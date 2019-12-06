@@ -6622,6 +6622,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    Visualization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#other-libraries-and-tools" class="md-nav__link">
     Other libraries and tools
   </a>
@@ -6704,7 +6711,7 @@ them.</p>
 <h2 id="finite-elements">Finite Elements<a class="headerlink" href="#finite-elements" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://fenicsproject.org">FEniCS</a> -用于用Python和C ++解决PDE的开源计算平台.
-  （C ++ / Python，LGPL 3， <a href="https://bitbucket.org/fenics-project/">BitBucket</a>)</li>
+  (C++/Python, LGPL 3, <a href="https://bitbucket.org/fenics-project/">BitBucket</a>)</li>
 <li><a href="https://libmesh.github.io">libMesh</a> -使用任意非结构化离散化进行PDE数值模拟的框架.
   （C ++，LGPL 2.1， <a href="https://github.com/libMesh/libmesh">GitHub</a>)</li>
 <li><a href="https://dealii.org">deal.II</a> -支持创建有限元代码的软件库.
@@ -6719,7 +6726,8 @@ them.</p>
   （C ++，LGPL 2.1， <a href="https://github.com/mfem/mfem">GitHub</a>)</li>
 <li><a href="https://sfepy.org">SfePy</a> -Python中的简单有限元.
   （Python，BSD， <a href="https://github.com/sfepy/sfepy">GitHub</a>)</li>
-<li><a href="https://freefem.org">FreeFEM</a>  -高级Multiphysics-multimesh有限元语言.  （C ++，LGPL， <a href="https://github.com/FreeFem">GitHub</a>)</li>
+<li><a href="https://freefem.org">FreeFEM</a> -高级Multiphysics-multimesh有限元语言.
+  （C ++，LGPL， <a href="https://github.com/FreeFem">GitHub</a>)</li>
 </ul>
 <h2 id="meshing">Meshing<a class="headerlink" href="#meshing" title="Permanent link">&para;</a></h2>
 <ul>
@@ -6761,9 +6769,13 @@ them.</p>
   （Python，麻省理工学院， <a href="https://github.com/mikedh/trimesh">GitHub</a>)</li>
 <li><a href="https://github.com/nschloe/dmsh">dmsh</a> -由distmesh启发的非结构三角形网格的简单生成器.
   （Python，麻省理工学院，GitHub）</li>
-<li><a href="http://www.pmp-library.org/">pmp-library</a>  -多边形网格处理库.  （C ++，MIT，雇主免责声明， <a href="https://github.com/pmp-library/pmp-library/">GitHub</a>)</li>
+<li><a href="https://www.pmp-library.org/">pmp-library</a>  -多边形网格处理库.  （C ++，MIT，雇主免责声明， <a href="https://github.com/pmp-library/pmp-library/">GitHub</a>)</li>
 <li><a href="https://www.mmgtools.org/">Mmg</a>  -健壮，开放源代码和多学科的软件，可用于重新设计.  （C，LGPL 3， <a href="https://github.com/MmgTools/mmg">GitHub</a>)</li>
 <li><a href="https://github.com/nschloe/meshplex">meshplex</a>  -单工网格的快速工具.  （Python，麻省理工学院，GitHub）</li>
+<li><a href="https://cs.nyu.edu/~yixinhu/tetwild.pdf">TetWild</a> -在野外强大的四面体啮合.
+  （C ++，GPL 3， <a href="https://github.com/Yixin-Hu/TetWild">GitHub</a>)</li>
+<li><a href="https://cs.nyu.edu/~yixinhu/triwild.pdf">TriWild</a> -带有曲线约束的鲁棒三角剖分.
+  （C ++，MPL 2， <a href="https://github.com/wildmeshing/TriWild">GitHub</a>)</li>
 </ul>
 <h2 id="sparse-linear-solvers">Sparse linear solvers<a class="headerlink" href="#sparse-linear-solvers" title="Permanent link">&para;</a></h2>
 <ul>
@@ -6776,6 +6788,17 @@ them.</p>
 <li><a href="https://computing.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods">hypre</a> -高性能预处理器和求解器库.
   （C，Apache 2.0 / MIT， <a href="https://github.com/hypre-space/hypre">GitHub</a>)</li>
 </ul>
+<h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.paraview.org">ParaView</a> -基于VTK的多平台数据分析和可视化应用程序.
+  （100 ++，BSD， <a href="https://gitlab.kitware.com/paraview/paraview">GitLab</a>)</li>
+<li><a href="https://vtk.org/">VTK</a> -处理图像并创建3D计算机图形.
+  （100 ++，BSD， <a href="https://gitlab.kitware.com/vtk/vtk">GitLab</a>)</li>
+<li><a href="https://docs.enthought.com/mayavi/mayavi/">Mayavi</a> -使用Python进行3D科学数据可视化和绘图.
+  （Python，BSD， <a href="https://github.com/enthought/mayavi">GitHub</a>)</li>
+<li><a href="https://polyscope.run/">Polyscope</a> -用于3D几何处理的查看器和用户界面.
+  （C ++，麻省理工学院， <a href="https://github.com/nmwsharp/polyscope">GitHub</a>)</li>
+</ul>
 <h2 id="other-libraries-and-tools">Other libraries and tools<a class="headerlink" href="#other-libraries-and-tools" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="http://www.fftw.org">FFTW</a> -一维或多维，任意输入大小以及实数据和复杂数据的离散傅立叶变换.
@@ -6787,15 +6810,13 @@ them.</p>
   （C / C ++，GPL 3， <a href="https://savannah.gnu.org/projects/gsl">Savannah</a>)</li>
 <li><a href="https://www.openfoam.com">OpenFOAM</a> -免费的开源CFD（计算流体动力学）软件.
   （C ++，GPL 3， <a href="https://github.com/OpenFOAM/OpenFOAM-dev">GitHub</a>)</li>
-<li><a href="https://www.paraview.org">ParaView</a> -基于VTK的多平台数据分析和可视化应用程序.
-  （100 ++，BSD， <a href="https://gitlab.kitware.com/paraview/paraview">GitLab</a>)</li>
 <li><a href="https://github.com/nschloe/quadpy">quadpy</a> -Python中的数值积分（正交，容积）.
   （Python，麻省理工学院，GitHub）</li>
 <li><a href="https://www.ctcms.nist.gov/fipy/">FiPy</a> -有限体积的PDF解算器.
   （Python，[自定义开源
   许可]（<a href="https://www.nist.gov/topics/data/public-access-nist-research/copyright-fair-use-and-licensing-statements-srd-data-and">https://www.nist.gov/topics/data/public-access-nist-research/copyright-fair-use-and-licensing-statements-srd-data-and</a>），
   <a href="https://github.com/usnistgov/fipy">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/accupy">accupy</a> - Accurate sums and dot products for Python.
+<li><a href="https://github.com/nschloe/accupy">accupy</a> -适用于Python的精确求和和点积.
   （Python，麻省理工学院，GitHub）</li>
 <li><a href="http://slepc.upv.es">SLEPc</a> -特征值问题计算的可扩展库.
   （C，2句BSD， <a href="https://bitbucket.org/slepc/slepc/src/master/">BitBucket</a>)</li>
@@ -6818,7 +6839,7 @@ them.</p>
 <li><a href="https://people.maths.ox.ac.uk/trefethen/videos.html">Nick Trefethen's Video Lectures</a> -关于逼近理论/实践和科学计算的36个视频讲座.</li>
 <li><a href="https://www.johndcook.com/blog/">John D. Cook's blog</a> -科学计算的壮举.</li>
 <li><a href="https://www.netlib.org/utk/people/JackDongarra/la-sw.html">Jack Dongarra's software list</a> -解决线性代数问题的免费软件列表.</li>
-<li><a href="http://www.netlib.org/na-digest-html/">NA Digest</a> -收集与数值分析有关的主题和实践者的文章.</li>
+<li><a href="https://www.netlib.org/na-digest-html/">NA Digest</a> -收集与数值分析有关的主题和实践者的文章.</li>
 </ul>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" /></a></p>
