@@ -7293,7 +7293,7 @@
 <li><a href="http://gora.apache.org/">Apache Gora</a> -内存中数据模型和持久性的框架.</li>
 <li><a href="http://hama.apache.org/">Apache Hama</a> -BSP（批量同步并行）计算框架.</li>
 <li><a href="https://wiki.apache.org/hadoop/MapReduce/">Apache MapReduce</a> -用于在集群上使用并行分布式算法处理大型数据集的编程模型.</li>
-<li><a href="https://pig.apache.org/">Apache Pig</a> -用于表达Hadoop数据分析程序的高级语言.</li>
+<li><a href="https://pig.apache.org/">Apache Pig</a> - high level language to express data analysis programs for Hadoop.</li>
 <li><a href="http://reef.apache.org/">Apache REEF</a> -可保留的评估程序执行框架，以简化和统一大数据系统的较低层.</li>
 <li><a href="http://incubator.apache.org/projects/s4.html">Apache S4</a> -流处理框架，实现S4.</li>
 <li><a href="http://spark.apache.org/">Apache Spark</a> -内存集群计算框架.</li>
@@ -7334,7 +7334,7 @@
 <li><a href="https://github.com/twitter/heron">Twitter Heron</a> -Heron是Twitter的实时，分布式，容错流处理引擎，取代了Storm.</li>
 <li><a href="https://github.com/twitter/scalding">Twitter Scalding</a> -基于Cascading构建的用于Map Reduce作业的Scala库.</li>
 <li><a href="https://github.com/twitter/summingbird">Twitter Summingbird</a> -通过Twitter流式传输带有缩放和风暴的MapReduce.</li>
-<li><a href="https://blog.twitter.com/engineering/en_us/a/2014/tsar-a-timeseries-aggregator.html">Twitter TSAR</a> -Twitter的TimeSeries AggregatoR.</li>
+<li><a href="https://blog.twitter.com/engineering/en_us/a/2014/tsar-a-timeseries-aggregator.html">Twitter TSAR</a> - TimeSeries AggregatoR by Twitter.</li>
 <li><a href="http://www.wallaroolabs.com/community">Wallaroo</a>  -超快速，弹性的数据处理引擎.  大数据或快速数据-不必大惊小怪，不需要Java.</li>
 </ul>
 <h2 id="distributed-filesystem">Distributed Filesystem<a class="headerlink" href="#distributed-filesystem" title="Permanent link">&para;</a></h2>
@@ -7365,7 +7365,7 @@
 <li><a href="https://www.actian.com/data-management/ingres-sql-rdbms/">Actian Versant</a> -商业面向对象的数据库管理系统.</li>
 <li><a href="https://crate.io/">Crate Data</a>  -是开源的大规模可扩展数据存储.  它需要零管理.</li>
 <li><a href="http://www.infoq.com/news/2014/06/facebook-apollo">Facebook Apollo</a> -Facebook的类似Paxos的NoSQL数据库.</li>
-<li><a href="http://comsysto.github.io/jumbodb/">jumboDB</a> - document oriented datastore over Hadoop.</li>
+<li><a href="http://comsysto.github.io/jumbodb/">jumboDB</a> -通过Hadoop面向文档的数据存储.</li>
 <li><a href="https://engineering.linkedin.com/data">LinkedIn Espresso</a> -水平可扩展的面向文档的NoSQL数据存储.</li>
 <li><a href="http://www.marklogic.com/">MarkLogic</a> -与模式无关的企业NoSQL数据库技术.</li>
 <li><a href="https://azure.microsoft.com/en-us/services/cosmos-db/">Microsoft Azure DocumentDB</a> -带有对MongoDB的协议支持的NoSQL云数据库服务 </li>
@@ -7374,7 +7374,7 @@
 <li><a href="https://rethinkdb.com/">RethinkDB</a> -支持诸如表联接和分组依据之类的查询的文档数据库.</li>
 </ul>
 <h2 id="key-map-data-model">Key Map Data Model<a class="headerlink" href="#key-map-data-model" title="Permanent link">&para;</a></h2>
-<p><strong>注意</strong>：行业中存在一些术语混淆，有两种不同的名称称为“列式数据库”.  这里列出的一些分布式持久数据库是围绕“键映射”数据模型构建的：所有数据都有一个（可能是复合的）键，键-值对映射与之关联.  在某些系统中，多个这样的值映射可以与一个键相关联，并且这些映射被称为“列族”（值映射键被称为“列”）.</p>
+<p><strong>注意</strong>：行业中存在一些术语混淆，有两种不同的名称称为“列式数据库”.  这里列出的一些分布式持久数据库是围绕“键映射”数据模型构建的：所有数据都有一个（可能是复合的）键，键-值对映射与之关联.  在一些系统中，多个这样的值图可以与一个键相关联，并且这些图被称为“列族”（其中值图键被称为“列”）.</p>
 <p>另一组也可以称为“列数据库”的技术的区别在于，它是如何在磁盘或内存上存储数据的-而不是像传统方式那样将数据存储在给定键的所有列值彼此相邻的位置上（按行），这些系统将所有<em>列</em>值彼此相邻存储.  因此，需要更多的工作来获取给定键的所有列，但是需要更少的工作来获取给定列的所有值.</p>
 <p>前一组在此称为“键映射数据模型”.  这些与 <a href="#key-value-data-model">Key-value Data Model</a> 商店相当模糊.</p>
 <p>后者是关于存储格式而不是数据模型，在下面列出 <a href="#columnar-databases">Columnar Databases</a>.</p>
@@ -7413,7 +7413,7 @@
 <li><a href="https://github.com/basho/riak">Riak</a> -分散的数据存储.</li>
 <li><a href="https://github.com/twitter/storehaus">Storehaus</a> -通过Twitter与异步键值存储一起使用的库.</li>
 <li><a href="https://github.com/tidwall/summitdb">SummitDB</a> -内存中的NoSQL键/值数据库，具有磁盘持久性并使用Raft共识算法.</li>
-<li><a href="https://github.com/tarantool/tarantool">Tarantool</a> - an efficient NoSQL database and a Lua application server.</li>
+<li><a href="https://github.com/tarantool/tarantool">Tarantool</a> -高效的NoSQL数据库和Lua应用程序服务器.</li>
 <li><a href="https://github.com/pingcap/tikv">TiKV</a> -由Rust提供动力并受Google Spanner和HBase启发的分布式键值数据库.</li>
 <li><a href="https://github.com/tidwall/tile38">Tile38</a> -地理位置数据存储，空间索引和实时地理围栏，支持多种对象类型，包括纬度/经度点，边界框，XYZ磁贴，地理哈希和GeoJSON</li>
 <li><a href="https://github.com/Treode/store">TreodeDB</a> -键值存储，已复制和分片，并提供原子多行写入.</li>
@@ -7459,7 +7459,7 @@
 <li><a href="http://parquet.apache.org/">Parquet</a> -Hadoop的列式存储格式.</li>
 <li><a href="https://pivotal.io/pivotal-greenplum">Pivotal Greenplum</a> -专用的专用分析数据仓库，提供了列式引擎以及传统的基于行的引擎.</li>
 <li><a href="https://www.vertica.com/">Vertica</a> -用于管理大量，快速增长的数据，并在用于数据仓库时提供非常快的查询性能.</li>
-<li><a href="http://sqream.com/">SQream DB</a> -由GPU驱动的大数据数据库，专为分析和数据仓库而设计，具有符合ANSI-92的SQL，适用于从10TB到1PB的数据集.</li>
+<li><a href="http://sqream.com/">SQream DB</a> -由GPU驱动的大数据数据库，专为分析和数据仓库而设计，具有符合ANSI-92的SQL，适用于10TB至1PB的数据集.</li>
 <li><a href="https://cloud.google.com/bigquery/what-is-bigquery">Google BigQuery</a> -Google在Dremel上的开拓性工作为后盾的云产品.</li>
 <li><a href="https://aws.amazon.com/redshift/">Amazon Redshift</a> -亚马逊的云产品，也基于列式数据存储后端.</li>
 <li><a href="https://github.com/shunfei/indexr">IndexR</a> -一种开源的列式存储格式，用于大数据的快速实时分析.</li>
@@ -7484,7 +7484,7 @@
 <li><a href="https://www.percona.com/doc/percona-server/5.5/performance/handlersocket.html">HandlerSocket</a> -适用于MySQL / MariaDB的NoSQL插件.</li>
 <li><a href="http://www.infinisql.org/">InfiniSQL</a> -无限可扩展的RDBMS.</li>
 <li><a href="https://www.mapd.com/">Map-D</a> -GPU内存数据库，大数据分析和可视化平台.</li>
-<li><a href="http://www.memsql.com/">MemSQL</a> -内存中的SQL数据库，具有优化的Flash列式存储.</li>
+<li><a href="http://www.memsql.com/">MemSQL</a> -内存中的SQL数据库，具有优化的Flash列存储.</li>
 <li><a href="http://www.nuodb.com/">NuoDB</a> -符合SQL / ACID的分布式数据库.</li>
 <li><a href="http://www.oracle.com/technetwork/database/database-technologies/timesten/overview/index.html">Oracle TimesTen in-Memory Database</a> -具有持久性和可恢复性的内存中关系数据库管理系统.</li>
 <li><a href="http://gemfirexd.docs.pivotal.io/latest/">Pivotal GemFire XD</a>  -低延迟，内存中的分布式SQL数据存储.  提供内存中表数据的SQL接口，可持久存储在HDFS中.</li>
@@ -7498,7 +7498,7 @@
 <h2 id="time-series-databases">Time-Series Databases<a class="headerlink" href="#time-series-databases" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="http://axibase.com/products/axibase-time-series-database/">Axibase Time Series Database</a> -在HBase之上的集成时间序列数据库，具有内置的可视化，规则引擎和SQL支持.</li>
-<li><a href="http://chronix.io/">Chronix</a> - a time series storage built to store time series highly compressed and for fast access times.</li>
+<li><a href="http://chronix.io/">Chronix</a> -时间序列存储，用于存储高度压缩的时间序列和快速访问时间.</li>
 <li><a href="http://square.github.io/cube/">Cube</a> -使用MongoDB存储时间序列数据.</li>
 <li><a href="https://spotify.github.io/heroic/#!/index">Heroic</a> -是基于Cassandra和Elasticsearch的可伸缩时间序列数据库.</li>
 <li><a href="https://www.influxdata.com/">InfluxDB</a> -分布式时间序列数据库.</li>
@@ -7506,6 +7506,7 @@
 <li><a href="https://github.com/kairosdb/kairosdb">Kairosdb</a> -与OpenTSDB相似，但允许使用Cassandra.</li>
 <li><a href="http://m3db.github.io/m3/m3db/">M3DB</a> -分布式时间序列数据库，可用于长时间保留实时度量.</li>
 <li><a href="https://opennms.github.io/newts/">Newts</a> -基于Apache Cassandra的时间序列数据库.</li>
+<li><a href="https://github.com/taosdata/TDengine/">TDengine</a> -C语言中的时间序列数据库，利用IoT的独特功能来提高读写吞吐量并减少存储数据所需的空间</li>
 <li><a href="http://opentsdb.net">OpenTSDB</a> -在HBase之上的分布式时间序列数据库.</li>
 <li><a href="https://prometheus.io/">Prometheus</a> -时间序列数据库和服务监视系统.</li>
 <li><a href="https://github.com/facebookincubator/beringei">Beringei</a> -Facebook的内存时间序列数据库.</li>
@@ -7601,7 +7602,7 @@
 <li><a href="http://falcon.apache.org/">Apache Falcon</a> -数据管理框架.</li>
 <li><a href="http://oozie.apache.org/">Apache Oozie</a> -工作流程作业计划程序.</li>
 <li><a href="https://docs.microsoft.com/en-us/azure/data-factory/data-factory-introduction">Azure Data Factory</a> -用于本地，云和HDInsight的基于云的管道编排</li>
-<li><a href="http://mesos.github.io/chronos/">Chronos</a> -分布式容错调度程序.</li>
+<li><a href="http://mesos.github.io/chronos/">Chronos</a> - distributed and fault-tolerant scheduler.</li>
 <li><a href="https://azkaban.github.io/">Linkedin Azkaban</a> -批处理工作流作业计划程序.</li>
 <li><a href="https://github.com/ottogroup/schedoscope">Schedoscope</a> -Scala DSL，用于Hadoop作业的敏捷调度.</li>
 <li><a href="https://github.com/radlab/sparrow">Sparrow</a> -调度平台.</li>
@@ -7638,7 +7639,7 @@
 <li><a href="https://github.com/scikit-learn/scikit-learn">scikit-learn</a> -scikit-learn：Python中的机器学习.</li>
 <li><a href="http://spark.apache.org/docs/0.9.0/mllib-guide.html">Spark MLlib</a> -一些常见机器学习（ML）功能的Spark实现.</li>
 <li><a href="https://users.soe.ucsc.edu/~niejiazhong/slides/chandra.pdf">Sibyl</a> -Google的大规模机器学习系统.</li>
-<li><a href="https://github.com/tensorflow/tensorflow">TensorFlow</a> -Google的库，用于使用数据流图进行机器学习.</li>
+<li><a href="https://github.com/tensorflow/tensorflow">TensorFlow</a> - Library from Google for machine learning using data flow graphs.</li>
 <li><a href="https://github.com/theano">Theano</a> -蒙特利尔大学支持的以Python为中心的机器学习库.</li>
 <li><a href="https://github.com/torch">Torch</a> -带有Lua API的深度学习库，由纽约大学和Facebook支持.</li>
 <li><a href="https://github.com/amplab/velox-modelserver">Velox</a> -服务机器学习预测的系统.</li>
@@ -7746,9 +7747,9 @@
 <li><a href="https://aws.amazon.com/rds/">Amazon RDS</a> -亚马逊云中的MySQL数据库.</li>
 <li><a href="http://www.drizzle.org/">Drizzle</a> -MySQL 6.0的演变.</li>
 <li><a href="https://cloud.google.com/sql/docs/">Google Cloud SQL</a> -Google云中的MySQL数据库.</li>
-<li><a href="https://mariadb.org/">MariaDB</a> -增强了MySQL的直接替换.</li>
+<li><a href="https://mariadb.org/">MariaDB</a> - enhanced, drop-in replacement for MySQL.</li>
 <li><a href="https://www.mysql.com/products/cluster/">MySQL Cluster</a> -使用NDB群集存储引擎的MySQL实现.</li>
-<li><a href="https://www.percona.com/software/mysql-database/percona-server">Percona Server</a> -增强了MySQL的直接替换.</li>
+<li><a href="https://www.percona.com/software/mysql-database/percona-server">Percona Server</a> - enhanced, drop-in replacement for MySQL.</li>
 <li><a href="https://github.com/renecannao/proxysql">ProxySQL</a> -MySQL的高性能代理.</li>
 <li><a href="https://www.percona.com/">TokuDB</a> -TokuDB是MySQL和MariaDB的存储引擎.</li>
 <li><a href="http://webscalesql.org/">WebScaleSQL</a> -是多家公司的工程师之间的协作，这些公司在大规模运行MySQL时面临类似的挑战.</li>
@@ -7776,7 +7777,7 @@
 <ul>
 <li><a href="http://www.actian.com/products/operational-databases/">Actian PSQL</a> -Pervasive Software开发的符合ACID的DBMS，针对嵌入应用程序进行了优化.</li>
 <li><a href="https://www.oracle.com/database/berkeley-db/index.html">BerkeleyDB</a> -一个软件库，可为键/值数据提供高性能的嵌入式数据库.</li>
-<li><a href="https://github.com/krestenkrab/hanoidb">HanoiDB</a> -Erlang LSM BTree存储.</li>
+<li><a href="https://github.com/krestenkrab/hanoidb">HanoiDB</a> -Erlang NGO BTree存储.</li>
 <li><a href="https://github.com/google/leveldb">LevelDB</a> -由Google编写的快速键值存储库，提供了从字符串键到字符串值的有序映射.</li>
 <li><a href="https://symas.com/mdb/">LMDB</a> -Symas开发的超快速，超紧凑键值嵌入式数据存储.</li>
 <li><a href="http://rocksdb.org/">RocksDB</a> -可嵌入的持久键值存储，用于基于LevelDB的快速存储.</li>
@@ -7796,13 +7797,13 @@
 <li><a href="http://www.microsoft.com/en-us/server-cloud/solutions/business-intelligence/default.aspx">Microsoft</a> -商业智能软件和平台.</li>
 <li><a href="https://www.microstrategy.com/">Microstrategy</a> -商业智能，移动智能和网络应用程序的软件平台.</li>
 <li><a href="https://numeracy.co/">Numeracy</a> -快速，干净的SQL客户端和商业智能.</li>
-<li><a href="http://www.pentaho.com/">Pentaho</a> - business intelligence platform.</li>
+<li><a href="http://www.pentaho.com/">Pentaho</a> -商业智能平台.</li>
 <li><a href="http://www.qlik.com/us/">Qlik</a> -商业智能和分析平台.</li>
 <li><a href="https://redash.io/">Redash</a> -开源商业智能平台，支持多个数据源和计划的查询.</li>
-<li><a href="http://www.meteorite.bi/">Saiku</a> -开源分析平台.</li>
+<li><a href="https://www.meteorite.bi/">Saiku Analytics</a> -开源分析平台.</li>
 <li><a href="https://www.knowage-suite.com/">Knowage</a>  -开源商业智能平台.  （前任 <a href="http://www.spagobi.org/">SpagoBi</a>)</li>
 <li><a href="http://sparklinedata.com/">SparklineData SNAP</a> -由Apache Spark支持的现代BI平台.</li>
-<li><a href="https://www.tableau.com/">Tableau</a> - business intelligence platform.</li>
+<li><a href="https://www.tableau.com/">Tableau</a> -商业智能平台.</li>
 <li><a href="https://www.zoomdata.com/">Zoomdata</a> -大数据分析.</li>
 </ul>
 <h2 id="data-visualization">Data Visualization<a class="headerlink" href="#data-visualization" title="Permanent link">&para;</a></h2>
@@ -7811,7 +7812,7 @@
 <li><a href="http://www.anychart.com">AnyChart</a> -具有纯JS API的快速，简单和灵活的JavaScript（HTML5）图表库.</li>
 <li><a href="https://github.com/samizdatco/arbor">Arbor</a> -使用Web Worker和jQuery的图形可视化库.</li>
 <li><a href="https://github.com/LucidWorks/banana">Banana</a>  -可视化存储在Solr中的日志和带时间戳的数据.  基巴纳港口.</li>
-<li><a href="https://github.com/ufukomer/bloomery">Bloomery</a> - Web UI for Impala.</li>
+<li><a href="https://github.com/ufukomer/bloomery">Bloomery</a> -Impala的Web UI.</li>
 <li><a href="http://bokeh.pydata.org/en/latest/">Bokeh</a> -一个功能强大的Python交互式可视化库，该库针对现代Web浏览器进行演示，目标是以D3.js样式优雅，简洁地构造新颖的图形，同时还可以通过超大型或流式传输提供此功能以及高性能的交互性数据集.</li>
 <li><a href="http://c3js.org/">C3</a> -基于D3的可重用图表库</li>
 <li><a href="https://github.com/CartoDB/cartodb">CartoDB</a> -具有强大的前端编辑功能和强大的API的地理空间数据库的开源或免费增值托管.</li>
@@ -7857,8 +7858,8 @@
 </ul>
 <h2 id="internet-of-things-and-sensor-data">Internet of things and sensor data<a class="headerlink" href="#internet-of-things-and-sensor-data" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="http://edgent.apache.org/">Apache Edgent (Incubating)</a> -可以嵌入到网关和占用空间小的边缘设备中的编程模型和微内核样式运行时，可以在边缘设备上进行本地，实时分析.</li>
-<li><a href="https://azure.microsoft.com/en-us/services/iot-hub/">Azure IoT Hub</a> - Cloud-based bi-directional monitoring and messaging hub</li>
+<li><a href="http://edgent.apache.org/">Apache Edgent (Incubating)</a> -可以嵌入到网关和占地面积小的边缘设备中的编程模型和微内核样式运行时，可以在边缘设备上进行本地实时分析.</li>
+<li><a href="https://azure.microsoft.com/en-us/services/iot-hub/">Azure IoT Hub</a> -基于云的双向监视和消息传递中心</li>
 <li><a href="https://www.tempoiq.com/">TempoIQ</a> -基于云的传感器分析.</li>
 <li><a href="http://2lemetry.com/">2lemetry</a> -物联网平台.</li>
 <li><a href="https://www.pubnub.com/">Pubnub</a> -数据流网络</li>
@@ -7959,6 +7960,7 @@ Twitter上的数据分析.</li>
 -决策树文件 <a href="https://github.com/benedekrozemberczki/awesome-decision-tree-papers">awesome-decision-tree-papers</a>.
 -欺诈检测文件 <a href="https://github.com/benedekrozemberczki/awesome-fraud-detection-papers">awesome-fraud-detection-papers</a>.
 -梯度提升论文 <a href="https://github.com/benedekrozemberczki/awesome-gradient-boosting-papers">awesome-gradient-boosting-papers</a>.
+- Monte Carlo Tree Search Papers <a href="https://github.com/benedekrozemberczki/awesome-monte-carlo-tree-search-papers">awesome-monte-carlo-tree-search-papers</a>.
 -卡夫卡 <a href="https://github.com/monksy/awesome-kafka">awesome-kafka</a>.</p>
                 
                   
