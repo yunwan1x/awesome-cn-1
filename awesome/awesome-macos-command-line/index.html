@@ -12313,7 +12313,7 @@ sudo /系统/库/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/k
 
 <h4 id="enable-and-disable-remote-desktop-sharing">Enable and Disable Remote Desktop Sharing<a class="headerlink" href="#enable-and-disable-remote-desktop-sharing" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><span class="c1">## Allow Access for All Users and Give All Users Full Access</span>
-sudo /系统/库/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
+须藤/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
 
 <span class="c1">## Disable ARD Agent and Remove Access Privileges for All Users</span>
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -configure -access -off
@@ -12323,7 +12323,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 <div class="codehilite"><pre><span></span> 须藤rm -rf / var / db / RemoteManagement<span class="p">;</span>  <span class="se">\</span>
  sudo默认删除/Library/Preferences/com.apple.RemoteDesktop.plist<span class="p">;</span>  <span class="se">\</span>
  默认为delete〜/ Library / Preferences / com.apple.RemoteDesktop.plist<span class="p">;</span>  <span class="se">\</span>
-sudo rm -r /Library/Application<span class="se">\ </span>Support/Apple/Remote<span class="se">\ </span>Desktop/ <span class="p">;</span> <span class="se">\</span>
+ sudo rm -r / Library / Application <span class="se">\ </span>Support / Apple / Remote <span class="se">\ </span>Desktop /<span class="p">;</span>  <span class="se">\</span>
  rm -r〜/ Library / Application <span class="se">\ </span>Support / Remote <span class="se">\ </span>Desktop /<span class="p">;</span>  <span class="se">\</span>
 rm -r〜/ Library / Containers / com.apple.RemoteDesktop
 </pre></div>
@@ -12380,7 +12380,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
     <span class="err">如果“</span> <span class="mf">10.14</span><span class="err">”</span> <span class="o">&amp;</span><span class="nv">lt</span><span class="err">;</span><span class="o">=</span> <span class="nv">os_version</span><span class="err">，则将mail_version设置为“</span> <span class="nv">V6</span><span class="err">”</span>
 <span class="err">结束考虑</span>
 
-<span class="err">设置sizeBefore做外壳程序脚本“</span> <span class="nv">ls</span> <span class="o">-</span><span class="nv">lnah</span><span class="err">〜</span><span class="o">/</span> <span class="nv">Library</span> <span class="o">/</span> <span class="nv">Mail</span> <span class="o">/</span><span class="err">”和mail_version＆“</span> <span class="o">/</span> <span class="nv">MailData</span> <span class="err">|</span> <span class="nv">grep</span> <span class="o">-</span><span class="nv">E</span><span class="o">&amp;</span><span class="c">#39;信封索引$&amp;#39;| awk {&amp;#39;print $ 5&amp;#39;}”</span>
+<span class="err">设置sizeBefore做外壳程序脚本“</span> <span class="nv">ls</span> <span class="o">-</span><span class="nv">lnah</span><span class="err">〜</span><span class="o">/</span> <span class="nv">Library</span> <span class="o">/</span> <span class="nv">Mail</span> <span class="o">/</span><span class="err">”＆</span><span class="nv">mail_version</span><span class="err">＆“</span> <span class="o">/</span> <span class="nv">MailData</span> <span class="err">|</span> <span class="nv">grep</span> <span class="o">-</span><span class="nv">E</span><span class="o">&amp;</span><span class="c">#39;信封索引$&amp;#39;| awk {&amp;#39;print $ 5&amp;#39;}”</span>
 <span class="err">做shell脚本“</span> <span class="o">/</span> <span class="nv">usr</span> <span class="o">/</span> <span class="nv">bin</span> <span class="o">/</span> <span class="nv">sqlite3</span><span class="err">〜</span><span class="o">/</span> <span class="nv">Library</span> <span class="o">/</span> <span class="nv">Mail</span> <span class="o">/</span><span class="err">”和mail_version和“</span> <span class="o">/</span> <span class="nv">MailData</span> <span class="o">/</span> <span class="nv">Envelope</span> <span class="err">\\</span> <span class="nv">Index</span> <span class="nv">vacuum</span><span class="err">”</span>
 
 <span class="err">设置sizeAfter做外壳程序脚本“</span> <span class="nv">ls</span> <span class="o">-</span><span class="nv">lnah</span><span class="err">〜</span><span class="o">/</span> <span class="nv">Library</span> <span class="o">/</span> <span class="nv">Mail</span> <span class="o">/</span><span class="err">”和mail_version＆“</span> <span class="o">/</span> <span class="nv">MailData</span> <span class="err">|</span> <span class="nv">grep</span> <span class="o">-</span><span class="nv">E</span><span class="o">&amp;</span><span class="c">#39;信封索引$&amp;#39;| awk {&amp;#39;打印$ 5&amp;#39;}”</span>
@@ -12391,7 +12391,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 </pre></div></p>
 <h3 id="safari">Safari<a class="headerlink" href="#safari" title="Permanent link">&para;</a></h3>
 <h4 id="change-default-fonts">Change Default Fonts<a class="headerlink" href="#change-default-fonts" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2StandardFontFamily乔治亚
+<div class="codehilite"><pre><span></span>默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2StandardFontFamily Georgia
 默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFontSize <span class="m">16</span>
 默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2FixedFontFamily Menlo
 默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFixedFontSize <span class="m">14</span>
@@ -12399,7 +12399,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 
 <h4 id="enable-develop-menu-and-web-inspector">Enable Develop Menu and Web Inspector<a class="headerlink" href="#enable-develop-menu-and-web-inspector" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>默认写com.apple.Safari IncludeInternalDebugMenu -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
-默认写com.apple.Safari IncludeDevelopMenu -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+defaults write com.apple.Safari IncludeDevelopMenu -bool <span class="nb">true</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
 默认写com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 默认写-g WebKitDeveloperExtras -bool <span class="nb">true</span>
@@ -12438,7 +12438,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 
 <h3 id="textedit">TextEdit<a class="headerlink" href="#textedit" title="Permanent link">&para;</a></h3>
 <h4 id="use-plain-text-mode-as-default">Use Plain Text Mode as Default<a class="headerlink" href="#use-plain-text-mode-as-default" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>默认写com.apple.TextEdit RichText -int <span class="m">0</span>
+<div class="codehilite"><pre><span></span>defaults write com.apple.TextEdit RichText -int <span class="m">0</span>
 </pre></div>
 
 <h3 id="visual-studio-code">Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permanent link">&para;</a></h3>
@@ -12450,7 +12450,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 <h3 id="time-machine">Time Machine<a class="headerlink" href="#time-machine" title="Permanent link">&para;</a></h3>
 <h4 id="change-backup-interval">Change Backup Interval<a class="headerlink" href="#change-backup-interval" title="Permanent link">&para;</a></h4>
 <p>这会将间隔更改为30分钟.  整数值是以秒为单位的时间.
-<div class="codehilite"><pre><span></span>sudo默认写/System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int <span class="m">1800</span>
+<div class="codehilite"><pre><span></span>sudo默认写入/System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int <span class="m">1800</span>
 </pre></div></p>
 <h4 id="local-backups">Local Backups<a class="headerlink" href="#local-backups" title="Permanent link">&para;</a></h4>
 <p>Time Machine备份卷不可用时，Time Machine是否执行本地备份.
@@ -12699,7 +12699,7 @@ sudo systemsetup -setstartupdisk /系统/库/ CoreServices
 
 <span class="c1">#### List Snapshots</span>
 <span class="sb">```</span>bash
-tmutil listlocals快照/
+tmutil listlocals快照
 </pre></div>
 
 <h4 id="mount-snapshot">Mount Snapshot<a class="headerlink" href="#mount-snapshot" title="Permanent link">&para;</a></h4>
@@ -12875,7 +12875,7 @@ Killall搜寻器
 
 <h4 id="scrollbar-visibility">Scrollbar Visibility<a class="headerlink" href="#scrollbar-visibility" title="Permanent link">&para;</a></h4>
 <p>可能的值：“ WhenScrolling”，“ Automatic”和“ Always”.
-<div class="codehilite"><pre><span></span>defaults write -g AppleShowScrollBars -string <span class="s2">&quot;Always&quot;</span>
+<div class="codehilite"><pre><span></span>默认写-g AppleShowScrollBars -string“始终”
 </pre></div></p>
 <h4 id="status-bar">Status Bar<a class="headerlink" href="#status-bar" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><span class="c1">## Show</span>
@@ -12904,11 +12904,11 @@ Killall搜寻器
 </pre></div></p>
 <h3 id="metadata-files">Metadata Files<a class="headerlink" href="#metadata-files" title="Permanent link">&para;</a></h3>
 <h4 id="disable-creation-of-metadata-files-on-network-volumes">Disable Creation of Metadata Files on Network Volumes<a class="headerlink" href="#disable-creation-of-metadata-files-on-network-volumes" title="Permanent link">&para;</a></h4>
-<p>Avoids creation of <code>.DS_Store</code> and AppleDouble files.
+<p>避免创建.DS_Store和AppleDouble文件.
 <div class="codehilite"><pre><span></span>默认写com.apple.desktopservices DSntWriteNetworkStores -bool <span class="nb">true</span>
 </pre></div></p>
 <h4 id="disable-creation-of-metadata-files-on-usb-volumes">Disable Creation of Metadata Files on USB Volumes<a class="headerlink" href="#disable-creation-of-metadata-files-on-usb-volumes" title="Permanent link">&para;</a></h4>
-<p>Avoids creation of <code>.DS_Store</code> and AppleDouble files.
+<p>避免创建.DS_Store和AppleDouble文件.
 <div class="codehilite"><pre><span></span>默认写入com.apple.desktopservices DSntWriteUSBStores -bool <span class="nb">true</span>
 </pre></div></p>
 <h3 id="opening-things">Opening Things<a class="headerlink" href="#opening-things" title="Permanent link">&para;</a></h3>
@@ -12954,7 +12954,7 @@ atsutil服务器-ping
 <div class="codehilite"><pre><span></span>cp -v /系统/应用程序/实用程序/Terminal.app/内容/资源/字体/ SFMono- *〜/库/字体
 </pre></div></p>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
-<p>请参见 <a href="https://github.com/herrbischoff/awesome-macos-command-line/blob/master/functions.md">this file</a>.</p>
+<p>请参阅 <a href="https://github.com/herrbischoff/awesome-macos-command-line/blob/master/functions.md">this file</a>.</p>
 <h2 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h2>
 <h3 id="bluetooth">Bluetooth<a class="headerlink" href="#bluetooth" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="c1">## Status</span>
@@ -12983,7 +12983,7 @@ sudo默认写入/Library/Preferences/com.apple.Bluetooth ControllerPowerState -i
 </pre></div>
 
 <h4 id="remaining-battery-time">Remaining Battery Time<a class="headerlink" href="#remaining-battery-time" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span> pmset -g batt <span class="p">|</span>  egrep“（<span class="o">[[</span><span class="m">0</span>-9<span class="o">]</span> + <span class="se">\％</span>）.*” -o --colour <span class="o">=</span> auto <span class="p">|</span>  切-f3 -d<span class="p">&amp;</span><span class="c1">#39;;&amp;#39;</span>
+<div class="codehilite"><pre><span></span>pmset -g batt <span class="p">|</span> egrep <span class="s2">&quot;([0-9]+\%).*&quot;</span> -o --colour<span class="o">=</span>auto <span class="p">|</span> cut -f3 -d<span class="s1">&#39;;&#39;</span>
 </pre></div>
 
 <h4 id="show-connected-devices-udid">Show Connected Device's UDID<a class="headerlink" href="#show-connected-devices-udid" title="Permanent link">&para;</a></h4>
@@ -12991,7 +12991,7 @@ sudo默认写入/Library/Preferences/com.apple.Bluetooth ControllerPowerState -i
 </pre></div>
 
 <h4 id="show-current-screen-resolution">Show Current Screen Resolution<a class="headerlink" href="#show-current-screen-resolution" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span> system_profiler SPDisplaysDataType <span class="p">|</span>  扣押决议
+<div class="codehilite"><pre><span></span> system_profiler SPDisplaysDataType <span class="p">|</span>  grep分辨率
 </pre></div>
 
 <h4 id="show-cpu-brand-string">Show CPU Brand String<a class="headerlink" href="#show-cpu-brand-string" title="Permanent link">&para;</a></h4>
@@ -13222,7 +13222,7 @@ sudo launchctl卸载-w /System/Library/LaunchDaemons/ssh.plist
 </pre></div></p>
 <h4 id="show-network-interface-information">Show Network Interface Information<a class="headerlink" href="#show-network-interface-information" title="Permanent link">&para;</a></h4>
 <p><code>scutil</code>命令的未记录标志.
-<div class="codehilite"><pre><span></span>scutil-nwi
+<div class="codehilite"><pre><span></span>scutil --nwi
 </pre></div></p>
 <h3 id="tftp">TFTP<a class="headerlink" href="#tftp" title="Permanent link">&para;</a></h3>
 <h4 id="start-native-tftp-daemon">Start Native TFTP Daemon<a class="headerlink" href="#start-native-tftp-daemon" title="Permanent link">&para;</a></h4>
@@ -13314,6 +13314,7 @@ sudo / usr / libexec / ApplicationFirewall / socketfilterfw --setglobalstate关�
 </pre></div>
 
 <h4 id="manage-gatekeeper">Manage Gatekeeper<a class="headerlink" href="#manage-gatekeeper" title="Permanent link">&para;</a></h4>
+<p>对于令人讨厌的Catalina系统弹出窗口阻止非签名应用程序执行尤其有用.
 <div class="codehilite"><pre><span></span><span class="c1">## Status</span>
 spctl-状态
 
@@ -13322,8 +13323,7 @@ sudo spctl --master-启用
 
 <span class="c1">## Disable</span>
 sudo spctl --master-禁用
-</pre></div>
-
+</pre></div></p>
 <h3 id="passwords">Passwords<a class="headerlink" href="#passwords" title="Permanent link">&para;</a></h3>
 <h4 id="generate-secure-password-and-copy-to-clipboard">Generate Secure Password and Copy to Clipboard<a class="headerlink" href="#generate-secure-password-and-copy-to-clipboard" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span> <span class="nv">LC_ALL</span> <span class="o">=</span> C tr -dc“ <span class="o">[</span>：alnum：<span class="o">]</span>” <span class="p">&amp;</span>lt<span class="p">;</span>/ dev / urandom <span class="p">|</span>  头-c <span class="m">20</span> <span class="p">|</span>  pbcopy
@@ -13437,7 +13437,7 @@ defaults <span class="nb">read</span> com.apple.screensaver askForPassword
 </pre></div>
 
 <h4 id="uptime">Uptime<a class="headerlink" href="#uptime" title="Permanent link">&para;</a></h4>
-<p>自上次重新启动以来已过
+<p>自上次重新启动以来已经过了多长时间.
 <div class="codehilite"><pre><span></span>uptime
 </pre></div></p>
 <h3 id="clipboard">Clipboard<a class="headerlink" href="#clipboard" title="Permanent link">&para;</a></h3>
@@ -13456,7 +13456,7 @@ defaults <span class="nb">read</span> com.apple.screensaver askForPassword
 <div class="codehilite"><pre><span></span>pbpaste<span class="p">&amp;</span>gt<span class="p">;</span> what.txt
 </pre></div>
 
-<div class="codehilite"><pre><span></span> pbpaste <span class="p">|</span>  排序  uniq <span class="p">|</span>  pbcopy
+<div class="codehilite"><pre><span></span> pbpaste <span class="p">|</span>  排序<span class="p">|</span>  uniq <span class="p">|</span>  pbcopy
 </pre></div>
 
 <h3 id="filevault">FileVault<a class="headerlink" href="#filevault" title="Permanent link">&para;</a></h3>
@@ -13515,7 +13515,7 @@ sudo / Applications / Install <span class="se">\ </span>OS <span class="se">\ </
 </pre></div>
 
 <h3 id="launchagents">LaunchAgents<a class="headerlink" href="#launchagents" title="Permanent link">&para;</a></h3>
-<p>请参见 <a href="https://github.com/herrbischoff/awesome-macos-command-line/blob/master/launchagents.md">this file</a>.</p>
+<p>请参阅 <a href="https://github.com/herrbischoff/awesome-macos-command-line/blob/master/launchagents.md">this file</a>.</p>
 <h3 id="launchservices">LaunchServices<a class="headerlink" href="#launchservices" title="Permanent link">&para;</a></h3>
 <h4 id="rebuild-launchservices-database">Rebuild LaunchServices Database<a class="headerlink" href="#rebuild-launchservices-database" title="Permanent link">&para;</a></h4>
 <p>为了独立于OS X版本，这依赖于<code>locate</code>查找<code>lsregister</code>.  如果您尚未建立<code>locate</code>数据库， <a href="#build-locate-database">do it</a>.
