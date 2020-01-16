@@ -7035,6 +7035,23 @@ Awesome-Kubernetes
 <li><a href="https://github.com/rexray/csi-vfs">Virtual Filesystem</a></li>
 <li><a href="https://github.com/thecodeteam/csi-vsphere">VMware vSphere</a></li>
 </ul>
+<h1 id="api">群集API提供程序<a class="headerlink" href="#api" title="Permanent link">&para;</a></h1>
+<p><em>部分清单 <a href="https://github.com/kubernetes-sigs/cluster-api">Cluster API</a>  Kubernetes的提供商.  查看 <a href="https://cluster-api.sigs.k8s.io/reference/providers.html">Kubernetes-CAPI Providers</a> 了解更多信息</em></p>
+<p>### 引导程序</p>
+<ul>
+<li><a href="https://github.com/kubernetes-sigs/cluster-api/tree/master/bootstrap/kubeadm">Kubeadm</a></li>
+</ul>
+<p>### 基础设施</p>
+<ul>
+<li><a href="https://github.com/kubernetes-sigs/cluster-api-provider-aws">AWS</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cluster-api-provider-azure">Azure</a></li>
+<li><a href="https://github.com/metal3-io/cluster-api-provider-baremetal">Metal3-io</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cluster-api-provider-digitalocean">DigitalOcean</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cluster-api-provider-gcp">GCP</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud">IBM Cloud</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cluster-api-provider-openstack">OpenStack</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cluster-api-provider-vsphere">VMware vSphere</a></li>
+</ul>
 <h1 id="_9">开发人员库/脚本<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h1>
 <p><em>一些用于执行和良好引用的库和脚本的列表</em></p>
 <ul>
@@ -7086,6 +7103,7 @@ Awesome-Kubernetes
 <li><a href="http://github.com/kubernetes/dashboard">Console</a></li>
 <li><a href="https://github.com/infracloudio/botkube">BotKube</a> -可帮助您监控Kubernetes集群，调试关键部署并为标准做法提供建议的应用程序</li>
 <li><a href="http://www.datadoghq.com/">Datadog</a></li>
+<li><a href="https://www.dynatrace.com/technologies/kubernetes-monitoring/">Dynatrace</a> -Kubernetes集群和工作负载监控</li>
 <li><a href="https://github.com/heptiolabs/eventrouter">eventrouter</a> -简单的自省型kubernetes服务，可将事件转发到指定的接收器.</li>
 <li><a href="https://github.com/bloomberg/goldpinger">Goldpinger</a> 显示，监视和提醒集群间连接</li>
 <li><a href="https://github.com/grafana/kubernetes-app">Grafana Kubernetes App</a></li>
@@ -7202,7 +7220,7 @@ Awesome-Kubernetes
 <li><a href="https://github.com/CrunchyData/postgres-operator">PostgreSQL</a></li>
 <li><a href="https://github.com/zalando-incubator/postgres-operator">PostgreSQL</a> -使用StatefulSets和PostgreSQL管理PostgreSQL集群 <a href="https://github.com/zalando/patroni">Patroni</a>.</li>
 <li><a href="https://github.com/coreos/prometheus-operator">Prometheus</a></li>
-<li><a href="https://github.com/flant/addon-operator">Addon-operator</a> -向舵图添加钩子和值，以增强舵的功能，并将舵转换为可自我配置并响应集群变化的智能模块.</li>
+<li><a href="https://github.com/flant/addon-operator">Addon-operator</a> -向舵图添加钩子和值，以增强舵的功能，并将图转换为可自我配置并响应集群更改的智能模块.</li>
 <li><a href="https://github.com/flant/shell-operator">Shell-operator</a> -在Kubernetes集群中运行事件驱动脚本的工具.</li>
 </ul>
 <h2 id="custom-schedulers">Custom Schedulers<a class="headerlink" href="#custom-schedulers" title="Permanent link">&para;</a></h2>
@@ -7281,7 +7299,7 @@ Awesome-Kubernetes
 <li><a href="http://istio.io/">Istio</a></li>
 <li><a href="http://linkerd.io/getting-started/k8s/">Linkerd</a></li>
 <li><a href="https://github.com/weaveworks/mesh">Weave Mesh</a></li>
-<li><a href="https://github.com/containous/maesh">Maesh: Simpler Service Mesh</a> -Maesh是直接，易于配置且非侵入式的服务网格，可对任何Kubernetes集群内部的流量进行可视化和管理.</li>
+<li><a href="https://github.com/containous/maesh">Maesh: Simpler Service Mesh</a> -Maesh是一个简单，易于配置且非侵入式的服务网格，可查看和管理任何Kubernetes集群内部的流量.</li>
 <li><a href="https://github.com/kong/kuma">Kuma: The Universal Service Mesh</a> -构建，保护和观察您的现代服务网格.</li>
 </ul>
 <h2 id="rpc">RPC<a class="headerlink" href="#rpc" title="Permanent link">&para;</a></h2>
@@ -7513,7 +7531,7 @@ Awesome-Kubernetes
 <li><a href="http://shop.oreilly.com/product/9781784394035.do">Getting Started with Kubernetes</a> 乔纳森·拜尔（Jonathan Baier）</li>
 <li><a href="https://matthewpalmer.net/kubernetes-app-developer">Golden Guide to Kubernetes Application Development</a> 马修·帕尔默（Matthew Palmer）</li>
 <li><a href="https://github.com/Leverege/kubernetes-book">Kubernetes Book</a> （开源书籍）由Leverege Developers开发</li>
-<li><a href="https://www.packtpub.com/virtualization-and-cloud/kubernetes-cookbook-second-edition">Kubernetes Cookbook - Second Edition</a> 斋藤秀人（Hideto Saito），许惠传（Choi Lee），许克J（Ke-Jou Carol Hsu）</li>
+<li><a href="https://www.packtpub.com/virtualization-and-cloud/kubernetes-cookbook-second-edition">Kubernetes Cookbook - Second Edition</a> 斋藤秀人（Hideto Saito），许惠全（Choi Lee），许克J（Ke-Jou Carol Hsu）</li>
 <li><a href="https://www.amazon.com/dp/B07HSZHRHZ">Kubernetes Design Patterns and Extensions</a> 通过 <a href="https://github.com/onuryilmaz">Onur Yilmaz</a></li>
 <li><a href="https://github.com/feiskyer/kubernetes-handbook">Kubernetes Handbook</a> （中文的开源书籍）作者： <a href="https://github.com/feiskyer">Pengfei Ni</a></li>
 <li><a href="https://github.com/rootsongjc/kubernetes-handbook">Kubernetes Handbook</a> （中文的开源书籍）作者： <a href="https://github.com/rootsongjc">Jimmy Song</a></li>
@@ -7604,7 +7622,7 @@ Awesome-Kubernetes
 <li><a href="https://twitter.com/arungupta">Arun Gupta</a>，Amazon Web Services的首席开源技术专家</li>
 <li><a href="https://twitter.com/BrandonPhilips">Brandon Philips</a>，CTO在核心</li>
 <li><a href="https://twitter.com/brendandburns">Brendan Burns</a>微软合伙人架构师</li>
-<li><a href="https://github.com/bgrant0607">Brian Grant</a>, Principal Engineer at Google, Lead Architect of Kubernetes</li>
+<li><a href="https://github.com/bgrant0607">Brian Grant</a>，Google首席工程师，Kubernetes首席架构师</li>
 <li><a href="https://www.twitter.com/csanchez">Carlos Sanchez</a>，CloudBees高级软件工程师</li>
 <li><a href="https://www.twitter.com/cra">Chris Aniszczyk</a>，云原生计算基金会首席运营官</li>
 <li><a href="https://twitter.com/eric_tune">Eric Tune</a>，Google高级工程师</li>
@@ -7617,7 +7635,7 @@ Awesome-Kubernetes
 <li><a href="https://www.twitter.com/michellenoorali">Michelle Noorali</a>，微软软件工程师</li>
 <li><a href="https://www.twitter.com/ParisInBmore">Paris Pittman</a>，开发人员关系经理-Google的Kubernetes</li>
 <li><a href="https://twitter.com/preillyme">Patrick Reilly</a>，思科CTO办公室，思科CNCF董事会成员</li>
-<li><a href="https://twitter.com/thockin">Tim Hockin</a>，Google高级软件工程师/工程经理</li>
+<li><a href="https://twitter.com/thockin">Tim Hockin</a>, Senior Staff SW Engineer / Engineering Manager at Google</li>
 </ul>
 <h1 id="_13">聚会小组<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h1>
 <p><em>与世界各地的kubernauts建立联系的绝佳方式</em></p>
