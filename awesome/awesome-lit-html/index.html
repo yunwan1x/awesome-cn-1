@@ -2600,6 +2600,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    CDN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#static-site-generators" class="md-nav__link">
     Static Site Generators
   </a>
@@ -6894,6 +6901,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    CDN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#static-site-generators" class="md-nav__link">
     Static Site Generators
   </a>
@@ -7095,7 +7109,7 @@
 <li><a href="https://github.com/cfware/babel-plugin-template-html-minifier">babel-plugin-template-html-minifier</a> -Babel插件，用于最小化带有标签的模板字符串中的HTML.</li>
 <li><a href="https://github.com/43081j/eslint-plugin-lit">eslint-plugin-lit</a> -用于lit-html模板字符串的ESLint插件.</li>
 <li><a href="https://github.com/runem/lit-analyzer/tree/master/packages/lit-analyzer">lit-analyzer</a> -CLI类型，用于检查lit-html模板中的绑定.</li>
-<li><a href="https://github.com/asyncLiz/rollup-plugin-minify-html-literals">rollup-plugin-minify-html-literals</a> - Rollup plugin to minify HTML in tagged template strings.</li>
+<li><a href="https://github.com/asyncLiz/rollup-plugin-minify-html-literals">rollup-plugin-minify-html-literals</a> -汇总插件可最小化带有标签的模板字符串中的HTML.</li>
 <li><a href="https://github.com/aelbore/rollup-plugin-inline-lit-element">rollup-plugin-inline-lit-element</a> -汇总插件，可在LitElement和Transpile装饰器中内联外部样式.</li>
 <li><a href="https://github.com/bennypowers/rollup-plugin-lit-css">rollup-plugin-lit-css</a> -汇总插件，用于将CSS文件作为LitElement标记的<code>css</code>模板字符串导入.</li>
 <li><a href="https://github.com/umbopepato/rollup-plugin-postcss-lit">rollup-plugin-postcss-lit</a> -汇总插件，用于在LitElement组件中加载PostCSS处理的样式表.</li>
@@ -7103,6 +7117,21 @@
 <li><a href="https://github.com/abraham/nutmeg-cli">Nutmeg</a> -使用一点点香料就可以构建，测试和发布香草Web组件的CLI工具.</li>
 <li><a href="https://github.com/open-wc">open-wc</a> -一组建议，可帮助您生成，测试，检查，演示和发布Web组件.</li>
 </ul>
+<h2 id="cdn">CDN<a class="headerlink" href="#cdn" title="Permanent link">&para;</a></h2>
+<p>以下内容交付网络提供了lit-html和LitElement的ES模块版本：</p>
+<ul>
+<li><a href="https://unpkg.com/">unpkg.com</a></li>
+<li><a href="https://unpkg.com/lit-html?module">lit-html</a></li>
+<li><a href="https://unpkg.com/lit-element?module">lit-element</a></li>
+<li><a href="https://www.pika.dev/cdn">Pika CDN</a></li>
+<li><a href="https://cdn.pika.dev/lit-html">lit-html</a></li>
+<li><a href="https://cdn.pika.dev/lit-element">lit-element</a></li>
+</ul>
+<p><strong>使用CDN的注意事项</strong></p>
+<ol>
+<li>lit-html指令 <a href="https://github.com/Polymer/lit-element/issues/603#issuecomment-501528498">might not work</a> 使用Pika CDN时使用LitElement.
+2.参见 <a href="https://github.com/Polymer/lit-element/issues/603">this issue</a> 讨论了CDN分发的静态构建.</li>
+</ol>
 <h2 id="static-site-generators">Static Site Generators<a class="headerlink" href="#static-site-generators" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/ProjectEvergreen/greenwood">Greenwood</a> -现代化的高性能静态站点生成器，支持基于Web组件的开发.</li>
@@ -7173,7 +7202,7 @@
 模板文字，并利用相同的好处 <a href="#ide-plugins">IDE Plugins</a> 用于语法突出显示.</p>
 <ul>
 <li><a href="https://github.com/developit/htm">htm</a> -超标标记的标记：使用标准标记模板的JSX替代品，并具有编译器支持.</li>
-<li><a href="https://github.com/hybridsjs/hybrids">hybrids</a> -用于使用简单实用的API创建Web组件的UI库.</li>
+<li><a href="https://github.com/hybridsjs/hybrids">hybrids</a> - UI library for creating Web Components with simple and functional API.</li>
 <li><a href="https://github.com/motss/lit-ntml">lit-ntml</a> -受lit-html启发，在Node.js中实现了SSR的轻量级现代模板.</li>
 <li><a href="https://github.com/ruphin/lite-html">lite-html</a> -VirtualDOM渲染引擎的现代替代品.</li>
 <li><a href="https://github.com/modulor-js/modulor-html">modulor-html</a> -Web组件缺少模板引擎.</li>
