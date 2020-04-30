@@ -6850,6 +6850,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    Database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    Localization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cheat-sheet" class="md-nav__link">
     Cheat Sheet
   </a>
@@ -6906,9 +6920,9 @@
     <img src="https://raw.githubusercontent.com/sdras/awesome-actions/master/awesome-actions.png" width="150"/>
   <br>
 </p></p>
-<h2 id="awesome-actions">Awesome Actions <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <!--lint ignore no-dead-urls--> <a href="https://github.com/sdras/awesome-actions/actions?workflow=Lint+Awesome+List"><img alt="GitHub Actions status | sdras/awesome-actions" src="https://github.com/sdras/awesome-actions/workflows/Lint%20Awesome%20List/badge.svg" /></a><a class="headerlink" href="#awesome-actions" title="Permanent link">&para;</a></h2>
+<h2 id="awesome-actions">Awesome Actions <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/sdras/awesome-actions/actions?workflow=Lint+Awesome+List"><!--lint ignore no-dead-urls--><img alt="GitHub Actions status | sdras/awesome-actions" src="https://github.com/sdras/awesome-actions/workflows/Lint%20Awesome%20List/badge.svg" /></a><a class="headerlink" href="#awesome-actions" title="Permanent link">&para;</a></h2>
 <p>&gt;与以下内容相关的精选精选清单 <a href="https://github.com/actions">GitHub Actions</a>.</p>
-<p>动作由GitHub平台事件直接在回购中触发，并作为响应在Linux，Windows或macOS虚拟机上或在容器内部运行按需工作流.  使用GitHub Actions，您可以自动化从构思到生产的工作流程.</p>
+<p>动作由GitHub平台事件直接在回购中触发，并作为响应在Linux，Windows或macOS虚拟机上或容器内部运行按需工作流.  使用GitHub Actions，您可以自动化从构思到生产的工作流程.</p>
 <h2 id="official-resources">Official Resources<a class="headerlink" href="#official-resources" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/features/actions">Official Site</a></li>
@@ -6925,12 +6939,13 @@
 <li><a href="https://github.com/actions/example-services">actions/example-services</a> -使用服务容器的示例工作流程.</li>
 </ul>
 <h3 id="official-actions">Official Actions<a class="headerlink" href="#official-actions" title="Permanent link">&para;</a></h3>
+<!--lint disable no-dead-urls-->
+
 <h4 id="workflow-tool-actions">Workflow Tool Actions<a class="headerlink" href="#workflow-tool-actions" title="Permanent link">&para;</a></h4>
 <p>工作流程的工具动作.</p>
 <!--lint ignore awesome-spell-check-->
 
 <ul>
-<li><a href="https://github.com/actions/github">actions/github</a> -将action-toolkit包装到Action中，以实现常见的GitHub自动化.</li>
 <li><a href="https://github.com/actions/checkout">actions/checkout</a> -在工作流程上设置存储库.</li>
 <li><a href="https://github.com/actions/upload-artifact">actions/upload-artifact</a> -从您的工作流程中上传工件.</li>
 <li><a href="https://github.com/actions/download-artifact">actions/download-artifact</a> -从构建中下载工件.</li>
@@ -6945,6 +6960,7 @@
 <li><a href="https://github.com/actions/first-interaction">actions/first-interaction</a> -用于过滤来自首次贡献者的拉取请求和问题的操作.</li>
 <li><a href="https://github.com/actions/stale">actions/stale</a> -标记问题并拉出最近没有交互的请求.</li>
 <li><a href="https://github.com/actions/labeler">actions/labeler</a> -自动标记拉取请求的动作.</li>
+<li><a href="https://github.com/actions/delete-package-versions">actions/delete-package-versions</a> -从GitHub软件包中删除软件包的版本.</li>
 </ul>
 <h4 id="setup-actions">Setup Actions<a class="headerlink" href="#setup-actions" title="Permanent link">&para;</a></h4>
 <p>使用特定版本的编程语言设置GitHub Actions工作流.</p>
@@ -6983,6 +6999,7 @@
 <li><a href="https://github.com/softprops/action-gh-release">Publish GitHub Releases with Assets</a></li>
 <li><a href="https://github.com/alex-page/github-project-automation-plus">GitHub Project Automation+</a> -通过任何webhook事件使GitHub Project卡自动化.</li>
 <li><a href="https://github.com/phishy/wflow">Run GitHub Actions Locally with a web interface</a></li>
+<li><a href="https://github.com/nektos/act">Run GitHub Actions Locally in Terminal</a></li>
 <li><a href="https://github.com/ShaunLWM/action-release-debugapk">Build and Publish Android debug APK</a></li>
 <li><a href="https://github.com/einaregilsson/build-number">Generate sequential build numbers for GitHub Actions</a></li>
 <li><a href="https://github.com/ad-m/github-push-action">Push Git changes to GitHub repository without authentication difficulties</a></li>
@@ -6994,6 +7011,11 @@
 <li><a href="https://github.com/trilom/file-changes-action">Get a list of file changes with PR/Push</a></li>
 <li><a href="https://github.com/InVisionApp/private-action-loader">Use private actions in any workflow</a></li>
 <li><a href="https://github.com/damccorm/tag-ur-it">Label Your Issues Using the Issue's Contents</a></li>
+<li><a href="https://github.com/author/action-rollback">Rollback a GitHub Release</a></li>
+<li><a href="https://github.com/dessant/lock-threads">Lock Closed Issues and Pull Requests after a Period of Inactivity</a></li>
+<li><a href="https://github.com/jessicalostinspace/commit-difference-action">Get Commit Difference Count Between Two Branches</a></li>
+<li><a href="https://github.com/metcalfc/changelog-generator">Generate Release Notes Based on Git References</a></li>
+<li><a href="https://github.com/talos-systems/conform">Enforce Policies on GitHub Repositories and Commits</a></li>
 </ul>
 <h3 id="collection-of-actions">Collection of Actions<a class="headerlink" href="#collection-of-actions" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7012,6 +7034,8 @@
 <li><a href="https://github.com/denolib/setup-deno">GitHub Actions for Deno</a></li>
 <li><a href="https://github.com/webbertakken/unity-actions">GitHub Actions for Unity</a></li>
 <li><a href="https://github.com/maxkomarychev/octions">Octions - GitHub Actions for GitHub REST API</a></li>
+<li><a href="https://github.com/docker/github-actions">GitHub Actions for Docker</a></li>
+<li><a href="https://github.com/clowdhaus/aws-github-actions">GitHub Actions for AWS</a></li>
 </ul>
 <h3 id="utility">Utility<a class="headerlink" href="#utility" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7038,11 +7062,23 @@
 <li><a href="https://github.com/deepakputhraya/action-branch-name">Action to enforce branch naming rules</a></li>
 <li><a href="https://github.com/marketplace/actions/github-slug">Expose slug of some GitHub variables</a></li>
 <li><a href="https://github.com/max/awesome-lint">awesome-lint as a GitHub Action</a></li>
-<li><a href="https://github.com/squadcastHQ/awesome-lint-action">Action to lint Awesome lists</a> -用途 <a href="https://github.com/sindresorhus/awesome-lint">awesome-lint</a> 将出色列表作为动作.</li>
 <li><a href="https://github.com/deef0000dragon1/json-edit-action">Edit JSON File</a></li>
 <li><a href="https://github.com/Decathlon/slate-builder-action">Build Slate documentation</a></li>
 <li><a href="https://github.com/christian-draeger/read-properties">Read Properties</a> -从<code>.properties</code>文件中读取值.</li>
 <li><a href="https://github.com/christian-draeger/write-properties">Write Properties</a> -将值写入.properties文件.</li>
+<li><a href="https://github.com/butlerlogic/action-autotag">Autotag</a> -当清单文件（即“ package.json”）的版本更改时，自动生成一个新标签.</li>
+<li><a href="https://github.com/cuchi/jinja2-action">Apply templates with Jinja2</a> -使用Jinja2模板引擎从模板生成文件.</li>
+<li><a href="https://github.com/UnicornGlobal/has-changes-action">Has Changes</a> -检查之前的步骤是否有代码更改.</li>
+<li><a href="https://github.com/tailaiw/mind-your-language-action">Mind Your Language Action</a> -检测问题中的冒犯性评论并提出请求，并警告发件人.</li>
+<li><a href="https://github.com/fabasoad/yaml-json-xml-converter-action">YAML/JSON/XML Converter</a> -可互换地转换YAML / JSON / XML文件格式.</li>
+<li><a href="https://github.com/fabasoad/nsfw-detection-action">NSFW Detection</a> -检测已提交文件中的NSFW内容.</li>
+<li><a href="https://github.com/MarceloPrado/has-changed-path">Has Changed Path</a> -根据更改的路径有条件地执行操作.</li>
+<li><a href="https://github.com/fabasoad/linguist-action">Linguist</a> -检查存储库并在输出中生成有关使用的语言的信息.</li>
+<li><a href="https://github.com/fabasoad/twilio-voice-call-action/">Twilio Voice Call</a> -使用定义的文本进行Twilio语音通话.</li>
+<li><a href="https://github.com/maxim-lobanov/setup-xamarin">Setup Xamarin</a> -在用于MacOS映像的Xamarin和Mono的预安装版本之间切换.</li>
+<li><a href="https://github.com/Bhupesh-V/memer-action">Memer Action</a> -程序员Memes xD的GitHub操作.</li>
+<li><a href="https://github.com/maxim-lobanov/setup-cocoapods">Setup Cocoapods</a> -设置特定版本的Cocoapods.</li>
+<li><a href="https://github.com/haythem/public-ip">Public IP</a> -查询GitHub动作执行者的公共IP地址.</li>
 </ul>
 <h4 id="environments">Environments<a class="headerlink" href="#environments" title="Permanent link">&para;</a></h4>
 <ul>
@@ -7050,6 +7086,8 @@
 <li><a href="https://github.com/zweitag/github-actions">Export global environment variables for succeeding build steps</a></li>
 <li><a href="https://github.com/allenevans/set-env">Programmatically set environment variables for use in subsequent steps</a></li>
 <li><a href="https://github.com/goanpeca/setup-miniconda">Install Conda environments for Python</a></li>
+<li><a href="https://github.com/hrueger/setup-nativescript">Setup NativeScript</a></li>
+<li><a href="https://github.com/schdck/create-env-json">Create a JSON Environment File</a></li>
 </ul>
 <h4 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h4>
 <ul>
@@ -7067,11 +7105,10 @@
 <li><a href="https://github.com/OskarStark/phpstan-ga">PHPStan Static code analyzer Action</a></li>
 <li><a href="https://github.com/kamilkisiela/graphql-inspector">GraphQL Inspector Action</a></li>
 <li><a href="https://github.com/devblackops/github-action-psscriptanalyzer">PowerShell static analysis with PSScriptAnalyzer</a></li>
-<li><a href="https://github.com/reviewdog/action-tfsec">Run tfsec, with reviewdog output on the PR</a> </li>
+<li><a href="https://github.com/reviewdog/action-tfsec">Run tfsec, with reviewdog output on the PR</a></li>
 </ul>
 <h4 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="https://github.com/snyk/actions">Snyk Test Action</a></li>
 <li><a href="https://github.com/ianwalter/puppeteer">Run Tests through Puppeteer, the Headless Chrome Node API</a></li>
 <li><a href="https://github.com/ivanklee86/xunit-slack-reporter">xUnit Slack Reporter: Sends summary of tests from xUnit reports to a Slack channel</a></li>
 <li><a href="https://github.com/joelwmale/codeception-action">Run codeception tests</a></li>
@@ -7079,6 +7116,8 @@
 <li><a href="https://github.com/webbertakken/unity-test-runner">Run Unity tests</a></li>
 <li><a href="https://github.com/cypress-io/github-action">Run Cypress E2E tests</a></li>
 <li><a href="https://github.com/robertdebock/molecule-action">Test Ansible roles with Molecule</a></li>
+<li><a href="https://github.com/kenju/github-actions-artillery">Run performance testing with artillery.io</a></li>
+<li><a href="https://github.com/Workshop64/buildpulse-action">Detect Flaky Tests with BuildPulse</a></li>
 </ul>
 <h4 id="linting">Linting<a class="headerlink" href="#linting" title="Permanent link">&para;</a></h4>
 <ul>
@@ -7108,6 +7147,7 @@
 <li><a href="https://github.com/chekalsky/phpcs-action">PHP_CodeSniffer With Annotations</a></li>
 <li><a href="https://github.com/avto-dev/markdown-lint">Linter for markdown (with presets)</a></li>
 <li><a href="https://github.com/xt0rted/stylelint-problem-matcher">Stylelint problem matcher to create annotations</a></li>
+<li><a href="https://github.com/yokawasa/action-sqlcheck">Run sqlcheck on the PR to identifies anti-patterns in SQL queries</a></li>
 </ul>
 <h4 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h4>
 <ul>
@@ -7117,12 +7157,15 @@
 <li><a href="https://github.com/say8425/aws-secrets-manager-actions">AWS Secrets Manager Actions</a> -将AWS Secrets Manager机密定义为环境值.</li>
 <li><a href="https://github.com/xen0l/iam-lint">Linting your AWS IAM policy documents for correctness and security issues</a></li>
 <li><a href="https://github.com/webfactory/secret-spreader">Secret Spreader</a> -本身不是动作，而是用于在整个存储库列表中管理动作秘密的工具.</li>
+<li><a href="https://github.com/google/secrets-sync-action">Secrets Sync Action</a> -动作可跨多个存储库同步机密.</li>
+<li><a href="https://github.com/snyk/actions">Snyk Test Action</a></li>
 </ul>
 <h4 id="code-coverage">Code Coverage<a class="headerlink" href="#code-coverage" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="https://github.com/sonarsource/sonarcloud-github-action">Scan code with SonarCloud</a></li>
 <li><a href="https://github.com/codecov/codecov-action">Send your code coverage to codecov.io</a></li>
 <li><a href="https://github.com/paambaati/codeclimate-action">Publishing code coverage to CodeClimate</a></li>
+<li><a href="https://github.com/creekorful/goreportcard-action">Update repository go report card</a></li>
 </ul>
 <h3 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7130,6 +7173,7 @@
 <li><a href="https://github.com/foo-software/lighthouse-check-action">Runs Lighthouse and posts results to PRs and Slack</a></li>
 <li><a href="https://github.com/treosh/lighthouse-ci-action">Run Lighthouse in CI using GitHub Actions</a></li>
 <li><a href="https://github.com/bobheadxi/gobenchdata">Continuous Benchmarking and Benchmark Visualization for Go</a></li>
+<li><a href="https://github.com/andresz1/size-limit-action">Size Limit Action</a> -评论PR中您的JS的费用比较，如果超出限制则拒绝它们.</li>
 </ul>
 <h3 id="pull-requests">Pull Requests<a class="headerlink" href="#pull-requests" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7156,6 +7200,8 @@
 <li><a href="https://github.com/loomble/pull-request-stuck-notifier-action">Pull Request Stuck Notifier</a></li>
 <li><a href="https://github.com/JulienKode/pull-request-name-linter-action">Lint pull request name with commitlint (Awesome if you squash merge !)</a></li>
 <li><a href="https://github.com/cirrus-actions/branch-guard">Block PR merges when Checks for target branches are failing</a></li>
+<li><a href="https://github.com/ssowonny/diff-pages-action">Get generated static site screeshots updated by Pull Request</a></li>
+<li><a href="https://github.com/AlbertHernandez/working-label-action">Add Labels Depending if the Pull Request Still in Progress</a></li>
 </ul>
 <h3 id="github-pages">GitHub Pages<a class="headerlink" href="#github-pages" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7167,6 +7213,7 @@
 <li><a href="https://github.com/heowc/action-hexo">GitHub Action for Hexo</a></li>
 <li><a href="https://github.com/cristianpb/analytics-google">Deploy Google Analytics stats to GitHub Pages</a></li>
 <li><a href="https://github.com/fastai/fastpages">A Jupyter Notebook Blogging Platform Powered by GitHub Actions, Pages and Jekyll</a></li>
+<li><a href="https://github.com/appleboy/gh-pages-action">Deploy A Static Site to GitHub Pages</a> -部署到自定义目录，并忽略文件夹/文件.</li>
 </ul>
 <h3 id="notifications-and-messages">Notifications and Messages<a class="headerlink" href="#notifications-and-messages" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7174,7 +7221,7 @@
 <li><a href="https://github.com/pullreminders/slack-action">Post a Slack message as a bot</a></li>
 <li><a href="https://github.com/nexmo-community/nexmo-sms-action">Send an SMS from GitHub Actions using Nexmo</a></li>
 <li><a href="https://github.com/appleboy/telegram-action">Send a Telegram Message</a></li>
-<li><a href="https://github.com/appleboy/telegram-action">Send a File or Text Message to Discord (custom define color, username or avatar)</a></li>
+<li><a href="https://github.com/appleboy/discord-action">Send a File or Text Message to Discord (custom define color, username or avatar)</a></li>
 <li><a href="https://github.com/gr2m/twitter-together">Collaborate on tweets using pull requests</a></li>
 <li><a href="https://github.com/techulus/push-github-action">Send a Push Notification via Push by Techulus</a></li>
 <li><a href="https://github.com/peter-evans/sendgrid-action">Send email with SendGrid</a></li>
@@ -7184,6 +7231,8 @@
 <li><a href="https://github.com/MeilCli/gradle-update-check-action">New package version checker for Gradle</a></li>
 <li><a href="https://github.com/ShaunLWM/action-pushbullet">Send a Push Notification via Pushbullet</a></li>
 <li><a href="https://github.com/anoopt/ms-graph-create-event">Create an Outlook Calendar Event using Microsoft Graph</a></li>
+<li><a href="https://github.com/benmatselby/gollum-page-watcher-action">Watch for GitHub Wiki page changes and post to Slack</a></li>
+<li><a href="https://github.com/nikitasavinov/messagebird-sms-action">Send an SMS using MessageBird</a></li>
 </ul>
 <h3 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7216,12 +7265,22 @@
 <li><a href="https://github.com/samuelmeuli/action-maven-publish">Publish a Maven package</a></li>
 <li><a href="https://github.com/TryGhost/action-deploy-theme">Build and deploy a theme to Ghost CMS</a></li>
 <li><a href="https://github.com/robertdebock/galaxy-action">Deploy an Ansible role to Ansible Galaxy</a></li>
+<li><a href="https://github.com/author/action-publish">Publish one or more JS modules to a registry</a></li>
+<li><a href="https://github.com/erezrokah/2fa-with-slack-action">Publish a package with 2FA using Slack</a></li>
+<li><a href="https://github.com/softprops/turnstyle">Serialize Workflow Runs in Continuous Deployment Pipelines</a></li>
+<li><a href="https://github.com/nwtgck/actions-netlify">Netlify Deploy GitHub Action for each commit</a></li>
+<li><a href="https://github.com/arillso/action.playbook">Run Ansible Playbooks</a></li>
+<li><a href="https://github.com/fcakyon/conda-publish-action">Publish a Python Distribution Package to Anaconda Cloud</a></li>
 </ul>
 <h4 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="https://github.com/peter-evans/dockerhub-description">Update a Docker Hub repository description from README.md</a></li>
 <li><a href="https://github.com/machine-learning-apps/gpr-docker-publish">Publish Docker Images to the GitHub Package Registry (GPR)</a></li>
 <li><a href="https://github.com/mpepping/github-actions/tree/master/docker-hub-metadata">Update a repository's "Full description" on Docker Hub</a></li>
+<li><a href="https://github.com/outillage/kaniko-action">Build and publish docker images to any registry using Kaniko</a></li>
+<li><a href="https://github.com/wemake-services/docker-image-size-limit">Monitor and limit your docker image size</a></li>
+<li><a href="https://github.com/appleboy/docker-ecr-action">Publish Docker Images to the Amazon Elastic Container Registry (ECR)</a></li>
+<li><a href="https://github.com/whoan/docker-build-with-cache-action">Build And Push Your Docker Images Caching Each Stage To Reduce Build Time</a></li>
 </ul>
 <h4 id="kubernetes">Kubernetes<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h4>
 <ul>
@@ -7249,6 +7308,7 @@
 <li><a href="https://github.com/iksaku/openstack-swift-action">Upload files to any OpenStack Swift service provider</a></li>
 <li><a href="https://github.com/logankilpatrick/StackOverflowBot">GitHub Action for sending Stack Overflow posts to Slack</a></li>
 <li><a href="https://github.com/nordcloud/aws-assume-role/">Assume AWS role</a></li>
+<li><a href="https://github.com/fabasoad/jsonbin-action">Generate Custom Response using JSONbin</a></li>
 </ul>
 <h3 id="frontend-tools">Frontend Tools<a class="headerlink" href="#frontend-tools" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7259,6 +7319,7 @@
 <li><a href="https://github.com/peaceiris/actions-hugo">GitHub Actions for Hugo extended</a></li>
 <li><a href="https://github.com/BoyWithSilverWings/generate-og-image">Generate OG Image</a> -从Markdown文件生成可自定义的打开图形图像.</li>
 <li><a href="https://github.com/peaceiris/actions-mdbook">GitHub Actions for mdBook</a></li>
+<li><a href="https://github.com/fabasoad/setup-mint-action">Setup Mint</a> -Setup Mint（用于编写单页应用程序的编程语言）.</li>
 </ul>
 <h3 id="machine-learning-ops">Machine Learning Ops<a class="headerlink" href="#machine-learning-ops" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7266,6 +7327,7 @@
 <li><a href="https://github.com/machine-learning-apps/gke-argo">Submitting Argo Workflows to GKE</a></li>
 <li><a href="https://github.com/machine-learning-apps/wandb-action">Query Experiment Tracking Results From Weights &amp; Biases</a></li>
 <li><a href="https://github.com/yaananth/run-notebook">Run Parameterized Jupyter Notebooks</a></li>
+<li><a href="https://github.com/NikeNano/kubeflow-github-action">Compile, Deploy and Run Kubeflow Pipeline</a></li>
 </ul>
 <h3 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7273,6 +7335,18 @@
 <li><a href="https://github.com/lukka/run-vcpkg">run-vcpkg</a> -使用以下命令构建和安装C / C ++依赖项的多平台操作 <a href="https://github.com/microsoft/vcpkg">vcpkg</a>.</li>
 <li><a href="https://github.com/izumin5210/action-go-crossbuild">Build Go applications for multiplatform</a></li>
 <li><a href="https://github.com/whelk-io/maven-settings-xml-action">Generate ~/.m2/settings.xml for Maven builds</a></li>
+<li><a href="https://github.com/fabasoad/pascal-action">Run Pascal Script</a></li>
+<li><a href="https://github.com/fabasoad/brainfuck-install-action/">Setup Brainfuck</a> -设置Brainfuck解释器.</li>
+<li><a href="https://github.com/wangyoucao577/go-release-action">Publish Go Binaries to GitHub Release Assets</a></li>
+</ul>
+<h3 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/fabasoad/setup-cassandra-action">Setup Cassandra Schema</a> -从Cassandra群集顶部的提供的文件夹中运行脚本.</li>
+</ul>
+<h3 id="localization">Localization<a class="headerlink" href="#localization" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/sobolevn/misspell-fixer-action">Find and automatically fix typos and grammar issues in your code</a></li>
+<li><a href="https://github.com/fabasoad/translation-action">Translation</a> -将文本从任何语言翻译成任何语言.</li>
 </ul>
 <h3 id="cheat-sheet">Cheat Sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7287,8 +7361,10 @@
 <li><a href="https://www.youtube.com/watch?v=gGUXydw22zw">GitHub Actions for Rails Developers</a></li>
 <li><a href="https://www.edwardthomson.com/blog/github_actions_advent_calendar.html">GitHub Actions Advent Calendar</a></li>
 <li><a href="https://atymic.dev/blog/github-actions-laravel-ci-cd/">Zero Downtime Laravel Deployments with GitHub Actions</a></li>
+<li><a href="https://www.pluralsight.com/courses/building-custom-github-actions/">Building Custom GitHub Actions Pluralsight Course</a></li>
+<li><a href="https://testdriven.io/blog/deploying-django-to-digitalocean-with-docker-and-github-actions/">Continuously Deploying Django to DigitalOcean with Docker and GitHub Actions</a></li>
 </ul>
-<p>&gt;如果您有更多资源可以共享，请不要犹豫进行PR.  查看 <a href="https://github.com/sdras/awesome-actions/blob/master/contributing.md">https://github.com/sdras/awesome-actions/blob/master/contributing.md</a> 了解更多信息</p>
+<p>&gt;如果您有更多资源可以共享，请不要犹豫进行PR.  查看 <a href="https://github.com/sdras/awesome-actions/blob/master/contributing.md">https://github.com/sdras/awesome-actions/blob/master/contributing.md</a> 欲获得更多信息</p>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="Creative Commons License" src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" /></a></p>
                 

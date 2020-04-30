@@ -6753,7 +6753,7 @@
 <p>WebExtensions是用于开发浏览器附加组件的跨浏览器系统.  该系统在很大程度上与 <a href="https://developer.chrome.com/extensions">extension API</a>  受Google Chrome和Opera支持.  在大多数情况下，为这些浏览器编写的扩展程序将在Firefox或 <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/extensions/">Microsoft Edge</a> 只是 <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension">a few changes</a>.</p>
 <h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://developer.chrome.com/extensions">Chrome Extensions documentation</a> -原始Chrome扩展程序型号的文档.</li>
+<li><a href="https://developer.chrome.com/extensions">Chrome Extensions documentation</a> -原始Chrome扩展程序模型的文档.</li>
 <li><a href="https://developer.chrome.com/extensions/api_index">Chrome Extensions API</a> -有关Chrome提供的原始API的全面文档.</li>
 <li><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">Mozilla's WebExtensions documentation</a> -WebExtensions API的MDN Wiki.</li>
 <li><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs">Browser support for WebExtensions</a> -适用于Chrome，Edge，Firefox和Opera的兼容性表.</li>
@@ -6767,7 +6767,7 @@
 <ul>
 <li><a href="https://groups.google.com/a/chromium.org/forum/#!forum/chromium-extensions">Google Groups</a> -讨论.</li>
 <li><a href="https://discourse.mozilla.org/c/add-ons">Mozilla Discourse</a> -讨论.</li>
-<li><a href="https://wiki.mozilla.org/IRC"><code>#webextensions</code></a> -Mozilla的IRC频道.</li>
+<li><a href="https://matrix.to/#/#addons:mozilla.org"><code>#addons:mozilla.org</code></a> -Mozilla的矩阵频道.</li>
 <li><a href="https://stackoverflow.com/questions/tagged/google-chrome-extension"><code>google-chrome-extension</code> tag on Stack Overflow</a> -相关问题.</li>
 <li><a href="https://stackoverflow.com/questions/tagged/firefox-webextensions"><code>firefox-webextensions</code> tag on Stack Overflow</a> -相关问题.</li>
 <li><a href="https://stackoverflow.com/questions/tagged/microsoft-edge-extension"><code>microsoft-edge-extension</code> tag on Stack Overflow</a> -相关问题.</li>
@@ -6776,9 +6776,9 @@
 <p>代码意味着成为扩展的一部分.</p>
 <ul>
 <li><a href="https://github.com/fregante/webext-options-sync">webext-options-sync</a> -帮助您管理和自动保存扩展程序的选项.</li>
-<li><a href="https://github.com/fregante/webext-storage-cache">webext-storage-cache</a> -类似于地图的承诺缓存存储，其中包含到期.</li>
+<li><a href="https://github.com/fregante/webext-storage-cache">webext-storage-cache</a> -类似于地图的承诺缓存存储，具有到期时间.</li>
 <li><a href="https://github.com/fregante/webext-dynamic-content-scripts">webext-dynamic-content-scripts</a> -自动将您的<code>content_scripts</code>注入自定义域.</li>
-<li><a href="https://github.com/mozilla/webextension-polyfill">mozilla/webextension-polyfill</a> -Polyfill支持<code>browser</code>名称空间中基于标准化promise的API.</li>
+<li><a href="https://github.com/mozilla/webextension-polyfill">mozilla/webextension-polyfill</a> -Polyfill支持<code>browser</code>命名空间中基于标准化Promise的API.</li>
 <li><a href="https://github.com/ivantsov/redux-webext">redux-webext</a> -用途 <a href="https://github.com/reactjs/redux">redux</a> 用于管理WebExtension的状态.</li>
 </ul>
 <h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
@@ -6791,12 +6791,16 @@
 <li><a href="https://github.com/acvetkov/chrome-store-api">chrome-store-api</a> -Chrome Web Store API包装器.</li>
 <li><a href="https://github.com/Rob--W/crxviewer">Chrome extension source viewer</a> -WebExtension，可直接在商店上查看扩展的源代码.</li>
 <li><a href="https://github.com/LinusU/wext-shipit">@wext/shipit</a> -自动发布到Chrome网上应用店，Mozilla插件和Opera插件的工具.</li>
-<li><a href="https://github.com/Lusito/web-ext-translator">web-ext-translator</a> -用于管理i18n messages.json的翻译器工具.</li>
+<li><a href="https://github.com/abhijithvijayan/wext-manifest-loader">wext-manifest-loader</a> -Webpack加载器，可让您指定“ manifest.json”属性以仅在特定浏览器中显示.</li>
 </ul>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/acvetkov/sinon-chrome">sinon-chrome</a> -修改Chrome扩展程序API进行测试.</li>
 <li><a href="https://github.com/mozilla/addons-validator">addons-validator</a> -根据Mozilla的指南验证扩展.</li>
+<li><a href="https://github.com/stoically/webextensions-jsdom">webextensions-jsdom</a> -根据manifest.json使用JSDOM加载弹出窗口，侧边栏和背景.</li>
+<li><a href="https://github.com/stoically/webextensions-api-fake">webextensions-api-fake</a> -内存中的WebExtensions API伪实现（包括TypeScript类型）.</li>
+<li><a href="https://github.com/stoically/webextensions-api-mock">webextensions-api-mock</a> -作为sinon存根的WebExtensions API（包括TypeScript类型）.</li>
+<li><a href="https://github.com/stoically/webextensions-schema">webextensions-schema</a> -以编程方式使用WebExtensions架构JSON文件.</li>
 </ul>
 <h2 id="boilerplates">Boilerplates<a class="headerlink" href="#boilerplates" title="Permanent link">&para;</a></h2>
 <ul>
@@ -6806,7 +6810,7 @@
 <li><a href="https://github.com/HaNdTriX/generator-web-extension">generator-web-extension</a> -WebExtension生成器，创建跨浏览器Web扩展开发入门所需的一切.</li>
 </ul>
 <h2 id="sample-extensions">Sample Extensions<a class="headerlink" href="#sample-extensions" title="Permanent link">&para;</a></h2>
-<p>这些是简单而现代的WebExtensions存储库，可以帮助您弄清碎片的位置，包括通过Travis CI自动部署.</p>
+<p>这些是简单而现代的WebExtensions存储库，可以帮助您确定组件的运行方向，包括通过Travis CI自动部署.</p>
 <ul>
 <li><a href="https://github.com/npmhub/npmhub">npmhub</a></li>
 <li><a href="https://github.com/sindresorhus/hide-files-on-github">Hide Files on GitHub</a></li>
@@ -6814,7 +6818,7 @@
 </ul>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" /></a></p>
-<p>在法律允许的范围内， <a href="https://bfred.it">Federico Brigante</a> 放弃了此作品的所有版权以及相关或邻近的权利.</p>
+<p>在法律允许的范围内， <a href="https://bfred.it">Federico Brigante</a> 已放弃此作品的所有版权以及相关或邻近的权利.</p>
                 
                   
                 

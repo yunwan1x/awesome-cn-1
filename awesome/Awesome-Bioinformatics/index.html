@@ -6021,6 +6021,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#data-tools" class="md-nav__link">
+    Data Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-processing" class="md-nav__link">
     Data Processing
   </a>
@@ -6065,6 +6072,13 @@
           <li class="md-nav__item">
   <a href="#sequence-processing" class="md-nav__link">
     Sequence Processing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis" class="md-nav__link">
+    Data Analysis
   </a>
   
 </li>
@@ -6905,6 +6919,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#data-tools" class="md-nav__link">
+    Data Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-processing" class="md-nav__link">
     Data Processing
   </a>
@@ -6949,6 +6970,13 @@
           <li class="md-nav__item">
   <a href="#sequence-processing" class="md-nav__link">
     Sequence Processing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis" class="md-nav__link">
+    Data Analysis
   </a>
   
 </li>
@@ -7170,7 +7198,8 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890694312814945" data-ad-slot="5473692530" data-ad-format="auto"  data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-很棒的生物信息学 <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://travis-ci.org/danielecook/Awesome-Bioinformatics"><img alt="Build Status" src="https://travis-ci.org/danielecook/Awesome-Bioinformatics.svg?branch=master" /></a>
+很棒的生物信息学 <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<img alt="URL Check" src="https://github.com/danielecook/Awesome-Bioinformatics/workflows/URL%20Check/badge.svg" /> <img alt="TOC" src="https://github.com/danielecook/Awesome-Bioinformatics/workflows/TOC/badge.svg" />
 ======================</p>
 <p>&gt;生物信息学是一个跨学科领域，致力于开发用于理解生物学数据的方法和软件工具.  — <a href="https://en.wikipedia.org/wiki/Bioinformatics">Wikipedia</a></p>
 <p>精选的生物信息学软件，资源和库的精选列表.  主要基于命令行，免费或开源.  请随意 <a href="https://github.com/danielecook/Awesome-Bioinformatics/blob/master/CONTRIBUTING.md">contribute</a>!</p>
@@ -7195,6 +7224,11 @@
 <ul>
 <li><strong><a href="https://bioconda.github.io/">Bioconda</a></strong>-的频道 <a href="http://conda.pydata.org/docs/intro.html">conda package manager</a>  专业从事生物信息学软件.  包括一个存储库，该存储库包含3000多个随时可安装（带有<code>conda install</code>）生物信息学软件包.</li>
 </ul>
+<h2 id="data-tools">Data Tools<a class="headerlink" href="#data-tools" title="Permanent link">&para;</a></h2>
+<ul>
+<li>__<a href="https://github.com/gogetdata/ggd-cli">GGD</a><em> </em>-获取数据；  用于获取基因组数据的命令行界面</li>
+<li><strong><a href="https://sra-explorer.info/">SRA-Explorer</a></strong>-轻松获得SRA下载链接和其他信息.</li>
+</ul>
 <h2 id="data-processing">Data Processing<a class="headerlink" href="#data-processing" title="Permanent link">&para;</a></h2>
 <h3 id="command-line-utilities">Command Line Utilities<a class="headerlink" href="#command-line-utilities" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7207,6 +7241,7 @@
 <li>__<a href="https://github.com/shenwei356/easy_qsub">easy_qsub</a><em> </em>-使用脚本模板轻松提交PBS作业.  支持多个输入文件.</li>
 <li><strong><a href="http://www.gnu.org/software/parallel/">GNU <code>parallel</code></a></strong>-通用并行器，可在一台多核计算机上并行运行作业. <a href="https://www.biostars.org/p/63816/">Here</a> 一些使用GNU<code>parallel</code>的示例脚本.</li>
 <li><strong><a href="https://github.com/arq5x/grabix">grabix</a></strong>-随机访问BGZF文件的工具.</li>
+<li><strong><a href="https://github.com/brentp/gsort">gsort</a></strong>-根据指定顺序对基因组文件进行排序.</li>
 <li><strong><a href="https://github.com/samtools/tabix">tabix</a></strong>-表文件索引.</li>
 <li><strong><a href="https://github.com/wormtable/wormtable">wormtable</a></strong>-大型数据集的一次写入多次读取表.</li>
 <li><strong><a href="https://github.com/mattgodbolt/zindex">zindex</a></strong>-在压缩的文本文件上创建索引.</li>
@@ -7216,9 +7251,9 @@
 <ul>
 <li><strong><a href="https://pcingola.github.io/BigDataScript/">BigDataScript</a></strong>-一种跨系统脚本语言，用于处理具有不同大小和功能的计算机系统中的大数据管道.</li>
 <li><strong><a href="http://docs.bpipe.org">Bpipe</a></strong>-一种用于定义管道阶段并将它们链接在一起以构成管道的小语言.</li>
-<li><strong><a href="http://www.commonwl.org/">Common Workflow Language</a></strong>-一种规范，用于描述分析工作流和工具，这些工作流和工具可在从工作站到群集，云和高性能计算（HPC）环境的各种软件和硬件环境中移植和扩展.</li>
+<li><strong><a href="http://www.commonwl.org/">Common Workflow Language</a></strong>-用于描述分析工作流和工具的规范，该分析工作流和工具在从工作站到集群，云和高性能计算（HPC）环境的各种软件和硬件环境中均具有可移植性和可伸缩性.</li>
 <li><strong><a href="https://github.com/broadinstitute/cromwell">Cromwell</a></strong>-面向科学工作流程的工作流程管理系统.</li>
-<li><strong><a href="https://usegalaxy.org/">Galaxy</a></strong> - a popular open-source, web-based platform for data intensive biomedical research. Has several features, from data analysis to workflow management to visualization tools.</li>
+<li>__<a href="https://usegalaxy.org/">Galaxy</a><em> </em>-流行的基于Web的开源平台，用于数据密集型生物医学研究.  从数据分析到工作流管理再到可视化工具，具有多种功能.</li>
 <li>__<a href="https://gatkforums.broadinstitute.org/gatk/discussion/1288/howto-run-queue-for-the-first-time">GATK Queue</a>_-流水线系统，可与GATK以及其他高通量序列分析软件一起使用.</li>
 <li><strong><a href="https://www.nextflow.io">Nextflow</a> (recommended)</strong> - A fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.</li>
 <li><strong><a href="http://www.ruffus.org.uk">Ruffus</a></strong>-广泛用于科学和生物信息学的python计算管道库.</li>
@@ -7245,8 +7280,14 @@
 <li><strong><a href="https://github.com/lh3/seqtk">Seqtk</a></strong>-用于处理FASTA / Q格式的序列的工具包.</li>
 <li><strong><a href="https://github.com/incertae-sedis/smof">smof</a></strong>-UNIX风格的FASTA操作工具.</li>
 </ul>
+<h3 id="data-analysis">Data Analysis<a class="headerlink" href="#data-analysis" title="Permanent link">&para;</a></h3>
+<p>通过引入专门的数据库，以下各项可进行可扩展的基因组分析.</p>
+<ul>
+<li><strong><a href="https://github.com/hail-is/hail">Hail</a></strong>-可扩展的基因组分析</li>
+<li>__<a href="https://github.com/dnanexus-rnd/GLnexus">GLNexus</a>_-可扩展的gVCF合并和联合变量调用，以进行总体测序项目.</li>
+</ul>
 <h3 id="sequence-alignment">Sequence Alignment<a class="headerlink" href="#sequence-alignment" title="Permanent link">&para;</a></h3>
-<p><strong>新对齐</strong></p>
+<p><strong>De New Alignment</strong></p>
 <p><strong>DNA重测序</strong></p>
 <ul>
 <li><strong><a href="https://github.com/BenLangmead/bowtie2">Bowtie 2</a></strong>-一种超快速且高效存储的工具，用于将测序读数与长参考序列进行比对.</li>
@@ -7295,7 +7336,7 @@
 </ul>
 <h3 id="variant-predictionannotation">Variant Prediction/Annotation<a class="headerlink" href="#variant-predictionannotation" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><a href="http://sift.jcvi.org/">SIFT</a></strong>-预测氨基酸取代是否影响蛋白质功能.</li>
+<li><strong><a href="http://sift.jcvi.org/">SIFT</a></strong> - Predicts whether an amino acid substitution affects protein function.</li>
 <li><strong><a href="https://github.com/pcingola/SnpEff">SnpEff</a></strong>-遗传变异注释和效果预测工具箱.</li>
 </ul>
 <h3 id="python-modules">Python Modules<a class="headerlink" href="#python-modules" title="Permanent link">&para;</a></h3>
@@ -7325,7 +7366,7 @@
 <li><strong><a href="https://github.com/drio/dnaism">DNAism</a></strong>-基于D3地平线图表的JavaScript库，用于DNA数据.</li>
 <li>__<a href="https://www.broadinstitute.org/igv">IGV js</a><em> </em>-基于Java的浏览器.  快速，高效，可扩展的可视化工具，用于基因组数据和注释.  处理大 <a href="http://software.broadinstitute.org/software/igv/fileformats">variety of formats</a>.</li>
 <li>__<a href="https://github.com/lairdm/islandplot">Island Plot</a><em> </em>-基于D3 JavaScript的基因组查看器.  构造SVG.</li>
-<li><strong><a href="https://jbrowse.org">JBrowse</a></strong>-JavaScript基因组浏览器，可通过插件高度自定义并跟踪自定义</li>
+<li><strong><a href="https://jbrowse.org">JBrowse</a></strong>-JavaScript基因组浏览器，可通过插件进行高度自定义并跟踪自定义</li>
 <li><strong><a href="https://github.com/chgibb/PHAT">PHAT</a></strong>-跨平台套件的点击式，用于分析和可视化下一代测序数据集.</li>
 <li><strong><a href="https://github.com/hammerlab/pileup.js">pileup.js</a></strong>-JavaScript库，可用于生成交互式且高度可定制的基于Web的基因组浏览器.</li>
 <li>__<a href="https://github.com/chmille4/Scribl">scribl</a><em> </em>-JavaScript库，用于绘制基于画布的基因图.   <a href="http://chmille4.github.io/Scribl/">Homepage</a> 有例子.</li>
@@ -7349,13 +7390,13 @@
 <li><a href="http://blog.fejes.ca/?p=2418">What is a bioinformatician</a></li>
 <li><a href="http://www.ploscompbiol.org/article/info:doi%2F10.1371%2Fjournal.pcbi.1003496">Bioinformatics Curriculum Guidelines: Toward a Definition of Core Competencies</a></li>
 <li><a href="http://caseybergman.wordpress.com/2012/07/31/top-n-reasons-to-do-a-ph-d-or-post-doc-in-bioinformaticscomputational-biology/">Top N Reasons To Do A Ph.D. or Post-Doc in Bioinformatics/Computational Biology</a></li>
-<li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-1-104">A 10-Step Guide to Party Conversation For Bioinformaticians</a> -这是有关如何向未参与该领域工作的人传达概念的分步指南，当您提出以下问题时：“那么，您会怎么做？”</li>
+<li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-1-104">A 10-Step Guide to Party Conversation For Bioinformaticians</a> -这是有关如何向未参与该领域的人员传达概念的分步指南，当您提出以下问题时：“那么，您会怎么做？”</li>
 <li><a href="https://www.youtube.com/watch?v=uwsjwMO-TEA">A History Of Bioinformatics (In The Year 2039)</a> -泰特斯·布朗（C. Titus Brown）关于他回顾2039年以来的生物信息学的演讲. <a href="http://ivory.idyll.org/blog/2014-bosc-keynote.html">here</a>.</li>
 <li><a href="http://madhadron.com/posts/2012-03-26-a-farewell-to-bioinformatics.html">A farewell to bioinformatics</a> -对生物信息学状态的批判性看法.</li>
 <li><a href="http://www.acgt.me/blog/2014/3/25/101-questions-a-new-series-of-interviews-with-notable-bioinformaticians">A Series of Interviews with Notable Bioinformaticians</a> -Keith Bradnam博士“认为向一群著名的生物信息学家提出一系列简单的问题，以评估他们对当前生物信息学研究现状的看法可能具有启发性，也许可以获取他们对自己的研究有用的任何提示生物信息学事业.”</li>
 <li><a href="https://github.com/ossu/bioinformatics">Open Source Society University on Bioinformatics</a> -对于那些想要免费完成世界上最好的大学的信息的人来说，这是一条坚实的道路.</li>
 <li><a href="http://rosalind.info/">Rosalind</a> -Rosalind是一个通过解决问题来学习生物信息学的平台.</li>
-<li><a href="http://www.opiniomics.org/a-guide-for-the-lonely-bioinformatician/">A guide for the lonely bioinformatician</a> -本指南针对生物信息学家，旨在指导他们朝着更好的职业发展方向发展.</li>
+<li><a href="http://www.opiniomics.org/a-guide-for-the-lonely-bioinformatician/">A guide for the lonely bioinformatician</a> - This guide is aimed at bioinformaticians, and is meant to guide them towards better career development.</li>
 <li><a href="https://doi.org/10.1093/bib/bby063">A brief history of bioinformatics</a></li>
 </ul>
 <h3 id="bioinformatics-on-github">Bioinformatics on GitHub<a class="headerlink" href="#bioinformatics-on-github" title="Permanent link">&para;</a></h3>
@@ -7365,13 +7406,13 @@
 <h3 id="sequencing">Sequencing<a class="headerlink" href="#sequencing" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://youtu.be/6Is3W7JkFp8">Next-Generation Sequencing Technologies - Elaine Mardis (2014)</a> [1:34:35]-下一代和第三代测序技术的出色（技术）概述，以及在癌症研究中的一些应用.</li>
-<li><a href="https://liorpachter.wordpress.com/seq/">Annotated bibliography of *Seq assays</a> -约100篇论文，涉及从转录到可转座元素发现的各种测序技术和测定.</li>
+<li><a href="https://liorpachter.wordpress.com/seq/">Annotated bibliography of *Seq assays</a> -约100篇论文，涉及从转录到转座因子发现的各种测序技术和测定.</li>
 </ul>
 <h3 id="rna-seq">RNA-Seq<a class="headerlink" href="#rna-seq" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://www.biostars.org/p/52152/">Review papers on RNA-seq (Biostars)</a> -包括许多有关RNA序列和分析方法的开创性论文.</li>
 <li><a href="https://github.com/griffithlab/rnaseq_tutorial">Informatics for RNA-seq: A web resource for analysis on the cloud</a>  -有关使用Amazon AWS云服务在云中执行RNA序列分析的教育资源.  主题包括准备数据，预处理，差异表达，异构体发现，数据可视化和解释.</li>
-<li><a href="http://rnaseq.uoregon.edu/">RNA-seqlopedia</a> -RNA-seqlopedia提供了一个很棒的RNA-seq概述以及进行成功的RNA-seq实验所需的选择.</li>
+<li><a href="http://rnaseq.uoregon.edu/">RNA-seqlopedia</a> -RNA-seqlopedia提供了一个很棒的RNA-seq概述，以及进行成功的RNA-seq实验所需的选择.</li>
 <li><a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8">A survey of best practices for RNA-seq data analysis</a> -为RNA序列计算分析提供了绝佳的路线图，包括挑战/障碍和需要注意的事项，以及如何将RNA序列数据与其他数据类型集成在一起.</li>
 <li><a href="https://www.youtube.com/watch?v=5NiFibnbE8o">Stories from the Supplement</a> [46:39]-Lior Pachter博士分享了著名RNA-seq分析软件CuffDiff和 <a href="http://cole-trapnell-lab.github.io/cufflinks/">Cufflinks</a> 并解释了他们的一些方法.</li>
 <li><a href="https://en.wikipedia.org/wiki/List_of_RNA-Seq_bioinformatics_tools">List of RNA-seq Bioinformatics Tools</a> -分析所需的RNA-seq生物信息学工具在Wikipedia上的详尽列表，涵盖质量，控制，比对，剪接分析和可视化等分析流程的所有部分.</li>
@@ -7384,8 +7425,8 @@
 <h3 id="youtube-channels-and-playlists">YouTube Channels and Playlists<a class="headerlink" href="#youtube-channels-and-playlists" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://www.genome.gov/12514288/current-topics-in-genome-analysis-2016-course-syllabus-handouts-and-videos/">Current Topics in Genome Analysis 2016</a> -在NIH举行的十四次精彩系列讲座，内容涉及基因组学的当前主题，从序列分析到测序技术，甚至还有更多翻译主题，例如基因组医学.</li>
-<li><a href="https://www.youtube.com/user/GenomeTV">GenomeTV</a> -“ GenomeTV是NHGRI官方视频资源的集合，包括演讲，新闻纪录片，会议的完整视频集，这些视频集解决了基因组研究的研究，问题和临床应用.”</li>
-<li><a href="https://www.youtube.com/user/LeadingStrand">Leading Strand</a> - Keynote lectures from Cold Spring Harbor Laboratory (CSHL) Meetings. More on <a href="http://theleadingstrand.cshl.edu/">The Leading Strand</a>.</li>
+<li><a href="https://www.youtube.com/user/GenomeTV">GenomeTV</a> -“ GenomeTV是NHGRI官方视频资源的集合，包括演讲，新闻纪录片，会议的完整视频集，这些视频集处理基因组研究的研究，问题和临床应用.”</li>
+<li><a href="https://www.youtube.com/user/LeadingStrand">Leading Strand</a>  -冷泉港实验室（CSHL）会议的主题演讲.  更多关于 <a href="http://theleadingstrand.cshl.edu/">The Leading Strand</a>.</li>
 <li><a href="https://www.youtube.com/playlist?list=PLqLDR0CTP9_pboZCk6gR9Zn4kW7h9XWJI">Genomics, Big Data and Medicine Seminar Series</a> -“我们的研讨会专门针对GBM的关键交叉领域，深入研究将深刻塑造未来的&#39;出血边缘&#39;技术和方法.”</li>
 <li><a href="https://www.youtube.com/user/RafalabChannel/videos">Rafael Irizarry's Channel</a> -Rafael Irizarry博士关于基因组统计的讲座和学术讲座.</li>
 <li><a href="https://www.youtube.com/user/nihvcast">NIH VideoCasting and Podcasting</a>  -“ NIH VideoCast通过互联网向全世界的观众直播研讨会，会议和会议，作为实时流视频.”  不仅是基因组学和生物信息学视频，而且还有许多关于特定领域的生物信息学和基因组学使用的精彩演讲.</li>
@@ -7403,7 +7444,7 @@
 <li><a href="https://doi.org/10.1371/journal.pcbi.1003662">A New Online Computational Biology Curriculum</a> -“本文介绍了数百个免费视频课程的目录，这些课程对那些希望扩展其生物信息学和计算生物学知识的人们来说是必不可少的.这些课程分为11个学科领域，以大学部门为蓝本，并附有评论和职业建议. ”</li>
 <li><a href="http://www.foo.be/docs/tpj/issues/vol1_2/tpj0102-0001.html">How Perl Saved the Human Genome Project</a> -林肯·斯坦因（Lincoln D. Stein）的轶事，有关Perl编程语言在人类基因组计划中的重要性.</li>
 <li><a href="https://liacs.leidenuniv.nl/~hoogeboomhj/mcb/nature_primer.html">Educational Papers from Nature Biotechnology and PLoS Computational Biology</a> -引文链接和关于计算生物学和生物信息学中使用的各种方法的简短教育文章的链接.</li>
-<li><a href="https://peerj.com/collections/45-bioinformatics-software/">The PeerJ Bioinformatics Software Tools Collection</a> -Keith Crandall和Claus White策划的工具集合，目的是整理PeerJ中最有趣，创新和相关的生物信息学工具文章.</li>
+<li><a href="https://peerj.com/collections/45-bioinformatics-software/">The PeerJ Bioinformatics Software Tools Collection</a> -由Keith Crandall和Claus White策划的工具集合，旨在整理PeerJ中最有趣，创新和相关的生物信息学工具文章.</li>
 </ul>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" /></a></p>
