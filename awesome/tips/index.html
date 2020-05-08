@@ -8918,12 +8918,12 @@
 <p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890694312814945" data-ad-slot="5473692530" data-ad-format="auto"  data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></p>
 <h2 id="git-tips">git-tips<a class="headerlink" href="#git-tips" title="Permanent link">&para;</a></h2>
 <p>&gt; git-tips的集合，想添加您的提示吗？  查看 <a href="https://github.com/git-tips/tips/blob/master/./contributing.md">contributing.md</a></p>
-<p><a href="http://git.io/git-tips">English</a> | <a href="https://github.com/521xueweihan/git-tips">中文</a> | <a href="https://github.com/Imangazaliev/git-tips">Русский</a> | <a href="https://github.com/mingrammer/git-tips">한국어</a> | <a href="https://github.com/hprobotic/git-tips">Tiếng Việt</a> | <a href="https://github.com/isotai/git-tips">日本語</a> | <a href="https://github.com/amarduwal/git-tips">नेपाली</a></p>
+<p><a href="http://git.io/git-tips">English</a> | <a href="https://github.com/521xueweihan/git-tips">中文</a> | <a href="https://github.com/Imangazaliev/git-tips">Русский</a> | <a href="https://github.com/mingrammer/git-tips">한국어</a> | <a href="https://github.com/hprobotic/git-tips">Tiếng Việt</a> | <a href="https://github.com/isotai/git-tips">日本語</a> | <a href="https://github.com/amarduwal/git-tips">नेपाली</a> | <a href="https://github.com/mbiesiad/tips">Polski</a></p>
 <h3 id="tools"><strong>Tools:</strong><a class="headerlink" href="#tools" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://www.npmjs.com/package/git-tip">git-tip</a>  -方便的CLI，可最佳利用这些技巧.  （<a href="https://github.com/djoudi5/docker-git-tip">Here in Docker container</a>)</li>
 </ul>
-<p>PS：所有这些命令均在git版本2.7.4（Apple Git-66）上进行了测试.</p>
+<p>PS：所有这些命令都在git版本2.7.4（Apple Git-66）上进行了测试.</p>
 <!-- @doxie.inject start toc -->
 
 <!-- Don’t remove or change the comment above – that can break automatic updates. -->
@@ -8971,7 +8971,7 @@
 </pre></div>
 
 <h2 id="reset-preserve-uncommitted-local-changes">Reset: preserve uncommitted local changes<a class="headerlink" href="#reset-preserve-uncommitted-local-changes" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git reset-保持&lt;commit&gt;
+<div class="codehilite"><pre><span></span>git reset --keep &lt;commit&gt;
 </pre></div>
 
 <h2 id="list-all-the-conflicted-files">List all the conflicted files<a class="headerlink" href="#list-all-the-conflicted-files" title="Permanent link">&para;</a></h2>
@@ -8983,7 +8983,7 @@
 </pre></div>
 
 <h2 id="unstaged-changes-since-last-commit">Unstaged changes since last commit<a class="headerlink" href="#unstaged-changes-since-last-commit" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git差异
+<div class="codehilite"><pre><span></span>git diff
 </pre></div>
 
 <h2 id="changes-staged-for-commit">Changes staged for commit<a class="headerlink" href="#changes-staged-for-commit" title="Permanent link">&para;</a></h2>
@@ -9111,7 +9111,7 @@
 </pre></div>
 
 <h2 id="pick-commits-across-branches-using-cherry-pick">Pick commits across branches using cherry-pick<a class="headerlink" href="#pick-commits-across-branches-using-cherry-pick" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span> git checkout &lt;branch-name&gt;  <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> git cherry-pick &lt;commit-ish&gt;
+<div class="codehilite"><pre><span></span> git结帐 &lt;branch-name&gt;  <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> git cherry-pick &lt;commit-ish&gt;
 </pre></div>
 
 <h2 id="find-out-branches-containing-commit-hash">Find out branches containing commit-hash<a class="headerlink" href="#find-out-branches-containing-commit-hash" title="Permanent link">&para;</a></h2>
@@ -9127,7 +9127,7 @@ git config --global alias.st状态
 </pre></div>
 
 <h2 id="saving-current-state-of-tracked-files-without-commiting">Saving current state of tracked files without commiting<a class="headerlink" href="#saving-current-state-of-tracked-files-without-commiting" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git stash
+<div class="codehilite"><pre><span></span>git存储
 </pre></div>
 
 <p><strong>Alternatives:</strong>
@@ -9180,7 +9180,7 @@ git config --global alias.st状态
 </pre></div>
 
 <p><strong>Alternatives:</strong>
-<div class="codehilite"><pre><span></span>git stash应用stash @ <span class="o">{</span><span class="m">0</span><span class="o">}</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> git stash drop存放stash @ <span class="o">{</span><span class="m">0</span><span class="o">}</span>
+<div class="codehilite"><pre><span></span>git stash apply stash @ <span class="o">{</span><span class="m">0</span><span class="o">}</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> git stash drop存放@@ <span class="o">{</span><span class="m">0</span><span class="o">}</span>
 </pre></div></p>
 <h2 id="delete-all-stored-stashes">Delete all stored stashes<a class="headerlink" href="#delete-all-stored-stashes" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git隐藏
@@ -9190,7 +9190,7 @@ git config --global alias.st状态
 <div class="codehilite"><pre><span></span>git隐藏&lt;stash@<span class="o">{</span>n<span class="o">}</span>&gt;
 </pre></div></p>
 <h2 id="grab-a-single-file-from-a-stash">Grab a single file from a stash<a class="headerlink" href="#grab-a-single-file-from-a-stash" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span> git checkout &lt;stash@<span class="o">{</span>n<span class="o">}</span>&gt;  - &lt;file_path&gt;
+<div class="codehilite"><pre><span></span> git结帐 &lt;stash@<span class="o">{</span>n<span class="o">}</span>&gt;  - &lt;file_path&gt;
 </pre></div>
 
 <p><strong>Alternatives:</strong>
@@ -9205,7 +9205,7 @@ git config --global alias.st状态
 </pre></div>
 
 <h2 id="show-all-ignored-files">Show all ignored files<a class="headerlink" href="#show-all-ignored-files" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git ls-files --others -i --exclude-standard
+<div class="codehilite"><pre><span></span>git ls文件--others -i --exclude-standard
 </pre></div>
 
 <h2 id="create-new-working-tree-from-a-repository-git-25">Create new working tree from a repository (git 2.5)<a class="headerlink" href="#create-new-working-tree-from-a-repository-git-25" title="Permanent link">&para;</a></h2>
@@ -9369,11 +9369,11 @@ git config --global alias.st状态
 </pre></div>
 
 <h2 id="restore-deleted-file">Restore deleted file.<a class="headerlink" href="#restore-deleted-file" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span> git checkout &lt;deleting_commit&gt;  ^- &lt;file_path&gt;
+<div class="codehilite"><pre><span></span> git结帐 &lt;deleting_commit&gt;  ^- &lt;file_path&gt;
 </pre></div>
 
 <h2 id="restore-file-to-a-specific-commit-hash">Restore file to a specific commit-hash<a class="headerlink" href="#restore-file-to-a-specific-commit-hash" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span> git checkout &lt;commit-ish&gt;  - &lt;file_path&gt;
+<div class="codehilite"><pre><span></span> git结帐 &lt;commit-ish&gt;  - &lt;file_path&gt;
 </pre></div>
 
 <h2 id="always-rebase-instead-of-merge-on-pull">Always rebase instead of merge on pull.<a class="headerlink" href="#always-rebase-instead-of-merge-on-pull" title="Permanent link">&para;</a></h2>
@@ -9405,7 +9405,7 @@ git config --global branch.autosetuprebase总是
 </pre></div>
 
 <h2 id="dry-run-any-command-that-supports-dry-run-flag-should-do">Dry run. (any command that supports dry-run flag should do.)<a class="headerlink" href="#dry-run-any-command-that-supports-dry-run-flag-should-do" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git clean -fd --dry-run
+<div class="codehilite"><pre><span></span>git clean -fd --dry运行
 </pre></div>
 
 <h2 id="marks-your-commit-as-a-fix-of-a-previous-commit">Marks your commit as a fix of a previous commit.<a class="headerlink" href="#marks-your-commit-as-a-fix-of-a-previous-commit" title="Permanent link">&para;</a></h2>
@@ -9472,7 +9472,7 @@ git config --global branch.autosetuprebase总是
 </pre></div>
 
 <h2 id="checkout-a-new-branch-without-any-history">Checkout a new branch without any history<a class="headerlink" href="#checkout-a-new-branch-without-any-history" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git checkout-孤立&lt;branch_name&gt;
+<div class="codehilite"><pre><span></span>git checkout --orphan &lt;branch_name&gt;
 </pre></div>
 
 <h2 id="extract-file-from-another-branch">Extract file from another branch.<a class="headerlink" href="#extract-file-from-another-branch" title="Permanent link">&para;</a></h2>
@@ -9682,10 +9682,10 @@ git bisect reset                    <span class="c1"># Finish search </span>
 </pre></div>
 
 <p><strong>Alternatives:</strong>
-<div class="codehilite"><pre><span></span> git config -l <span class="p">|</span>  grep别名<span class="p">|</span>  切-d<span class="p">&amp;</span><span class="c1">#39;.  -f 2</span>
+<div class="codehilite"><pre><span></span> git config -l <span class="p">|</span>  grep别名<span class="p">|</span>  切-d<span class="p">&amp;</span><span class="c1">#39;.&amp;#39;  -f 2</span>
 </pre></div></p>
 <h2 id="show-git-status-short">Show git status short<a class="headerlink" href="#show-git-status-short" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git status --short-分支
+<div class="codehilite"><pre><span></span>git status --short --branch
 </pre></div>
 
 <h2 id="checkout-a-commit-prior-to-a-day-ago">Checkout a commit prior to a day ago<a class="headerlink" href="#checkout-a-commit-prior-to-a-day-ago" title="Permanent link">&para;</a></h2>
