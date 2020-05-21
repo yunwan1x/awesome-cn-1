@@ -7295,7 +7295,8 @@
  *</code>docker pull danmx / docker-owasp-webgoat<code>- [OWASP WebGoat Project docker image](https://hub.docker.com/r/danmx/docker-owasp-webgoat/)
  *</code>docker-compose build &amp;&amp; docker-compose up- <a href="https://github.com/owasp/nodegoat#option-3---run-nodegoat-on-docker">OWASP NodeGoat</a>
  </em><code>docker pull citizentig / nowasp</code>- <a href="https://hub.docker.com/r/citizenstig/nowasp/">OWASP Mutillidae II Web Pen-Test Practice Application</a>
- *<code>docker pull bkimminich / juice-shop</code>- <a href="https://github.com/bkimminich/juice-shop#docker-container--">OWASP Juice Shop</a></li>
+ <em><code>docker pull bkimminich / juice-shop</code>- <a href="https://github.com/bkimminich/juice-shop#docker-container--">OWASP Juice Shop</a>
+ </em><code>docker pull phocean / msf</code>- <a href="https://hub.docker.com/r/phocean/msf/">Docker Metasploit</a></li>
 </ul>
 <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h2>
 <ul>
@@ -7321,7 +7322,7 @@
 <h3 id="decompilers">Decompilers<a class="headerlink" href="#decompilers" title="Permanent link">&para;</a></h3>
 <p>*基于JVM的语言
   * <a href="https://github.com/Storyyeller/Krakatau">Krakatau</a>  -我使用过的最好的反编译器.  能够将用Scala和Kotlin编写的应用程序反编译为Java代码.  JD-GUI和Luyten未能完全做到这一点.
-  * <a href="https://github.com/java-decompiler/jd-gui">JD-GUI</a> 
+  * <a href="https://github.com/java-decompiler/jd-gui">JD-GUI</a>
   * <a href="https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler">procyon</a>
     * <a href="https://github.com/deathmarine/Luyten">Luyten</a> -最好的程序之一，尽管有点慢，但挂在某些二进制文件上，并且维护得不太好.
   * <a href="http://varaneckas.com/jad/">JAD</a> -JAD Java Decompiler（封闭源，未维护）
@@ -7336,6 +7337,10 @@
   * <a href="https://github.com/avast-tl/retdec">retdec</a>
   * <a href="https://github.com/yegord/snowman">snowman</a>
   * <a href="https://www.hex-rays.com/products/decompiler/">Hex-Rays</a></p>
+<ul>
+<li>Python</li>
+<li><a href="https://github.com/rocky/python-uncompyle6">uncompyle6</a> -为20多个CPython版本和20年的反编译器.</li>
+</ul>
 <h3 id="deobfuscators">Deobfuscators<a class="headerlink" href="#deobfuscators" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/0xd4d/de4dot">de4dot</a> -.NET解混淆器和解包器.</li>
@@ -7367,7 +7372,7 @@
 <li><a href="http://mh-nexus.de/en/hxd/">HxD</a> -十六进制编辑器，除了原始磁盘编辑和主存储器（RAM）修改外，还可以处理任何大小的文件</li>
 <li><a href="http://www.winhex.com/winhex/">WinHex</a> -十六进制编辑器，有助于计算机取证，数据恢复，低级数据处理和IT安全领域</li>
 <li><a href="https://github.com/EUA/wxHexEditor">wxHexEditor</a></li>
-<li><a href="https://www.synalysis.net/">Synalize It</a>/<a href="https://hexinator.com/">Hexinator</a> - </li>
+<li><a href="https://www.synalysis.net/">Synalize It</a>/<a href="https://hexinator.com/">Hexinator</a> -</li>
 </ul>
 <h4 id="other_1">Other<a class="headerlink" href="#other_1" title="Permanent link">&para;</a></h4>
 <ul>
@@ -7388,11 +7393,13 @@
 <h2 id="web">Web<a class="headerlink" href="#web" title="Permanent link">&para;</a></h2>
 <h2 id="tools_2">Tools<a class="headerlink" href="#tools_2" title="Permanent link">&para;</a></h2>
 <ul>
+<li><a href="https://spyse.com/">Spyse</a>  -数据收集服务，可使用OSINT收集Web信息.  提供的信息：IPv4主机，域/域名，端口/横幅/协议，技术，操作系统，自治系统，维护着巨大的SSL / TLS数据库，以及更多...所有数据都存储在其自己的数据库中，无需扫描即可获取数据.</li>
 <li><a href="https://github.com/sqlmapproject/sqlmap">sqlmap</a> -自动SQL注入和数据库接管工具</li>
 <li><a href="https://github.com/codingo/NoSQLMap">NoSQLMap</a> -自动化的NoSQL数据库枚举和Web应用程序开发工具.</li>
 <li><a href="http://tools.web-max.ca/encode_decode.php">tools.web-max.ca</a> -base64 base85 md4,5哈希，sha1哈希编码/解码</li>
 <li><a href="https://github.com/codingo/VHostScan">VHostScan</a> -执行反向查找的虚拟主机扫描程序，可与数据透视工具一起使用，检测所有情况，别名和动态默认页面.</li>
 <li><a href="https://github.com/subfinder/subfinder">SubFinder</a> -SubFinder是一个子域发现工具，可使用被动在线源发现任何目标的有效子域.</li>
+<li><a href="https://findsubdomains.com/">Findsubdomains</a> -子域发现工具，可从开源Internet收集所有可能的子域，并通过各种工具对其进行验证以提供准确的结果.</li>
 <li><a href="https://github.com/kpcyrd/badtouch">badtouch</a> -可编写脚本的网络身份验证破解程序</li>
 </ul>
 <h2 id="general_2">General<a class="headerlink" href="#general_2" title="Permanent link">&para;</a></h2>
@@ -7405,6 +7412,9 @@
 <li><a href="http://www.netresec.com/?page=NetworkMiner">NetworkMiner</a> -网络取证分析工具（NFAT）</li>
 <li><a href="http://sourceforge.net/projects/paros/">Paros</a> -基于Java的HTTP / HTTPS代理，用于评估Web应用程序漏洞</li>
 <li><a href="https://github.com/rafael-santiago/pig">pig</a> -Linux数据包制作工具</li>
+<li><a href="https://findsubdomains.com">findsubdomains</a> -真正快速的子域扫描服务，比简单的子查找器（使用OSINT可以工作）具有更多的机会.</li>
+<li><a href="http://www.cirt.dk/">cirt-fuzzer</a> -一个简单的TCP / UDP协议模糊器.</li>
+<li><a href="https://aslookup.com/">ASlookup</a> -探索自治系统和所有相关信息（CIDR，ASN，组织...）的有用工具</li>
 <li><a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">ZAP</a> -Zed攻击代理（ZAP）是易于使用的集成渗透测试工具，用于发现Web应用程序中的漏洞</li>
 <li><a href="https://github.com/Akdeniz/mitmsocks4j">mitmsocks4j</a> -Java中间人SOCKS代理</li>
 <li><a href="https://github.com/jtesta/ssh-mitm">ssh-mitm</a> -SSH / SFTP中间人工具，用于记录交互式会话和密码.</li>
@@ -7414,7 +7424,7 @@
 <li><a href="https://github.com/portantier/habu">Habu</a> -Python网络黑客工具包</li>
 <li><a href="https://n0where.net/wifijammer/">Wifi Jammer</a> -免费程序可阻止范围内的所有wifi客户端</li>
 <li><a href="https://codebutler.github.io/firesheep/">Firesheep</a> -用于HTTP会话劫持攻击的免费程序.</li>
-<li><a href="https://github.com/secdev/scapy">Scapy</a> -用于低级数据包创建和处理的Python工具和库</li>
+<li><a href="https://github.com/secdev/awesome-scapy">Scapy</a> -用于低级数据包创建和处理的Python工具和库</li>
 <li><a href="https://github.com/OWASP/Amass">Amass</a> -深入的子域枚举工具，可执行抓取，递归蛮行强制，网络档案的爬网，名称更改和反向DNS扫描</li>
 <li><a href="https://github.com/kpcyrd/sniffglue">sniffglue</a> -安全的多线程数据包嗅探器</li>
 </ul>
@@ -7425,6 +7435,7 @@
 <li><a href="https://github.com/sleuthkit/sleuthkit">sleuthkit</a> -命令行数字取证工具库和集合</li>
 <li><a href="https://www.guidancesoftware.com/products/Pages/encase-forensic/overview.aspx">EnCase</a> -Guidance Software提供的一套数字调查产品中的共享技术</li>
 <li><a href="http://malzilla.sourceforge.net/">malzilla</a> -恶意软件搜寻工具</li>
+<li><a href="https://servicos.dpf.gov.br/ferramentas/IPED/">IPED - Indexador e Processador de Evidências Digitais</a> -巴西联邦警察取证调查工具</li>
 </ul>
 <h2 id="cryptography">Cryptography<a class="headerlink" href="#cryptography" title="Permanent link">&para;</a></h2>
 <h3 id="tools_5">Tools<a class="headerlink" href="#tools_5" title="Permanent link">&para;</a></h3>
@@ -7442,6 +7453,7 @@
 <li><a href="http://pwnable.kr/">pwnable.kr</a> -提供有关系统安全性的各种挑战</li>
 <li><a href="https://exploit-exercises.com/nebula/">Exploit Exercises - Nebula</a></li>
 <li><a href="http://smashthestack.org/">SmashTheStack</a></li>
+<li><a href="https://www.hacking-lab.com/">HackingLab</a> </li>
 </ul>
 <h2 id="reverse-engineering_1">Reverse Engineering<a class="headerlink" href="#reverse-engineering_1" title="Permanent link">&para;</a></h2>
 <ul>
@@ -7456,6 +7468,7 @@
 <li><a href="https://www.hackthebox.eu">Hack The Box</a> -一个免费的站点，可以在各种不同的系统中进行笔测.</li>
 <li><a href="http://webhacking.kr/">Webhacking.kr</a></li>
 <li><a href="https://0xf.at/">0xf.at</a> -一个没有登录名或广告的网站，您可以在其中解决密码难题（即所谓的hackits）.</li>
+<li><a href="https://fuzzy.land/">fuzzy.land</a>  -奥地利团体的网站.  他们参加的CTF带来了很多挑战.</li>
 <li><a href="https://google-gruyere.appspot.com/">Gruyere</a></li>
 <li><a href="https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project#tab=On-Line_apps">Others</a></li>
 </ul>
@@ -7487,8 +7500,9 @@
 <li><a href="http://bostonkeyparty.net/">Boston Key Party CTF</a></li>
 <li><a href="https://zerodays.ie/">ZeroDays CTF</a></li>
 <li><a href="https://insomnihack.ch/">Insomni’hack</a></li>
-<li><a href="https://picoctf.com/">Pico CTF</a> </li>
+<li><a href="https://picoctf.com/">Pico CTF</a></li>
 <li><a href="http://prompt.ml/">prompt(1) to win</a> -XSS挑战</li>
+<li><a href="https://www.hackthebox.eu/">HackTheBox</a></li>
 </ul>
 <h2 id="general_3">General<a class="headerlink" href="#general_3" title="Permanent link">&para;</a></h2>
 <ul>
@@ -7499,7 +7513,7 @@
 <li><a href="https://amzn.com/144962636X">Rookit Arsenal</a> -OS RE和rootkit开发</li>
 <li><a href="https://github.com/coreb1t/awesome-pentest-cheat-sheets">Pentest Cheat Sheets</a> -收集有用的备忘单</li>
 <li><a href="https://github.com/k4m4/movies-for-hackers">Movies For Hackers</a> -每个黑客和赛博朋克都必须看的电影精选清单.</li>
-<li><a href="https://www.hoppersroppers.org/courseCTF.html">Hopper's Roppers Intro. to CTF Course</a> -一门免费课程，讲授法学，密码学和网络开发的基本知识，这是在“夺旗”比赛中取得成功所必需的.</li>
+<li><a href="https://www.hoppersroppers.org/courseCTF.html">Hopper's Roppers Intro. to CTF Course</a> -一门免费课程，讲授法学，密码学和网络利用的基本知识，这是在“夺旗”比赛中取得成功所必需的.</li>
 </ul>
 <h2 id="os">OS<a class="headerlink" href="#os" title="Permanent link">&para;</a></h2>
 <h2 id="online-resources">Online resources<a class="headerlink" href="#online-resources" title="Permanent link">&para;</a></h2>
@@ -7513,11 +7527,12 @@
 <ul>
 <li><a href="https://github.com/EmpireProject/Empire">empire</a> -Powershell和python的后期开发框架.</li>
 <li><a href="https://github.com/byt3bl33d3r/SILENTTRINITY">silenttrinity</a> -使用铁python克服powershell限制的后期开发工具.</li>
+<li><a href="https://github.com/Genetic-Malware/Ebowla">ebowla</a> - Framework for Making Environmental Keyed Payloads</li>
 </ul>
 <h2 id="etc">ETC<a class="headerlink" href="#etc" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="http://sectools.org/">SecTools</a> -排名前125位的网络安全工具</li>
-<li><a href="https://www.hoppersroppers.org/training.html">Hopper's Roppers Security Training</a> - Four free courses designed to teach beginners the fundamentals of computing, security, and CTFs. </li>
+<li><a href="https://www.hoppersroppers.org/training.html">Hopper's Roppers Security Training</a> -四门免费课程，旨在向初学者教授计算，安全性和CTF的基础知识. </li>
 </ul>
                 
                   
