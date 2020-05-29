@@ -2745,8 +2745,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-os" class="md-nav__link">
-    Install OS
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
     <nav class="md-nav">
@@ -2755,6 +2755,13 @@
           <li class="md-nav__item">
   <a href="#create-bootable-installer" class="md-nav__link">
     Create Bootable Installer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-older-os-versions" class="md-nav__link">
+    Download Older OS Versions
   </a>
   
 </li>
@@ -11715,8 +11722,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-os" class="md-nav__link">
-    Install OS
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
     <nav class="md-nav">
@@ -11725,6 +11732,13 @@
           <li class="md-nav__item">
   <a href="#create-bootable-installer" class="md-nav__link">
     Create Bootable Installer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-older-os-versions" class="md-nav__link">
+    Download Older OS Versions
   </a>
   
 </li>
@@ -12295,13 +12309,13 @@
 <h1><img src="https://cdn.rawgit.com/herrbischoff/awesome-macos-command-line/cab824f0/assets/logo.svg" alt="Awesome macOS Command Line" width="600"></h1></p>
 <p>&gt;专门针对OS X的Shell命令和工具的精选列表.</p>
 <blockquote>
-<p>&gt; <em>“您不必一无所知.  您只需要知道在必要时在哪里可以找到它.”  （约翰·布鲁纳）</em></p>
+<p>&gt; <em>“您不必了解所有内容.  您只需要知道在必要时在哪里可以找到它.”  （约翰·布鲁纳）</em></p>
 </blockquote>
 <p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://travis-ci.org/herrbischoff/awesome-macos-command-line"><img alt="Build Status" src="https://travis-ci.org/herrbischoff/awesome-macos-command-line.svg?branch=master" /></a></p>
-<p>如果您想捐款，我们强烈建议您捐款.  请阅读 <a href="https://github.com/herrbischoff/awesome-macos-command-line/blob/master/contributing.md">contribution guidelines</a>.</p>
+<p>如果您想做出贡献，强烈建议您这样做.  请阅读 <a href="https://github.com/herrbischoff/awesome-macos-command-line/blob/master/contributing.md">contribution guidelines</a>.</p>
 <p>有关终端外壳的更多信息，请参见此列表的姐妹列表 <a href="https://github.com/herrbischoff/awesome-command-line-apps">Awesome Command Line Apps</a>.</p>
 <h2 id="caffeinating">Caffeinating<a class="headerlink" href="#caffeinating" title="Permanent link">&para;</a></h2>
-<p>如果您在这里找到有用的东西，可以给我买杯咖啡.  我花了很多时间和精力来整理这份清单.  让我保持适当的咖啡因会加速事情的发展.  这真的会让我开心.  陌生人之类的善良.  如果您不能或不愿意，那就没有难过的感觉.  完全免费是有原因的.  尽管如此，那还是很棒的.</p>
+<p>如果您在这里找到有用的东西，可以给我买杯咖啡.  我花了很多时间和精力来整理这份清单.  让我保持适当的咖啡因会加速事情的发展.  这真的会让我开心.  陌生人之类的善良.  如果您不能或不愿意，那就没有难过的感觉.  由于某种原因，它是完全免费的.  尽管如此，那还是很棒的.</p>
 <p><a href="https://www.buymeacoffee.com/Oi5LPJ4lr" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a></p>
 <h2 id="appearance">Appearance<a class="headerlink" href="#appearance" title="Permanent link">&para;</a></h2>
 <h3 id="transparency">Transparency<a class="headerlink" href="#transparency" title="Permanent link">&para;</a></h3>
@@ -12316,7 +12330,7 @@
 <h3 id="wallpaper">Wallpaper<a class="headerlink" href="#wallpaper" title="Permanent link">&para;</a></h3>
 <h4 id="set-wallpaper">Set Wallpaper<a class="headerlink" href="#set-wallpaper" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><span class="c1">## Up to Mountain Lion</span>
-osascript -e<span class="p">&amp;</span><span class="c1">#39;告诉应用程序“ Finder”将桌面图片设置为POSIX文件“ /path/to/picture.jpg”</span>
+osascript -e<span class="p">&amp;</span><span class="c1">#39;告诉应用程序“ Finder”将桌面图片设置为POSIX文件“ /path/to/picture.jpg”&amp;#39;</span>
 
 <span class="c1">## Since Mavericks</span>
 sqlite3〜/ Library / Application <span class="se">\ </span>Support / Dock / desktoppicture.db“更新数据集值<span class="o">=</span><span class="p">&amp;</span><span class="c1">#39;/path/to/picture.jpg&amp;#39;” &amp;amp;&amp;amp; killall Dock</span>
@@ -12350,7 +12364,7 @@ mdfind <span class="nv">kMDItemAppStoreHasReceipt</span> <span class="o">=</span
 sudo /系统/库/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -restart -agent -console
 
 <span class="c1">## Deactivate and Stop the Remote Management Service</span>
-须藤/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart-停用-停止
+sudo /系统/库/CoreServices/RemoteManagement/ARDAgent.app/Contents/资源/ kickstart-停用-停止
 </pre></div>
 
 <h4 id="enable-and-disable-remote-desktop-sharing">Enable and Disable Remote Desktop Sharing<a class="headerlink" href="#enable-and-disable-remote-desktop-sharing" title="Permanent link">&para;</a></h4>
@@ -12366,7 +12380,7 @@ sudo /系统/库/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/k
  sudo默认删除/Library/Preferences/com.apple.RemoteDesktop.plist<span class="p">;</span>  <span class="se">\</span>
  默认为delete〜/ Library / Preferences / com.apple.RemoteDesktop.plist<span class="p">;</span>  <span class="se">\</span>
  sudo rm -r / Library / Application <span class="se">\ </span>Support / Apple / Remote <span class="se">\ </span>Desktop /<span class="p">;</span>  <span class="se">\</span>
- rm -r〜/ Library / Application <span class="se">\ </span>Support / Remote <span class="se">\ </span>Desktop /  <span class="se">\</span>
+ rm -r〜/ Library / Application <span class="se">\ </span>Support / Remote <span class="se">\ </span>Desktop /<span class="p">;</span>  <span class="se">\</span>
 rm -r〜/ Library / Containers / com.apple.RemoteDesktop
 </pre></div>
 
@@ -12393,7 +12407,7 @@ launchctl卸载-w /System/Library/LaunchAgents/com.apple.rcd.plist
 <span class="c1">## Respond to Key Presses (Default)</span>
 launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 </pre></div></p>
-<p>从El Capitan开始，您可以禁用SIP或诉诸某种黑客手段，这将使任何用户都无法访问iTunes，从而有效地阻止了iTunes自身或助手的启动.  请注意，出于所有目的和目的，这将破坏iTunes的安装，并可能与以后的OS更新冲突.
+<p>从El Capitan开始，您可以禁用SIP或诉诸某种黑客手段，这将使任何用户无法访问iTunes，从而有效地阻止了iTunes自身或助手的启动.  请注意，出于所有目的和目的，这将破坏iTunes的安装，并可能与以后的OS更新冲突.
 <div class="codehilite"><pre><span></span>sudo chmod <span class="m">0000</span> /应用程序/iTunes.app
 </pre></div></p>
 <h3 id="mail">Mail<a class="headerlink" href="#mail" title="Permanent link">&para;</a></h3>
@@ -12405,14 +12419,14 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 <p>下面的AppleScript代码将退出Mail，清理SQLite索引，然后重新打开Mail.  在尚未经过优化的大型电子邮件数据库上，这可以显着提高响应速度和速度.
 <div class="codehilite"><pre><span></span><span class="cm">(*</span>
 <span class="cm">通过清除信封索引来加速Mail.app</span>
-<span class="cm">代码来自：http://web.archive.org/web/20071008123746/http://www.hawkwings.net/2007/03/03/scripts-to-automate-the-mailapp-envelope-speed-trick/</span>
+<span class="cm">来自以下网址的代码：http：//web.archive.org/web/20071008123746/http：//www.hawkwings.net/2007/03/03/scripts-to-automate-the-mailapp-envelope-speed-trick/</span>
 <span class="cm">最初由“ pmbuko”修改，由Romulo修改</span>
 <span class="cm">由Brett Terpstra更新于2012</span>
 <span class="cm">由MathiasTörnblom2015更新，以支持El Capitan中的V3，并且仍保持向后兼容性</span>
-<span class="cm">由Andrei Miclaus 2017更新，以支持Sierra中的V4</span>
+<span class="cm">Updated by Andrei Miclaus 2017 to support V4 in Sierra</span>
 <span class="cm">*)</span>
 
-<span class="err">告诉应用程序“邮件”退出</span>
+<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Mail&quot;</span> <span class="k">to</span> <span class="nb">quit</span>
 <span class="err">设置os_version以执行shell脚本“</span> <span class="nv">sw_vers</span> <span class="o">-</span><span class="nv">productVersion</span><span class="err">”</span>
 <span class="err">将mail_version设置为“</span> <span class="nv">V2</span><span class="err">”</span>
 <span class="err">考虑数字字符串</span>
@@ -12422,10 +12436,10 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
     <span class="err">如果“</span> <span class="mf">10.14</span><span class="err">”</span> <span class="o">&amp;</span><span class="nv">lt</span><span class="err">;</span><span class="o">=</span> <span class="nv">os_version</span><span class="err">，则将mail_version设置为“</span> <span class="nv">V6</span><span class="err">”</span>
 <span class="err">结束考虑</span>
 
-<span class="k">set</span> <span class="nv">sizeBefore</span> <span class="k">to</span> <span class="nb">do shell script</span> <span class="s2">&quot;ls -lnah ~/Library/Mail/&quot;</span> <span class="o">&amp;</span> <span class="nv">mail_version</span> <span class="o">&amp;</span> <span class="s2">&quot;/MailData | grep -E &#39;Envelope Index$&#39; | awk {&#39;print $5&#39;}&quot;</span>
+<span class="err">设置sizeBefore做外壳程序脚本“</span> <span class="nv">ls</span> <span class="o">-</span><span class="nv">lnah</span><span class="err">〜</span><span class="o">/</span> <span class="nv">Library</span> <span class="o">/</span> <span class="nv">Mail</span> <span class="o">/</span><span class="err">”＆</span><span class="nv">mail_version</span><span class="err">＆“</span> <span class="o">/</span> <span class="nv">MailData</span> <span class="err">|</span> <span class="nv">grep</span> <span class="o">-</span><span class="nv">E</span><span class="o">&amp;</span><span class="c">#39;信封索引$&amp;#39;| awk {&amp;#39;print $ 5&amp;#39;}”</span>
 <span class="err">做shell脚本“</span> <span class="o">/</span> <span class="nv">usr</span> <span class="o">/</span> <span class="nv">bin</span> <span class="o">/</span> <span class="nv">sqlite3</span><span class="err">〜</span><span class="o">/</span> <span class="nv">Library</span> <span class="o">/</span> <span class="nv">Mail</span> <span class="o">/</span><span class="err">”和mail_version和“</span> <span class="o">/</span> <span class="nv">MailData</span> <span class="o">/</span> <span class="nv">Envelope</span> <span class="err">\\</span> <span class="nv">Index</span> <span class="nv">vacuum</span><span class="err">”</span>
 
-<span class="err">设置sizeAfter以执行shell脚本“</span> <span class="nv">ls</span> <span class="o">-</span><span class="nv">lnah</span><span class="err">〜</span><span class="o">/</span> <span class="nv">Library</span> <span class="o">/</span> <span class="nv">Mail</span> <span class="o">/</span><span class="err">”和mail_version＆“</span> <span class="o">/</span> <span class="nv">MailData</span> <span class="err">|</span> <span class="nv">grep</span> <span class="o">-</span><span class="nv">E</span><span class="o">&amp;</span><span class="c">#39;信封索引$&amp;#39;| awk {&amp;#39;print $ 5&amp;#39;}”</span>
+<span class="err">设置sizeAfter做外壳程序脚本“</span> <span class="nv">ls</span> <span class="o">-</span><span class="nv">lnah</span><span class="err">〜</span><span class="o">/</span> <span class="nv">Library</span> <span class="o">/</span> <span class="nv">Mail</span> <span class="o">/</span><span class="err">”和mail_version＆“</span> <span class="o">/</span> <span class="nv">MailData</span> <span class="err">|</span> <span class="nv">grep</span> <span class="o">-</span><span class="nv">E</span><span class="o">&amp;</span><span class="c">#39;信封索引$&amp;#39;| awk {&amp;#39;打印$ 5&amp;#39;}”</span>
 
 <span class="err">显示对话框（“之前的邮件索引：”＆</span><span class="nv">sizeBefore</span><span class="err">＆</span><span class="no">return</span><span class="err">＆“之后的邮件索引：”＆</span><span class="nv">sizeAfter</span><span class="err">＆</span><span class="no">return</span><span class="err">＆</span><span class="no">return</span><span class="err">＆“享受新速度！”）</span>
 
@@ -12433,7 +12447,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 </pre></div></p>
 <h3 id="safari">Safari<a class="headerlink" href="#safari" title="Permanent link">&para;</a></h3>
 <h4 id="change-default-fonts">Change Default Fonts<a class="headerlink" href="#change-default-fonts" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2StandardFontFamily乔治亚
+<div class="codehilite"><pre><span></span>默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2StandardFontFamily Georgia
 默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFontSize <span class="m">16</span>
 默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2FixedFontFamily Menlo
 默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFixedFontSize <span class="m">14</span>
@@ -12456,7 +12470,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool是
 
 <span class="c1">## Disable</span>
-默认写com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool否
+默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool否
 </pre></div>
 
 <h3 id="sketch">Sketch<a class="headerlink" href="#sketch" title="Permanent link">&para;</a></h3>
@@ -12491,8 +12505,8 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 <h2 id="backup">Backup<a class="headerlink" href="#backup" title="Permanent link">&para;</a></h2>
 <h3 id="time-machine">Time Machine<a class="headerlink" href="#time-machine" title="Permanent link">&para;</a></h3>
 <h4 id="change-backup-interval">Change Backup Interval<a class="headerlink" href="#change-backup-interval" title="Permanent link">&para;</a></h4>
-<p>这将间隔更改为30分钟.  整数值是以秒为单位的时间.
-<div class="codehilite"><pre><span></span>sudo默认写/System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int <span class="m">1800</span>
+<p>这会将间隔更改为30分钟.  整数值是以秒为单位的时间.
+<div class="codehilite"><pre><span></span>sudo默认写入/System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int <span class="m">1800</span>
 </pre></div></p>
 <h4 id="local-backups">Local Backups<a class="headerlink" href="#local-backups" title="Permanent link">&para;</a></h4>
 <p>Time Machine备份卷不可用时，Time Machine是否执行本地备份.
@@ -12533,7 +12547,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 </pre></div></p>
 <h4 id="toggle-backup-while-on-battery">Toggle Backup While on Battery<a class="headerlink" href="#toggle-backup-while-on-battery" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><span class="c1">## Status</span>
-sudo默认值读取/Library/Preferences/com.apple.TimeMachine需要ACPower
+sudo默认阅读/Library/Preferences/com.apple.TimeMachine需要ACPower
 
 <span class="c1">## Enable (Default)</span>
 sudo默认写入/Library/Preferences/com.apple.TimeMachine RequiresACPower -bool <span class="nb">true</span>
@@ -12543,13 +12557,13 @@ sudo默认写入/Library/Preferences/com.apple.TimeMachine要求ACPower -bool <s
 </pre></div>
 
 <h4 id="verify-backup">Verify Backup<a class="headerlink" href="#verify-backup" title="Permanent link">&para;</a></h4>
-<p>从OS X 10.11开始，Time Machine记录复制到快照中的文件的校验和.  对于OS X早期版本复制的文件，不会追溯计算校验和.
-<div class="codehilite"><pre><span></span>须藤tmutil verifychecksums / path / to / backup
+<p>从OS X 10.11开始，Time Machine记录复制到快照中的文件的校验和.  对于由早期版本的OS X复制的文件，不会追溯计算校验和.
+<div class="codehilite"><pre><span></span>sudo tmutil verifychecksums /路径/到/备份
 </pre></div></p>
 <h2 id="developer">Developer<a class="headerlink" href="#developer" title="Permanent link">&para;</a></h2>
 <h3 id="vim">Vim<a class="headerlink" href="#vim" title="Permanent link">&para;</a></h3>
 <h4 id="compile-sane-vim">Compile Sane Vim<a class="headerlink" href="#compile-sane-vim" title="Permanent link">&para;</a></h4>
-<p>通过Homebrew编译MacVim，并使用所有功能，包括覆盖系统Vim.
+<p>通过Homebrew编译MacVim的所有代码，包括覆盖系统Vim.
 <div class="codehilite"><pre><span></span>brew install macvim --HEAD
 </pre></div></p>
 <h4 id="neovim">Neovim<a class="headerlink" href="#neovim" title="Permanent link">&para;</a></h4>
@@ -12572,7 +12586,7 @@ sudo默认写入/Library/Preferences/com.apple.TimeMachine要求ACPower -bool <s
 </pre></div>
 
 <h4 id="add-a-nameless-stack-folder-and-small-spacer">Add a Nameless Stack Folder and Small Spacer<a class="headerlink" href="#add-a-nameless-stack-folder-and-small-spacer" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span> 默认写com.apple.dock持久其他-array-add<span class="p">&amp;</span><span class="c1">#39;{“ tile-data” = {};  “ tile-type” =“小间隔片-tile”;  }&amp;#39;&amp;amp;&amp;amp; \</span>
+<div class="codehilite"><pre><span></span> 默认写com.apple.dock持久其他-array-add<span class="p">&amp;</span><span class="c1">#39;{“ tile-data” = {};  “ tile-type” =“小垫片-瓷砖”;  }&amp;#39;&amp;amp;&amp;amp; \</span>
 杀人码头
 </pre></div>
 
@@ -12605,7 +12619,7 @@ sudo默认写入/Library/Preferences/com.apple.TimeMachine要求ACPower -bool <s
 <p>默认写com.apple.dock autohide -bool false &amp;&amp; \
 杀人码头
 <div class="codehilite"><pre><span></span>#### Icon Bounce
-全局设置当相应的应用程序需要您注意时，是否应停靠Dock图标.
+全局设置当相应的应用程序需要您关注时，是否应停靠Dock图标.
 ```bash
 ## Enable (Default)
 默认写com.apple.dock不反弹-bool true &amp;amp;&amp;amp; \
@@ -12617,11 +12631,11 @@ sudo默认写入/Library/Preferences/com.apple.TimeMachine要求ACPower -bool <s
 </pre></div></p>
 <h4 id="lock-the-dock-size">Lock the Dock Size<a class="headerlink" href="#lock-the-dock-size" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><span class="c1">## Enable</span>
-默认写com.apple.Dock大小不可变-bool yes <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+默认写com.apple.Dock大小不可变-bool是<span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 杀人码头
 
 <span class="c1">## Disable (Default)</span>
-默认写入com.apple.Dock大小不可变-bool否<span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+默认写com.apple.Dock大小不可变-bool否<span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 杀人码头
 </pre></div>
 
@@ -12693,7 +12707,7 @@ sudo默认写入/Library/Preferences/com.apple.TimeMachine要求ACPower -bool <s
 <div class="codehilite"><pre><span></span>mkfile 10g / path / to / file
 </pre></div></p>
 <h4 id="disable-sudden-motion-sensor">Disable Sudden Motion Sensor<a class="headerlink" href="#disable-sudden-motion-sensor" title="Permanent link">&para;</a></h4>
-<p>使用SSD时，保持开启状态是没有用的.
+<p>使用SSD时，将其保持打开状态是没有用的.
 <div class="codehilite"><pre><span></span>须藤pmset -a sms <span class="m">0</span>
 </pre></div></p>
 <h4 id="eject-all-mountable-volumes">Eject All Mountable Volumes<a class="headerlink" href="#eject-all-mountable-volumes" title="Permanent link">&para;</a></h4>
@@ -12753,7 +12767,7 @@ tmutil listlocals快照/
 <div class="codehilite"><pre><span></span>hdiutil create -volname“卷名” -srcfolder / path / to / folder -ov diskimage.dmg
 </pre></div>
 
-<p>如果您想加密磁盘映像：
+<p>如果要加密磁盘映像：
 <div class="codehilite"><pre><span></span>hdiutil create -encryption -stdinpass -volname“卷名” -srcfolder / path / to / folder -ov crypto.dmg
 </pre></div></p>
 <p>默认情况下，系统会提示您输入密码.  您可以通过输入密码来自动执行此操作：
@@ -12783,7 +12797,7 @@ tmutil listlocals快照/
 
 <h4 id="write-disk-image-to-volume">Write Disk Image to Volume<a class="headerlink" href="#write-disk-image-to-volume" title="Permanent link">&para;</a></h4>
 <p>就像磁盘工具的“还原”功能.
-<div class="codehilite"><pre><span></span>须藤ASR -restore -noverify -source /path/to/diskimage.dmg -target /体积/ VolumeToRestoreTo
+<div class="codehilite"><pre><span></span>Sudo ASR-还原-noverify-源/path/to/diskimage.dmg-目标/卷/ VolumeToRestoreTo
 </pre></div></p>
 <h2 id="finder">Finder<a class="headerlink" href="#finder" title="Permanent link">&para;</a></h2>
 <h3 id="desktop">Desktop<a class="headerlink" href="#desktop" title="Permanent link">&para;</a></h3>
@@ -12800,7 +12814,7 @@ Killall搜寻器
 <h4 id="show-internal-media">Show Internal Media<a class="headerlink" href="#show-internal-media" title="Permanent link">&para;</a></h4>
 <p>内置HD或SSD.
 <div class="codehilite"><pre><span></span><span class="c1">## Enable</span>
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool <span class="nb">true</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+默认写com.apple.finder ShowHardDrivesOnDesktop -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 Killall搜寻器
 
 <span class="c1">## Disable (Default)</span>
@@ -12810,7 +12824,7 @@ Killall搜寻器
 <h4 id="show-removable-media">Show Removable Media<a class="headerlink" href="#show-removable-media" title="Permanent link">&para;</a></h4>
 <p>CD，DVD，iPod等
 <div class="codehilite"><pre><span></span><span class="c1">## Enable</span>
-默认值写com.apple.finder ShowRemovableMediaOnDesktop -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+默认写com.apple.finder ShowRemovableMediaOnDesktop -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 Killall搜寻器
 
 <span class="c1">## Disable (Default)</span>
@@ -12853,7 +12867,7 @@ Killall搜寻器
 </pre></div>
 
 <h4 id="show-full-path-in-finder-title">Show Full Path in Finder Title<a class="headerlink" href="#show-full-path-in-finder-title" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>defaults write com.apple.finder _FXShowPosixPathInTitle -bool <span class="nb">true</span>
+<div class="codehilite"><pre><span></span>默认写com.apple.finder _FXShowPosixPathInTitle -bool <span class="nb">true</span>
 </pre></div>
 
 <h4 id="unhide-user-library-folder">Unhide User Library Folder<a class="headerlink" href="#unhide-user-library-folder" title="Permanent link">&para;</a></h4>
@@ -12867,7 +12881,7 @@ Killall搜寻器
 
 <h3 id="layout">Layout<a class="headerlink" href="#layout" title="Permanent link">&para;</a></h3>
 <h4 id="show-quit-finder-menu-item">Show "Quit Finder" Menu Item<a class="headerlink" href="#show-quit-finder-menu-item" title="Permanent link">&para;</a></h4>
-<p>通过默认快捷键<kbd>Cmd</kbd> + <kbd>Q</kbd>可以查看Finder菜单项“ Quit Finder”.
+<p>可以使用默认的快捷键<kbd>Cmd</kbd> + <kbd>Q</kbd>来查看Finder菜单项“ Quit Finder”.
 <div class="codehilite"><pre><span></span><span class="c1">## Enable</span>
 默认写com.apple.finder QuitMenuItem -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 Killall搜寻器
@@ -12951,12 +12965,12 @@ Killall搜寻器
 </pre></div></p>
 <h4 id="disable-creation-of-metadata-files-on-usb-volumes">Disable Creation of Metadata Files on USB Volumes<a class="headerlink" href="#disable-creation-of-metadata-files-on-usb-volumes" title="Permanent link">&para;</a></h4>
 <p>避免创建.DS_Store和AppleDouble文件.
-<div class="codehilite"><pre><span></span>默认写com.apple.desktopservices DSntWriteUSBStores -bool <span class="nb">true</span>
+<div class="codehilite"><pre><span></span>默认写入com.apple.desktopservices DSntWriteUSBStores -bool <span class="nb">true</span>
 </pre></div></p>
 <h3 id="opening-things">Opening Things<a class="headerlink" href="#opening-things" title="Permanent link">&para;</a></h3>
 <h4 id="change-working-directory-to-finder-path">Change Working Directory to Finder Path<a class="headerlink" href="#change-working-directory-to-finder-path" title="Permanent link">&para;</a></h4>
 <p>如果打开了多个窗口，它将选择最上面的一个.
-<div class="codehilite"><pre><span></span>cd“ $（osascript -e<span class="p">&amp;</span><span class="c1">#39;tell app” Finder“到（插入位置作为别名的）POSIX路径&amp;#39;）”</span>
+<div class="codehilite"><pre><span></span>cd“ $（osascript -e<span class="p">&amp;</span><span class="c1">#39;tell app“ Finder”到（插入位置作为别名的）POSIX路径&amp;#39;）”</span>
 </pre></div></p>
 <h4 id="open-url">Open URL<a class="headerlink" href="#open-url" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>打开https://github.com
@@ -12992,7 +13006,7 @@ atsutil服务器-ping
 <p>从Sierra开始，它们包含在Terminal.app中.
 <div class="codehilite"><pre><span></span>cp -v /应用程序/实用程序/Terminal.app/内容/资源/字体/ SFMono- *〜/库/字体
 </pre></div></p>
-<p>从Catalina开始，现在在/ System文件夹中找到实用工具应用程序（包括Terminal.app）.
+<p>从Catalina开始，Utilities应用程序（包括Terminal.app）现在位于“ / System”文件夹中.
 <div class="codehilite"><pre><span></span>cp -v /系统/应用程序/实用程序/Terminal.app/内容/资源/字体/ SFMono- *〜/库/字体
 </pre></div></p>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
@@ -13007,7 +13021,7 @@ sudo默认写入/Library/Preferences/com.apple.Bluetooth ControllerPowerState -i
 
 <span class="c1">## Disable</span>
 sudo默认写入/Library/Preferences/com.apple.Bluetooth ControllerPowerState -int <span class="m">0</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
-须藤killall -HUP变蓝
+须藤killall -HUP蓝色
 </pre></div>
 
 <h3 id="harddisks">Harddisks<a class="headerlink" href="#harddisks" title="Permanent link">&para;</a></h3>
@@ -13124,7 +13138,7 @@ sudo默认写入/Library/Preferences/com.apple.Bluetooth ControllerPowerState -i
 默认写-g ApplePressAndHoldEnabled -bool <span class="nb">true</span>
 </pre></div></p>
 <h4 id="key-repeat-rate">Key Repeat Rate<a class="headerlink" href="#key-repeat-rate" title="Permanent link">&para;</a></h4>
-<p>设置非常快的重复率，调整以适应口味.
+<p>Sets a very fast repeat rate, adjust to taste.
 <div class="codehilite"><pre><span></span>默认写-g KeyRepeat -int <span class="m">0</span>.02
 </pre></div></p>
 <h2 id="launchpad">Launchpad<a class="headerlink" href="#launchpad" title="Permanent link">&para;</a></h2>
@@ -13153,7 +13167,7 @@ rm〜/ Library / Application <span class="se">\ </span>Support / Dock / *.db <sp
 </pre></div>
 
 <h4 id="mute-audio-output">Mute Audio Output<a class="headerlink" href="#mute-audio-output" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>osascript -e <span class="s1">&#39;set volume output muted true&#39;</span>
+<div class="codehilite"><pre><span></span>osascript -e<span class="p">&amp;</span><span class="c1">#39;设置音量输出静音为真&amp;#39;</span>
 </pre></div>
 
 <h4 id="set-audio-volume">Set Audio Volume<a class="headerlink" href="#set-audio-volume" title="Permanent link">&para;</a></h4>
@@ -13161,8 +13175,8 @@ rm〜/ Library / Application <span class="se">\ </span>Support / Dock / *.db <sp
 </pre></div>
 
 <h4 id="play-audio-file">Play Audio File<a class="headerlink" href="#play-audio-file" title="Permanent link">&para;</a></h4>
-<p>您可以播放QuickTime本机支持的所有音频格式.
-<div class="codehilite"><pre><span></span>afplay -q <span class="m">1</span> filename.mp3
+<p>您可以播放QuickTime本身支持的所有音频格式.
+<div class="codehilite"><pre><span></span>afplay -q 1文件名.mp3
 </pre></div></p>
 <h4 id="speak-text-with-system-default-voice">Speak Text with System Default Voice<a class="headerlink" href="#speak-text-with-system-default-voice" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>说“您的所有基地都属于我们！”
@@ -13215,8 +13229,8 @@ sudo默认写/System/Library/LaunchDaemons/com.apple.mDNSResponder.plist Program
 
 <h3 id="hostname">Hostname<a class="headerlink" href="#hostname" title="Permanent link">&para;</a></h3>
 <h4 id="set-computer-namehost-name">Set Computer Name/Host Name<a class="headerlink" href="#set-computer-namehost-name" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>sudo scutil --set ComputerName“ newhostname” <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
-sudo scutil --set HostName“ newhostname” <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+<div class="codehilite"><pre><span></span>sudo scutil --set ComputerName <span class="s2">&quot;newhostname&quot;</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+sudo scutil --set主机名“ newhostname” <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 sudo scutil --set LocalHostName“ newhostname” <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 sudo默认写/Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string“ newhostname”
 </pre></div>
@@ -13231,7 +13245,7 @@ scselect
 scselect LocationNameFromStatus
 </pre></div></p>
 <h4 id="set-static-ip-address">Set Static IP Address<a class="headerlink" href="#set-static-ip-address" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>networksetup -setmanual“以太网” <span class="m">192</span>.168.2.100 <span class="m">255</span>.255.255.0 <span class="m">192</span>.168.2.1
+<div class="codehilite"><pre><span></span>networksetup -setmanual“ Ethernet” <span class="m">192</span>.168.2.100 <span class="m">255</span>.255.255.0 <span class="m">192</span>.168.2.1
 </pre></div>
 
 <h3 id="networking-tools">Networking Tools<a class="headerlink" href="#networking-tools" title="Permanent link">&para;</a></h3>
@@ -13313,7 +13327,7 @@ sudo launchctl启动com.apple.tftpd
 
 <h4 id="show-wi-fi-network-passwords">Show Wi-Fi Network Passwords<a class="headerlink" href="#show-wi-fi-network-passwords" title="Permanent link">&para;</a></h4>
 <p>用您要从中查询密码的接入点的SSID交换SSID.
-<div class="codehilite"><pre><span></span>安全查找通用密码-D“ AirPort网络密码” -a“ SSID” -gw
+<div class="codehilite"><pre><span></span>security find-generic-password -D <span class="s2">&quot;AirPort network password&quot;</span> -a <span class="s2">&quot;SSID&quot;</span> -gw
 </pre></div></p>
 <h4 id="turn-on-wi-fi-adapter">Turn on Wi-Fi Adapter<a class="headerlink" href="#turn-on-wi-fi-adapter" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>启用networksetup -setairportpower en0
@@ -13321,7 +13335,7 @@ sudo launchctl启动com.apple.tftpd
 
 <h2 id="package-managers">Package Managers<a class="headerlink" href="#package-managers" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="http://www.finkproject.org">Fink</a>  -达尔文的Unix开源软件的完整领域.  有点过时了.</li>
+<li><a href="http://www.finkproject.org">Fink</a>  -用于Darwin的Unix开源软件的完整世界.  有点过时了.</li>
 <li><a href="https://brew.sh">Homebrew</a> -缺少OS X的软件包管理器.最受欢迎的选择.</li>
 <li><a href="https://www.macports.org">MacPorts</a>  -编译，安装和升级命令行，基于X11或Aqua的开源软件.  很干净，这就是我用的.</li>
 </ul>
@@ -13371,12 +13385,12 @@ sudo / usr / libexec / ApplicationFirewall / socketfilterfw --setglobalstate关�
 </pre></div>
 
 <h4 id="manage-gatekeeper">Manage Gatekeeper<a class="headerlink" href="#manage-gatekeeper" title="Permanent link">&para;</a></h4>
-<p>对于讨厌的Catalina系统弹出窗口阻止非签名应用程序执行特别有用.
+<p>对于令人讨厌的Catalina系统弹出窗口阻止非签名应用程序执行尤其有用.
 <div class="codehilite"><pre><span></span><span class="c1">## Status</span>
 spctl-状态
 
 <span class="c1">## Enable (Default)</span>
-sudo spctl --master启用
+sudo spctl --master-启用
 
 <span class="c1">## Disable</span>
 sudo spctl --master-禁用
@@ -13423,7 +13437,7 @@ sudo spctl --master-禁用
 
 <h3 id="wiping-data">Wiping Data<a class="headerlink" href="#wiping-data" title="Permanent link">&para;</a></h3>
 <p>注意：在Mac OS 10.9之后，似乎已删除了srm命令.  有一个关于 <a href="https://support.apple.com/en-us/HT201949">Apple support page</a> 暗示原因：
- &gt;对于SSD驱动器，“磁盘工具”中不提供安全擦除和擦除可用空间.  SSD驱动器不需要这些选项，因为标准擦除使其很难从SSD恢复数据.</p>
+ &gt;对于SSD驱动器，“磁盘工具”中不提供“安全擦除”和“擦除可用空间”.  SSD驱动器不需要这些选项，因为标准擦除使其很难从SSD恢复数据.</p>
 <h4 id="securely-remove-file">Securely Remove File<a class="headerlink" href="#securely-remove-file" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>srm /路径/到/文件
 </pre></div>
@@ -13448,7 +13462,7 @@ sudo spctl --master-禁用
 </pre></div>
 
 <h4 id="search-via-locate">Search via Locate<a class="headerlink" href="#search-via-locate" title="Permanent link">&para;</a></h4>
-<p>-i修饰符使搜索大小写不敏感.
+<p>-i修饰符使搜索不区分大小写.
 <div class="codehilite"><pre><span></span>定位-i * .jpg
 </pre></div></p>
 <h2 id="system">System<a class="headerlink" href="#system" title="Permanent link">&para;</a></h2>
@@ -13513,7 +13527,7 @@ sudo spctl --master-禁用
 <div class="codehilite"><pre><span></span>pbpaste<span class="p">&amp;</span>gt<span class="p">;</span> what.txt
 </pre></div>
 
-<div class="codehilite"><pre><span></span> pbpaste <span class="p">|</span>  排序  uniq <span class="p">|</span>  pbcopy
+<div class="codehilite"><pre><span></span> pbpaste <span class="p">|</span>  排序<span class="p">|</span>  uniq <span class="p">|</span>  pbcopy
 </pre></div>
 
 <h3 id="filevault">FileVault<a class="headerlink" href="#filevault" title="Permanent link">&para;</a></h3>
@@ -13537,9 +13551,12 @@ sudo fdesetup禁用
 <div class="codehilite"><pre><span></span>sudo sysdiagnose -f〜/桌面/
 </pre></div>
 
-<h3 id="install-os">Install OS<a class="headerlink" href="#install-os" title="Permanent link">&para;</a></h3>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
 <h4 id="create-bootable-installer">Create Bootable Installer<a class="headerlink" href="#create-bootable-installer" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="c1">## Mojave</span>
+<div class="codehilite"><pre><span></span><span class="c1">## Catalina</span>
+sudo / Applications / Install <span class="se">\ </span>macOS <span class="se">\ </span>Catalina.app/Contents/Resources/createinstallmedia --volume / Volumes / USB --nointeraction --downloadassets
+
+<span class="c1">## Mojave</span>
 sudo / Applications / Install <span class="se">\ </span>macOS <span class="se">\ </span>Mojave.app/Contents/Resources/createinstallmedia --volume / Volumes / USB --nointeraction --downloadassets
 
 <span class="c1">## High Sierra</span>
@@ -13558,6 +13575,98 @@ sudo / Applications / Install <span class="se">\ </span>OS <span class="se">\ </
 <p><em>为了在擦除驱动器之前进行确认，请从命令中删除“ –-nointeraction”.
  * Mojave中新增了可选的––downloadassets标志.  它会下载安装过程中可能需要的资产，例如更新.
 </em>自Mojave以来，不推荐使用––applicationpath标志，如果使用该标志将引发错误.</p>
+<h4 id="download-older-os-versions">Download Older OS Versions<a class="headerlink" href="#download-older-os-versions" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>代号</th>
+<th>下载</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mac OS X 10.0</td>
+<td>猎豹  不适用</td>
+<td></td>
+</tr>
+<tr>
+<td>Mac OS X 10.1</td>
+<td>彪马</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>Mac OS X 10.2</td>
+<td>美洲虎</td>
+<td>在</td>
+</tr>
+<tr>
+<td>Mac OS X 10.3</td>
+<td>豹</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>Mac OS X 10.4</td>
+<td>老虎</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>Mac OS X 10.5</td>
+<td>豹纹</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>Mac OS X 10.6</td>
+<td>雪豹</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>Mac OS X 10.7</td>
+<td>狮子</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>OS X 10.8</td>
+<td>山狮</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>OS X 10.9</td>
+<td>小牛</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>OS X 10.10</td>
+<td>优胜美地</td>
+<td><a href="http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg">Direct Download</a></td>
+</tr>
+<tr>
+<td>OS X 10.11</td>
+<td>埃尔卡皮坦</td>
+<td><a href="http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg">Direct Download</a></td>
+</tr>
+<tr>
+<td>macOS 10.12</td>
+<td>塞拉利昂</td>
+<td><a href="http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg">Direct Download</a></td>
+</tr>
+<tr>
+<td>macOS 10.13</td>
+<td>高塞拉利昂</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>macOS 10.14</td>
+<td>莫哈韦沙漠</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>macOS 10.15</td>
+<td>卡塔琳娜</td>
+<td><a href="https://apps.apple.com/de/app/macos-catalina/id1466841314">App Store</a></td>
+</tr>
+</tbody>
+</table>
 <h3 id="kernel-extensions">Kernel Extensions<a class="headerlink" href="#kernel-extensions" title="Permanent link">&para;</a></h3>
 <h4 id="display-status-of-loaded-kernel-extensions">Display Status of Loaded Kernel Extensions<a class="headerlink" href="#display-status-of-loaded-kernel-extensions" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>须藤kextstat -l
@@ -13642,7 +13751,7 @@ sudo nvram boot-args <span class="o">=</span>“”
 </pre></div>
 
 <h3 id="save-dialogs">Save Dialogs<a class="headerlink" href="#save-dialogs" title="Permanent link">&para;</a></h3>
-<p>大大改善了保存对话框中现在相当慢的动画.
+<p>Significantly improve the now rather slow animation in save dialogs.
 <div class="codehilite"><pre><span></span>默认写入NSGlobalDomain NSWindowResizeTime .001
 </pre></div></p>
 <h3 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h3>
@@ -13676,10 +13785,10 @@ sudo nvram boot-args <span class="o">=</span>“”
 
 <h3 id="sidecar">Sidecar<a class="headerlink" href="#sidecar" title="Permanent link">&para;</a></h3>
 <h4 id="use-on-incompatible-macs">Use on Incompatible Macs<a class="headerlink" href="#use-on-incompatible-macs" title="Permanent link">&para;</a></h4>
-<p>根据机器的使用时间，此方法可能有效或无效.
+<p>根据机器的寿命，这可能会或可能不会起作用.
 <div class="codehilite"><pre><span></span><span class="c1">## Enable</span>
 默认写com.apple.sidecar.display AllowAllDevices -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
-defaults write com.apple.sidecar.display hasShownPref -bool <span class="nb">true</span>
+默认写com.apple.sidecar.display hasShownPref -bool <span class="nb">true</span>
 
 <span class="c1">## Disable (Default)</span>
 默认删除com.apple.sidecar.display
@@ -13728,7 +13837,7 @@ mdutil -i off -d / path / to / volume
 </pre></div>
 
 <h4 id="search-via-spotlight">Search via Spotlight<a class="headerlink" href="#search-via-spotlight" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>mdfind -name<span class="p">&amp;</span><span class="c1">#39;搜索词&amp;#39;</span>
+<div class="codehilite"><pre><span></span>mdfind -name<span class="p">&amp;</span><span class="c1">#39;searchterm&amp;#39;</span>
 </pre></div>
 
 <h4 id="show-spotlight-indexed-metadata">Show Spotlight Indexed Metadata<a class="headerlink" href="#show-spotlight-indexed-metadata" title="Permanent link">&para;</a></h4>
@@ -13737,11 +13846,11 @@ mdutil -i off -d / path / to / volume
 
 <h3 id="system-integrity-protection">System Integrity Protection<a class="headerlink" href="#system-integrity-protection" title="Permanent link">&para;</a></h3>
 <h4 id="disable-system-integrity-protection">Disable System Integrity Protection<a class="headerlink" href="#disable-system-integrity-protection" title="Permanent link">&para;</a></h4>
-<p>在按住<kbd>Cmd</kbd> + <kbd>R的</kbd>同时重新启动，打开终端应用程序，然后输入：
+<p>Reboot while holding <kbd>Cmd</kbd> + <kbd>R</kbd>, open the Terminal application and enter:
 <div class="codehilite"><pre><span></span>csrutil禁用<span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span>重新启动
 </pre></div></p>
 <h4 id="enable-system-integrity-protection">Enable System Integrity Protection<a class="headerlink" href="#enable-system-integrity-protection" title="Permanent link">&para;</a></h4>
-<p>在按住<kbd>Cmd</kbd> + <kbd>R的</kbd>同时重新启动，打开终端应用程序，然后输入：
+<p>Reboot while holding <kbd>Cmd</kbd> + <kbd>R</kbd>, open the Terminal application and enter:
 <div class="codehilite"><pre><span></span>csrutil启用<span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span>重新启动
 </pre></div></p>
 <h3 id="date-and-time">Date and Time<a class="headerlink" href="#date-and-time" title="Permanent link">&para;</a></h3>
@@ -13784,7 +13893,7 @@ chsh -s $（brew --prefix）/ bin / bash
 </pre></div></p>
 <ul>
 <li><a href="https://www.gnu.org/software/bash/">Homepage</a> -OS X和大多数其他基于Unix的操作系统的默认外壳.</li>
-<li><a href="https://github.com/Bash-it/bash-it">Bash-it</a> -社区Bash框架，例如Oh My Zsh for Bash.</li>
+<li><a href="https://github.com/Bash-it/bash-it">Bash-it</a> -社区Bash框架，例如Bash的Oh My Zsh.</li>
 </ul>
 <h4 id="fish">fish<a class="headerlink" href="#fish" title="Permanent link">&para;</a></h4>
 <p>安装最新版本并设置为当前用户的默认外壳程序：
@@ -13808,7 +13917,7 @@ chsh -s $（brew --prefix）/ bin / zsh
 <li><a href="http://www.zsh.org">Homepage</a> -Zsh是一种设计用于交互式使用的外壳程序，尽管它也是一种功能强大的脚本语言.</li>
 <li><a href="http://ohmyz.sh">Oh My Zsh</a> -用于管理Zsh配置的开源，社区驱动的框架.</li>
 <li><a href="https://github.com/sorin-ionescu/prezto">Prezto</a>  -快速的Zsh框架.  通过合理的默认值，别名，函数，自动完成和提示主题来丰富命令行界面环境.</li>
-<li><a href="https://github.com/tarjoilija/zgen">zgen</a>  -另一个用于管理zsh配置的开源框架.  Zgen将加载oh-my-zsh兼容的插件和主题，并具有更快和自动克隆配置中使用的所有插件的优势.</li>
+<li><a href="https://github.com/tarjoilija/zgen">zgen</a>  -另一个用于管理zsh配置的开源框架.  Zgen将加载与oh-my-zsh兼容的插件和主题，并具有更快和自动克隆配置中使用的所有插件的优势.</li>
 </ul>
 <h3 id="terminal-fonts">Terminal Fonts<a class="headerlink" href="#terminal-fonts" title="Permanent link">&para;</a></h3>
 <ul>
@@ -13816,10 +13925,10 @@ chsh -s $（brew --prefix）/ bin / zsh
 <li><a href="https://github.com/chrissimpkins/codeface">Codeface</a> -供开发人员使用的等距字体的库和存储库.</li>
 <li><a href="https://dejavu-fonts.github.io/">DejaVu Sans Mono</a> -基于Vera字体的字体家族.</li>
 <li><a href="http://sourcefoundry.org/hack/">Hack</a> -Hack经过手工修饰，并在视觉上保持平衡，可以成为您首选的代码.</li>
-<li><a href="http://levien.com/type/myfonts/inconsolata.html">Inconsolata</a> -用于代码清单等的等宽字体.</li>
-<li><a href="http://input.fontbureau.com">Input</a> -专门为代码设计的灵活字体系统.</li>
+<li><a href="http://levien.com/type/myfonts/inconsolata.html">Inconsolata</a> -等宽字体，设计用于代码清单等.</li>
+<li><a href="http://input.fontbureau.com">Input</a> -专为代码设计的灵活字体系统.</li>
 <li><a href="https://github.com/andreberg/Meslo-Font">Meslo</a> -Apple的Menlo字体的自定义版本.</li>
-<li><a href="https://www.typography.com/fonts/operator/overview/">Operator Mono</a> -对等宽字体（商业）的一种令人惊讶地有用的替代选择.</li>
+<li><a href="https://www.typography.com/fonts/operator/overview/">Operator Mono</a> -等宽字体（商业）的一种令人惊讶的可用替代方法.</li>
 <li><a href="https://github.com/powerline/fonts">Powerline Fonts</a> -Powerline插件的修补字体回购.</li>
 <li><a href="https://adobe-fonts.github.io/source-code-pro/">Source Code Pro</a> -用于用户界面和编码环境的等宽字体系列.</li>
 </ul>
@@ -13848,10 +13957,10 @@ chsh -s $（brew --prefix）/ bin / zsh
 <td>1.2v3（2000年10月27日）</td>
 </tr>
 <tr>
-<td>Mac OS X Developer Preview</td>
-<td>n/a</td>
-<td>March 16, 1999</td>
-<td>DP4 (April 5, 2000)</td>
+<td>Mac OS X开发人员预览</td>
+<td>不适用  1999年3月16日</td>
+<td>DP4（2000年4月5日）</td>
+<td></td>
 </tr>
 <tr>
 <td>Mac OS X公开Beta版</td>
@@ -13903,9 +14012,9 @@ chsh -s $（brew --prefix）/ bin / zsh
 </tr>
 <tr>
 <td>Mac OS X 10.7</td>
-<td>Lion</td>
-<td>July 20, 2011</td>
-<td>10.7.5 (September 19, 2012)</td>
+<td>狮子</td>
+<td>2011年7月20日</td>
+<td>10.7.5（2012年9月19日）</td>
 </tr>
 <tr>
 <td>OS X 10.8</td>
@@ -13933,15 +14042,15 @@ chsh -s $（brew --prefix）/ bin / zsh
 </tr>
 <tr>
 <td>macOS 10.12</td>
-<td>塞拉利昂  2016年9月20日</td>
+<td>塞拉利昂</td>
+<td>2016年9月20日</td>
 <td>10.12.6（16G29）（2017年7月19日）</td>
-<td></td>
 </tr>
 <tr>
 <td>macOS 10.13</td>
-<td>高山脉  2017年9月25日</td>
+<td>高塞拉利昂</td>
+<td>2017年9月25日</td>
 <td>10.13.6（17G65）（2018年7月9日）</td>
-<td></td>
 </tr>
 <tr>
 <td>macOS 10.14</td>
