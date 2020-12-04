@@ -6831,129 +6831,130 @@
 
 <p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890694312814945" data-ad-slot="5473692530" data-ad-format="auto"  data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></p>
 <h2 id="progressive-enhancement-resources">Progressive Enhancement Resources <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a><a class="headerlink" href="#progressive-enhancement-resources" title="Permanent link">&para;</a></h2>
-<p>关于渐进增强的全面资源集合.  从概念和策略到特征检测和测试方法.  完成（代码）示例列表.</p>
+<p>有关渐进增强的资源的全面收集. 从概念和策略到功能检测和测试方法. 完整列出（代码）示例.</p>
 <h2 id="the-concept">The Concept<a class="headerlink" href="#the-concept" title="Permanent link">&para;</a></h2>
-<p><a href="https://en.wikipedia.org/wiki/Progressive_enhancement">Progressive Enhancement</a>  意味着在验证目标环境（例如浏览器）能够实现之后逐渐改善用户体验.  从内容开始，确保您保持功能和可访问性.</p>
+<p><a href="https://en.wikipedia.org/wiki/Progressive_enhancement">Progressive Enhancement</a> 表示在验证目标环境（例如，浏览器）具备的能力之后，逐渐改善其用户体验. 从内容开始，并确保您保持功能和可访问性.</p>
 <ul>
-<li><a href="https://www.nngroup.com/articles/enhancement/">The Role of Enhancement in Web Design</a> - 从增强的概念到丰富用户界面的标准和规则.</li>
-<li><a href="http://alistapart.com/article/understandingprogressiveenhancement">Understanding Progressive Enhancement</a> - 以层层叠叠的智能方式应用技术，创造出令人惊叹的体验.</li>
-<li><a href="https://www.filamentgroup.com/dwpe/">Designing with Progressive Enhancement</a> -  <em>关于渐进增强的书</em>（400多页）.</li>
-<li><a href="http://diveinto.html5doctor.com/detect.html">Detecting (HTML5) features</a> - 通过示例和演示介绍不同的特征检测技术. </li>
-<li><a href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/">Progressive Web Apps</a> - 将网站增强为类似本机的应用程序（渐进式，非混合型）.</li>
+<li><a href="https://www.nngroup.com/articles/enhancement/">The Role of Enhancement in Web Design</a> -从增强的概念到丰富用户界面的标准和规则.</li>
+<li><a href="http://alistapart.com/article/understandingprogressiveenhancement">Understanding Progressive Enhancement</a> -以智能的方式逐层应用技术，以创造惊人的体验.</li>
+<li><a href="https://www.filamentgroup.com/dwpe/">Designing with Progressive Enhancement</a> -<em>有关渐进增强的书</em>（超过400页）.</li>
+<li><a href="http://diveinto.html5doctor.com/detect.html">Detecting (HTML5) features</a> -通过示例和演示介绍不同的特征检测技术. </li>
+<li><a href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/">Progressive Web Apps</a> -将网站增强为类似本机的应用程序（渐进式，非混合式）.</li>
 </ul>
 <h2 id="strategies">Strategies<a class="headerlink" href="#strategies" title="Permanent link">&para;</a></h2>
-<p>您可以通过不同方式应用渐进增强：</p>
+<p>您可以采用不同的方式应用渐进增强：</p>
 <ul>
-<li><a href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement#make-the-page-usable-with-only-html">Make the page usable with only HTML</a> - 这为每个设备和浏览器设置基线.</li>
-<li><a href="http://alistapart.com/article/testdriven">Test Driven Progressive Enhancement</a> - 测试功能后，核心功能体验得到增强.</li>
-<li><a href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard">Cut the mustard</a> - 设置增强功能集合的阈值.</li>
+<li><a href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement#make-the-page-usable-with-only-html">Make the page usable with only HTML</a> -这将为每个设备和浏览器设置基准.</li>
+<li><a href="http://alistapart.com/article/testdriven">Test Driven Progressive Enhancement</a> -经过测试的功能增强了核心功能体验.</li>
+<li><a href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard">Cut the mustard</a> -设置收集增强的阈值.</li>
 <li>[等级组件，而不是浏览器]（<a href="https://www.filamentgroup.com/lab/grade-the-components.html">https://www.filamentgroup.com/lab/grade-the-components.html</a>
-） - 组件级功能测试和增强功能.</li>
-<li><a href="http://www.html5rocks.com/en/tutorials/detection/">Feature vs Browser vs Form factor detection</a> - 作为将应用程序调整到其环境的不同策略.</li>
-<li><a href="https://www.smashingmagazine.com/2014/07/server-side-device-detection-with-javascript/">Server-side device detection</a> - 使用用户代理和其他HTTP标头信息与设备数据库结合有条件地提供文件.</li>
-<li><a href="https://addyosmani.com/blog/writing-polyfills/">Writing polyfills</a> - 如果某些浏览器的基线仍然太高，请考虑 <a href="https://remysharp.com/2010/10/08/what-is-a-polyfill">polyfills</a> （又名 <a href="https://twitter.com/SlexAxton/status/25600963629">Regressive Enhancement</a>).</li>
-<li><a href="https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73">Application Shell Architecture</a> - 即时加载Web应用程序的设置.</li>
+）-组件级功能测试和增强.</li>
+<li><a href="http://www.html5rocks.com/en/tutorials/detection/">Feature vs Browser vs Form factor detection</a> -作为将您的应用调整到其环境的不同策略.</li>
+<li><a href="https://www.smashingmagazine.com/2014/07/server-side-device-detection-with-javascript/">Server-side device detection</a> -结合使用用户代理和其他HTTP标头信息和设备数据库来有条件地提供文件.</li>
+<li><a href="https://addyosmani.com/blog/writing-polyfills/">Writing polyfills</a> -如果您的基准对于某些浏览器仍然过高，请考虑 <a href="https://remysharp.com/2010/10/08/what-is-a-polyfill">polyfills</a> （又名 <a href="https://twitter.com/SlexAxton/status/25600963629">Regressive Enhancement</a>).</li>
+<li><a href="https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73">Application Shell Architecture</a> -设置为即时加载Web应用程序.</li>
 </ul>
 <h2 id="feature-detection">Feature Detection<a class="headerlink" href="#feature-detection" title="Permanent link">&para;</a></h2>
-<p>在尝试增强体验之前，您需要确保环境能够增强.  您可以通过执行功能检测来测试它：</p>
+<p>在尝试增强体验之前，需要确保环境能够进行增强. 您可以通过执行功能检测来对此进行测试：</p>
 <ul>
-<li><a href="https://www.sitepoint.com/an-introduction-to-css-supports-rule-feature-queries/">CSS feature queries</a> (<a href="https://developer.mozilla.org/en/docs/Web/API/CSS/supports"><code>CSS.supports()</code></a> &amp; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"><code>@supports()</code></a>） - 使用JS方法或CSS声明本地测试是否支持特定的CSS功能.</li>
-<li><a href="https://www.npmjs.com/package/feature-detect-es6">Feature Detect ES6</a> - 检测哪些ES2015功能可用.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/requiredFeatures">SVG requiredFeatures</a> - 只有当<code>[requiredFeatures]</code>求值为true时才渲染SVG元素.</li>
-<li><a href="https://modernizr.com/">Modernizr</a> - 广泛的功能检测套件（支持自定义构建）.</li>
-<li><a href="http://featurejs.com/">Feature.js</a> - 轻量级功能检测套件.</li>
-<li><a href="http://conditionerjs.com/">Conditioner.js</a> - 根据HTML属性中的指令有条件地加载JS模块.</li>
-<li><a href="https://www.filamentgroup.com/lab/introducing-enhancejs-smarter-safer-apply-progressive-enhancement.html">EnhanceJS</a> - 允许您在设置预定义功能测试后异步加载CSS和JS.</li>
+<li><a href="https://www.sitepoint.com/an-introduction-to-css-supports-rule-feature-queries/">CSS feature queries</a> (<a href="https://developer.mozilla.org/en/docs/Web/API/CSS/supports"><code>CSS.supports()</code></a> &amp; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"><code>@supports()</code></a>）-使用JS方法或CSS声明，本地测试是否支持特定的CSS功能.</li>
+<li><a href="https://www.npmjs.com/package/feature-detect-es6">Feature Detect ES6</a> -检测哪些ES2015功能可用.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/requiredFeatures">SVG requiredFeatures</a> -仅在其[requiredFeatures]评估为true时才渲染SVG元素.</li>
+<li><a href="https://modernizr.com/">Modernizr</a> -广泛的功能检测套件（支持自定义版本）.</li>
+<li><a href="http://featurejs.com/">Feature.js</a> -轻量级功能检测套件.</li>
+<li><a href="http://conditionerjs.com/">Conditioner.js</a> -根据HTML属性中的指令有条件地加载JS模块.</li>
+<li><a href="https://www.filamentgroup.com/lab/introducing-enhancejs-smarter-safer-apply-progressive-enhancement.html">EnhanceJS</a> -让您在一组预定义的功能测试后异步加载CSS和JS.</li>
 </ul>
 <h2 id="support-tables">Support Tables<a class="headerlink" href="#support-tables" title="Permanent link">&para;</a></h2>
-<p>不同的环境（平台，浏览器，版本）具有不同的功能.  支持表告诉您每个环境具有哪些功能.  了解支持级别可以帮助您权衡增强与其实施的努力和影响.</p>
+<p>不同的环境（平台，浏览器，版本）具有不同的功能. 支持表告诉您每种环境具有哪些功能. 了解支持级别可以帮助您权衡一项增强与实现的努力和影响.</p>
 <ul>
-<li><a href="https://platform.html5.org/">The Web Platform</a> - 浏览器技术概述，包含指向文档和测试套件的链接.</li>
-<li><a href="http://caniuse.com/">Can I use ...?</a> - 比较桌面和移动浏览器的功能实现和限制.</li>
-<li><a href="http://www.iwanttouse.com/">I want to use ...</a> - 找出浏览器对功能组合的支持.</li>
-<li><a href="http://html5test.com/">HTML5 Test</a> - 测试和比较跨浏览器的HTML5功能支持.</li>
-<li><a href="http://css3test.com/">CSS3 Test</a> -  CSS3的细粒度测试功能支持您当前的浏览器.</li>
-<li><a href="https://github.com/bramstein/stateofwebtype">State of Web Type</a> - 支持Web上的类型和印刷功能表.</li>
-<li><a href="http://fontfamily.io/">Font Family Reunion</a> - 默认本地（系统）字体的兼容性表.</li>
-<li><a href="http://html5accessibility.com/">HTML5 Accessibility</a> - 比较HTML5标签的功能支持，主要浏览器的输入类型和属性. </li>
-<li><a href="https://www.powermapper.com/tests/screen-readers/aria/">WAI-ARIA Screen reader compatibility</a> -  ARIA角色和属性支持不同的屏幕阅读器和浏览器组合.</li>
-<li><a href="https://whatwebcando.today/">What web can do today</a> - 列出并检查现代Web API，例如访问设备系统，传感器和执行器.</li>
-<li><a href="https://nolanlawson.github.io/html5workertest/">HTML5 Worker test</a> - 比较浏览器中Web Workers和Service Workers支持的API.</li>
-<li><a href="http://html5please.com/">HTML5 Please</a> - 探索功能，包括建议和填充物的链接.</li>
-<li><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/catalog/">API Catalog</a> - 允许您比较主要桌面浏览器中API规范的实现.</li>
-<li><a href="http://kangax.github.io/compat-table/">Kangax's ECMAScript compatibility table</a> - 跨浏览器和其他运行时的JavaScript功能支持概述.</li>
-<li><a href="http://node.green/">Node compatibility table</a> - 跨NodeJS版本的JavaScript功能支持概述.</li>
-<li><a href="https://jakearchibald.github.io/isserviceworkerready/">Is service worker ready?</a> - 支持Progressive Web Apps背后的核心技术所涉及的所有功能的概述.</li>
-<li><a href="https://ispwaready.toxicjohann.com/">Is PWA ready?</a> - 针对流行的全球和许多中国浏览器支持Progressive Web Apps背后的核心和相关技术的概述.</li>
-<li><a href="http://iswebrtcreadyyet.com/">Is WebRTC ready yet?</a> - 支持实时通信背后的不同浏览器功能的概述.</li>
-<li><a href="https://iswebvrready.org/">Is WebVR ready?</a> - 支持WebVR背后不同浏览器功能的概述，包括显示，游戏手柄，音频和语音API.</li>
+<li><a href="https://platform.html5.org/">The Web Platform</a> -浏览器技术概述以及指向文档和测试套件的链接.</li>
+<li><a href="http://caniuse.com/">Can I use ...?</a> -比较台式机和移动浏览器的功能实现和限制.</li>
+<li><a href="http://www.iwanttouse.com/">I want to use ...</a> -找出浏览器对功能组合的支持.</li>
+<li><a href="http://html5test.com/">HTML5 Test</a> -测试和比较跨浏览器的HTML5功能支持.</li>
+<li><a href="http://css3test.com/">CSS3 Test</a> -当前浏览器对CSS3功能支持的细粒度测试.</li>
+<li><a href="https://github.com/bramstein/stateofwebtype">State of Web Type</a> -网络上的类型和印刷功能的支持表.</li>
+<li><a href="http://fontfamily.io/">Font Family Reunion</a> -默认本地（系统）字体的兼容性表.</li>
+<li><a href="http://html5accessibility.com/">HTML5 Accessibility</a> -比较主要浏览器对HTML5标签，输入类型和属性的功能支持. </li>
+<li><a href="https://www.powermapper.com/tests/screen-readers/aria/">WAI-ARIA Screen reader compatibility</a> -ARIA角色和属性支持不同的屏幕阅读器和浏览器组合.</li>
+<li><a href="https://whatwebcando.today/">What web can do today</a> -列出并检查现代Web API，例如访问设备系统，传感器和执行器.</li>
+<li><a href="https://nolanlawson.github.io/html5workertest/">HTML5 Worker test</a> -比较跨浏览器的Web Workers和Service Workers支持哪些API.</li>
+<li><a href="http://html5please.com/">HTML5 Please</a> -通过推荐功能和指向Polyfill的链接来探索功能.</li>
+<li><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/catalog/">API Catalog</a> -让您比较主要桌面浏览器中API规范的实现.</li>
+<li><a href="http://kangax.github.io/compat-table/">Kangax's ECMAScript compatibility table</a> -跨浏览器和其他运行时的JavaScript功能支持概述.</li>
+<li><a href="http://node.green/">Node compatibility table</a> -跨NodeJS版本的JavaScript功能支持概述.</li>
+<li><a href="https://jakearchibald.github.io/isserviceworkerready/">Is service worker ready?</a> -对渐进式Web应用程序背后的核心技术所涉及的所有功能的支持概述.</li>
+<li><a href="https://ispwaready.toxicjohann.com/">Is PWA ready?</a> -渐进式Web应用程序背后的核心和相关技术对流行的全球和许多中文浏览器的支持概述.</li>
+<li><a href="http://iswebrtcreadyyet.com/">Is WebRTC ready yet?</a> -实时通信背后对不同浏览器功能的支持概述.</li>
+<li><a href="https://iswebvrready.org/">Is WebVR ready?</a> -WebVR背后对各种浏览器功能的支持概述，包括显示，游戏手柄，音频和语音API.</li>
+<li><a href="https://ishoudinireadyyet.com/">Is Houdini ready yet?</a> -跨浏览器对Houdini（支持CSS渲染引擎一部分的低级API）的支持概述.</li>
 <li><a href="https://www.chromestatus.com/features">Chrome Platform Status</a></li>
 <li><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Edge Platform Status</a></li>
 <li><a href="https://platform-status.mozilla.org/">Firefox Platform Status</a></li>
 <li><a href="https://webkit.org/status/">Webkit Platform Status</a> （苹果浏览器）</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/MDN/Contribute/Structures/Compatibility_tables">MDN Compatibility tables</a> -  MDN的Web技术文档在每篇文章末尾都有一个浏览器兼容性表.</li>
-<li><a href="https://github.com/mdn/browser-compat-data">MDN Browser Compat Data</a> -  npm模块为MDN兼容性表提供支持.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/MDN/Contribute/Structures/Compatibility_tables">MDN Compatibility tables</a> -MDN的网络技术文档在每篇文章的末尾都有一个浏览器兼容性表.</li>
+<li><a href="https://github.com/mdn/browser-compat-data">MDN Browser Compat Data</a> -npm模块为MDN兼容性表供电.</li>
 <li><a href="https://github.com/scottjehl/Device-Bugs">Device Bugs &amp; Quirks</a> - Crowd sourced collection of weird HTML, CSS, and JS quirks in mobile devices, which you won't find in the other support tables.</li>
-<li><a href="https://www.caniemail.com/">Can I Email?</a>   - 支持电子邮件中HTML和CSS的表格.  灵感来自 <a href="http://caniuse.com/">Can I use</a>.</li>
+<li><a href="https://www.caniemail.com/">Can I Email?</a>  -电子邮件中HTML和CSS的支持表. 受启发 <a href="http://caniuse.com/">Can I use</a>.</li>
 </ul>
 <h2 id="testing-methods">Testing Methods<a class="headerlink" href="#testing-methods" title="Permanent link">&para;</a></h2>
-<p>通过渐进增强，您可以支持不同环境中的不同体验  这些是测试所有这些变化的一些方法：</p>
+<p>通过逐步增强，您可以在不同的环境中支持不同的体验. 这些是测试所有这些变体的方法：</p>
 <ul>
-<li><a href="https://opendevicelab.com/">Open Device Lab</a> - 让您<em>在实际设备上手动测试</em>（免费）.</li>
-<li><a href="https://dev.opera.com/articles/making-sites-work-opera-mini/#testing-in-opera-mini">Testing in Opera Mini</a>   - 下载应用程序，在桌面上模拟，设置以测试本地网站.  （Opera Mini占全球浏览器使用率的5％以上）</li>
-<li><a href="https://curl.haxx.se/docs/manual.html">cURL</a> - 用于查看页面的预呈现源代码的网页.</li>
-<li><a href="https://www.browserling.com/">Browserling</a> - 允许您在Windows和Android平台上手动测试不同版本浏览器中的网页.</li>
-<li><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/mac/">Run Internet Explorer using Virtual Machines</a> - 在其他平台上测试IE浏览器.</li>
+<li><a href="https://opendevicelab.com/">Open Device Lab</a> -让您<em>在实际设备上手动测试</em>（免费）.</li>
+<li><a href="https://dev.opera.com/articles/making-sites-work-opera-mini/#testing-in-opera-mini">Testing in Opera Mini</a>  -下载该应用程序，在桌面上模拟，设置以测试本地网站.  （Opera Mini占全球浏览器使用量的5％以上）</li>
+<li><a href="https://curl.haxx.se/docs/manual.html">cURL</a> -网页以查看页面的预渲染源代码.</li>
+<li><a href="https://www.browserling.com/">Browserling</a> -可让您在Windows和Android平台上的不同版本的浏览器中手动测试网页.</li>
+<li><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/mac/">Run Internet Explorer using Virtual Machines</a> -在其他平台上测试IE浏览器.</li>
 <li><a href="https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/testing-other-browsers?hl=en#device-emulators-and-simulators">Device emulators and simulators</a></li>
-<li><a href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities">Configure <em>Desired Capabilities</em> in Selenium</a> - 在不同的场景中运行自动浏览器测试.
-*使用不同浏览器连续运行自动化测试 <a href="https://www.browserstack.com/">BrowserStack</a>, <a href="https://saucelabs.com/">Saucelabs</a> 或其他替代方案.</li>
-<li><a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a> - 审计和测试Progressive Web Apps的性能（通过cli或 <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Chrome extension</a>).</li>
-<li><a href="http://adaptivewebdesign.info/1st-edition/read/chapter-6.html#the-progressive-enhancement-checklist">Progressive Enhancement checklist (1<sup>st</sup> edition, HTML)</a>, <a href="http://adaptivewebdesign.info/2nd-edition/checklist.pdf">Checklist of 2<sup>nd</sup> edition (PDF)</a>   - 可操作的列表，用于检查您是否已应用渐进增强最佳实践.  部分 <a href="http://adaptivewebdesign.info/">Adaptive Web Design book</a>.</li>
-<li><a href="https://chrome.google.com/webstore/detail/css-feature-toggles/aeinmfddnniiloadoappmdnffcbffnjg">CSS Feature Toggles</a> -  Chrome DevTools扩展，用于切换对所选CSS功能的支持，以测试渐进增强回退.</li>
+<li><a href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities">Configure <em>Desired Capabilities</em> in Selenium</a> -在不同情况下运行自动浏览器测试.
+*使用以下工具在不同的浏览器中连续运行自动化测试 <a href="https://www.browserstack.com/">BrowserStack</a>, <a href="https://saucelabs.com/">Saucelabs</a> 或其他选择.</li>
+<li><a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a> -审核和衡量渐进式Web应用程序的性能（通过cli或 <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Chrome extension</a>).</li>
+<li><a href="http://adaptivewebdesign.info/1st-edition/read/chapter-6.html#the-progressive-enhancement-checklist">Progressive Enhancement checklist (1<sup>st</sup> edition, HTML)</a>, <a href="http://adaptivewebdesign.info/2nd-edition/checklist.pdf">Checklist of 2<sup>nd</sup> edition (PDF)</a>  -可操作的列表，以检查您是否已应用渐进增强最佳实践. 部分 <a href="http://adaptivewebdesign.info/">Adaptive Web Design book</a>.</li>
+<li><a href="https://chrome.google.com/webstore/detail/css-feature-toggles/aeinmfddnniiloadoappmdnffcbffnjg">CSS Feature Toggles</a> -Chrome DevTools扩展程序可切换对所选CSS功能的支持，以测试渐进式增强后备.</li>
 </ul>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="custom-form-elements">Custom Form Elements<a class="headerlink" href="#custom-form-elements" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://www.sitepoint.com/replacing-radio-buttons-without-replacing-radio-buttons/">Fancy radio buttons</a> - 基于HTML单选按钮，使用CSS伪类和元素进行可视化增强.</li>
-<li><a href="https://www.filamentgroup.com/dwpe/checkbox-radiobutton/">Checkboxes &amp; radio buttons</a>   - 具有自定义焦点，悬停和检查状态.  异步增强.</li>
-<li><a href="https://ghinda.net/css-toggle-switch/">Toggle switch</a> - 复选框或无线电，仅使用CSS可视化增强到滑动切换开关.</li>
-<li><a href="http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/">5-star rating</a> - 基于HTML单选按钮，使用CSS伪类和元素进行可视化增强.</li>
-<li><a href="https://github.com/filamentgroup/jQuery-Slider">jQuery slider</a> - 基于标准HTML选择的可访问的自定义滑块小部件.</li>
-<li><a href="https://www.filamentgroup.com/lab/jquery-custom-file-input-book-designing-with-progressive-enhancement.html">jQuery custom file input</a> - 文章和图书馆.</li>
-<li><a href="https://github.com/ghengeveld/react-isomorphic-form/">React isomorphic form</a>   - 一组React表单组件，可以在服务器端预呈现和处理.  它们在客户端增强而不会丢失状态.</li>
+<li><a href="https://www.sitepoint.com/replacing-radio-buttons-without-replacing-radio-buttons/">Fancy radio buttons</a> -基于HTML单选按钮，使用CSS伪类和元素在视觉上进行了增强.</li>
+<li><a href="https://www.filamentgroup.com/dwpe/checkbox-radiobutton/">Checkboxes &amp; radio buttons</a>  -具有自定义焦点，悬停和检查状态. 异步增强.</li>
+<li><a href="https://ghinda.net/css-toggle-switch/">Toggle switch</a> -复选框或单选按钮，在视觉上已增强为仅使用CSS的滑动切换开关.</li>
+<li><a href="http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/">5-star rating</a> -基于HTML单选按钮，使用CSS伪类和元素在视觉上进行了增强.</li>
+<li><a href="https://github.com/filamentgroup/jQuery-Slider">jQuery slider</a> -基于标准HTML选择的可访问的自定义滑块小部件.</li>
+<li><a href="https://www.filamentgroup.com/lab/jquery-custom-file-input-book-designing-with-progressive-enhancement.html">jQuery custom file input</a> -文章和图书馆.</li>
+<li><a href="https://github.com/ghengeveld/react-isomorphic-form/">React isomorphic form</a>  -一组可在服务器端预先渲染和处理的React表单组件. 它们是增强的客户端，不会丢失状态.</li>
 </ul>
 <h3 id="data-visualisations">Data Visualisations<a class="headerlink" href="#data-visualisations" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://css-tricks.com/progressive-enhancement-data-visualizations/">Timeline</a> - 从定义列表到SVG插图（带演示的文章）.</li>
-<li><a href="https://www.filamentgroup.com/lab/update-to-jquery-visualize-accessible-charts-with-html5-from-designing-with.html">Charts</a> - 使用HTML5画布（文章和库）从数据表到主题图表.</li>
+<li><a href="https://css-tricks.com/progressive-enhancement-data-visualizations/">Timeline</a> -从定义列表到SVG插图（带有演示的文章）.</li>
+<li><a href="https://www.filamentgroup.com/lab/update-to-jquery-visualize-accessible-charts-with-html5-from-designing-with.html">Charts</a> -从数据表到使用HTML5画布（主题和库）的主题图表.</li>
 </ul>
 <h3 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="http://filamentgroup.github.io/responsive-carousel/test/functional/fade-auto.html">Responsive Carousel</a> - 增强到具有各种行为选项的响应轮播的图像列表.</li>
-<li><a href="https://github.com/tvler/lazy-progressive-enhancement">Lazy Progressive Enhancement</a>   - 懒惰加载<code>里面的图像 &lt;noscript&gt;</code>标签.  （注意：仅限常绿浏览器）</li>
+<li><a href="http://filamentgroup.github.io/responsive-carousel/test/functional/fade-auto.html">Responsive Carousel</a> -具有各种行为选项的增强到响应式轮播中的图像列表.</li>
+<li><a href="https://github.com/tvler/lazy-progressive-enhancement">Lazy Progressive Enhancement</a>  -内懒加载图片<noscript>标签.  （注意：仅常绿浏览器）</li>
 </ul>
 <h3 id="menus">Menus<a class="headerlink" href="#menus" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="http://heydonworks.com/practical_aria_examples/#hamburger">Progressive hamburger menu</a> - 页脚链接列表增强到画布外菜单.</li>
+<li><a href="http://heydonworks.com/practical_aria_examples/#hamburger">Progressive hamburger menu</a> -页脚中的链接列表已增强到非画布菜单.</li>
 </ul>
 <h3 id="page-navigation">Page Navigation<a class="headerlink" href="#page-navigation" title="Permanent link">&para;</a></h3>
 <p>使用ajax和<code>history.pushState</code>在静态页面之间异步获取和转换：</p>
 <ul>
-<li><a href="http://barbajs.org/">Barba.js</a> - 使用事件挂钩，缓存和预取支持添加页面转换.</li>
-<li><a href="https://github.com/miguel-perez/smoothState.js">SmoothState.js</a>   - 使用事件挂钩，缓存和预取支持添加页面转换.  （需要jQuery）.</li>
-<li><a href="https://github.com/MoOx/pjax">MoOx/pjax</a> - 类似于jquery-pjax，但没有jQuery依赖.</li>
-<li><a href="https://github.com/turbolinks/turbolinks">Turbolinks</a>   - 使用事件挂钩和缓存支持添加页面转换.  具有适配器以绑定到iOS和Android上的本机导航控件.</li>
+<li><a href="http://barbajs.org/">Barba.js</a> -添加具有事件挂钩，缓存和预取支持的页面转换.</li>
+<li><a href="https://github.com/miguel-perez/smoothState.js">SmoothState.js</a>  -添加具有事件挂钩，缓存和预取支持的页面转换.  （需要jQuery）.</li>
+<li><a href="https://github.com/MoOx/pjax">MoOx/pjax</a> -与jquery-pjax类似，但没有jQuery依赖性.</li>
+<li><a href="https://github.com/turbolinks/turbolinks">Turbolinks</a>  -添加带有事件挂钩和缓存支持的页面过渡. 具有可绑定到iOS和Android上的本机导航控件的适配器.</li>
 </ul>
 <h2 id="related-articles">Related Articles<a class="headerlink" href="#related-articles" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://hacks.mozilla.org/2016/07/make-the-web-work-for-everyone/">Make the web work for everyone</a> - 请开发人员考虑浏览器差异并构建弹性网络.</li>
-<li><a href="https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/">How many people are missing out on JavaScript enhancement?</a> - 研究为什么1.1％的页面访问JavaScript未加载. </li>
+<li><a href="https://hacks.mozilla.org/2016/07/make-the-web-work-for-everyone/">Make the web work for everyone</a> -恳请开发人员考虑浏览器的差异并构建具有弹性的网站.</li>
+<li><a href="https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/">How many people are missing out on JavaScript enhancement?</a> -研究为何在1.1％的网页访问中未加载JavaScript. </li>
 </ul>
 <hr />
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" /></a></p>
-<p><a href="https://twitter.com/jbmoelker">Jasper Moelker</a> 在法律允许的范围内，根据版权法放弃全球范围内对本作品的所有权利，包括所有相关和邻接权利.</p>
-<p>您可以复制，修改，分发和执行工作，即使是出于商业目的，也可以不经许可.</p>
+<p><a href="https://twitter.com/jbmoelker">Jasper Moelker</a> 在法律允许的范围内，放弃在全球范围内根据版权法享有此作品的所有权利，包括所有相关和邻接权.</p>
+<p>您可以复制，修改，分发和执行作品，甚至出于商业目的，而无需征求许可.</p>
                 
                   
                 

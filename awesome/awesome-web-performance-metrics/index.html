@@ -7045,7 +7045,7 @@
 <p>-实验室：DNS性能测试工具
 -领域：IE9 +，Safari 9+</p>
 <div class="codehilite"><pre><span></span><span class="c1">//测量DNS查找时间</span>
-<span class="kd">var</span> <span class="nx">pageNav</span> <span class="o">=</span> <span class="nx">performance</span><span class="p">.</span><span class="nx">getEntriesByType</span><span class="err">（“</span> <span class="nx">navigation</span><span class="err">”）</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">pageNav</span> <span class="o">=</span> <span class="nx">performance</span><span class="p">.</span><span class="nx">getEntriesByType</span><span class="err">（“</span> <span class="nx">navigation</span><span class="err">”）</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
 <span class="kd">var</span> <span class="nx">dnsTime</span> <span class="o">=</span> <span class="nx">pageNav</span><span class="p">.</span><span class="nx">domainLookupEnd</span><span class="o">-</span><span class="nx">pageNav</span><span class="p">.</span><span class="nx">domainLookupStart</span><span class="p">;</span>
 </pre></div>
 
@@ -7053,12 +7053,12 @@
 <p>-实验室：请参阅 <a href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs</a> 进行审核
 -领域：IE9 +，Safari 9+</p>
 <div class="codehilite"><pre><span></span><span class="c1">//量化总连接时间</span>
-<span class="kd">var</span> <span class="nx">pageNav</span> <span class="o">=</span> <span class="nx">performance</span><span class="p">.</span><span class="nx">getEntriesByType</span><span class="err">（“</span> <span class="nx">navigation</span><span class="err">”）</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">pageNav</span> <span class="o">=</span> <span class="nx">performance</span><span class="p">.</span><span class="nx">getEntriesByType</span><span class="err">（“</span> <span class="nx">navigation</span><span class="err">”）</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
 <span class="kd">var</span> <span class="nx">connectionTime</span> <span class="o">=</span> <span class="nx">pageNav</span><span class="p">.</span><span class="nx">connectEnd</span><span class="o">-</span><span class="nx">pageNav</span><span class="p">.</span><span class="nx">connectStart</span><span class="p">;</span>
- <span class="kd">var</span> <span class="nx">tlsTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// &amp;lt;-默认为0</span>
+ <span class="kd">var</span> <span class="nx">tlsTime</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>  <span class="c1">// &amp;lt;-默认为0</span>
 
 <span class="c1">//是否发生了TLS错误？</span>
-<span class="nx">如果</span><span class="err">（</span><span class="nx">pageNav</span><span class="p">.</span><span class="nx">secureConnectionStart</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">0</span><span class="err">）</span><span class="p">{</span>
+<span class="nx">如果</span><span class="err">（</span><span class="nx">pageNav</span><span class="p">.</span><span class="nx">secureConnectionStart</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mf">0</span><span class="err">）</span><span class="p">{</span>
    <span class="c1">//太棒了！  计算吧！</span>
   <span class="nx">tlsTime</span> <span class="o">=</span> <span class="nx">pageNav</span><span class="p">.</span><span class="nx">connectEnd</span><span class="o">-</span><span class="nx">pageNav</span><span class="p">.</span><span class="nx">secureConnectionStart</span><span class="p">;</span>
 <span class="p">}</span>

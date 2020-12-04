@@ -6630,13 +6630,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    License
-  </a>
-  
-</li>
-      
       
       
       
@@ -6666,24 +6659,26 @@
 <h2 id="awesome-scientific-computing">Awesome Scientific Computing <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a><a class="headerlink" href="#awesome-scientific-computing" title="Permanent link">&para;</a></h2>
 <p>&gt;用于科学计算和数值分析的有用资源.</p>
 <p>科学计算和数值分析是旨在提供
-借助以下方法解决各个科学领域的大规模问题的方法
- 电脑.  典型的问题是常微分方程和偏微分方程（ODE，
+借助以下方法解决科学各个领域的大规模问题的方法
+电脑. 典型的问题是常微分方程和偏微分方程（ODE，
 PDE），离散化和线性代数问题的解
 them.</p>
 <h2 id="basic-linear-algebra">Basic linear algebra<a class="headerlink" href="#basic-linear-algebra" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.netlib.org/blas/">BLAS</a> -用于执行基本矢量和矩阵运算的标准构件.
   （Fortran，公共领域， <a href="https://github.com/Reference-LAPACK/lapack/tree/master/BLAS">GitHub</a>)</li>
-<li><a href="https://www.openblas.net">OpenBLAS</a> -基于GotoBLAS2的优化的BLAS库.
+<li><a href="https://www.openblas.net">OpenBLAS</a> -基于GotoBLAS2的优化BLAS库.
   （C和汇编，BSD， <a href="https://github.com/xianyi/OpenBLAS">GitHub</a>)</li>
 <li><a href="https://github.com/flame/blis">BLIS</a> -类似于BLAS的高性能密集线性代数库.
   （C，BSD，GitHub）</li>
-<li><a href="https://www.netlib.org/lapack/">LAPACK</a> -求解线性方程组，线性最小二乘法，特征值问题等的例程.
+<li><a href="https://www.netlib.org/lapack/">LAPACK</a> -求解线性方程组，线性最小二乘，特征值问题等的例程.
   （Fortran，BSD， <a href="https://github.com/Reference-LAPACK/lapack">GitHub</a>)</li>
-<li><a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen</a> -线性代数的C ++模板库.
+<li><a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen</a> -用于线性代数的C ++模板库.
   （C ++，MPL 2， <a href="https://gitlab.com/libeigen/eigen">GitLab</a>)</li>
 <li><a href="https://ginkgo-project.github.io/">Ginkgo</a> -高性能manycore线性代数库，专注于稀疏系统.
   （C ++，BSD， <a href="https://github.com/ginkgo-project/ginkgo">GitHub</a>)</li>
+<li><a href="https://bitbucket.org/blaze-lib/blaze">blaze</a> -用于密集和稀疏算术的高性能C ++数学库.
+  （C ++，BSD，Bitbucket）</li>
 </ul>
 <h2 id="multi-purpose-toolkits">Multi-purpose toolkits<a class="headerlink" href="#multi-purpose-toolkits" title="Permanent link">&para;</a></h2>
 <ul>
@@ -6691,15 +6686,15 @@ them.</p>
   （C，2句BSD， <a href="https://gitlab.com/petsc/petsc">GitLab</a>)</li>
 <li><a href="https://www.dune-project.org">DUNE Numerics</a> -使用基于网格的方法求解PDE的工具箱.
   （C ++，GPL 2， <a href="https://gitlab.dune-project.org/core/">GitLab</a>)</li>
-<li><a href="https://www.scipy.org">SciPy</a> -统计，优化，积分，线性代数等的Python模块
+<li><a href="https://www.scipy.org">SciPy</a> -用于统计，优化，积分，线性代数等的Python模块
   （Python，主要是BSD， <a href="https://github.com/scipy/scipy/">GitHub</a>)</li>
 <li><a href="https://numpy.org/">NumPy</a> -使用Python进行科学计算所需的基本软件包.
   （Python，BSD， <a href="https://github.com/numpy/numpy">GitHub</a>)</li>
 </ul>
 <h2 id="finite-elements">Finite Elements<a class="headerlink" href="#finite-elements" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://fenicsproject.org">FEniCS</a> -用于以Python和C ++解决PDE的计算平台.
-  （C ++ / Python，LGPL 3， <a href="https://bitbucket.org/fenics-project/">BitBucket</a>)</li>
+<li><a href="https://fenicsproject.org">FEniCS</a> -用于解决Python和C ++中的PDE的计算平台.
+  （C ++ / Python，LGPL 3， <a href="https://bitbucket.org/fenics-project/">Bitbucket</a>)</li>
 <li><a href="https://libmesh.github.io">libMesh</a> -使用非结构化离散化进行PDE数值模拟的框架.
   （C ++，LGPL 2.1， <a href="https://github.com/libMesh/libmesh">GitHub</a>)</li>
 <li><a href="https://dealii.org">deal.II</a> -支持创建有限元代码的软件库.
@@ -6708,7 +6703,7 @@ them.</p>
   （C ++，LGPL 2.1， <a href="https://github.com/NGSolve/netgen">GitHub</a>)</li>
 <li><a href="https://www.firedrakeproject.org">Firedrake</a> -使用有限元方法的PDE自动化解决方案.
   （Python，LGPL 3， <a href="https://github.com/firedrakeproject/firedrake">GitHub</a>)</li>
-<li><a href="https://www.mooseframework.org">MOOSE</a> -多物理场面向对象的仿真环境.
+<li><a href="https://mooseframework.inl.gov/">MOOSE</a> -多物理场面向对象的仿真环境.
   （C ++，LGPL 2.1， <a href="https://github.com/idaholab/moose">GitHub</a>)</li>
 <li><a href="https://mfem.org">MFEM</a> -用于有限元方法的免费，轻量级，可扩展的C ++库.
   （C ++，LGPL 2.1， <a href="https://github.com/mfem/mfem">GitHub</a>)</li>
@@ -6722,49 +6717,51 @@ them.</p>
 <h2 id="meshing">Meshing<a class="headerlink" href="#meshing" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="http://gmsh.info">Gmsh</a> -具有预处理和后处理功能的三维有限元网格生成器.
-  （C ++，LPG， <a href="https://gitlab.onelab.info/gmsh/gmsh">GitLab</a>)</li>
+  （C ++，GPL， <a href="https://gitlab.onelab.info/gmsh/gmsh">GitLab</a>)</li>
 <li><a href="https://github.com/nschloe/pygmsh">pygmsh</a> -Gmsh的Python界面.
-  （Python，麻省理工学院，GitHub）</li>
-<li><a href="https://mathema.tician.de/software/meshpy/">MeshPy</a> -高质量的三角形和四面体网格生成.
+  （Python，GPL 3，GitHub）</li>
+<li><a href="https://mathema.tician.de/software/meshpy/">MeshPy</a> -优质的三角形和四面体网格生成.
   （Python，麻省理工学院， <a href="https://github.com/inducer/meshpy">GitHub</a>)</li>
 <li><a href="https://github.com/nschloe/meshio">meshio</a> -各种网格格式的I / O，文件转换.
   （Python，麻省理工学院，GitHub）</li>
 <li><a href="https://www.cgal.org">CGAL</a> -计算几何的算法.
   （C ++，混合的LGPL / GPL， <a href="https://github.com/CGAL/cgal">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/pygalmesh">pygalmesh</a> -用于CGAL的3D网格化功能的Python界面.
-  （Python，麻省理工学院，GitHub）</li>
+<li><a href="https://github.com/nschloe/pygalmesh">pygalmesh</a> -CGAL的3D网格化功能的Python界面.
+  （Python，GPL 3，GitHub）</li>
 <li><a href="https://bitbucket.org/fenics-project/mshr/">mshr</a> -FEniCS的网格生成组件.
-  （Python，GPL 3，BitBucket）</li>
+  （Python，GPL 3，Bitbucket）</li>
 <li><a href="https://press3.mcs.anl.gov/sigma/moab-library/">MOAB</a> -表示和评估网格数据.
-  （C ++，主要是LGPL3， <a href="https://bitbucket.org/fathomteam/moab/">BitBucket</a>)</li>
+  （C ++，主要是LGPL 3， <a href="https://bitbucket.org/fathomteam/moab/">Bitbucket</a>)</li>
 <li><a href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a> -用于面向阵列的科学数据的软件库和数据格式.
   （C / C ++ / Fortran / Java / Python，[自定义开源
   许可]（<a href="https://www.unidata.ucar.edu/software/netcdf/copyright.html">https://www.unidata.ucar.edu/software/netcdf/copyright.html</a>），
   <a href="https://github.com/Unidata/netcdf-c/">GitHub</a>)</li>
 <li><a href="https://support.hdfgroup.org/HDF5/">HDF5</a> -用于存储和管理数据的数据模型，库和文件格式.
   （C / Fortran，BSD）</li>
-<li><a href="http://www.xdmf.org/index.php/Main_Page">XDMF</a> -用于高性能计算代码的数据的可扩展数据模型和格式.
+<li><a href="http://www.xdmf.org/index.php/Main_Page">XDMF</a> -可扩展数据模型和格式，用于来自高性能计算代码的数据.
   （C ++， <a href="https://gitlab.kitware.com/xdmf/xdmf">GitLab</a>)</li>
 <li><a href="https://www.wias-berlin.de/software/index.jsp?id=TetGen">TetGen</a> -优质的四面体网格生成器和3D Delaunay三角剖分器.
   （C ++，AGPLv3）</li>
 <li><a href="https://www.cs.cmu.edu/~quake/triangle.html">Triangle</a> -二维质量网格生成器和Delaunay三角剖分器.
-  （C，<em>非免费软件</em>）</li>
+  （C，<em>非自由软件</em>）</li>
 <li><a href="https://github.com/nschloe/optimesh">optimesh</a> -三角网格平滑.
-  （Python，麻省理工学院，GitHub）</li>
+  （Python，GPL 3，GitHub）</li>
 <li><a href="http://persson.berkeley.edu/distmesh/">distmesh</a> -用于非结构化三角形和四面体网格的简单生成器.
   （MATLAB，GPL 3）</li>
 <li><a href="https://stanford.edu/~jingweih/papers/quadriflow/">QuadriFlow</a> -一种可扩展且鲁棒的四边形方法.
   （C ++，BSD， <a href="https://github.com/hjwdzh/QuadriFlow">GitHub</a>)</li>
-<li><a href="https://trimsh.org/">trimesh</a> -加载和使用强调水密表面的三角形网格.
+<li><a href="https://trimsh.org/">trimesh</a> -加载和使用三角网格，重点放在水密表面上.
   （Python，麻省理工学院， <a href="https://github.com/mikedh/trimesh">GitHub</a>)</li>
 <li><a href="https://github.com/nschloe/dmsh">dmsh</a> -由distmesh启发的非结构三角形网格的简单生成器.
-  （Python，麻省理工学院，GitHub）</li>
-<li><a href="https://www.pmp-library.org/">pmp-library</a>  -多边形网格处理库.  （C ++，MIT，雇主免责声明， <a href="https://github.com/pmp-library/pmp-library/">GitHub</a>)</li>
-<li><a href="https://www.mmgtools.org/">Mmg</a>  -健壮，开放源代码和多学科的软件，可用于重新设计.  （C，LGPL 3， <a href="https://github.com/MmgTools/mmg">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/meshplex">meshplex</a>  -单工网格的快速工具.  （Python，麻省理工学院，GitHub）</li>
+  （Python，GPL 3，GitHub）</li>
+<li><a href="https://www.pmp-library.org/">pmp-library</a> -多边形网格处理库.
+  （C ++，MIT，雇主免责声明， <a href="https://github.com/pmp-library/pmp-library/">GitHub</a>)</li>
+<li><a href="https://www.mmgtools.org/">Mmg</a> -健壮，开放源代码和多学科的软件，可用于重新设计.
+  （C，LGPL 3， <a href="https://github.com/MmgTools/mmg">GitHub</a>)</li>
+<li><a href="https://github.com/nschloe/meshplex">meshplex</a>  -单工网格的快速工具.  （Python，GPL 3，GitHub）</li>
 <li><a href="https://cs.nyu.edu/~yixinhu/tetwild.pdf">TetWild</a> -在野外强大的四面体啮合.
   （C ++，GPL 3， <a href="https://github.com/Yixin-Hu/TetWild">GitHub</a>)</li>
-<li><a href="https://cs.nyu.edu/~yixinhu/triwild.pdf">TriWild</a> -带有曲线约束的鲁棒三角剖分.
+<li><a href="https://cims.nyu.edu/gcl/papers/2019-TriWild.pdf">TriWild</a> -带有曲线约束的鲁棒三角剖分.
   （C ++，MPL 2， <a href="https://github.com/wildmeshing/TriWild">GitHub</a>)</li>
 <li><a href="https://arxiv.org/abs/1908.03581">fTetWild</a> -在野外快速四面体啮合.
   （C ++，MPL 2， <a href="https://github.com/wildmeshing/fTetWild">GitHub</a>)</li>
@@ -6792,10 +6789,14 @@ them.</p>
   （C ++，麻省理工学院， <a href="https://github.com/nmwsharp/polyscope">GitHub</a>)</li>
 <li><a href="https://docs.pyvista.org/">PyVista</a> -通过简化的VTK界面进行3D绘图和网格分析.
   （Python，麻省理工学院， <a href="https://github.com/pyvista/pyvista">GitHub</a>)</li>
+<li><a href="https://vedo.embl.es">vedo</a> -用于基于VTK对3D对象进行科学分析和可视化的库.
+  （Python，麻省理工学院， <a href="https://github.com/marcomusy/vedo">GitHub</a>)</li>
+<li><a href="https://yt-project.org/">yt</a> -用于分析和可视化体积数据的工具包.
+  （Python，BSD， <a href="https://github.com/yt-project/yt">GitHub</a>)</li>
 </ul>
 <h2 id="other-libraries-and-tools">Other libraries and tools<a class="headerlink" href="#other-libraries-and-tools" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="http://www.fftw.org">FFTW</a> -一维或多维离散傅立叶变换，具有任意输入大小，实数和复数.
+<li><a href="http://www.fftw.org">FFTW</a> -一维或多维的离散傅立叶变换，具有任意输入大小，实数和复数.
   （C，GPL2， <a href="https://github.com/FFTW/fftw3">GitHub</a>)</li>
 <li><a href="http://www.qhull.org">Qhull</a> -凸包，Delaunay三角剖分，Voronoi图，关于点的半空间交点等.
   （C / C ++， <a href="http://www.qhull.org/COPYING.txt">custom open source license</a>,
@@ -6805,13 +6806,13 @@ them.</p>
 <li><a href="https://www.openfoam.com">OpenFOAM</a> -免费的开源CFD（计算流体动力学）软件.
   （C ++，GPL 3， <a href="https://github.com/OpenFOAM/OpenFOAM-dev">GitHub</a>)</li>
 <li><a href="https://github.com/nschloe/quadpy">quadpy</a> -Python中的数值积分（正交，容积）.
-  （Python，麻省理工学院，GitHub）</li>
-<li><a href="https://www.ctcms.nist.gov/fipy/">FiPy</a> -有限体积的PDF解算器.
+  （Python，GPL 3，GitHub）</li>
+<li><a href="https://www.ctcms.nist.gov/fipy/">FiPy</a> -有限体积的PDE求解器.
   （Python，[自定义开源
-  许可]（<a href="https://www.nist.gov/topics/data/public-access-nist-research/copyright-fair-use-and-licensing-statements-srd-data-and">https://www.nist.gov/topics/data/public-access-nist-research/copyright-fair-use-and-licensing-statements-srd-data-and</a>），
+  许可]（<a href="https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications">https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications</a>），
   <a href="https://github.com/usnistgov/fipy">GitHub</a>)</li>
 <li><a href="https://github.com/nschloe/accupy">accupy</a> -适用于Python的精确求和和点积.
-  （Python，麻省理工学院，GitHub）</li>
+  （Python，GPL 3，GitHub）</li>
 <li><a href="https://slepc.upv.es">SLEPc</a> -特征值问题计算的可扩展库.
   （C，2句BSD， <a href="https://gitlab.com/slepc/slepc">GitLab</a>)</li>
 <li><a href="https://www.chebfun.org/">Chebfun</a> -具有约15位精度的函数计算.
@@ -6819,27 +6820,27 @@ them.</p>
 <li><a href="https://pymor.org/">pyMOR</a> -使用Python减少模型订单.
   （Python，2句BSD， <a href="https://github.com/pymor/pymor/">GitHub</a>)</li>
 <li><a href="https://www.cvxpy.org/">cvxpy</a> -凸优化问题的建模语言.
-  （Python，Apache 2.0， <a href="https://github.com/cvxgrp/cvxpy">GitHub</a>)</li>
+  (Python, Apache 2.0, <a href="https://github.com/cvxgrp/cvxpy">GitHub</a>)</li>
 <li><a href="https://pywavelets.readthedocs.io/en/latest/">PyWavelets</a> -Python中的小波变换.
   （Python，麻省理工学院， <a href="https://github.com/PyWavelets/pywt">GitHub</a>)</li>
 <li><a href="https://www-user.tu-chemnitz.de/~potts/nfft/">NFFT</a> -非等距快速傅立叶变换.
   （C / MATLAB，GPL 2， <a href="https://github.com/NFFT/nfft">GitHub</a>)</li>
+<li><a href="https://www.precice.org/">preCICE</a> -用于分区多物理场模拟（FSI，CHT等）的耦合库.
+  （C ++，LGPL 3， <a href="https://github.com/precice/">GitHub</a>)</li>
+<li><a href="https://github.com/nschloe/orthopy">orthopy</a> -有效地计算正交多项式.
+  （Python，GPL 3，GitHub）</li>
 </ul>
 <h2 id="community">Community<a class="headerlink" href="#community" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://scicomp.stackexchange.com/">SciComp StackExchange</a> -StackExchange网络上的计算科学.</li>
 <li><a href="https://www.math.colostate.edu/~bangerth/videos.html">Wolfgang Bangerth's video class</a> -MATH 676：科学计算中的有限元方法.</li>
 <li><a href="https://nhigham.com/">Nick Higham's blog</a> -通常在MATLAB上提供一般计算建议.</li>
-<li><a href="https://people.maths.ox.ac.uk/trefethen/videos.html">Nick Trefethen's Video Lectures</a> - 36 video lectures on approximation theory/practice and scientific computing.</li>
+<li><a href="https://people.maths.ox.ac.uk/trefethen/videos.html">Nick Trefethen's Video Lectures</a> -关于逼近理论/实践和科学计算的36个视频讲座.</li>
 <li><a href="https://www.johndcook.com/blog/">John D. Cook's blog</a> -科学计算的壮举.</li>
 <li><a href="https://www.netlib.org/utk/people/JackDongarra/la-sw.html">Jack Dongarra's software list</a> -解决线性代数问题的免费软件列表.</li>
 <li><a href="https://www.netlib.org/na-digest-html/">NA Digest</a> -收集与数值分析有关的主题和实践者的文章.</li>
-<li><a href="https://twitter.com/gabrielpeyre">Gabriel Peyré on Twitter</a> -每天一则关于计算数学的推文.</li>
+<li><a href="https://twitter.com/gabrielpeyre">Gabriel Peyré on Twitter</a> -一天一则关于计算数学的推文.</li>
 </ul>
-<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" /></a></p>
-<p>在法律允许的范围内， <a href="https://github.com/nschloe">Nico Schlömer</a>
-已放弃此作品的所有版权以及相关或邻近的权利.</p>
                 
                   
                 
