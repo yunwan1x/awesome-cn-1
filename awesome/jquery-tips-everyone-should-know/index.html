@@ -7015,32 +7015,32 @@
 
 <p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890694312814945" data-ad-slot="5473692530" data-ad-format="auto"  data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></p>
 <h2 id="jquery-tips-everyone-should-know">jQuery Tips Everyone Should Know <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a><a class="headerlink" href="#jquery-tips-everyone-should-know" title="Permanent link">&para;</a></h2>
-<p>一系列简单的技巧可以帮助您开发jQuery游戏.</p>
+<p>一系列简单的提示，可以帮助您改善jQuery游戏.</p>
 <p>&gt;有关其他很棒的清单，请查看 <a href="https://github.com/sindresorhus/">@sindresorhus</a>的精选清单 <a href="https://github.com/sindresorhus/awesome/">awesome lists</a>.</p>
 <ul>
 <li><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know/blob/master/CONTRIBUTING.md">Contribution Guidelines</a></li>
 </ul>
 <h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h2>
 <h3 id="use-noconflict">Use <code>noConflict()</code><a class="headerlink" href="#use-noconflict" title="Permanent link">&para;</a></h3>
-<p>jQuery使用的<span><span class="MathJax_Preview">别名也被其他JavaScript库使用.  为了确保jQuery不会与不同库的</span><script type="math/tex">别名也被其他JavaScript库使用.  为了确保jQuery不会与不同库的</script></span>对象冲突，请在文档开头使用noConflict（）方法：</p>
+<p>jQuery使用的<span><span class="MathJax_Preview">别名也被其他JavaScript库使用. 为了确保jQuery不会与不同库的</span><script type="math/tex">别名也被其他JavaScript库使用. 为了确保jQuery不会与不同库的</script></span>对象冲突，请在文档开头使用noConflict（）方法：</p>
 <div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">();</span>
 </pre></div>
 
-<p>现在，您将使用jQuery变量名而不是$来引用jQuery对象（例如jQuery（&#39;div p&#39;）.hide（））.  如果同一页面上有多个版本的jQuery（不建议使用），则可以使用<code>noConflict（）</code>来为特定版本设置别名：</p>
+<p>现在，您将使用jQuery变量名而不是$来引用jQuery对象（例如jQuery（&#39;div p&#39;）.hide（））. 如果同一页面上有多个版本的jQuery（不建议使用），则可以使用<code>noConflict（）</code>来为特定版本设置别名：</p>
 <div class="codehilite"><pre><span></span><span class="nx">让$</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">noConflict</span><span class="err">（）</span><span class="p">;</span>
 </pre></div>
 
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="checking-if-jquery-loaded">Checking If jQuery Loaded<a class="headerlink" href="#checking-if-jquery-loaded" title="Permanent link">&para;</a></h3>
 <p>在使用jQuery做任何事情之前，您首先需要确定它已经加载：</p>
-<div class="codehilite"><pre><span></span><span class="nx">如果</span><span class="err">（</span><span class="nx">jQuery的typeof</span> <span class="o">==&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="kc">undefined</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">{</span>
+<div class="codehilite"><pre><span></span><span class="nx">如果</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">jQuery</span> <span class="o">==&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="kc">undefined</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">jQuery尚未加载</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
 <span class="p">}</span><span class="nx">其他</span><span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">jQuery已加载</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 
-<p>现在你走了...</p>
+<p>现在你离开...</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="check-whether-an-element-exists">Check Whether an Element Exists<a class="headerlink" href="#check-whether-an-element-exists" title="Permanent link">&para;</a></h3>
 <p>在使用HTML元素之前，您需要确保它是DOM的一部分.</p>
@@ -7051,7 +7051,7 @@
 
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="use-on-binding-instead-of-click">Use <code>.on()</code> Binding Instead of <code>.click()</code><a class="headerlink" href="#use-on-binding-instead-of-click" title="Permanent link">&para;</a></h3>
-<p>与使用.click（）相比，使用.on（）具有多个优点，例如可以添加多个事件...</p>
+<p>与使用.click（）相比，使用.on（）具有多个优点，例如添加多个事件的能力...</p>
 <div class="codehilite"><pre><span></span><span class="p">.</span><span class="nx">on</span><span class="err">（“</span><span class="nx">单击点击悬停</span><span class="err">”）</span>
 </pre></div>
 
@@ -7060,7 +7060,7 @@
 <div class="codehilite"><pre><span></span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click.menuOpening&#39;</span><span class="p">)</span>
 </pre></div>
 
-<p>命名空间使您可以解除绑定特定事件的能力（例如，.off（&#39;click.menuOpening&#39;）`）.</p>
+<p>命名空间使您可以取消绑定特定事件（例如，.off（&#39;click.menuOpening&#39;）`）.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="back-to-top-button">Back to Top Button<a class="headerlink" href="#back-to-top-button" title="Permanent link">&para;</a></h3>
 <p>通过在jQuery中使用<code>animate</code>和<code>scrollTop</code>方法，您不需要插件即可创建简单的滚动到顶部的动画：</p>
@@ -7077,14 +7077,14 @@
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div>
 
-<p>更改<code>scrollTop</code>值会更改您希望滚动条到达的位置.  您真正要做的就是在整个800毫秒的过程中对文档正文进行动画处理，直到滚动到文档顶部.</p>
+<p>更改<code>scrollTop</code>值会更改您希望滚动条到达的位置. 您真正要做的就是在整个800毫秒的过程中对文档正文进行动画处理，直到文档滚动到文档顶部为止.</p>
 <p><strong>注意：</strong>注意一些 <a href="https://github.com/jquery/api.jquery.com/issues/417">buggy behavior</a> 与<code>scrollTop</code>.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="preload-images">Preload Images<a class="headerlink" href="#preload-images" title="Permanent link">&para;</a></h3>
 <p>如果您的网页使用了大量最初不可见的图像（例如，悬停时），则可以预加载它们：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span> <span class="p">.</span><span class="nx">preloadImages</span> <span class="o">=</span> <span class="kd">function</span><span class="err">（）</span><span class="p">{</span>
   <span class="k">for</span><span class="err">（</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span><span class="err">）</span><span class="p">{</span>
-     <span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span> <span class="o">&lt;</span><span class="nx">img</span><span class="o">&gt;</span>  <span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">attr</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">src</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="nx">arguments</span> <span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="err">）</span><span class="p">;</span>
+     <span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">img</span><span class="o">&gt;</span>  <span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">attr</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">src</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="nx">arguments</span> <span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="err">）</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">};</span>
 
@@ -7099,10 +7099,10 @@
 <span class="p">});</span>
 </pre></div>
 
-<p>您也可以通过替换<code>检查特定图片是否已加载. &lt;img&gt;  具有ID或类的</code>标签.</p>
+<p>您也可以通过替换<code>&lt;img&gt; 具有ID或类的</code>标签.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="fix-broken-images-automatically">Fix Broken Images Automatically<a class="headerlink" href="#fix-broken-images-automatically" title="Permanent link">&para;</a></h3>
-<p>如果您发现网站上损坏的图像链接被一个接一个地替换，可能会很痛苦.  这个简单的代码可以省去很多麻烦：</p>
+<p>如果您发现网站上损坏的图像链接被一个接一个地替换，可能会很痛苦. 这段简单的代码可以省去很多麻烦：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">img</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">on</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">error</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="kd">function</span><span class="err">（）</span><span class="p">{</span>
   <span class="k">if</span><span class="err">（！</span><span class="nx">$</span><span class="err">（</span><span class="k">this</span><span class="err">）</span><span class="p">.</span><span class="nx">hasClass</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">broken</span><span class="o">-</span><span class="nx">image</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">））</span><span class="p">{</span>
     <span class="nx">$</span><span class="err">（</span><span class="k">this</span><span class="err">）</span><span class="p">.</span><span class="nx">prop</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">src</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">img</span> <span class="o">/</span> <span class="nx">broken</span><span class="p">.</span><span class="nx">png</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">addClass</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">broken</span><span class="o">-</span><span class="nx">image</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
@@ -7118,7 +7118,7 @@
 
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="post-a-form-with-ajax">Post a Form with AJAX<a class="headerlink" href="#post-a-form-with-ajax" title="Permanent link">&para;</a></h3>
-<p>jQuery AJAX方法是请求文本，HTML，XML或JSON的常用方法.  如果您想通过AJAX发送表单，则可以通过val（）方法收集用户输入：</p>
+<p>jQuery AJAX方法是请求文本，HTML，XML或JSON的常用方法. 如果您想通过AJAX发送表单，则可以通过val（）方法收集用户输入：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span> <span class="p">.</span><span class="nx">post</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">sign_up</span><span class="p">.</span><span class="nx">php</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="p">{</span>
   <span class="nx">user_name</span><span class="err">：</span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">input</span> <span class="p">[</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">user_name</span><span class="p">]</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">val</span><span class="err">（），</span>
   <span class="nx">电子邮件</span><span class="err">：</span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">input</span> <span class="p">[</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">email</span><span class="p">]</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">val</span><span class="err">（），</span>
@@ -7126,13 +7126,13 @@
 <span class="p">});</span>
 </pre></div>
 
-<p>但是所有这些<code>val（）</code>调用都很昂贵，并且在<code>上使用</code>.val（）<code>&lt;textarea&gt;</code>元素将从浏览器报告的值中去除回车符.  收集用户输入的一种更好的方法是使用<code>serialize（）</code>函数，该函数将它们收集为字符串：</p>
+<p>但是所有这些<code>val（）</code>调用都很昂贵，并且在<code>上使用</code>.val（）<code>&lt;textarea&gt;</code>元素将从浏览器报告的值中去除回车符. 收集用户输入的一种更好的方法是使用<code>serialize（）</code>函数，该函数将它们收集为字符串：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">&#39;sign_up&#39;</span><span class="p">,</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#sign-up-form&#39;</span><span class="p">).</span><span class="nx">serialize</span><span class="p">());</span>
 </pre></div>
 
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="toggle-classes-on-hover">Toggle Classes on Hover<a class="headerlink" href="#toggle-classes-on-hover" title="Permanent link">&para;</a></h3>
-<p>假设您要在用户将鼠标悬停在页面上时更改页面上可点击元素的外观.  您可以在用户悬停时在您的元素中添加一个类；  当用户停止悬停时，将删除该类：</p>
+<p>假设您要在用户将鼠标悬停在页面上时更改页面上可点击元素的外观. 您可以在用户悬停时在您的元素中添加一个类； 当用户停止悬停时，将删除该类：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;.</span><span class="nx">btn</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">on</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">hover</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="kd">function</span><span class="err">（）</span><span class="p">{</span>
   <span class="nx">$</span><span class="err">（</span><span class="k">this</span><span class="err">）</span><span class="p">.</span><span class="nx">addClass</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">hover</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
 <span class="p">}</span><span class="err">，</span><span class="nx">函数</span><span class="err">（）</span><span class="p">{</span>
@@ -7140,7 +7140,7 @@
 <span class="p">});</span>
 </pre></div>
 
-<p>您需要添加必要的CSS.  如果您想使用_simpler_甚至的方式，请使用<code>toggleClass</code>方法：</p>
+<p>您需要添加必要的CSS. 如果您想使用_simpler_甚至的方式，请使用<code>toggleClass</code>方法：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;.</span><span class="nx">btn</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">on</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">hover</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="kd">function</span><span class="err">（）</span><span class="p">{</span>
   <span class="nx">$</span><span class="err">（</span><span class="k">this</span><span class="err">）</span><span class="p">.</span><span class="nx">toggleClass</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">hover</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
 <span class="p">});</span>
@@ -7149,17 +7149,17 @@
 <p><strong>注意：</strong>在这种情况下，CSS可能是一个更快的解决方案，但是仍然值得一提.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="disabling-input-fields">Disabling Input Fields<a class="headerlink" href="#disabling-input-fields" title="Permanent link">&para;</a></h3>
-<p>有时，您可能希望禁用表单的提交按钮或其文本输入之一，直到用户执行了某些操作（例如，选中“我已经阅读条款”复选框）.  将<code>disabled</code>属性添加到您的输入中，以便您可以在需要时启用它：</p>
+<p>有时，您可能希望禁用表单的提交按钮或其文本输入之一，直到用户执行了某些操作（例如，选中“我已经阅读条款”复选框）. 将<code>disabled</code>属性添加到您的输入中，以便您可以在需要时启用它：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">input</span> <span class="p">[</span><span class="nx">type</span> <span class="o">=</span><span class="err">“</span> <span class="nx">submit</span><span class="err">”</span><span class="p">]</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">prop</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">disabled</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="kc">true</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
-<p>您需要做的就是再次在输入上运行<code>prop</code>方法，但是将<code>disabled&amp;#39;的值设置为</code>false`：</p>
+<p>您需要做的就是在输入上再次运行<code>prop</code>方法，但是将<code>disabled&amp;#39;的值设置为</code>false`：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">input</span> <span class="p">[</span><span class="nx">type</span> <span class="o">=</span><span class="err">“</span> <span class="nx">submit</span><span class="err">”</span><span class="p">]</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">prop</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">disabled</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="kc">false</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="stop-the-loading-of-links">Stop the Loading of Links<a class="headerlink" href="#stop-the-loading-of-links" title="Permanent link">&para;</a></h3>
-<p>有时，您不希望链接转到某个网页，也不希望重新加载该网页；  您可能希望他们做其他事情，例如触发另一个脚本.  这样可以防止默认操作：</p>
+<p>有时，您不希望链接转到某个网页，也不希望重新加载该网页； 您可能希望他们做其他事情，例如触发另一个脚本. 这样可以防止默认操作：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">no</span><span class="o">-</span><span class="nx">link</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">on</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">click</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="kd">function</span><span class="err">（</span><span class="nx">e</span><span class="err">）</span><span class="p">{</span>
   <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="err">（）</span><span class="p">;</span>
 <span class="p">});</span>
@@ -7167,11 +7167,11 @@
 
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="cache-jquery-selectors">Cache jQuery Selectors<a class="headerlink" href="#cache-jquery-selectors" title="Permanent link">&para;</a></h3>
-<p>想想您在任何项目中一次又一次地编写同一选择器的次数.  每个<code>$（&amp;#39;.element&amp;#39;）</code>选择器每次都必须搜索整个DOM，无论该选择器以前是否运行过.  相反，您可以运行一次选择器并将结果存储在变量中：</p>
+<p>想想您在任何项目中一次又一次地编写同一选择器的次数. 每个<code>$（&amp;#39;.element&amp;#39;）</code>选择器每次都必须搜索整个DOM，无论该选择器以前是否运行过. 相反，您可以运行一次选择器并将结果存储在变量中：</p>
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">blocks</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#blocks&#39;</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
 </pre></div>
 
-<p>现在，您可以在任何需要的地方使用<code>blocks</code>变量，而不必每次都搜索DOM：</p>
+<p>现在您可以在任何需要的地方使用<code>blocks</code>变量，而不必每次都搜索DOM：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#hideBlocks&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="nx">blocks</span><span class="p">.</span><span class="nx">fadeOut</span><span class="err">（）</span><span class="p">;</span>
 <span class="p">});</span>
@@ -7184,7 +7184,7 @@
 <p>缓存jQuery选择器可以提高性能.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="toggle-fadeslide">Toggle Fade/Slide<a class="headerlink" href="#toggle-fadeslide" title="Permanent link">&para;</a></h3>
-<p>滑动和衰落在jQuery动画中很常见.  您可能希望在用户单击某些内容时显示一个元素，这使“ fadeIn”和“ slideDown”方法变得完美，但是如果您希望该元素在第一次单击时出现，然后在第二次单击时消失，则可以正常工作：</p>
+<p>滑动和衰落在jQuery动画中很常见. 您可能希望在用户单击某些内容时显示一个元素，这使“ fadeIn”和“ slideDown”方法变得完美，但是如果您希望该元素在第一次单击时出现，然后在第二次单击时消失，则可以正常工作：</p>
 <div class="codehilite"><pre><span></span><span class="c1">// 褪色</span>
 <span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;.</span><span class="nx">btn</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">on</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">click</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="kd">function</span><span class="err">（）</span><span class="p">{</span>
   <span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;.</span><span class="nx">element</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">fadeToggle</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">slow</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
@@ -7211,14 +7211,14 @@
 <span class="p">});</span>
 </pre></div>
 
-<p>通过添加此脚本，您真正需要在网页上完成的工作就是实现此工作所需的HTML.</p>
+<p>通过添加此脚本，您真正需要在网页上完成的工作就是实现此功能所需的HTML.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="make-two-divs-the-same-height">Make Two Divs the Same Height<a class="headerlink" href="#make-two-divs-the-same-height" title="Permanent link">&para;</a></h3>
 <p>有时，无论它们包含什么内容，您都希望两个div具有相同的高度：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;.</span><span class="nx">div</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">css</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">min</span><span class="o">-</span><span class="nx">height</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;.</span><span class="nx">main</span><span class="o">-</span><span class="nx">div</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">height</span><span class="err">（））</span><span class="p">;</span>
 </pre></div>
 
-<p>此示例设置了“最小高度”，这意味着它可以大于主div，但永远不能小于它.  但是，一种更灵活的方法是遍历一组元素并将“ height”设置为最高元素的高度：</p>
+<p>此示例设置了“最小高度”，这意味着它可以大于主div，但永远不能小于它. 但是，一种更灵活的方法是遍历一组元素并将“ height”设置为最高元素的高度：</p>
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">$</span> <span class="nx">columns</span> <span class="o">=</span> <span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;.</span><span class="nx">column</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
 <span class="nx">$</span> <span class="nx">columns</span><span class="p">.</span><span class="nx">each</span><span class="err">（</span><span class="kd">function</span><span class="err">（）</span><span class="p">{</span>
@@ -7236,7 +7236,7 @@
 <span class="p">});</span>
 </pre></div>
 
-<p><strong>注意：</strong>这可以通过多种方式完成 <a href="http://codepen.io/AllThingsSmitty/pen/KMPqoO">in CSS</a> 但是根据您的需求，知道如何在jQuery中做到这一点很方便.</p>
+<p><strong>注意：</strong>这可以通过几种方法完成 <a href="http://codepen.io/AllThingsSmitty/pen/KMPqoO">in CSS</a> 但是根据您的需求，知道如何在jQuery中做到这一点很方便.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="open-external-links-in-new-tabwindow">Open External Links in New Tab/Window<a class="headerlink" href="#open-external-links-in-new-tabwindow" title="Permanent link">&para;</a></h3>
 <p>在新的浏览器标签或窗口中打开外部链接，并确保在同一标签或窗口中打开相同来源的链接：</p>
@@ -7248,7 +7248,7 @@
 <p><strong>注意：</strong><code>window.location.origin</code>在IE10中不起作用. <a href="http://tosbourn.com/a-fix-for-window-location-origin-in-internet-explorer/">This fix</a> 解决这个问题.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="find-element-by-text">Find Element By Text<a class="headerlink" href="#find-element-by-text" title="Permanent link">&para;</a></h3>
-<p>通过在jQuery中使用“ contains（）”选择器，您可以找到元素内容中的文本.  如果文本不存在，则该元素将被隐藏：</p>
+<p>通过在jQuery中使用“ contains（）”选择器，您可以在元素的内容中找到文本. 如果文本不存在，则该元素将被隐藏：</p>
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">search</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#search&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
 <span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">div</span><span class="err">：</span><span class="nx">not</span><span class="err">（：</span><span class="nx">contains</span><span class="err">（“</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="o">+</span> <span class="nx">search</span> <span class="o">+&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">”））</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">hide</span><span class="err">（）</span><span class="p">;</span>
 </pre></div>
@@ -7258,7 +7258,7 @@
 <p>当用户不再专注于标签或重新关注标签时触发JavaScript：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="nb">document</span><span class="err">）</span><span class="p">.</span><span class="nx">on</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">visibilitychange</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="kd">function</span><span class="err">（</span><span class="nx">e</span><span class="err">）</span><span class="p">{</span>
   <span class="nx">如果</span><span class="err">（</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">visibilityState</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">visible</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">Tab现在可见了</span><span class="err">！</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">Tab现在可见</span><span class="err">！</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
   <span class="p">}</span><span class="nx">否则</span><span class="err">，</span><span class="nx">如果</span><span class="err">（</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">visibilityState</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">hidden</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">标签现在被隐藏了</span><span class="err">！</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
   <span class="p">}</span>
@@ -7267,15 +7267,15 @@
 
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="ajax-call-error-handling">AJAX Call Error Handling<a class="headerlink" href="#ajax-call-error-handling" title="Permanent link">&para;</a></h3>
-<p>当AJAX调用返回404或500错误时，将执行错误处理程序.  如果未定义处理程序，则其他jQuery代码可能无法按预期工作.  要定义全局AJAX错误处理程序：</p>
-<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="nb">document</span><span class="err">）</span><span class="p">.</span><span class="nx">on</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">ajaxError</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="nx">函数</span><span class="err">（</span><span class="nx">例如</span><span class="err">，</span><span class="nx">xhr</span><span class="err">，</span><span class="nx">设置</span><span class="err">，</span><span class="nx">错误</span><span class="err">）</span><span class="p">{</span>
+<p>当AJAX调用返回404或500错误时，将执行错误处理程序. 如果未定义处理程序，则其他jQuery代码可能无法按预期工作. 要定义全局AJAX错误处理程序：</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="err">（</span><span class="nb">document</span><span class="err">）</span><span class="p">.</span><span class="nx">on</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">ajaxError</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="nx">函数</span><span class="err">（</span><span class="nx">e</span><span class="err">，</span><span class="nx">xhr</span><span class="err">，</span><span class="nx">设置</span><span class="err">，</span><span class="nx">错误</span><span class="err">）</span><span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="err">（</span><span class="nx">错误</span><span class="err">）</span><span class="p">;</span>
 <span class="p">});</span>
 </pre></div>
 
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="chain-plugin-calls">Chain Plugin Calls<a class="headerlink" href="#chain-plugin-calls" title="Permanent link">&para;</a></h3>
-<p>jQuery允许插件方法调用的“链接”，以减轻重复查询DOM和创建多个jQuery对象的过程.  假设以下代码段表示您的插件方法调用：</p>
+<p>jQuery允许插件方法调用的“链接”，以减轻重复查询DOM和创建多个jQuery对象的过程. 假设以下代码段表示您的插件方法调用：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#elem&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#elem&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;bla&#39;</span><span class="p">);</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#elem&#39;</span><span class="p">).</span><span class="nx">otherStuff</span><span class="p">();</span>
@@ -7283,22 +7283,22 @@
 
 <p>通过使用链接可以大大改善这一点：</p>
 <div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#elem&#39;</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">显示</span><span class="err">（）</span>
-  <span class="p">.</span><span class="nx">html</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">bla</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span>
+  <span class="p">.</span><span class="nx">节目</span><span class="err">（）</span>
+  <span class="p">.</span><span class="nx">html</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">blah</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">）</span>
   <span class="p">.</span><span class="nx">其他的东西</span><span class="err">（）</span><span class="p">;</span>
 </pre></div>
 
-<p>另一种方法是将元素缓存在变量中（以$开头）：</p>
+<p>另一种方法是将元素缓存在变量中（前缀为$）：</p>
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">$elem</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#elem&#39;</span><span class="p">);</span>
 <span class="nx">$elem</span><span class="p">.</span><span class="nx">hide</span><span class="p">();</span>
 <span class="nx">$elem</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;bla&#39;</span><span class="p">);</span>
 <span class="nx">$elem</span><span class="p">.</span><span class="nx">otherStuff</span><span class="p">();</span>
 </pre></div>
 
-<p>链接和 <a href="#cache-jquery-selectors">caching</a> jQuery中的方法是导致代码更短，更快的最佳实践.</p>
+<p>链接和 <a href="#cache-jquery-selectors">caching</a> jQuery中的方法是导致代码更短和更快的最佳实践.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="sort-list-items-alphabetically">Sort List Items Alphabetically<a class="headerlink" href="#sort-list-items-alphabetically" title="Permanent link">&para;</a></h3>
-<p>假设您最终在列表中添加了太多项目.  内容可能是由CMS制作的，您想按字母顺序排序：</p>
+<p>假设您最终在列表中添加了太多项目. 内容可能是由CMS制作的，您想按字母顺序排序：</p>
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#list&#39;</span><span class="p">),</span>
 <span class="nx">lis</span> <span class="o">=</span> <span class="nx">$</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="nx">li</span><span class="o">&amp;</span><span class="err">#</span><span class="mf">39</span><span class="p">;</span><span class="err">，</span><span class="nx">ul</span><span class="err">）</span><span class="p">.</span><span class="nx">get</span><span class="err">（）</span><span class="p">;</span>
 
@@ -7338,6 +7338,7 @@
 <li><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know/tree/master/translations/es-ES">Español</a></li>
 <li><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know/tree/master/translations/fr-FR">Français</a></li>
 <li><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know/tree/master/translations/hu-HU">Magyar</a></li>
+<li><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know/tree/master/translations/ko-KR">한국어</a></li>
 <li><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know/tree/master/translations/pt-PT">Português do Europe</a></li>
 <li><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know/tree/master/translations/ru-RU">Pусский</a></li>
 <li><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know/tree/master/translations/zh-CN">简体中文</a></li>
