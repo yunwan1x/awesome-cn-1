@@ -6939,13 +6939,13 @@
 <li><a href="https://owasp.org/www-project-dependency-check/">Dependency-Check</a> -<em>OWASP</em>-使用CLI或构建服务器插件扫描依赖项，以查找公开披露的漏洞.</li>
 <li><a href="https://dependencytrack.org/">Dependency-Track</a> -<em>OWASP</em>-随时间监视多个项目中易受攻击的依赖项的数量和严重性.</li>
 <li><a href="https://jfrog.com/xray/">JFrog XRay</a> -<em>JFrog</em>-对JFrog Artifactory中存储的工件的安全性和合规性分析.</li>
-<li><a href="https://docs.npmjs.com/cli/audit">NPM Audit</a> - <em>NPM</em> - Vulnerable package auditing for node packages built into the npm CLI.</li>
+<li><a href="https://docs.npmjs.com/cli/audit">NPM Audit</a> -<em>NPM</em>-npm CLI中内置的节点程序包的漏洞程序包审核.</li>
 <li><a href="https://renovate.whitesourcesoftware.com/">Renovate</a> -<em>WhiteSource</em>-使用CLI或git仓库应用程序自动监视和更新多种框架和语言的软件依赖关系.</li>
 <li><a href="https://requires.io/">Requires.io</a> -<em>Olivier Mansion和Alexis Tabary</em>-针对Python项目的自动化漏洞依赖项监视和升级.</li>
 <li><a href="https://snyk.io/">Snyk Open Source</a> -<em>Snyk</em>-使用Snyk的专用漏洞数据库自动进行漏洞依赖项监视和升级.</li>
 </ul>
 <h3 id="dynamic-analysis">Dynamic Analysis<a class="headerlink" href="#dynamic-analysis" title="Permanent link">&para;</a></h3>
-<p>动态分析安全测试（DAST）是黑盒安全测试的一种形式，其中安全扫描程序与正在运行的应用程序实例进行交互，以模拟恶意活动以查找常见漏洞.  DAST工具通常用于渗透测试的初始阶段，并且可以发现漏洞，例如跨站点脚本，SQL注入，跨站点请求伪造和信息泄露.</p>
+<p>Dynamic Analysis Security Testing (DAST) is a form of black-box security testing where a security scanner interacts with a running instance of an application, emulating malicious activity to find common vulnerabilities. DAST tools are commonly used in the initial phases of a penetration test, and can find vulnerabilities such as cross-site scripting, SQL injection, cross-site request forgery and information disclosure.</p>
 <ul>
 <li><a href="https://github.com/imperva/automatic-api-attack-tool">Automatic API Attack Tool</a> -<em>Imperva</em>-根据API规范对API执行自动安全扫描.</li>
 <li><a href="https://portswigger.net/burp/enterprise">BurpSuite Enterprise Edition</a> -<em>PortSwigger</em>-BurpSuite的Web应用程序漏洞扫描程序已由渗透测试人员广泛使用，并通过CI / CD集成进行了修改，并可以持续监控多个Web应用程序.</li>
@@ -6969,7 +6969,7 @@
 <li><a href="https://anchore.com/opensource/">Anchore Engine</a>  -<em>Anchore，Inc</em>-对CVE的Docker映像进行深度检查，并检查自定义策略. 他们的企业产品背后的引擎，这些产品与注册表，协调器和CI / CD产品集成在一起.</li>
 <li><a href="https://github.com/quay/clair">Clair</a> -<em>Quay</em>-扫描App容器和Docker容器以查看公开的漏洞.</li>
 <li><a href="https://github.com/eliasgranderubio/dagda/">Dagda</a> -<em>ElíasGrande</em>-将Docker容器中安装的OS和软件依赖版本与公共漏洞数据库进行比较，并执行病毒扫描.</li>
-<li><a href="https://github.com/hadolint/hadolint">Hadolint</a> -<em>Hadolint</em>-根据已知规则检查Dockerfile并验证RUN语句中的内联bash代码. </li>
+<li><a href="https://github.com/hadolint/hadolint">Hadolint</a> -<em>Hadolint</em>-根据已知规则检查Dockerfile并验证RUN语句中的内联bash代码.</li>
 <li><a href="https://snyk.io/product/container-vulnerability-management/">Snyk Container</a> -<em>Snyk</em>-在CI / CD期间或通过连续监视扫描Docker和Kubernetes应用程序的安全漏洞.</li>
 <li><a href="https://github.com/aquasecurity/trivy">Trivy</a> -<em>Aqua Security</em>-容器的简单而全面的漏洞扫描程序.</li>
 </ul>
@@ -6978,6 +6978,7 @@
 <h4 id="terraform">Terraform<a class="headerlink" href="#terraform" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="https://github.com/bridgecrewio/checkov">Checkov</a> -<em>Bridgecrew</em>-扫描Terraform，AWS CloudFormation和Kubernetes模板以获取不安全的配置.</li>
+<li><a href="https://github.com/fugue/regula">Regula</a> -<em>Fugue</em>-在部署之前评估Terraform基础架构代码是否存在潜在的安全性错误配置和合规性违规.</li>
 <li><a href="https://github.com/cesar-rodriguez/terrascan">Terrascan</a> -<em>Cesar Rodriguez</em>-扫描Terraform模板以获得最佳实践安全配置.</li>
 <li><a href="https://github.com/liamg/tfsec">Tfsec</a> -<em>Liam Galvin</em>-扫描Terraform模板以了解安全性配置错误以及是否违反AWS，Azure和GCP安全性最佳做法.</li>
 </ul>
@@ -7017,7 +7018,7 @@
 <li><a href="https://www.cyberark.com/products/privileged-account-security-solution/application-access-manager/">CyberArk Application Access Manager</a> -<em>Cyber​​Ark</em>-应用程序的机密管理，包括机密轮换和审核.</li>
 <li><a href="https://docs.docker.com/engine/swarm/secrets/">Docker Secrets</a> -<em>Docker</em>-存储和管理对Docker群中机密的访问.</li>
 <li><a href="https://github.com/awslabs/git-secrets">Git Secrets</a> -<em>Amazon AWS</em>-扫描git存储库，以查找代码内或提交消息中提交的机密.</li>
-<li><a href="https://github.com/gopasspw/gopass">Gopass</a>  -<em>Gopass</em>-依赖Git和gpg的团队的密码管理器. 管理加密文件和存储库中的机密.</li>
+<li><a href="https://github.com/gopasspw/gopass">Gopass</a> - <em>Gopass</em> - Password manager for teams relying on Git and gpg. Manages secrets in encrypted files and repositories.</li>
 <li><a href="https://cloud.google.com/kms">Google Cloud Key Management Service (KMS)</a> -<em>Google云平台</em>-在GCP中安全存储机密.</li>
 <li><a href="https://www.vaultproject.io/">HashiCorp Vault</a> -<em>HashiCorp</em>-通过UI，CLI或HTTP API安全存储机密.</li>
 <li><a href="https://github.com/pinterest/knox">Pinterest Knox</a> -<em>Pinterest</em>-安全地存储，轮换和审核秘密.</li>
@@ -7107,7 +7108,7 @@
 <li><a href="https://github.com/hysnsec/awesome-threat-modelling">Awesome Threat Modelling</a> -<em>Practical DevSecOps</em>-威胁建模资源的精选列表.</li>
 <li><a href="https://www.foreseeti.com/">SecuriCAD</a> -<em>Forseeti</em>-处理IT基础架构的建模和攻击模拟.</li>
 <li><a href="https://iriusrisk.com/">IriusRisk</a> -<em>IriusRisk</em>-绘制威胁模型并捕获威胁和对策并管理风险.</li>
-<li><a href="https://github.com/devsecops/raindance">Raindance Project</a> - <em>DevSecOps</em> - Use attack maps to identify attack surface and adversary strategies that may lead to compromise.</li>
+<li><a href="https://github.com/devsecops/raindance">Raindance Project</a> -<em>DevSecOps</em>-使用攻击图来识别可能导致妥协的攻击面和对手策略.</li>
 <li><a href="https://www.securitycompass.com/sdelements/threat-modeling/">SD Elements</a> -<em>安全指南针</em>-识别威胁并对其进行排名，生成可操作的任务并跟踪相关票证.</li>
 <li><a href="https://owasp.org/www-project-threat-dragon/">Threat Dragon</a> -<em>OWASP</em>-威胁模型图表工具.</li>
 <li><a href="https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling">Threat Modelling Tool</a> -<em>Microsoft</em>-威胁模型图表工具.</li>
