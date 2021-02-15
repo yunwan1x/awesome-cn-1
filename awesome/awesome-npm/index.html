@@ -7198,6 +7198,7 @@
 <li><a href="http://www.npm-stats.com">npm-stats</a> -显示有关程序包的指标.</li>
 <li><a href="https://ghub.io">ghub.io</a> -重定向到npm软件包的GitHub存储库.</li>
 <li><a href="https://npmaddict.com">npm addict</a> -您每天注入npm软件包.</li>
+<li><a href="https://moiva.io">moiva</a> -发现和比较软件包.</li>
 </ul>
 <h3 id="browser-extensions">Browser extensions<a class="headerlink" href="#browser-extensions" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7366,7 +7367,7 @@ awesome-package
 <span class="p">}</span>
 </pre></div>
 
-<p><em>使用<code>--silent</code>选项会减少终端的输出. 看到 <a href="https://twitter.com/mkuehnel/status/957965749473210369">this comparison</a>.</em></p>
+<p><em>使用<code>--silent</code>选项会减少终端的输出. 看 <a href="https://twitter.com/mkuehnel/status/957965749473210369">this comparison</a>.</em></p>
 <h3 id="lifecycle-scripts">Lifecycle scripts<a class="headerlink" href="#lifecycle-scripts" title="Permanent link">&para;</a></h3>
 <p>npm带有预定义 <a href="https://docs.npmjs.com/misc/scripts">lifecyle scripts</a> 如果在package.json中定义它们，则它们将在特定条件下被执行.</p>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
@@ -7381,7 +7382,7 @@ awesome-package
 </pre></div>
 
 <p>这将在您的npm软件包通过“ npm publish”发布到注册表之前自动执行，以检查依赖项中的已知漏洞.</p>
-<p><em>注意：<strong> prepublishOnly </strong>自npm v4.0.0起可用. 看到 <a href="https://docs.npmjs.com/misc/scripts#deprecation-note">npm docs</a>.</em></p>
+<p><em>注意：<strong> prepublishOnly </strong>自npm v4.0.0起可用. 看 <a href="https://docs.npmjs.com/misc/scripts#deprecation-note">npm docs</a>.</em></p>
 <h4 id="npm-start-and-npm-test"><code>npm start</code> and <code>npm test</code><a class="headerlink" href="#npm-start-and-npm-test" title="Permanent link">&para;</a></h4>
 <p>“ npm start”和“ npm test”也是生命周期脚本，但不会自动执行.</p>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
@@ -7443,7 +7444,7 @@ Bentley
 </pre></div>
 
 <h3 id="run-commands-with-different-nodejs-versions">Run commands with different Node.js versions<a class="headerlink" href="#run-commands-with-different-nodejs-versions" title="Permanent link">&para;</a></h3>
-<p>使用<code>npx</code>（与npm v5.2.0或更高版本捆绑在一起）和 <a href="https://www.npmjs.com/package/node-bin"><code>node-bin</code></a> 软件包，您可以轻松试用不同Node.js版本中的代码，而不必使用版本管理器，例如 <a href="http://nvm.sh"><code>nvm</code></a>, <a href="https://github.com/isaacs/nave"><code>nave</code></a>， 要么 <a href="https://github.com/tj/n"><code>n</code></a>.</p>
+<p>使用<code>npx</code>（与npm v5.2.0或更高版本捆绑在一起）和 <a href="https://www.npmjs.com/package/node-bin"><code>node-bin</code></a> 软件包，您可以轻松试用不同Node.js版本中的代码，而不必使用版本管理器，例如 <a href="http://nvm.sh"><code>nvm</code></a>, <a href="https://github.com/isaacs/nave"><code>nave</code></a>， 或者 <a href="https://github.com/tj/n"><code>n</code></a>.</p>
 <div class="codehilite"><pre><span></span>$ npx --package=node-bin@6.11.0-节点--version
 v6.11.0
 </pre></div>
