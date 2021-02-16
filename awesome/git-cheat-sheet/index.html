@@ -6610,6 +6610,7 @@ Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img a
 <li><a href="https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-tr.md">Turkish Git Cheat Sheet</a></li>
 <li><a href="https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-es.md">Spanish Git Cheat Sheet</a></li>
 <li><a href="https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-el.md">Greek Git Cheat Sheet</a></li>
+<li><a href="https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-pt_BR.md">Brazilian Portuguese Git Cheat Sheet</a></li>
 </ol>
 <p>Git备忘单让您免于全心学习所有命令.</p>
 <p>自由贡献，更新语法错误. 您也可以自由添加语言文件.</p>
@@ -6781,6 +6782,14 @@ $ git stash pop
 
 <h5 id="in-any-version-of-a-text-search">In any version of a text search:<a class="headerlink" href="#in-any-version-of-a-text-search" title="Permanent link">&para;</a></h5>
 <div class="codehilite"><pre><span></span>$ git grep“ Hello” v2.5
+</pre></div>
+
+<h5 id="show-commits-that-introduced-a-specific-keyword">Show commits that introduced a specific keyword<a class="headerlink" href="#show-commits-that-introduced-a-specific-keyword" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span>$ git log -S&amp;#39;关键字&amp;#39;
+</pre></div>
+
+<h5 id="show-commits-that-introduced-a-specific-keyword-using-a-regular-expression">Show commits that introduced a specific keyword (using a regular expression)<a class="headerlink" href="#show-commits-that-introduced-a-specific-keyword-using-a-regular-expression" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span>$ git log -S&amp;#39;关键字&amp;#39;--pickaxe-regex
 </pre></div>
 
 <hr>
