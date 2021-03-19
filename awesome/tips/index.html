@@ -4511,8 +4511,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prunes-references-to-remote-branches-that-have-been-deleted-in-the-remote" class="md-nav__link">
-    Prunes references to remote branches that have been deleted in the remote.
+  <a href="#prunes-references-to-remove-branches-that-have-been-deleted-in-the-remote" class="md-nav__link">
+    Prunes references to remove branches that have been deleted in the remote.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-local-branches-that-has-been-squash-and-merged-in-the-remote" class="md-nav__link">
+    Delete local branches that has been squash and merged in the remote.
   </a>
   
 </li>
@@ -5078,15 +5085,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list-all-git-variable" class="md-nav__link">
-    List all Git variable.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-a-git-specific-variable" class="md-nav__link">
-    Show a Git specific variable.
+  <a href="#show-a-git-logical-variable" class="md-nav__link">
+    Show a Git logical variable.
   </a>
   
 </li>
@@ -8219,8 +8219,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prunes-references-to-remote-branches-that-have-been-deleted-in-the-remote" class="md-nav__link">
-    Prunes references to remote branches that have been deleted in the remote.
+  <a href="#prunes-references-to-remove-branches-that-have-been-deleted-in-the-remote" class="md-nav__link">
+    Prunes references to remove branches that have been deleted in the remote.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-local-branches-that-has-been-squash-and-merged-in-the-remote" class="md-nav__link">
+    Delete local branches that has been squash and merged in the remote.
   </a>
   
 </li>
@@ -8786,15 +8793,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list-all-git-variable" class="md-nav__link">
-    List all Git variable.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-a-git-specific-variable" class="md-nav__link">
-    Show a Git specific variable.
+  <a href="#show-a-git-logical-variable" class="md-nav__link">
+    Show a Git logical variable.
   </a>
   
 </li>
@@ -8931,13 +8931,13 @@
 
 <p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890694312814945" data-ad-slot="5473692530" data-ad-format="auto"  data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></p>
 <h2 id="git-tips">git-tips<a class="headerlink" href="#git-tips" title="Permanent link">&para;</a></h2>
-<p>&gt; git-tips的集合，要添加您的提示吗？ 查看 <a href="https://github.com/git-tips/tips/blob/master/./contributing.md">contributing.md</a></p>
+<p>&gt; git-tips的集合，要添加您的提示吗？ 退房 <a href="https://github.com/git-tips/tips/blob/master/./contributing.md">contributing.md</a></p>
 <p><a href="http://git.io/git-tips">English</a> | <a href="https://github.com/521xueweihan/git-tips">中文</a> | <a href="https://github.com/Imangazaliev/git-tips">Русский</a> | <a href="https://github.com/mingrammer/git-tips">한국어</a> | <a href="https://github.com/hprobotic/git-tips">Tiếng Việt</a> | <a href="https://github.com/isotai/git-tips">日本語</a> | <a href="https://github.com/amarduwal/git-tips">नेपाली</a> | <a href="https://github.com/mbiesiad/tips">Polski</a></p>
 <h3 id="tools"><strong>Tools:</strong><a class="headerlink" href="#tools" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://www.npmjs.com/package/git-tip">git-tip</a>  -方便的CLI，可最佳利用这些技巧.  （<a href="https://github.com/djoudi5/docker-git-tip">Here in Docker container</a>)</li>
 </ul>
-<p>PS：所有这些命令均在git版本2.7.4（Apple Git-66）上进行了测试.</p>
+<p>PS：所有这些命令都在git版本2.7.4（Apple Git-66）上进行了测试.</p>
 <!-- @doxie.inject start toc -->
 
 <!-- Don’t remove or change the comment above – that can break automatic updates. -->
@@ -8977,7 +8977,7 @@
 </pre></div>
 
 <h2 id="list-of-all-files-till-a-commit">List of all files till a commit<a class="headerlink" href="#list-of-all-files-till-a-commit" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git ls-tree-仅名称-r&lt;commit-ish&gt;
+<div class="codehilite"><pre><span></span>git ls-tree --name-only -r&lt;commit-ish&gt;
 </pre></div>
 
 <h2 id="git-reset-first-commit">Git reset first commit<a class="headerlink" href="#git-reset-first-commit" title="Permanent link">&para;</a></h2>
@@ -8985,7 +8985,7 @@
 </pre></div>
 
 <h2 id="reset-preserve-uncommitted-local-changes">Reset: preserve uncommitted local changes<a class="headerlink" href="#reset-preserve-uncommitted-local-changes" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git reset --keep&lt;commit&gt;
+<div class="codehilite"><pre><span></span>git reset-保持&lt;commit&gt;
 </pre></div>
 
 <h2 id="list-all-the-conflicted-files">List all the conflicted files<a class="headerlink" href="#list-all-the-conflicted-files" title="Permanent link">&para;</a></h2>
@@ -9145,7 +9145,7 @@ git config --global alias.st状态
 </pre></div>
 
 <p><strong>Alternatives:</strong>
-<div class="codehilite"><pre><span></span>git stash保存
+<div class="codehilite"><pre><span></span>git stash push
 </pre></div></p>
 <h2 id="saving-current-state-of-unstaged-changes-to-tracked-files">Saving current state of unstaged changes to tracked files<a class="headerlink" href="#saving-current-state-of-unstaged-changes-to-tracked-files" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git stash -k
@@ -9154,7 +9154,7 @@ git config --global alias.st状态
 <p><strong>Alternatives:</strong>
 <div class="codehilite"><pre><span></span>git stash --keep-index
 </pre></div></p>
-<div class="codehilite"><pre><span></span>git stash save --keep-index
+<div class="codehilite"><pre><span></span>git stash push --keep-index
 </pre></div>
 
 <h2 id="saving-current-state-including-untracked-files">Saving current state including untracked files<a class="headerlink" href="#saving-current-state-including-untracked-files" title="Permanent link">&para;</a></h2>
@@ -9162,15 +9162,18 @@ git config --global alias.st状态
 </pre></div>
 
 <p><strong>Alternatives:</strong>
-<div class="codehilite"><pre><span></span>git stash save -u
+<div class="codehilite"><pre><span></span>git stash push -u
 </pre></div></p>
-<div class="codehilite"><pre><span></span>git stash save --include-untracked
+<div class="codehilite"><pre><span></span>git stash push --include-untracked
 </pre></div>
 
 <h2 id="saving-current-state-with-message">Saving current state with message<a class="headerlink" href="#saving-current-state-with-message" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git stash保存&lt;message&gt;
+<div class="codehilite"><pre><span></span>git stash push -m&lt;message&gt;
 </pre></div>
 
+<p><strong>Alternatives:</strong>
+<div class="codehilite"><pre><span></span>git stash push-消息&lt;message&gt;
+</pre></div></p>
 <h2 id="saving-current-state-of-all-files-ignored-untracked-and-tracked">Saving current state of all files (ignored, untracked, and tracked)<a class="headerlink" href="#saving-current-state-of-all-files-ignored-untracked-and-tracked" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git stash -a
 </pre></div>
@@ -9178,7 +9181,7 @@ git config --global alias.st状态
 <p><strong>Alternatives:</strong>
 <div class="codehilite"><pre><span></span>git stash --all
 </pre></div></p>
-<div class="codehilite"><pre><span></span>git stash save --all
+<div class="codehilite"><pre><span></span>git stash push-全部
 </pre></div>
 
 <h2 id="show-list-of-all-saved-stashes">Show list of all saved stashes<a class="headerlink" href="#show-list-of-all-saved-stashes" title="Permanent link">&para;</a></h2>
@@ -9194,17 +9197,17 @@ git config --global alias.st状态
 </pre></div>
 
 <p><strong>Alternatives:</strong>
-<div class="codehilite"><pre><span></span>git stash apply stash @ <span class="o">{</span><span class="m">0</span><span class="o">}</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> git stash drop存放stash @ <span class="o">{</span><span class="m">0</span><span class="o">}</span>
+<div class="codehilite"><pre><span></span>git stash apply stash @ <span class="o">{</span><span class="m">0</span><span class="o">}</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> git stash drop藏匿@ <span class="o">{</span><span class="m">0</span><span class="o">}</span>
 </pre></div></p>
 <h2 id="delete-all-stored-stashes">Delete all stored stashes<a class="headerlink" href="#delete-all-stored-stashes" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git隐藏
 </pre></div>
 
 <p><strong>Alternatives:</strong>
-<div class="codehilite"><pre><span></span>git隐藏&lt;stash@<span class="o">{</span>n<span class="o">}</span>&gt;
+<div class="codehilite"><pre><span></span>git藏起来&lt;stash@<span class="o">{</span>n<span class="o">}</span>&gt;
 </pre></div></p>
 <h2 id="grab-a-single-file-from-a-stash">Grab a single file from a stash<a class="headerlink" href="#grab-a-single-file-from-a-stash" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span> git结帐&lt;stash@<span class="o">{</span>n<span class="o">}</span>&gt; -&lt;file_path&gt;
+<div class="codehilite"><pre><span></span> git结帐&lt;stash@<span class="o">{</span>n<span class="o">}</span>&gt; --&lt;file_path&gt;
 </pre></div>
 
 <p><strong>Alternatives:</strong>
@@ -9219,7 +9222,7 @@ git config --global alias.st状态
 </pre></div>
 
 <h2 id="show-all-ignored-files">Show all ignored files<a class="headerlink" href="#show-all-ignored-files" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git ls文件--others -i --exclude-standard
+<div class="codehilite"><pre><span></span>git ls-files --others -i --exclude-standard
 </pre></div>
 
 <h2 id="create-new-working-tree-from-a-repository-git-25">Create new working tree from a repository (git 2.5)<a class="headerlink" href="#create-new-working-tree-from-a-repository-git-25" title="Permanent link">&para;</a></h2>
@@ -9285,13 +9288,17 @@ git config --global alias.st状态
 <div class="codehilite"><pre><span></span>git add --all <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> git commit --amend --no-edit
 </pre></div>
 
-<h2 id="prunes-references-to-remote-branches-that-have-been-deleted-in-the-remote">Prunes references to remote branches that have been deleted in the remote.<a class="headerlink" href="#prunes-references-to-remote-branches-that-have-been-deleted-in-the-remote" title="Permanent link">&para;</a></h2>
+<h2 id="prunes-references-to-remove-branches-that-have-been-deleted-in-the-remote">Prunes references to remove branches that have been deleted in the remote.<a class="headerlink" href="#prunes-references-to-remove-branches-that-have-been-deleted-in-the-remote" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git fetch -p
 </pre></div>
 
 <p><strong>Alternatives:</strong>
 <div class="codehilite"><pre><span></span>git remote prune起源
 </pre></div></p>
+<h2 id="delete-local-branches-that-has-been-squash-and-merged-in-the-remote">Delete local branches that has been squash and merged in the remote.<a class="headerlink" href="#delete-local-branches-that-has-been-squash-and-merged-in-the-remote" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span> git branch -vv <span class="p">|</span>  grep<span class="p">&amp;</span><span class="c1">#39;：走了]&amp;#39;|  awk&amp;#39;{print&lt;!-- @doxie.inject start --&gt;  }&amp;#39;|  xargs git分支-D</span>
+</pre></div>
+
 <h2 id="retrieve-the-commit-hash-of-the-initial-revision">Retrieve the commit hash of the initial revision.<a class="headerlink" href="#retrieve-the-commit-hash-of-the-initial-revision" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>  git rev-list --reverse HEAD <span class="p">|</span>复制代码头-1
 </pre></div>
@@ -9383,11 +9390,11 @@ git config --global alias.st状态
 </pre></div>
 
 <h2 id="restore-deleted-file">Restore deleted file.<a class="headerlink" href="#restore-deleted-file" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span> git结帐&lt;deleting_commit&gt; -&lt;file_path&gt;
+<div class="codehilite"><pre><span></span> git结帐&lt;deleting_commit&gt; --&lt;file_path&gt;
 </pre></div>
 
 <h2 id="restore-file-to-a-specific-commit-hash">Restore file to a specific commit-hash<a class="headerlink" href="#restore-file-to-a-specific-commit-hash" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span> git结帐&lt;commit-ish&gt; -&lt;file_path&gt;
+<div class="codehilite"><pre><span></span> git结帐&lt;commit-ish&gt; --&lt;file_path&gt;
 </pre></div>
 
 <h2 id="always-rebase-instead-of-merge-on-pull">Always rebase instead of merge on pull.<a class="headerlink" href="#always-rebase-instead-of-merge-on-pull" title="Permanent link">&para;</a></h2>
@@ -9419,7 +9426,7 @@ git config --global branch.autosetuprebase总是
 </pre></div>
 
 <h2 id="dry-run-any-command-that-supports-dry-run-flag-should-do">Dry run. (any command that supports dry-run flag should do.)<a class="headerlink" href="#dry-run-any-command-that-supports-dry-run-flag-should-do" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git clean -fd --dry运行
+<div class="codehilite"><pre><span></span>git clean -fd --dry-run
 </pre></div>
 
 <h2 id="marks-your-commit-as-a-fix-of-a-previous-commit">Marks your commit as a fix of a previous commit.<a class="headerlink" href="#marks-your-commit-as-a-fix-of-a-previous-commit" title="Permanent link">&para;</a></h2>
@@ -9447,7 +9454,7 @@ git config --global branch.autosetuprebase总是
 </pre></div>
 
 <h2 id="commits-in-branch1-that-are-not-in-branch2">Commits in Branch1 that are not in Branch2<a class="headerlink" href="#commits-in-branch1-that-are-not-in-branch2" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git log分支1 ^分支2
+<div class="codehilite"><pre><span></span>git log Branch1 ^ Branch2
 </pre></div>
 
 <h2 id="list-n-last-commits">List n last commits<a class="headerlink" href="#list-n-last-commits" title="Permanent link">&para;</a></h2>
@@ -9614,11 +9621,11 @@ git bisect reset                    <span class="c1"># Finish search </span>
 </pre></div>
 
 <h2 id="alias-git-undo">Alias: git undo<a class="headerlink" href="#alias-git-undo" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git config --global alias.undo <span class="s1">&#39;!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f&#39;</span>
+<div class="codehilite"><pre><span></span> git config --global alias.undo<span class="p">&amp;</span><span class="c1">#39;！f（）{git reset --hard $（git rev-parse --abbrev-ref HEAD）@ {$ {1-1}};  };  F&amp;#39;</span>
 </pre></div>
 
 <h2 id="add-object-notes">Add object notes<a class="headerlink" href="#add-object-notes" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git notes add -m<span class="p">&amp;</span><span class="c1">#39;上一次提交的注释....</span>
+<div class="codehilite"><pre><span></span>git notes add -m<span class="p">&amp;</span><span class="c1">#39;关于上一次提交的注释....</span>
 </pre></div>
 
 <h2 id="show-all-the-git-notes">Show all the git-notes<a class="headerlink" href="#show-all-the-git-notes" title="Permanent link">&para;</a></h2>
@@ -9659,12 +9666,8 @@ git bisect reset                    <span class="c1"># Finish search </span>
 <div class="codehilite"><pre><span></span> git怪-L&lt;start&gt;  ，&lt;end&gt;
 </pre></div>
 
-<h2 id="list-all-git-variable">List all Git variable.<a class="headerlink" href="#list-all-git-variable" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git var -l
-</pre></div>
-
-<h2 id="show-a-git-specific-variable">Show a Git specific variable.<a class="headerlink" href="#show-a-git-specific-variable" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>你走了&lt;variable&gt;
+<h2 id="show-a-git-logical-variable">Show a Git logical variable.<a class="headerlink" href="#show-a-git-logical-variable" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>git var -l <span class="p">|</span>&lt;variable&gt;
 </pre></div>
 
 <h2 id="preformatted-patch-file">Preformatted patch file.<a class="headerlink" href="#preformatted-patch-file" title="Permanent link">&para;</a></h2>
