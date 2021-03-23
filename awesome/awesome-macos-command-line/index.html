@@ -12582,7 +12582,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 <div class="codehilite"><pre><span></span>默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2StandardFontFamily格鲁吉亚
 默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFontSize <span class="m">16</span>
 默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2FixedFontFamily Menlo
-默认写入com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFixedFontSize <span class="m">14</span>
+默认设置为com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFixedFontSize <span class="m">14</span>
 </pre></div>
 
 <h4 id="develop-menu-and-web-inspector">Develop Menu and Web Inspector<a class="headerlink" href="#develop-menu-and-web-inspector" title="Permanent link">&para;</a></h4>
@@ -12788,7 +12788,7 @@ defaults write com.apple.dock mru-spaces -bool <span class="nb">true</span> <spa
 </pre></div>
 
 <h4 id="icon-bounce">Icon Bounce<a class="headerlink" href="#icon-bounce" title="Permanent link">&para;</a></h4>
-<p>全局设置当相应应用程序时Dock图标是否应该弹跳
+<p>Global setting whether Dock icons should bounce when the respective application
 需要您的关注.
 <div class="codehilite"><pre><span></span><span class="c1">## Enable (Default)</span>
 默认写com.apple.dock不反弹-bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
@@ -13214,7 +13214,7 @@ atsutil server -ping
 <p>从macOS 10.12（Sierra）开始，它们包含在Terminal.app中.
 <div class="codehilite"><pre><span></span>cp -v /应用程序/实用程序/Terminal.app/内容/资源/字体/ SFMono- *〜/库/字体
 </pre></div></p>
-<p>在较旧的OS版本中，您需要下载并安装Xcode 8 Beta，以便
+<p>在较旧的OS版本中，您需要下载并安装Xcode 8 beta版才能执行此操作
 工作. 之后，它们应在所有应用程序中可用.
 <div class="codehilite"><pre><span></span>cp -v /系统/应用程序/实用程序/Terminal.app/内容/资源/字体/ SFMono- *〜/库/字体
 </pre></div></p>
@@ -13311,12 +13311,24 @@ sudo killall -HUP蓝牙
 
 <h4 id="chime-when-charging">Chime When Charging<a class="headerlink" href="#chime-when-charging" title="Permanent link">&para;</a></h4>
 <p>连接MagSafe时播放iOS充电声音.
-<div class="codehilite"><pre><span></span><span class="c1">## Enable</span>
+<div class="codehilite"><pre><span></span><span class="c1">## Up to macOS 10.12 (Sierra)</span>
+
+<span class="c1">## Enable</span>
 默认写com.apple.PowerChime ChimeOnAllHardware -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 打开/System/Library/CoreServices/PowerChime.app
 
 <span class="c1">## Disable (Default)</span>
 默认写com.apple.PowerChime ChimeOnAllHardware -bool <span class="nb">false</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+杀死所有力量
+</pre></div>
+<div class="codehilite"><pre><span></span><span class="c1">## From macOS 10.13 (High Sierra) on</span>
+
+<span class="c1">## Enable (Default)</span>
+默认写com.apple.PowerChime ChimeOnNoHardware -bool <span class="nb">false</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+打开/System/Library/CoreServices/PowerChime.app
+
+<span class="c1">## Disable</span>
+默认写com.apple.PowerChime ChimeOnNoHardware -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 杀死所有力量
 </pre></div></p>
 <h2 id="input-devices">Input Devices<a class="headerlink" href="#input-devices" title="Permanent link">&para;</a></h2>
@@ -13643,7 +13655,7 @@ sudo spctl --master-禁用
 默认写com.apple.screensaver askForPasswordDelay -int <span class="m">0</span>
 
 <span class="c1">## Disable (Integer = lock delay in seconds)</span>
-defaults write com.apple.screensaver askForPasswordDelay -int <span class="m">10</span>
+默认写com.apple.screensaver askForPasswordDelay -int <span class="m">10</span>
 </pre></div>
 
 <h4 id="screensaver-password">Screensaver Password<a class="headerlink" href="#screensaver-password" title="Permanent link">&para;</a></h4>
@@ -13660,7 +13672,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int <span class="m">10
 <h3 id="privacy-database">Privacy Database<a class="headerlink" href="#privacy-database" title="Permanent link">&para;</a></h3>
 <p>tccutil命令管理隐私数据库，该数据库存储决策
 用户已确定应用程序是否可以访问个人数据. 您需要关闭
-在运行这些命令中的任何命令之前，除Terminal以外的所有应用程序.</p>
+在运行这些命令中的任何命令之前，除终端外的所有应用程序.</p>
 <div class="codehilite"><pre><span></span><span class="c1">## Full Reset for All Applications</span>
 sudo tccutil重设所有
 
@@ -13818,7 +13830,7 @@ sudo / Applications / Install <span class="se">\ </span>OS <span class="se">\ </
 sudo / Applications / Install <span class="se">\ </span>OS <span class="se">\ </span>X <span class="se">\ </span>Yosemite.app/Contents/Resources/createinstallmedia --volume / Volumes / USB --applicationpath / Applications / Install <span class="se">\ </span>OS <span class="se">\ </span>X <span class="se">\ </span>Yosemite.app
 </pre></div>
 
-<p><em>为了在擦除驱动器之前进行确认，请从驱动器中删除<code>–nointeraction</code>.
+<p><em>为了在擦除驱动器之前进行确认，请从驱动器中删除<code>--nointeraction</code>.
   命令.
  </em>可选的“ –-downloadassets”标志是macOS 10.14（Mojave）中的新增功能. 它
   下载安装过程中可能需要的资产，例如更新.
@@ -13977,7 +13989,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.pl
 <p>通过Apple Remote Desktop或VNC远程登录Mac时，您是
 有时需要在连接到
 苹果电脑. 尽管您可以禁用此行为，但明确建议您不要
-除非您确定没有其他人会关闭此功能，否则请关闭此功能.
+除非您确定没有其他人会关闭此功能，否则请关闭此功能
 不在时可以物理访问Mac.
 <div class="codehilite"><pre><span></span><span class="c1">## Disable</span>
 sudo默认写/Library/Preferences/com.apple.RemoteManagement.plist RestoreMachineState -bool否
