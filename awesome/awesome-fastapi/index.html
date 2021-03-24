@@ -6831,6 +6831,7 @@
 <h3 id="auth">Auth<a class="headerlink" href="#auth" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/dmontagu/fastapi-auth">FastAPI Auth</a> -可插拔身份验证，支持带有JWT访问和刷新令牌的OAuth2密码流.</li>
+<li><a href="https://github.com/tokusumi/fastapi-cloudauth">FastAPI Cloud Auth</a> -FastAPI与云身份验证服务（AWS Cognito，Auth0，Firebase身份验证）之间的简单集成.</li>
 <li><a href="https://github.com/MushroomMaula/fastapi_login">FastAPI Login</a> -帐户管理和身份验证（基于 <a href="https://github.com/maxcountryman/flask-login">Flask-Login</a>).</li>
 <li><a href="https://github.com/IndominusByte/fastapi-jwt-auth">FastAPI JWT Auth</a> -JWT身份验证（基于 <a href="https://github.com/vimalloc/flask-jwt-extended">Flask-JWT-Extended</a>).</li>
 <li><a href="https://github.com/holgi/fastapi-permissions">FastAPI Permissions</a> -行级权限.</li>
@@ -6841,8 +6842,8 @@
 <h3 id="databases">Databases<a class="headerlink" href="#databases" title="Permanent link">&para;</a></h3>
 <h4 id="orms">ORMs<a class="headerlink" href="#orms" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="https://github.com/mfreeborn/fastapi-sqlalchemy">FastAPI SQLAlchemy</a> -FastAPI与 <a href="https://www.sqlalchemy.org/">SQLAlchemy</a>.</li>
-<li><a href="https://tortoise-orm.readthedocs.io/en/latest/index.html">Tortoise ORM</a> -受Django启发的易于使用的异步ORM（对象关系映射器）.</li>
+<li><a href="https://github.com/mfreeborn/fastapi-sqlalchemy">FastAPI SQLAlchemy</a> -FastAPI和 <a href="https://www.sqlalchemy.org/">SQLAlchemy</a>.</li>
+<li><a href="https://tortoise-orm.readthedocs.io/en/latest/index.html">Tortoise ORM</a> -受Django启发的易于使用的asyncio ORM（对象关系映射器）.</li>
 <li><a href="https://tortoise-orm.readthedocs.io/en/latest/examples/fastapi.html">FastAPI Example</a> -Tortoise-ORM FastAPI集成的示例.</li>
 <li><a href="https://web.archive.org/web/20200523174158/https://robwagner.dev/tortoise-fastapi-setup/">Tutorial: Setting up Tortoise ORM with FastAPI</a></li>
 <li><a href="https://tortoise-orm.readthedocs.io/en/latest/migration.html">Aerich</a> -乌龟ORM迁移工具.</li>
@@ -6856,12 +6857,12 @@
 </ul>
 <h4 id="query-builders">Query Builders<a class="headerlink" href="#query-builders" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="https://github.com/CanopyTax/asyncpgsa">asyncpgsa</a> -包装纸 <a href="https://github.com/MagicStack/asyncpg">asyncpg</a> 用于 <a href="https://docs.sqlalchemy.org/en/latest/core/">SQLAlchemy Core</a>.</li>
+<li><a href="https://github.com/CanopyTax/asyncpgsa">asyncpgsa</a> -周围的包装纸 <a href="https://github.com/MagicStack/asyncpg">asyncpg</a> 用于 <a href="https://docs.sqlalchemy.org/en/latest/core/">SQLAlchemy Core</a>.</li>
 <li><a href="https://github.com/encode/databases">Databases</a> -可以在 <a href="https://docs.sqlalchemy.org/en/latest/core/">SQLAlchemy Core</a> 表达语言.</li>
 </ul>
 <h4 id="odms">ODMs<a class="headerlink" href="#odms" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="http://mongoengine.org/">MongoEngine</a> -一个文档对象映射器（认为是ORM，但适用于文档数据库），用于从Python使用MongoDB.</li>
+<li><a href="http://mongoengine.org/">MongoEngine</a> -用于从Python使用MongoDB的文档对象映射器（认为是ORM，但适用于文档数据库）.</li>
 <li><a href="https://motor.readthedocs.io/">Motor</a> -MongoDB的异步Python驱动程序.</li>
 <li><a href="https://art049.github.io/odmantic/">ODMantic</a> -与AsyncIO MongoDB ODM集成 <a href="https://pydantic-docs.helpmanual.io/">Pydantic</a>. </li>
 </ul>
@@ -6873,6 +6874,7 @@
 </ul>
 <h3 id="developer-tools">Developer Tools<a class="headerlink" href="#developer-tools" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="https://github.com/koxudaxi/fastapi-code-generator">FastAPI Code Generator</a> -从OpenAPI文件创建FastAPI应用，从而启用架构驱动的开发.</li>
 <li><a href="https://github.com/dmontagu/fastapi_client">FastAPI Client Generator</a> -根据OpenAPI规范生成mypy和IDE友好的API客户端.</li>
 <li><a href="https://github.com/sunhailin-Leo/fastapi_profiler">FastAPI Profiler</a> -joerick / pyinstrument的FastAPI中间件，用于检查您的服务性能.</li>
 <li><a href="https://github.com/DeanWay/fastapi-versioning">FastAPI Versioning</a> -API版本控制.</li>
@@ -6897,9 +6899,9 @@
 <li><a href="https://github.com/pyropy/fastapi-socketio">FastAPI SocketIO</a> -轻松集成FastAPI和SocketIO.</li>
 <li><a href="https://github.com/dmontagu/fastapi-utils">FastAPI Utilities</a> -可重用的实用程序：基于类的视图，推理路由器，周期性任务，定时中间件，SQLAlchemy会话，OpenAPI规范简化.</li>
 <li><a href="https://github.com/authorizon/fastapi_websocket_pubsub">FastAPI Websocket Pub/Sub</a> -经典的发布/订阅模式可轻松在Web上和整个云中实时访问和扩展.</li>
-<li><a href="https://github.com/authorizon/fastapi_websocket_rpc">FastAPI Websocket RPC</a> -通过Websockets进行的RPC（双向JSON RPC）变得容易，健壮并可以进行生产.</li>
+<li><a href="https://github.com/authorizon/fastapi_websocket_rpc">FastAPI Websocket RPC</a> -通过Websockets进行的RPC（双向JSON RPC）可以轻松，可靠地进行生产.</li>
 <li><a href="https://github.com/BeeMyDesk/prerender-python-starlette">Prerender Python Starlette</a> -用于Prerender的Starlette中间件.</li>
-<li><a href="https://github.com/trallnag/prometheus-fastapi-instrumentator">Prometheus FastAPI Instrumentator</a> -适用于FastAPI应用程序的可配置模块化Prometheus Instrumentator.</li>
+<li><a href="https://github.com/trallnag/prometheus-fastapi-instrumentator">Prometheus FastAPI Instrumentator</a> -适用于您的FastAPI应用程序的可配置模块化Prometheus Instrumentator.</li>
 <li><a href="https://github.com/laurents/slowapi">SlowApi</a> -速率限制器（基于 <a href="https://flask-limiter.readthedocs.io">Flask-Limiter</a>).</li>
 <li><a href="https://github.com/tomwojcik/starlette-context">Starlette Context</a> -允许您在项目中的任何位置存储和访问请求数据，对记录很有用.</li>
 <li><a href="https://github.com/stephenhillier/starlette_exporter">Starlette Exporter</a> -FastAPI和Starlette的另一种Prometheus集成.</li>
@@ -6910,13 +6912,13 @@
 <h3 id="official-resources">Official Resources<a class="headerlink" href="#official-resources" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://fastapi.tiangolo.com/">Documentation</a> -全面的文档.</li>
-<li><a href="https://fastapi.tiangolo.com/tutorial/">Tutorial</a> -正式教程，逐步向您展示如何使用FastAPI及其大部分功能.</li>
+<li><a href="https://fastapi.tiangolo.com/tutorial/">Tutorial</a> -官方教程，逐步向您展示如何使用FastAPI及其大部分功能.</li>
 <li><a href="https://github.com/tiangolo/fastapi">Source Code</a> -托管在GitHub上.</li>
 <li><a href="https://gitter.im/tiangolo/fastapi">Gitter Chat</a> -与其他FastAPI用户聊天.</li>
 </ul>
 <h3 id="external-resources">External Resources<a class="headerlink" href="#external-resources" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://testdriven.io/blog/topics/fastapi/">TestDriven.io FastAPI</a> -多个特定于FastAPI的文章，着重于开发和测试可用于生产环境的RESTful API，服务于机器学习模型等.</li>
+<li><a href="https://testdriven.io/blog/topics/fastapi/">TestDriven.io FastAPI</a> -多个特定于FastAPI的文章，着重于开发和测试可用于生产环境的RESTful API，提供机器学习模型等.</li>
 </ul>
 <h3 id="podcasts">Podcasts<a class="headerlink" href="#podcasts" title="Permanent link">&para;</a></h3>
 <ul>
@@ -6935,16 +6937,16 @@
 <li><a href="https://medium.com/analytics-vidhya/deploy-machine-learning-models-with-keras-fastapi-redis-and-docker-4940df614ece">Deploy Machine Learning Models with Keras, FastAPI, Redis and Docker</a></li>
 <li><a href="https://towardsdatascience.com/deploying-iris-classifications-with-fastapi-and-docker-7c9b83fdec3a">Deploying Iris Classifications with FastAPI and Docker</a> -Docker化FastAPI应用程序.</li>
 <li><a href="https://testdriven.io/blog/fastapi-crud/">Developing and Testing an Asynchronous API with FastAPI and Pytest</a> -使用Test-Driven Development使用FastAPI，Postgres，Pytest和Docker开发和测试异步API.</li>
-<li><a href="https://amitness.com/2020/06/fastapi-vs-flask/">FastAPI for Flask Users</a> -通过与Flask的并行代码比较来学习FastAPI.</li>
+<li><a href="https://amitness.com/2020/06/fastapi-vs-flask/">FastAPI for Flask Users</a> -通过与Flask的并排代码比较来学习FastAPI.</li>
 <li><a href="https://florian-kromer.medium.com/fastapi-microservice-patterns-3052c1241019">FastAPI Microservice Patterns</a> -具有微服务模式的示例性实现的博客文章系列.</li>
 <li><a href="https://florian-kromer.medium.com/fastapi-microservice-patterns-local-development-environment-12182e786f1c">Local Development Environment</a> -简而言之，Skaffold，docker，kubectl和minikube.</li>
 <li><a href="https://florian-kromer.medium.com/fastapi-microservice-patterns-service-discovery-in-container-orchestration-platforms-290c00d1ad8">Service discovery in Container Orchestration Platforms</a> -说明了如何在Kubernetes中启用FastAPI服务通信.</li>
-<li><a href="https://florian-kromer.medium.com/fastapi-microservice-patterns-asynchronous-communication-45a3b68f8bb8">Asynchronous Communication</a> -通过消息启用松散耦合的服务.</li>
-<li><a href="https://medium.com/swlh/fastapi-microservice-patterns-application-monitoring-49fcb7341d9a">Application Monitoring</a> -使用Prometheus和Grafana进行应用程序指标监视.</li>
+<li><a href="https://florian-kromer.medium.com/fastapi-microservice-patterns-asynchronous-communication-45a3b68f8bb8">Asynchronous Communication</a> -通过消息传递启用松散耦合的服务.</li>
+<li><a href="https://medium.com/swlh/fastapi-microservice-patterns-application-monitoring-49fcb7341d9a">Application Monitoring</a> -使用Prometheus和Grafana进行应用程序度量监视.</li>
 <li><a href="https://medium.com/swlh/fastapi-microservice-serverless-deployment-41a6d21e5cb3">Serverless Deployment</a> -关于FastAPI和Kubernetes原生FaaS平台之间的兼容性的当前状态.</li>
 <li><a href="https://www.machinecurve.com/index.php/2020/03/19/tutorial-how-to-deploy-your-convnet-classifier-with-keras-and-fastapi/">How to deploy your ConvNet classifier with Keras and FastAPI</a> -通过基于Web的API部署机器学习模型.</li>
 <li><a href="https://guitton.co/posts/fastapi-monitoring/">How to monitor your FastAPI service</a> -说明如何使用OpenTelemetry和Datadog / Jaeger实施应用程序性能监视（APM）.</li>
-<li><a href="https://camillovisini.com/article/abstracting-fastapi-services/">Implementing FastAPI Services – Abstraction and Separation of Concerns</a> - FastAPI application and service structure for a more maintainable codebase.</li>
+<li><a href="https://camillovisini.com/article/abstracting-fastapi-services/">Implementing FastAPI Services – Abstraction and Separation of Concerns</a> -FastAPI应用程序和服务结构，可维护性更高的代码库.</li>
 <li><a href="https://developer.mongodb.com/how-to/FARM-Stack-FastAPI-React-MongoDB/">Introducing FARM Stack - FastAPI, React, and MongoDB</a> -完整的FastAPI Web应用程序堆栈入门.</li>
 <li><a href="https://www.errietta.me/blog/python-fastapi-intro/">Introduction to the FastAPI Python Framework</a> -快速介绍FastAPI.</li>
 <li><a href="https://www.pluralsight.com/tech-blog/porting-flask-to-fastapi-for-ml-model-serving/">Porting Flask to FastAPI for ML Model Serving</a> -Flask与FastAPI的比较.</li>
@@ -6954,12 +6956,12 @@
 </ul>
 <h3 id="talks">Talks<a class="headerlink" href="#talks" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=z9K5pwb0rt8">PyConBY 2020: Serve ML models easily with FastAPI</a> -通过Sebastian Ramirez的演讲，您将学习如何使用FastAPI轻松为ML模型构建生产就绪的Web（JSON）API，包括默认的最佳实践.</li>
+<li><a href="https://www.youtube.com/watch?v=z9K5pwb0rt8">PyConBY 2020: Serve ML models easily with FastAPI</a> -通过塞巴斯蒂安·拉米雷斯（Sebastian Ramirez）的演讲，您将学习如何使用FastAPI轻松为ML模型构建生产就绪的Web（JSON）API，包括默认的最佳实践.</li>
 <li><a href="https://www.youtube.com/watch?v=3DLwPcrE5mA">PyCon UK 2019: FastAPI from the ground up</a> -此演讲显示了如何使用FastAPI从头开始为数据库构建简单的REST API.</li>
 </ul>
 <h3 id="videos">Videos<a class="headerlink" href="#videos" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=5GorMC2lPpk">Building a Stock Screener with FastAPI</a> -使用FastAPI构建基于Web的股票筛选器后，将向您介绍FastAPI的许多功能，包括pydantic模型，依赖项注入，后台任务和SQLAlchemy集成.</li>
+<li><a href="https://www.youtube.com/watch?v=5GorMC2lPpk">Building a Stock Screener with FastAPI</a> -使用FastAPI构建基于Web的股票筛选器时，将向您介绍FastAPI的许多功能，包括pydantic模型，依赖项注入，后台任务和SQLAlchemy集成.</li>
 <li><a href="https://www.youtube.com/watch?v=Pe66M8mn-wA">Building Web APIs Using FastAPI</a> -使用FastAPI构建Web应用程序编程接口（RESTful API）.</li>
 <li><a href="https://www.youtube.com/watch?v=PUhio8CprhI&amp;list=PL5gdMNl42qynpY-o43Jk3evfxEKSts3HS">FastAPI - A Web Framework for Python</a> -了解如何使用FastAPI进行数值验证.</li>
 <li><a href="https://www.youtube.com/watch?v=9YBAOYQOzWs">FastAPI vs. Django vs. Flask</a>  -哪种框架最适合2020年的Python？ 哪个使用异步/等待最好？ 哪个最快？ </li>
@@ -6967,8 +6969,9 @@
 </ul>
 <h3 id="courses">Courses<a class="headerlink" href="#courses" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://training.talkpython.fm/courses/getting-started-with-fastapi">Modern APIs with FastAPI and Python</a> -旨在帮助您快速创建使用FastAPI在云中运行的新API的课程.</li>
 <li><a href="https://testdriven.io/courses/tdd-fastapi/">Test-Driven Development with FastAPI and Docker</a> -了解如何使用Python，FastAPI和Docker构建，测试和部署文本汇总微服务.</li>
+<li><a href="https://training.talkpython.fm/courses/getting-started-with-fastapi">Modern APIs with FastAPI and Python</a> -一门旨在让您使用FastAPI快速创建在云中运行的新API的课程.</li>
+<li><a href="https://training.talkpython.fm/courses/full-html-web-applications-with-fastapi">Full Web Apps with FastAPI Course</a> -您将学习使用FastAPI来构建完整的Web应用程序，这与使用Flask或Django可以完成的工作相当.</li>
 </ul>
 <h2 id="hosting">Hosting<a class="headerlink" href="#hosting" title="Permanent link">&para;</a></h2>
 <h3 id="paas">PaaS<a class="headerlink" href="#paas" title="Permanent link">&para;</a></h3>
@@ -6992,7 +6995,7 @@
 <p>Frameworks:</p>
 <ul>
 <li><a href="https://github.com/aws/chalice">Chalice</a></li>
-<li><a href="https://mangum.io/">Mangum</a> -使用AWS Lambda和API Gateway运行ASGI应用程序的适配器.</li>
+<li><a href="https://mangum.io/">Mangum</a> -用于通过AWS Lambda和API网关运行ASGI应用程序的适配器.</li>
 <li><a href="https://vercel.com/">Vercel</a> -（以前的时间）（<a href="https://github.com/paul121/fastapi-zeit-now">example</a>).</li>
 <li><a href="https://github.com/Miserlou/Zappa">Zappa</a></li>
 </ul>
@@ -7009,14 +7012,15 @@
 <li><a href="https://github.com/tiangolo/full-stack-fastapi-postgresql">Full Stack FastAPI and PostgreSQL - Base Project Generator</a> -全栈的现代Web应用程序生成器，其中包括FastAPI，PostgreSQL，Docker，Celery，Vue前端，自动HTTPS等（由FastAPI的创建者开发， <a href="https://github.com/tiangolo">Sebastián Ramírez</a>).</li>
 <li><a href="https://github.com/prostomarkeloff/fastapi-tortoise">FastAPI and Tortoise ORM</a> -带有FastAPI（作为Web框架）和Tortoise-ORM（用于通过数据库工作而毫不费力）的强大，简单的Web API模板.</li>
 <li><a href="https://github.com/eightBEC/fastapi-ml-skeleton">FastAPI Model Server Skeleton</a> -骨架应用程序，可为生产准备就绪的机器学习模型提供服务.</li>
-<li><a href="https://github.com/microsoft/cookiecutter-spacy-fastapi">cookiecutter-spacy-fastapi</a> -使用FastAPI快速部署spaCy模型.</li>
+<li><a href="https://github.com/microsoft/cookiecutter-spacy-fastapi">cookiecutter-spacy-fastapi</a> - Quick deployments of spaCy models with FastAPI.</li>
 <li><a href="https://github.com/arthurhenrique/cookiecutter-fastapi">cookiecutter-fastapi</a> -使用以下内容的FastAPI项目的Cookiecutter模板：机器学习，诗歌，Azure管道和pytest.</li>
-<li><a href="https://github.com/triaxtec/openapi-python-client">openapi-python-client</a> -从OpenAPI生成现代FastAPI Python客户端（通过FastAPI）.</li>
+<li><a href="https://github.com/triaxtec/openapi-python-client">openapi-python-client</a> -从OpenAPI生成现代的FastAPI Python客户端（通过FastAPI）.</li>
 <li><a href="https://github.com/vutran1710/YeomanPywork">Pywork</a> - <a href="https://yeoman.io/">Yeoman</a> 生成器以构建FastAPI应用.</li>
-<li><a href="https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker">uvicorn-gunicorn-fastapi-docker</a> -由Gunicorn管理的带有Uvicorn的Docker映像，用于具有性能自动调整功能的Python 3.7和3.6中的高性能FastAPI Web应用程序.</li>
+<li><a href="https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker">uvicorn-gunicorn-fastapi-docker</a> -由Gunicorn管理的带有Uvicorn的Docker映像，用于具有性能自动调整的Python 3.7和3.6中的高性能FastAPI Web应用程序.</li>
 <li><a href="https://github.com/leosussan/fastapi-gino-arq-uvicorn">fastapi-gino-arq-uvicorn</a>  -使用Python尝试高性能的REST异步API.  FastAPI + GINO + Arq + Uvicorn（带有Redis和PostgreSQL）.</li>
 <li><a href="https://github.com/Buuntu/fastapi-react">FastAPI and React Template</a> -使用FastAPI，TypeScript，Docker，PostgreSQL和React的全栈cookiecutter样板.</li>
 <li><a href="https://github.com/rednafi/fastapi-nano">FastAPI Nano</a> -具有工厂模式架构的简单FastAPI模板.</li>
+<li><a href="https://github.com/br3ndonland/inboard">inboard</a> -Docker映像可为您的FastAPI应用程序提供支持，并帮助您更快地发货.</li>
 </ul>
 <h3 id="open-source-projects">Open Source Projects<a class="headerlink" href="#open-source-projects" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7028,9 +7032,9 @@
 <li><a href="https://github.com/testdrivenio/fastapi-crud-async">Async flavor</a></li>
 <li><a href="https://github.com/testdrivenio/fastapi-crud-sync">Sync Flavor</a></li>
 <li><a href="https://github.com/cthwaite/fastapi-websocket-broadcast">FastAPI Websocket Broadcast</a> -Websocket“广播”演示.</li>
-<li><a href="https://github.com/GregaVrbancic/fastapi-celery">FastAPI with Celery, RabbitMQ, and Redis</a> -最小化示例，该示例将FastAPI和Celery与RabbitMQ一起用于任务队列，将Redis用于Celery后端，并使用Flower监视Celery任务.</li>
+<li><a href="https://github.com/GregaVrbancic/fastapi-celery">FastAPI with Celery, RabbitMQ, and Redis</a> -使用FastAPI和Celery与RabbitMQ进行任务队列，使用Redis进行Celery后端以及使用Flower监视Celery任务的最小示例.</li>
 <li><a href="https://github.com/smagafurov/fastapi-jsonrpc">JSON-RPC Server</a> -基于FastAPI的JSON-RPC服务器.</li>
-<li><a href="https://github.com/rclement/mailer">Mailer</a> -用于静态网站的简单死信邮件微服务.</li>
+<li><a href="https://github.com/rclement/mailer">Mailer</a> -静态网站的简单死信邮件微服务.</li>
 <li><a href="https://github.com/markqiu/fastapi-mongodb-realworld-example-app">RealWorld Example App - mongo</a></li>
 <li><a href="https://github.com/nsidnev/fastapi-realworld-example-app">RealWorld Example App - postgres</a></li>
 <li><a href="https://github.com/leonh/redis-streams-fastapi-chat">redis-streams-fastapi-chat</a> -使用Websockets，Asyncio和FastAPI / Starlette的简单Redis Streams支持的聊天应用程序.</li>
