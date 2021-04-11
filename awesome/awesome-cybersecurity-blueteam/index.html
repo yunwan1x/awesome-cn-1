@@ -6610,8 +6610,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#distributed-observability-and-tracing" class="md-nav__link">
-    Distributed observability and tracing
+  <a href="#distributed-monitoring" class="md-nav__link">
+    Distributed monitoring
   </a>
   
 </li>
@@ -6929,7 +6929,7 @@
 <p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890694312814945" data-ad-slot="5473692530" data-ad-format="auto"  data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></p>
 <h2 id="awesome-cybersecurity-blue-team">Awesome Cybersecurity Blue Team <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a><a class="headerlink" href="#awesome-cybersecurity-blue-team" title="Permanent link">&para;</a></h2>
 <p>&gt;为网络安全蓝队提供了很棒的资源，工具和其他令人眼前一亮的东西.</p>
-<p>[Cybersecurity blue teams](<a href="https://en.wikipedia.org/wiki/Blue_team_(computer_security">https://en.wikipedia.org/wiki/Blue_team_(computer_security</a>) ）是一群人，他们识别信息技术系统中的安全漏洞，验证安全措施的有效性并监视系统，以确保已实施的防御措施在将来仍然有效. 虽然不是排他性的，但此列表在很大程度上偏向于 <a href="https://www.gnu.org/philosophy/free-sw.html">Free Software</a> 项目，并反对专有产品或公司服务. 有关令人反感的TTP，请参阅 <a href="https://github.com/fabacab/awesome-pentest">awesome-pentest</a>.</p>
+<p>[Cybersecurity blue teams](<a href="https://en.wikipedia.org/wiki/Blue_team_(computer_security">https://en.wikipedia.org/wiki/Blue_team_(computer_security</a>) ）是一群人，他们识别信息技术系统中的安全漏洞，验证安全措施的有效性并监视系统，以确保已实施的防御措施在将来仍然有效. 虽然不是排他性的，但此清单在很大程度上偏向 <a href="https://www.gnu.org/philosophy/free-sw.html">Free Software</a> 项目，并反对专有产品或公司服务. 有关令人反感的TTP，请参阅 <a href="https://github.com/fabacab/awesome-pentest">awesome-pentest</a>.</p>
 <p>衷心地欢迎您的贡献和建议♥.  （✿◕‿◕）. 请检查 <a href="https://github.com/fabacab/awesome-cybersecurity-blueteam/blob/master/CONTRIBUTING.md">Contributing Guidelines</a> 更多细节. 这项工作是根据 <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 <p>许多网络安全专业人员通过向地方，州和联邦警务机构提供服务或与这样做的类似机构合作，有意或无意地助长了种族主义国家暴力. 这种恶魔最常见的情况是通过强制性的就业机制在缺乏食物，住房或医疗保健的威胁下发生. 尽管该列表可以公开获得，但维护者的意图是并希望该列表支持那些致力于对抗如此大规模的平庸邪恶的人们和组织.</p>
 <p><img alt="Image of a raised fist composed of the names of Black people murdered by taxpayer-funded racist police violence." src="https://web.archive.org/web/20201028021653if_/https://lauerrealtygroup.com/wp-content/uploads/2020/06/BLM-FIST-scaled.jpg" /></p>
@@ -6970,18 +6970,22 @@
 <li><a href="https://github.com/nccgroup/ScoutSuite">Scout Suite</a> -开源的多云安全审核工具，可对云环境进行安全状态评估.</li>
 <li><a href="https://github.com/google/gvisor">gVisor</a> -用Go编写的应用程序内核，它实现了Linux系统表面的很大一部分，以在应用程序和主机内核之间提供隔离边界.</li>
 </ul>
-<h3 id="distributed-observability-and-tracing">Distributed observability and tracing<a class="headerlink" href="#distributed-observability-and-tracing" title="Permanent link">&para;</a></h3>
+<h3 id="distributed-monitoring">Distributed monitoring<a class="headerlink" href="#distributed-monitoring" title="Permanent link">&para;</a></h3>
+<p>也可以看看 <a href="#service-and-performance-monitoring">§ Service and performance monitoring</a>.</p>
 <ul>
-<li><a href="https://opentelemetry.io/">OpenTelemetry</a> -云原生软件的可观察性框架，包括用于将应用程序性能指标导出到跟踪后端的工具，API和SDK的集合（以前由OpenTracing和OpenCensus项目维护）.</li>
+<li><a href="https://cortexmetrics.io/">Coretex</a> -为Prometheus提供水平可扩展，高可用性，多租户的长期存储.</li>
 <li><a href="https://www.jaegertracing.io/">Jaeger</a> -分布式跟踪平台后端，用于对基于微服务的分布式系统进行监视和故障排除.</li>
+<li><a href="https://opentelemetry.io/">OpenTelemetry</a> -云原生软件的可观察性框架，包括用于将应用程序性能指标导出到跟踪后端的工具，API和SDK的集合（以前由OpenTracing和OpenCensus项目维护）.</li>
+<li><a href="https://prometheus.io/">Prometheus</a> -最初在SoundCloud上构建的开源系统监视和警报工具包.</li>
 <li><a href="https://zipkin.io/">Zipkin</a> -分布式跟踪系统后端，有助于收集解决服务体系结构中的延迟问题所需的时序数据.</li>
 </ul>
 <h3 id="kubernetes">Kubernetes<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://kubesec.io/">KubeSec</a> - Static analyzer of Kubernetes manifests that can be run locally, as a Kuberenetes admission controller, or as its own cloud service.</li>
-<li><a href="https://linkerd.io/">Linkerd</a> - Ultra light Kubernetes-specific service mesh that adds observability, reliability, and security to Kubernetes applications without requiring any modification of the application itself.</li>
+<li><a href="https://linkerd.io/">Linkerd</a> -特定于Kubernetes的超轻服务网格，可为Kubernetes应用程序增加可观察性，可靠性和安全性，而无需对应用程序本身进行任何修改.</li>
 <li><a href="https://github.com/darkbitio/mkit">Managed Kubernetes Inspection Tool (MKIT)</a> -查询和验证托管Kubernetes集群对象以及集群内部运行的工作负载/资源的几种与安全性相关的常见配置设置.</li>
 <li><a href="https://polaris.docs.fairwinds.com/">Polaris</a> -通过针对代码提交，Kubernetes接纳请求或集群中已在运行的实时资源运行测试来验证Kubernetes最佳实践. </li>
+<li><a href="https://github.com/muxinc/certificate-expiry-monitor">certificate-expiry-monitor</a> -该实用程序可将TLS证书的到期日作为Prometheus指标公开.</li>
 <li><a href="https://github.com/keikoproj/kube-forensics">kube-forensics</a> -允许群集管理员转储正在运行的Pod及其所有容器的当前状态，以便安全专业人员可以执行脱机取证分析.</li>
 <li><a href="https://kube-hunter.aquasec.com/">kube-hunter</a> -开源工具，可以从外部（“攻击者的视图”）或集群内部运行一组测试（“猎人”）以解决Kubernetes集群中的安全问题.</li>
 </ul>
@@ -7101,7 +7105,7 @@
 <p>也可以看看 <a href="https://en.wikipedia.org/wiki/List_of_router_and_firewall_distributions">Wikipedia: List of router and firewall distributions</a>.</p>
 <ul>
 <li><a href="https://www.ipfire.org/">IPFire</a> -从IPCop派生的基于GNU / Linux的增强型路由器和防火墙分发.</li>
-<li><a href="https://opnsense.org/">OPNsense</a> - Hardened FreeBSD based firewall and routing platform forked from pfSense.</li>
+<li><a href="https://opnsense.org/">OPNsense</a> -从pfSense派生的基于FreeBSD的强化防火墙和路由平台.</li>
 <li><a href="https://www.pfsense.org/">pfSense</a> -从m0n0wall派生的FreeBSD防火墙和路由器分布.</li>
 </ul>
 <h2 id="operating-system-distributions">Operating System distributions<a class="headerlink" href="#operating-system-distributions" title="Permanent link">&para;</a></h2>
@@ -7149,7 +7153,7 @@
 <li><a href="https://github.com/MITRECND/chopshop">ChopShop</a> -协助分析人员创建和执行基于APT的基于Pynids的解码器和检测器的框架.</li>
 <li><a href="https://github.com/stamparm/maltrail">Maltrail</a> -恶意网络流量检测系统.</li>
 <li><a href="https://github.com/aol/moloch">Moloch</a> -增强您当前的安全基础架构，以标准PCAP格式存储和索引网络流量，从而提供快速的索引访问.</li>
-<li><a href="https://www.owlh.net/">OwlH</a> -通过可视化Suricata，Zeek和Moloch生命周期来帮助大规模管理网络IDS.</li>
+<li><a href="https://www.owlh.net/">OwlH</a> - Helps manage network IDS at scale by visualizing Suricata, Zeek, and Moloch life cycles.</li>
 <li><a href="https://github.com/activecm/rita">Real Intelligence Threat Analysis (RITA)</a> -用于网络流量分析的开源框架，可吸收Zeek日志并检测信标，DNS隧道等.</li>
 <li><a href="https://github.com/codeexpress/respounder">Respounder</a> -检测网络上是否存在响应者LLMNR / NBT-NS / MDNS中毒器.</li>
 <li><a href="https://snort.org/">Snort</a> -广泛部署的免费软件IPS，能够进行实时数据包分析，流量记录和基于规则的自定义触发器.</li>
@@ -7243,7 +7247,7 @@
 <ul>
 <li><a href="https://github.com/securitywithoutborders/hardentools">HardenTools</a> -禁用许多危险Windows功能的实用程序.</li>
 <li><a href="https://github.com/sensepost/notruler">NotRuler</a> -检测客户端规则和由VBScript启用的表单 <a href="https://github.com/sensepost/ruler">Ruler</a> 尝试破坏Microsoft Exchange服务器时使用的攻击工具.</li>
-<li><a href="https://github.com/PlumHound/PlumHound">PlumHound</a> -通过利用其寻路引擎来识别Active Directory安全漏洞，可以在连续的安全生命周期中更有效地使用BloodHoundAD.</li>
+<li><a href="https://github.com/PlumHound/PlumHound">PlumHound</a> - More effectively use BloodHoundAD in continual security life-cycles by utilizing its pathfinding engine to identify Active Directory security vulnerabilities.</li>
 <li><a href="https://www.sandboxie.com/">Sandboxie</a> -免费和开放源代码的通用Windows应用程序沙箱实用程序.</li>
 <li><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck">Sigcheck</a> -针对Microsoft的Windows主机的根证书存储进行审核 <a href="https://docs.microsoft.com/en-us/windows/desktop/SecCrypto/certificate-trust-list-overview">Certificate Trust List (CTL)</a>.</li>
 <li><a href="https://github.com/linuz/Sticky-Keys-Slayer">Sticky Keys Slayer</a> -从主机名列表建立Windows RDP会话，并扫描可访问性工具后门，并在发现后门时发出警报.</li>
