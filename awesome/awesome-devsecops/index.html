@@ -6911,7 +6911,7 @@
 <li><a href="https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards">Coding Standards</a> -<em>CERT</em>-用于C，C ++，Java和Android开发的安全开发标准的集合.</li>
 <li><a href="https://owasp.org/www-project-proactive-controls/">Proactive Controls</a> -<em>OWASP</em>-OWASP列出应在每个软件开发项目中实施的十大控件.</li>
 <li><a href="https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines">Secure Coding Guidelines</a> -<em>Mozilla</em>-包含用于安全Web应用程序开发的特定安全开发标准的指南.</li>
-<li><a href="https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf">Secure Coding Practices Quick Reference Guide</a> - <em>OWASP</em> - A checklist to verify that secure development standards have been followed.</li>
+<li><a href="https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf">Secure Coding Practices Quick Reference Guide</a> -<em>OWASP</em>-核对清单，以验证是否遵循了安全的开发标准.</li>
 </ul>
 <h3 id="secure-development-lifecycle-framework">Secure Development Lifecycle Framework<a class="headerlink" href="#secure-development-lifecycle-framework" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7012,7 +7012,7 @@
 <li><a href="http://www.dvwa.co.uk/">Damn Vulnerable Web App</a> -<em>Ryan Dewhurst</em>-一个Web应用程序，它提供了一个安全的环境来理解和利用常见的Web漏洞.</li>
 <li><a href="https://github.com/bkimminich/juice-shop">Juice Shop</a> -<em>OWASP</em>-包含OWASP十大安全漏洞及更多内容的Web应用程序.</li>
 <li><a href="https://github.com/OWASP/NodeGoat">NodeGoat</a> -<em>OWASP</em>-一个Node.js Web应用程序，用于演示并提供解决常见安全漏洞的方法.</li>
-<li><a href="https://github.com/bridgecrewio/terragoat">Terragoat</a>  -<em>Bridgecrew</em>-Terraform模板，用于在AWS，Azure和GCP中创建故意不安全的服务堆栈. 非常适合作为上述代码分析工具来测试Terraform基础结构.</li>
+<li><a href="https://github.com/bridgecrewio/terragoat">Terragoat</a> - <em>Bridgecrew</em> - Terraform templates for creating stacks of intentionally insecure services in AWS, Azure and GCP. Ideal for testing the Terraform Infrastructure as Code Analysis tools above.</li>
 <li><a href="https://owasp.org/www-project-vulnerable-web-applications-directory">Vulnerable Web Apps Directory</a> -<em>OWASP</em>-出于学习目的的易受攻击的Web应用程序的集合.</li>
 </ul>
 <h3 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h3>
@@ -7024,7 +7024,8 @@
 <p>我们编写的软件需要使用机密信息（密码，API密钥，证书，数据库连接字符串）来访问资源，但是我们无法在代码库中存储机密信息，因为这会使他们容易受到攻击. 机密管理工具提供了一种安全地存储，访问和管理机密的方法.</p>
 <ul>
 <li><a href="https://docs.ansible.com/ansible/latest/user_guide/vault.html">Ansible Vault</a> -<em>Ansible</em>-将机密安全存储在Ansible管道中.</li>
-<li><a href="https://aws.amazon.com/kms/">AWS Key Management Service (KMS)</a> -<em>Amazon AWS</em>-在AWS中安全存储机密.</li>
+<li><a href="https://aws.amazon.com/kms/">AWS Key Management Service (KMS)</a> -<em>Amazon AWS</em>-在AWS中创建和管理加密密钥.</li>
+<li><a href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a> -<em>Amazon AWS</em>-将可检索的应用程序密钥安全存储在AWS中.</li>
 <li><a href="https://azure.microsoft.com/en-au/services/key-vault/">Azure Key Vault</a> -<em>Microsoft Azure</em>-将机密安全存储在Azure中.</li>
 <li><a href="https://github.com/StackExchange/blackbox">BlackBox</a> -<em>StackExchange</em>-加密代码存储库中的凭据.</li>
 <li><a href="https://github.com/chef/chef-vault">Chef Vault</a> -<em>厨师</em>-在厨师内部安全存储机密.</li>
