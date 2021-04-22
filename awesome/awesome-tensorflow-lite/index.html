@@ -6758,16 +6758,16 @@
 <p><a href="https://www.tensorflow.org/lite">TensorFlow Lite</a> 是一组工具，可帮助转换和优化TensorFlow模型以在移动设备和边缘设备上运行. 它目前在超过40亿个设备上运行！ 使用TensorFlow 2.x，您可以使用tf.Keras训练模型，轻松地将模型转换为.tflite并进行部署; 或者您可以从模型动物园下载经过预训练的TensorFlow Lite模型.</p>
 <p>这是TensorFlow Lite模型的绝佳列表，其中包含示例应用程序，有用的工具和学习资源-
 <em>展示社区使用TensorFlow Lite构建的内容
-</em>将所有样品并排放置以便于参考
+</em>并排放置所有样品，以方便参考
 *分享知识和学习资源</p>
 <p>如果您想贡献并遵循指南，请提交PR <a href="https://github.com/margaretmz/awesome-tensorflow-lite/blob/master/CONTRIBUTING.md">here</a>.</p>
 <h2 id="what-is-new">What is new<a class="headerlink" href="#what-is-new" title="Permanent link">&para;</a></h2>
 <p>以下是TensorFlow Lite的新功能和工具： <img src="https://raw.githubusercontent.com/margaretmz/awesome-tensorflow-lite/master/images/icons/new.png" width='32' height='32'/>
-* <a href="https://groups.google.com/a/tensorflow.org/d/msg/tflite/Z_h7706dt8Q/sNrjPj4yGgAJ">Announcement of the new converter</a> - <a href="https://medium.com/tensorflow/mlir-a-new-intermediate-representation-and-compiler-framework-beba999ed18d">MLIR</a>基于-并支持转换新模型类别（例如Mask R-CNN和Mobile BERT等），支持功能控制流程并在转换过程中更好地处理错误. 默认情况下在每夜构建版本中启用.
+* <a href="https://groups.google.com/a/tensorflow.org/d/msg/tflite/Z_h7706dt8Q/sNrjPj4yGgAJ">Announcement of the new converter</a> - <a href="https://medium.com/tensorflow/mlir-a-new-intermediate-representation-and-compiler-framework-beba999ed18d">MLIR</a>基于-并支持转换新模型类别（例如Mask R-CNN和Mobile BERT等），支持功能控制流并在转换过程中更好地处理错误. 默认情况下在每夜构建版本中启用.
 * <a href="https://github.com/tensorflow/tflite-support/tree/master/tensorflow_lite_support/java">Android Support Library</a> -使移动开发更加容易（<a href="https://github.com/tensorflow/examples/blob/master/lite/examples/image_classification/android/EXPLORE_THE_CODE.md">Android</a> sample code).
 * <a href="https://www.tensorflow.org/lite/guide/model_maker">Model Maker</a> -创建您的自定义 <a href="https://github.com/tensorflow/examples/tree/master/tensorflow_examples/lite/model_maker">image &amp; text</a> 几行代码即可轻松完成分类模型. 请参阅下面的图标分类器以获取社区的教程.
 * <a href="https://blog.tensorflow.org/2019/12/example-on-device-model-personalization.html">On-device training</a>  -终于到了！ 目前仅限于将学习用于图像分类，但这是一个很好的开始. 见官方 <a href="https://github.com/tensorflow/examples/blob/master/lite/examples/model_personalization/README.md">Android</a> 示例代码，另外一个来自社区（<a href="https://aqibsaeed.github.io/on-device-activity-recognition">Blog</a> | <a href="https://github.com/aqibsaeed/on-device-activity-recognition">Android</a>).
-* <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/g3doc/performance/hexagon_delegate.md">Hexagon delegate</a>  -如何使用Hexagon委托在移动和边缘设备上加快模型推断. 另请参阅博客文章  <a href="https://blog.tensorflow.org/2019/12/accelerating-tensorflow-lite-on-qualcomm.html">Accelerating TensorFlow Lite on Qualcomm Hexagon DSPs</a>.
+* <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/g3doc/performance/hexagon_delegate.md">Hexagon delegate</a>  -如何使用Hexagon委托来加快移动设备和边缘设备上的模型推断. 另请参阅博客文章  <a href="https://blog.tensorflow.org/2019/12/accelerating-tensorflow-lite-on-qualcomm.html">Accelerating TensorFlow Lite on Qualcomm Hexagon DSPs</a>.
 * <a href="https://www.tensorflow.org/lite/convert/metadata">Model Metadata</a> -提供模型描述的标准，这也使 <a href="https://www.tensorflow.org/lite/inference_with_metadata/codegen">Code Gen and Android Studio ML Model Binding</a>.</p>
 <h2 id="models-with-samples">Models with samples<a class="headerlink" href="#models-with-samples" title="Permanent link">&para;</a></h2>
 <p>这是TensorFlow Lite模型以及应用程序/设备的实现和参考.
@@ -6813,10 +6813,10 @@
 </thead>
 <tbody>
 <tr>
-<td>问题与答案 DistilBERT</td>
+<td>问题与答案</td>
+<td>DistilBERT</td>
 <td><a href="https://github.com/huggingface/tflite-android-transformers/blob/master/bert">Android</a></td>
 <td>拥抱脸</td>
-<td></td>
 </tr>
 <tr>
 <td>文字生成</td>
@@ -6853,16 +6853,16 @@
 <h3 id="tensorflow-models">TensorFlow models<a class="headerlink" href="#tensorflow-models" title="Permanent link">&para;</a></h3>
 <p>这些是TensorFlow模型，可以将其转换为.tflite，然后在应用程序和事物中实现：
 * <a href="https://github.com/tensorflow/models/tree/master/official">TensorFlow models</a> -官方TensorFlow模型.
-* <a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md">Tensorflow detection model zoo</a> -在COCO，KITTI，AVA v2.1，iNaturalist Species数据集上进行了预培训.</p>
+* <a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md">Tensorflow detection model zoo</a> -在COCO，KITTI，AVA v2.1，iNaturalist Species数据集上进行了预训练.</p>
 <h2 id="ideas-and-inspiration">Ideas and Inspiration<a class="headerlink" href="#ideas-and-inspiration" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://github.com/ml-gde/e2e-tflite-tutorials">E2E TFLite Tutorials</a>  -签出此仓库以获取示例应用程序构想，并为您的教程项目寻求帮助. 一旦项目完成，TensorFlow Lite模型，示例代码和教程的链接将被添加到这个很棒的列表中.</li>
+<li><a href="https://github.com/ml-gde/e2e-tflite-tutorials">E2E TFLite Tutorials</a>  -签出此仓库以获取示例应用创意，并为您的教程项目寻求帮助. 一旦项目完成，TensorFlow Lite模型，示例代码和教程的链接将被添加到这个很棒的列表中.</li>
 </ul>
 <h2 id="ml-kit-examples">ML Kit examples<a class="headerlink" href="#ml-kit-examples" title="Permanent link">&para;</a></h2>
 <p><a href="https://developers.google.com/ml-kit">ML Kit</a> 是一种移动SDK，可将Google的ML专业知识带给移动开发人员.
 * 2019-10-01 <a href="https://codelabs.developers.google.com/codelabs/mlkit-android-translate/#0">ML Kit Translate demo</a> -材料设计教程 <a href="https://github.com/googlecodelabs/mlkit-android/tree/master/translate">Android</a> （Kotlin）示例-使用ML Kit for Firebase从实时摄像机识别，识别语言并翻译文本.
 * 2019-03-13 <a href="https://youtu.be/ymyYUCrJnxU">Computer Vision with ML Kit - Flutter In Focus</a>.
-* 2019-02-09 <a href="https://medium.com/flutter-community/flutter-mlkit-8039ec66b6a">Flutter + MLKit: Business Card Mail Extractor</a>  -带有 <a href="https://github.com/DaemonLoki/Business-Card-Mail-Extractor">Flutter</a> 示例代码.
+* 2019-02-09 <a href="https://medium.com/flutter-community/flutter-mlkit-8039ec66b6a">Flutter + MLKit: Business Card Mail Extractor</a>  -一篇带有 <a href="https://github.com/DaemonLoki/Business-Card-Mail-Extractor">Flutter</a> 示例代码.
 * 2019-02-08 <a href="https://speakerdeck.com/jinqian/from-tensorflow-to-ml-kit-power-your-android-application-with-machine-learning">From TensorFlow to ML Kit: Power your Android application with machine learning</a> -与之交谈 <a href="https://github.com/xebia-france/magritte">Android</a> （科特琳）示例代码.
 * 2018-08-07 <a href="https://medium.com/over-engineering/building-a-custom-machine-learning-model-on-android-with-tensorflow-lite-26447e53abf2">Building a Custom Machine Learning Model on Android with TensorFlow Lite</a>.
 * 2018-07-20 <a href="https://flatteredwithflutter.com/ml-kit-and-face-detection-in-flutter/">ML Kit and Face Detection in Flutter</a>.
@@ -6873,10 +6873,10 @@
 <h2 id="plugins-and-sdks">Plugins and SDKs<a class="headerlink" href="#plugins-and-sdks" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.edgeimpulse.com/">Edge Impulse</a> - 由...制作 <a href="https://twitter.com/EdgeImpulse">@EdgeImpulse</a> 帮助您训练针对云中嵌入式设备的TensorFlow Lite模型.</li>
-<li><a href="https://www.fritz.ai/">Fritz.ai</a> -的ML平台 <a href="https://twitter.com/fritzlabs">@fritzlabs</a> 借助预先训练的ML模型和用于构建和部署自定义训练模型的端到端平台，使移动开发更加轻松.</li>
-<li><a href="https://github.com/google/mediapipe">MediaPipe</a>  -Google AI的跨平台（移动，台式机和Edge TPU）AI管道.  （下午 <a href="https://twitter.com/realmgyong">Ming Yong</a>) | <a href="https://mediapipe.readthedocs.io/en/latest/examples.html">MediaPipe examples</a>.</li>
+<li><a href="https://www.fritz.ai/">Fritz.ai</a> -的ML平台 <a href="https://twitter.com/fritzlabs">@fritzlabs</a> 借助预先训练的ML模型和用于构建和部署定制训练模型的端到端平台，使移动开发变得更加容易.</li>
+<li><a href="https://github.com/google/mediapipe">MediaPipe</a>  -Google AI的跨平台（移动，桌面和Edge TPU）AI管道.  （下午 <a href="https://twitter.com/realmgyong">Ming Yong</a>) | <a href="https://mediapipe.readthedocs.io/en/latest/examples.html">MediaPipe examples</a>.</li>
 <li><a href="https://coral.ai/">Coral Edge TPU</a> -Google提供的Edge硬件. <a href="https://coral.ai/examples/">Coral Edge TPU examples</a>.</li>
-<li><a href="https://github.com/am15h/tflite_flutter_plugin/">TensorFlow Lite Flutter Plugin</a> -提供类似于TensorFlow Lite Java API的dart API，用于访问TensorFlow Lite解释器并在Flutter应用中执行推理. <a href="https://pub.dev/packages/tflite_flutter">tflite_flutter on pub.dev</a>.</li>
+<li><a href="https://github.com/am15h/tflite_flutter_plugin/">TensorFlow Lite Flutter Plugin</a> -提供类似于TensorFlow Lite Java API的dart API，用于访问TensorFlow Lite解释程序并在Flutter应用中执行推理. <a href="https://pub.dev/packages/tflite_flutter">tflite_flutter on pub.dev</a>.</li>
 </ul>
 <h2 id="helpful-links">Helpful links<a class="headerlink" href="#helpful-links" title="Permanent link">&para;</a></h2>
 <ul>
@@ -6906,8 +6906,9 @@
 </ul>
 <h3 id="books">Books<a class="headerlink" href="#books" title="Permanent link">&para;</a></h3>
 <ul>
+<li>2020-04-06 <a href="https://www.packtpub.com/product/mobile-deep-learning-with-tensorflow-lite-ml-kit-and-flutter/9781789611212">Mobile Deep Learning with TensorFlow Lite, ML Kit and Flutter</a>：构建可扩展的现实世界项目，以在Android和iOS上实现端到端的神经网络（<a href="https://github.com/PacktPublishing/Mobile-Deep-Learning-Projects">GitHub</a>）-Anubhav Singh（<a href="https://github.com/xprilion">@xprilion</a>）和Rimjhim Bhadan<a href="https://github.com/Rimjhim28">@Rimjhim28</a>).</li>
 <li>2019-12-01 <a href="http://shop.oreilly.com/product/0636920254508.do">TinyML</a> -皮特·沃登（Pete Warden）（<a href="https://twitter.com/petewarden">@petewarden</a>）和Daniel Situnayake（<a href="https://twitter.com/dansitu">@dansitu</a>).</li>
-<li>2019-10-01 <a href="https://www.practicaldeeplearning.ai/">Practical Deep Learning for Cloud, Mobile, and Edge</a> -作者：Anirudh Koul（<a href="https://twitter.com/AnirudhKoul">@AnirudhKoul</a>), Siddha Ganju (<a href="https://twitter.com/SiddhaGanju">@SiddhaGanju</a>）和Meher Kasam（<a href="https://twitter.com/MeherKasam">@MeherKasam</a>).</li>
+<li>2019-10-01 <a href="https://www.practicaldeeplearning.ai/">Practical Deep Learning for Cloud, Mobile, and Edge</a> -通过Anirudh Koul（<a href="https://twitter.com/AnirudhKoul">@AnirudhKoul</a>), Siddha Ganju (<a href="https://twitter.com/SiddhaGanju">@SiddhaGanju</a>）和Meher Kasam（<a href="https://twitter.com/MeherKasam">@MeherKasam</a>).</li>
 </ul>
 <h3 id="videos">Videos<a class="headerlink" href="#videos" title="Permanent link">&para;</a></h3>
 <ul>
@@ -6926,8 +6927,8 @@
 </ul>
 <h3 id="moocs">MOOCs<a class="headerlink" href="#moocs" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://www.udacity.com/course/intro-to-tensorflow-lite--ud190">Introduction to TensorFlow Lite</a> -Daniel Situnayake（@dansitu），Paige Bailey撰写的Udacity课程（<a href="https://twitter.com/DynamicWebPaige">@DynamicWebPaige</a>）和Juan Delgado.</li>
-<li><a href="https://www.coursera.org/learn/device-based-models-tensorflow">Device-based Models with TensorFlow Lite</a> -Laurence Moroney的Coursera课程（<a href="https://twitter.com/lmoroney">@lmoroney</a>).</li>
+<li><a href="https://www.udacity.com/course/intro-to-tensorflow-lite--ud190">Introduction to TensorFlow Lite</a> -Daniel Situnayake（@dansitu），Paige Bailey撰写的Udacity课程（<a href="https://twitter.com/DynamicWebPaige">@DynamicWebPaige</a>）和胡安·德尔加多（Juan Delgado）.</li>
+<li><a href="https://www.coursera.org/learn/device-based-models-tensorflow">Device-based Models with TensorFlow Lite</a> -劳伦斯·莫罗尼（Laurence Moroney）的Coursera课程（<a href="https://twitter.com/lmoroney">@lmoroney</a>).</li>
 <li><a href="https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning">The Future of ML is Tiny and Bright</a>  -哈佛大学与Google合作创建的一系列edX课程. 讲师-Vijay Janapa Reddi，Laurence Moroney和Pete Warden.</li>
 </ul>
                 
