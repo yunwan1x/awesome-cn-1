@@ -4203,6 +4203,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#create-local-tag" class="md-nav__link">
+    Create local tag
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#delete-local-tag" class="md-nav__link">
     Delete local tag
   </a>
@@ -5157,6 +5164,13 @@
         <li class="md-nav__item">
   <a href="#checkout-a-commit-prior-to-a-day-ago" class="md-nav__link">
     Checkout a commit prior to a day ago
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-the-current-branch-to-the-same-name-on-the-remote-repository" class="md-nav__link">
+    Push the current branch to the same name on the remote repository
   </a>
   
 </li>
@@ -7911,6 +7925,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#create-local-tag" class="md-nav__link">
+    Create local tag
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#delete-local-tag" class="md-nav__link">
     Delete local tag
   </a>
@@ -8870,6 +8891,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#push-the-current-branch-to-the-same-name-on-the-remote-repository" class="md-nav__link">
+    Push the current branch to the same name on the remote repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#push-a-new-local-branch-to-remote-repository-and-track" class="md-nav__link">
     Push a new local branch to remote repository and track
   </a>
@@ -8931,7 +8959,7 @@
 
 <p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890694312814945" data-ad-slot="5473692530" data-ad-format="auto"  data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></p>
 <h2 id="git-tips">git-tips<a class="headerlink" href="#git-tips" title="Permanent link">&para;</a></h2>
-<p>&gt; git-tips的集合，要添加您的提示吗？ 退房 <a href="https://github.com/git-tips/tips/blob/master/./contributing.md">contributing.md</a></p>
+<p>&gt; git-tips的集合，要添加您的提示吗？ 查看 <a href="https://github.com/git-tips/tips/blob/master/./contributing.md">contributing.md</a></p>
 <p><a href="http://git.io/git-tips">English</a> | <a href="https://github.com/521xueweihan/git-tips">中文</a> | <a href="https://github.com/Imangazaliev/git-tips">Русский</a> | <a href="https://github.com/mingrammer/git-tips">한국어</a> | <a href="https://github.com/hprobotic/git-tips">Tiếng Việt</a> | <a href="https://github.com/isotai/git-tips">日本語</a> | <a href="https://github.com/amarduwal/git-tips">नेपाली</a> | <a href="https://github.com/mbiesiad/tips">Polski</a></p>
 <h3 id="tools"><strong>Tools:</strong><a class="headerlink" href="#tools" title="Permanent link">&para;</a></h3>
 <ul>
@@ -9049,6 +9077,10 @@
 <div class="codehilite"><pre><span></span>git push来源：&lt;remote_branchname&gt;
 </pre></div></p>
 <div class="codehilite"><pre><span></span>git分支-dr&lt;remote/branch&gt;
+</pre></div>
+
+<h2 id="create-local-tag">Create local tag<a class="headerlink" href="#create-local-tag" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>git标签&lt;tag-name&gt;
 </pre></div>
 
 <h2 id="delete-local-tag">Delete local tag<a class="headerlink" href="#delete-local-tag" title="Permanent link">&para;</a></h2>
@@ -9186,6 +9218,9 @@ git config --global alias.st状态
 
 <h2 id="show-list-of-all-saved-stashes">Show list of all saved stashes<a class="headerlink" href="#show-list-of-all-saved-stashes" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git存储列表
+</pre></div>
+
+<div class="codehilite"><pre><span></span>git stash show -p&lt;stash@<span class="o">{</span>n<span class="o">}</span>&gt;
 </pre></div>
 
 <h2 id="apply-any-stash-without-deleting-from-the-stashed-list">Apply any stash without deleting from the stashed list<a class="headerlink" href="#apply-any-stash-without-deleting-from-the-stashed-list" title="Permanent link">&para;</a></h2>
@@ -9540,6 +9575,9 @@ git bisect reset                    <span class="c1"># Finish search </span>
 <p><strong>Alternatives:</strong>
 <div class="codehilite"><pre><span></span> git分支&lt;branch-name&gt; <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> git结帐&lt;branch-name&gt;
 </pre></div></p>
+<div class="codehilite"><pre><span></span>git开关-c&lt;branch-name&gt;
+</pre></div>
+
 <h2 id="ignore-file-mode-changes-on-commits">Ignore file mode changes on commits<a class="headerlink" href="#ignore-file-mode-changes-on-commits" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git config core.fileMode错误
 </pre></div>
@@ -9691,7 +9729,7 @@ git bisect reset                    <span class="c1"># Finish search </span>
 </pre></div>
 
 <h2 id="list-references-in-a-remote-repository">List references in a remote repository<a class="headerlink" href="#list-references-in-a-remote-repository" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git ls-远程git：//git.kernel.org/pub/scm/git/git.git
+<div class="codehilite"><pre><span></span>git ls-remote git：//git.kernel.org/pub/scm/git/git.git
 </pre></div>
 
 <h2 id="backup-untracked-files">Backup untracked files.<a class="headerlink" href="#backup-untracked-files" title="Permanent link">&para;</a></h2>
@@ -9711,6 +9749,10 @@ git bisect reset                    <span class="c1"># Finish search </span>
 
 <h2 id="checkout-a-commit-prior-to-a-day-ago">Checkout a commit prior to a day ago<a class="headerlink" href="#checkout-a-commit-prior-to-a-day-ago" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git checkout master @ <span class="o">{</span>昨天<span class="o">}</span>
+</pre></div>
+
+<h2 id="push-the-current-branch-to-the-same-name-on-the-remote-repository">Push the current branch to the same name on the remote repository<a class="headerlink" href="#push-the-current-branch-to-the-same-name-on-the-remote-repository" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>git push origin HEAD
 </pre></div>
 
 <h2 id="push-a-new-local-branch-to-remote-repository-and-track">Push a new local branch to remote repository and track<a class="headerlink" href="#push-a-new-local-branch-to-remote-repository-and-track" title="Permanent link">&para;</a></h2>
