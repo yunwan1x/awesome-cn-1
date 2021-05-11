@@ -6583,6 +6583,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#books" class="md-nav__link">
+    Books
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#communities" class="md-nav__link">
     Communities
   </a>
@@ -6730,6 +6737,13 @@
           <li class="md-nav__item">
   <a href="#secrets-management" class="md-nav__link">
     Secrets Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secrets-scanning" class="md-nav__link">
+    Secrets Scanning
   </a>
   
 </li>
@@ -6888,6 +6902,10 @@
 <ul>
 <li><a href="https://www.pagerduty.com/blog/security-training-at-pagerduty/">Our Approach to Employee Security Training</a> -<em>Pager Duty</em>-在组织内进行安全培训的准则.</li>
 </ul>
+<h3 id="books">Books<a class="headerlink" href="#books" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.wiley.com/en-gb/Alice+and+Bob+Learn+Application+Security-p-9781119687405">Alice and Bob Learn Application Security</a> -<em>Tanya Janca</em>-任何寻求从系统开发生命周期的开始就将最佳安全实践纳入软件开发的人的可访问且全面的资源.</li>
+</ul>
 <h3 id="communities">Communities<a class="headerlink" href="#communities" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://www.mydevsecops.io/">MyDevSecOps</a> -<em>Snyk</em>-一个运行会议，博客，播客和专用于DevSecOps的Slack工作区的社区.</li>
@@ -6927,12 +6945,13 @@
 </ul>
 <h3 id="training">Training<a class="headerlink" href="#training" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="https://github.com/duo-labs/appsec-education">Application Security Education</a> -<em>Duo Security</em>-Duo应用程序安全团队创建的培训材料，包括入门和高级培训演示以及动手实验.</li>
 <li><a href="https://www.cybrary.it/">Cybrary</a> -<em>Cybrary</em>-基于订阅的在线课程，其中包含网络安全和DevSecOps的专用类别.</li>
 <li><a href="https://pentesterlab.com/">PentesterLab</a> -<em>PentesterLab</em>-动手练习以了解和利用简单和高级的Web漏洞.</li>
 <li><a href="https://www.practical-devsecops.com">Practical DevSecOps</a> -<em>实用DevSecOps</em>-使用基于浏览器的先进实验室，向具有实际DevSecOps的行业专家学习DevSecOps的概念，工具和技术.</li>
 <li><a href="https://academy.safestack.io/">SafeStack</a> -<em>SafeStack</em>-针对软件开发团队的安全培训，旨在供个人和小型团队以及大型组织使用.</li>
 <li><a href="https://www.securecodewarrior.com/">Secure Code Warrior</a> -<em>安全代码战士</em>-游戏化和动手的安全开发培训，并支持课程，评估和锦标赛.</li>
-<li><a href="https://www.secureflag.com/platform.html">SecureFlag</a> -<em>OWASP</em>-针对开发人员和构建/发布工程师的动手安全编码培训.</li>
+<li><a href="https://www.secureflag.com/platform.html">SecureFlag</a> - <em>OWASP</em> - Hands-on secure coding training for Developers and Build/Release Engineers.</li>
 <li><a href="https://sudo.pagerduty.com/for_engineers/">Security Training for Engineers</a> -<em>Pager Duty</em>-由PagerDuty创建并开放源代码的演示文稿，旨在为软件工程师提供安全培训.</li>
 <li><a href="https://sudo.pagerduty.com/for_everyone/">Security Training for Everyone</a> -<em>Pager Duty</em>-由PagerDuty创建并开源的演示文稿，用于为员工提供安全培训.</li>
 <li><a href="https://portswigger.net/web-security">Web Security Academy</a> -<em>PortSwigger</em>-用于学习和利用常见Web漏洞的一组材料和实验室.</li>
@@ -6944,7 +6963,7 @@
 </ul>
 <h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
 <h3 id="dependency-management">Dependency Management<a class="headerlink" href="#dependency-management" title="Permanent link">&para;</a></h3>
-<p>开源软件包通过允许开发人员无需编写所有代码即可实现功能，从而可以加快开发过程. 但是，开放源代码附带了开放源漏洞. 依赖性管理工具通过识别和更新具有已知漏洞的程序包来帮助管理开源程序包中的漏洞.</p>
+<p>开源软件包通过允许开发人员无需编写所有代码即可实现功能，从而可以加快开发过程. 但是，开放源代码附带有开放源漏洞. 依赖性管理工具通过识别和更新具有已知漏洞的程序包来帮助管理开源程序包中的漏洞.</p>
 <ul>
 <li><a href="https://dependabot.com/">Dependabot</a> -<em>GitHub</em>-自动扫描GitHub信息库中的漏洞，并创建合并请求中的合并请求.</li>
 <li><a href="https://owasp.org/www-project-dependency-check/">Dependency-Check</a> -<em>OWASP</em>-使用CLI或构建服务器插件扫描依赖项，以查找公开披露的漏洞.</li>
@@ -6993,7 +7012,7 @@
 <h4 id="terraform">Terraform<a class="headerlink" href="#terraform" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="https://github.com/fugue/regula">Regula</a> -<em>Fugue</em>-在部署之前，评估Terraform基础架构代码是否存在潜在的安全错误配置和合规性违规.</li>
-<li><a href="https://terraform-compliance.com/">Terraform Compliance</a> -<em>terraform-compliance</em>-针对terraform的轻型，安全性和合规性测试框架，可为您的基础结构代码启用否定测试功能.</li>
+<li><a href="https://terraform-compliance.com/">Terraform Compliance</a> -<em>terraform-compliance</em>-针对terraform的轻量级，安全性和合规性测试框架，可为您的基础结构代码启用否定测试功能.</li>
 <li><a href="https://github.com/cesar-rodriguez/terrascan">Terrascan</a> -<em>Cesar Rodriguez</em>-扫描Terraform模板以获得最佳实践安全配置.</li>
 <li><a href="https://github.com/liamg/tfsec">Tfsec</a> -<em>Liam Galvin</em>-扫描Terraform模板以了解安全性配置错误以及是否违反AWS，Azure和GCP安全性最佳做法.</li>
 </ul>
@@ -7012,11 +7031,11 @@
 <li><a href="http://www.dvwa.co.uk/">Damn Vulnerable Web App</a> -<em>Ryan Dewhurst</em>-一个Web应用程序，它提供了一个安全的环境来理解和利用常见的Web漏洞.</li>
 <li><a href="https://github.com/bkimminich/juice-shop">Juice Shop</a> -<em>OWASP</em>-包含OWASP十大安全漏洞及更多内容的Web应用程序.</li>
 <li><a href="https://github.com/OWASP/NodeGoat">NodeGoat</a> -<em>OWASP</em>-一个Node.js Web应用程序，用于演示并提供解决常见安全漏洞的方法.</li>
-<li><a href="https://github.com/bridgecrewio/terragoat">Terragoat</a> - <em>Bridgecrew</em> - Terraform templates for creating stacks of intentionally insecure services in AWS, Azure and GCP. Ideal for testing the Terraform Infrastructure as Code Analysis tools above.</li>
+<li><a href="https://github.com/bridgecrewio/terragoat">Terragoat</a>  -<em>Bridgecrew</em>-Terraform模板，用于在AWS，Azure和GCP中创建故意不安全的服务堆栈. 非常适合作为上述代码分析工具来测试Terraform基础结构.</li>
 <li><a href="https://owasp.org/www-project-vulnerable-web-applications-directory">Vulnerable Web Apps Directory</a> -<em>OWASP</em>-出于学习目的的易受攻击的Web应用程序的集合.</li>
 </ul>
 <h3 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h3>
-<p>仅在发布之前测试和加强我们的软件是不够的. 我们还必须监控生产软件的使用，性能和错误，以捕获恶意行为和我们可能需要响应或解决的潜在安全漏洞. 各种各样的工具可用于监视生产软件和基础结构的不同方面.</p>
+<p>It's not enough to test and harden our software in the lead up to a release. We must also monitor our production software for usage, performance and errors to capture malicious behavior and potential security flaws that we may need to respond to or address. A wide variety of tools are available to monitor different aspects of production software and infrastructure.</p>
 <ul>
 <li><a href="https://csper.io/report-uri">Csper</a> -<em>Csper</em>-一组内容安全策略工具，可以测试策略，监视CSP报告以及提供指标和警报.</li>
 </ul>
@@ -7033,11 +7052,22 @@
 <li><a href="https://www.cyberark.com/products/privileged-account-security-solution/application-access-manager/">CyberArk Application Access Manager</a> -<em>Cyber​​Ark</em>-应用程序的秘密管理，包括秘密轮换和审核.</li>
 <li><a href="https://docs.docker.com/engine/swarm/secrets/">Docker Secrets</a> -<em>Docker</em>-存储和管理对Docker群中机密的访问.</li>
 <li><a href="https://github.com/awslabs/git-secrets">Git Secrets</a> -<em>Amazon AWS</em>-扫描git存储库，以查找代码内或提交消息中提交的机密.</li>
-<li><a href="https://github.com/gopasspw/gopass">Gopass</a> - <em>Gopass</em> - Password manager for teams relying on Git and gpg. Manages secrets in encrypted files and repositories.</li>
+<li><a href="https://github.com/gopasspw/gopass">Gopass</a>  -<em>Gopass</em>-依赖Git和gpg的团队的密码管理器. 管理加密文件和存储库中的机密.</li>
 <li><a href="https://cloud.google.com/kms">Google Cloud Key Management Service (KMS)</a> -<em>Google Cloud Platform</em>-在GCP中安全存储机密.</li>
 <li><a href="https://www.vaultproject.io/">HashiCorp Vault</a> -<em>HashiCorp</em>-通过UI，CLI或HTTP API安全存储机密.</li>
-<li><a href="https://github.com/pinterest/knox">Pinterest Knox</a> -<em>Pinterest</em>-安全地存储，轮换和审核秘密.</li>
+<li><a href="https://github.com/pinterest/knox">Pinterest Knox</a> -<em>Pinterest</em>-安全地存储，轮换和审核机密.</li>
 <li><a href="https://github.com/mozilla/sops">Secrets Operations (SOPS)</a> -<em>Mozilla</em>-加密存储在YAML，JSON，ENV，INI和BINARY文件中的密钥.</li>
+</ul>
+<h3 id="secrets-scanning">Secrets Scanning<a class="headerlink" href="#secrets-scanning" title="Permanent link">&para;</a></h3>
+<p>即使回购是私有的，源代码控制也不是存储机密信息（例如凭据，API密钥或令牌）的安全位置. 秘密扫描工具可以扫描和监视git存储库以及对秘密的拉取请求，并且可以用于防止提交秘密，或者查找和删除已经提交给源代码控制的秘密.</p>
+<ul>
+<li><a href="https://secdevtools.azurewebsites.net/helpcredscan.html">CredScan</a> -<em>Microsoft</em>-可以作为任务在Azure DevOps管道中运行的凭据扫描工具.</li>
+<li><a href="https://www.gitguardian.com/">GitGuardian</a> -<em>GitGuardian</em>-一种基于Web的解决方案，可扫描和监视公共和私有git存储库中的秘密.</li>
+<li><a href="https://github.com/zricethezav/gitleaks">Gitleaks</a> -<em>Zachary Rice</em>-Gitleaks是一种SAST工具，用于检测git存储库中的硬编码机密，例如密码，api密钥和令牌.</li>
+<li><a href="https://github.com/awslabs/git-secrets">git-secrets</a>  -<em>AWS Labs</em>-扫描提交，提交消息并合并秘密. 对AWS秘密模式的本机支持，但可以配置为支持其他模式.</li>
+<li><a href="https://nightfall.ai/solutions/product/github">Nightfall</a> -<em>Nightfall</em>-一个基于Web的平台，可监视多个SDLC工具（包括GitHub存储库）中敏感数据的泄露.</li>
+<li><a href="https://github.com/auth0/repo-supervisor">Repo-supervisor</a> -<em>Auth0</em>-可作为CLI，Docker容器或AWS Lambda运行的秘密扫描工具.</li>
+<li><a href="https://github.com/trufflesecurity/truffleHog">truffleHog</a> -_Truffle安全性--在git存储库中搜索秘密，深入挖掘提交历史记录和分支.</li>
 </ul>
 <h3 id="static-analysis">Static Analysis<a class="headerlink" href="#static-analysis" title="Permanent link">&para;</a></h3>
 <p>静态分析安全测试（SAST）工具可扫描软件中的漏洞，而无需执行目标软件. 通常，静态分析将扫描源代码以查找安全缺陷，例如使用不安全的功能，硬编码的机密和配置问题.  SAST工具通常以IDE插件和CLI的形式出现，可以集成到CI / CD管道中.</p>
