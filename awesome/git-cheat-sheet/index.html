@@ -6595,7 +6595,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890694312814945" data-ad-slot="5473692530" data-ad-format="auto"  data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://travis-ci.org/arslanbilal/git-cheat-sheet"><img alt="Build Status" src="https://travis-ci.org/arslanbilal/git-cheat-sheet.svg?branch=master" /></a>
+Git 和 Git Flow 备忘单 <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://travis-ci.org/arslanbilal/git-cheat-sheet"><img alt="Build Status" src="https://travis-ci.org/arslanbilal/git-cheat-sheet.svg?branch=master" /></a>
 ===============
 <hr>
 <p align="center">
@@ -6612,18 +6612,19 @@ Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img a
 <li><a href="https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-el.md">Greek Git Cheat Sheet</a></li>
 <li><a href="https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-pt_BR.md">Brazilian Portuguese Git Cheat Sheet</a></li>
 <li><a href="https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-ko.md">Korean Git Cheat Sheet</a></li>
+<li><a href="https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-pl.md">Polish Git Cheat Sheet</a></li>
 </ol>
-<p>Git备忘单可让您免于全心学习所有命令.</p>
-<p>自由贡献，更新语法错误. 您也可以自由添加语言文件.</p>
+<p>Git 备忘单可以让您免于背诵所有命令.</p>
+<p>自由贡献，更新语法错误. 您也可以自由添加您的语言文件.</p>
 <hr>
 
-<h1 id="git">Git作弊表英语<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
+<h1 id="git">Git备忘单英文<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
 <h3 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h3>
 <hr>
 
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
 <h5 id="show-current-configuration">Show current configuration:<a class="headerlink" href="#show-current-configuration" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git config --list
+<div class="codehilite"><pre><span></span>$ git 配置 --list
 </pre></div>
 
 <h5 id="show-repository-configuration">Show repository configuration:<a class="headerlink" href="#show-repository-configuration" title="Permanent link">&para;</a></h5>
@@ -6639,15 +6640,15 @@ Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img a
 </pre></div>
 
 <h5 id="set-a-name-that-is-identifiable-for-credit-when-review-version-history">Set a name that is identifiable for credit when review version history:<a class="headerlink" href="#set-a-name-that-is-identifiable-for-credit-when-review-version-history" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git config --global user.name“ [名姓]”
+<div class="codehilite"><pre><span></span>$ git config --global user.name “[firstname lastname]”
 </pre></div>
 
 <h5 id="set-an-email-address-that-will-be-associated-with-each-history-marker">Set an email address that will be associated with each history marker:<a class="headerlink" href="#set-an-email-address-that-will-be-associated-with-each-history-marker" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git config --global user.email“ [有效电子邮件]”
+<div class="codehilite"><pre><span></span>$ git config --global user.email “[valid-email]”
 </pre></div>
 
 <h5 id="set-automatic-command-line-coloring-for-git-for-easy-reviewing">Set automatic command line coloring for Git for easy reviewing:<a class="headerlink" href="#set-automatic-command-line-coloring-for-git-for-easy-reviewing" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git config --global color.ui自动
+<div class="codehilite"><pre><span></span>$ git config --global color.ui auto
 </pre></div>
 
 <h5 id="set-global-editor-for-commit">Set global editor for commit<a class="headerlink" href="#set-global-editor-for-commit" title="Permanent link">&para;</a></h5>
@@ -6673,28 +6674,28 @@ Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img a
 
 <h2 id="create">Create<a class="headerlink" href="#create" title="Permanent link">&para;</a></h2>
 <h5 id="clone-an-existing-repository">Clone an existing repository:<a class="headerlink" href="#clone-an-existing-repository" title="Permanent link">&para;</a></h5>
-<p>有两种方法：</p>
-<p>通过SSH</p>
-<div class="codehilite"><pre><span></span>$ git clone ssh：//user@domain.com/repo.git
+<p>有两种方式：</p>
+<p>通过 SSH</p>
+<div class="codehilite"><pre><span></span>$ git clone ssh://user@domain.com/repo.git
 </pre></div>
 
-<p>通过HTTP</p>
+<p>通过 HTTP</p>
 <div class="codehilite"><pre><span></span>$ git clone http://domain.com/user/repo.git
 </pre></div>
 
 <h5 id="create-a-new-local-repository-in-the-current-directory">Create a new local repository in the current directory:<a class="headerlink" href="#create-a-new-local-repository-in-the-current-directory" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git init
+<div class="codehilite"><pre><span></span>$ git 初始化
 </pre></div>
 
 <h5 id="create-a-new-local-repository-in-a-specific-directory">Create a new local repository in a specific directory:<a class="headerlink" href="#create-a-new-local-repository-in-a-specific-directory" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git init&lt;directory&gt;
+<div class="codehilite"><pre><span></span>$ git 初始化&lt;directory&gt;
 </pre></div>
 
 <hr>
 
 <h2 id="local-changes">Local Changes<a class="headerlink" href="#local-changes" title="Permanent link">&para;</a></h2>
 <h5 id="changes-in-working-directory">Changes in working directory:<a class="headerlink" href="#changes-in-working-directory" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git状态
+<div class="codehilite"><pre><span></span>$ git 状态
 </pre></div>
 
 <h5 id="changes-to-tracked-files">Changes to tracked files:<a class="headerlink" href="#changes-to-tracked-files" title="Permanent link">&para;</a></h5>
@@ -6706,7 +6707,7 @@ Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img a
 </pre></div>
 
 <h5 id="add-all-current-changes-to-the-next-commit">Add all current changes to the next commit:<a class="headerlink" href="#add-all-current-changes-to-the-next-commit" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git添加.
+<div class="codehilite"><pre><span></span>$ git 添加.
 </pre></div>
 
 <h5 id="add-some-changes-in-file-to-the-next-commit">Add some changes in &lt;file&gt; to the next commit:<a class="headerlink" href="#add-some-changes-in-file-to-the-next-commit" title="Permanent link">&para;</a></h5>
@@ -6714,7 +6715,7 @@ Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img a
 </pre></div>
 
 <h5 id="add-only-the-mentioned-files-to-the-next-commit">Add only the mentioned files to the next commit:<a class="headerlink" href="#add-only-the-mentioned-files-to-the-next-commit" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git添加&lt;filename1&gt;&lt;filename2&gt;
+<div class="codehilite"><pre><span></span>$ git 添加&lt;filename1&gt;&lt;filename2&gt;
 </pre></div>
 
 <h5 id="commit-all-local-changes-in-tracked-files">Commit all local changes in tracked files:<a class="headerlink" href="#commit-all-local-changes-in-tracked-files" title="Permanent link">&para;</a></h5>
@@ -6722,24 +6723,24 @@ Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img a
 </pre></div>
 
 <h5 id="commit-previously-staged-changes">Commit previously staged changes:<a class="headerlink" href="#commit-previously-staged-changes" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git commit
+<div class="codehilite"><pre><span></span>$ git提交
 </pre></div>
 
 <h5 id="commit-with-message">Commit with message:<a class="headerlink" href="#commit-with-message" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git commit -m&amp;#39;这里的消息&amp;#39;
+<div class="codehilite"><pre><span></span>$ git commit -m &amp;#39;消息在这里&amp;#39;
 </pre></div>
 
 <h5 id="commit-skipping-the-staging-area-and-adding-message">Commit skipping the staging area and adding message:<a class="headerlink" href="#commit-skipping-the-staging-area-and-adding-message" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git commit -am&amp;#39;在这里留言&amp;#39;
+<div class="codehilite"><pre><span></span>$ git commit -am &amp;#39;消息在这里&amp;#39;
 </pre></div>
 
 <h5 id="commit-to-some-previous-date">Commit to some previous date:<a class="headerlink" href="#commit-to-some-previous-date" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span> $ git commit --date =“`date --date =&amp;#39;n day ago&amp;#39;`” -am“&lt;Commit Message Here&gt;  ”
+<div class="codehilite"><pre><span></span> $ git commit --date=&amp;quot;`date --date=&amp;#39;n 天前&amp;#39;`&amp;quot; -am &amp;quot;&lt;Commit Message Here&gt;  ”
 </pre></div>
 
 <h5 id="change-last-commit">Change last commit:<br><a class="headerlink" href="#change-last-commit" title="Permanent link">&para;</a></h5>
 <p><em><sub>不要修改已发布的提交！</sub></em></p>
-<div class="codehilite"><pre><span></span>$ git commit -a-修改
+<div class="codehilite"><pre><span></span>$ git commit -a --amend
 </pre></div>
 
 <h5 id="amend-with-last-commit-but-use-the-previous-commit-log-message">Amend with last commit but use the previous commit log message<a class="headerlink" href="#amend-with-last-commit-but-use-the-previous-commit-log-message" title="Permanent link">&para;</a></h5>
@@ -6748,56 +6749,58 @@ Git和Git Flow速查表 <a href="https://github.com/sindresorhus/awesome"><img a
 </pre></div>
 
 <h5 id="change-committer-date-of-last-commit">Change committer date of last commit:<a class="headerlink" href="#change-committer-date-of-last-commit" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>GIT_COMMITTER_DATE =“ date” git commit --amend
+<div class="codehilite"><pre><span></span>GIT_COMMITTER_DATE=&amp;quot;date&amp;quot; git commit --amend
 </pre></div>
 
 <h5 id="change-author-date-of-last-commit">Change Author date of last commit:<a class="headerlink" href="#change-author-date-of-last-commit" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git commit --amend --date <span class="o">=</span>“日期”
+<div class="codehilite"><pre><span></span>$ git commit --amend --date<span class="o">=</span><span class="p">&amp;</span>quot<span class="p">;</span>date<span class="p">&amp;</span>quot<span class="p">;</span>
 </pre></div>
 
 <h5 id="move-uncommitted-changes-from-current-branch-to-some-other-branch">Move uncommitted changes from current branch to some other branch:<br><a class="headerlink" href="#move-uncommitted-changes-from-current-branch-to-some-other-branch" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git stash
+<div class="codehilite"><pre><span></span>$ git 藏匿处
 $ git checkout branch2
 $ git stash pop
 </pre></div>
 
 <h5 id="restore-stashed-changes-back-to-current-branch">Restore stashed changes back to current branch:<a class="headerlink" href="#restore-stashed-changes-back-to-current-branch" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git stash适用
+<div class="codehilite"><pre><span></span>$ git stash 应用
 </pre></div>
 
 <h4 id="restore-particular-stash-back-to-current-branch">Restore particular stash back to current branch:<a class="headerlink" href="#restore-particular-stash-back-to-current-branch" title="Permanent link">&para;</a></h4>
-<p>-<em> {stash_number} </em>可以从<code>git stash list</code>获取</p>
-<div class="codehilite"><pre><span></span>$ git stash apply stash @ <span class="o">{</span>stash_number<span class="o">}</span>
+<ul>
+<li><em>{stash_number}</em> 可以从<code>git stash list</code> 中获取</li>
+</ul>
+<div class="codehilite"><pre><span></span>$ git stash apply stash@<span class="o">{</span>stash_number<span class="o">}</span>
 </pre></div>
 
 <h5 id="remove-the-last-set-of-stashed-changes">Remove the last set of stashed changes:<a class="headerlink" href="#remove-the-last-set-of-stashed-changes" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git隐藏
+<div class="codehilite"><pre><span></span>$ git stash drop
 </pre></div>
 
 <hr>
 
 <h2 id="search">Search<a class="headerlink" href="#search" title="Permanent link">&para;</a></h2>
 <h5 id="a-text-search-on-all-files-in-the-directory">A text search on all files in the directory:<a class="headerlink" href="#a-text-search-on-all-files-in-the-directory" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git grep“你好”
+<div class="codehilite"><pre><span></span>$ git grep &amp;quot;你好&amp;quot;
 </pre></div>
 
 <h5 id="in-any-version-of-a-text-search">In any version of a text search:<a class="headerlink" href="#in-any-version-of-a-text-search" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git grep“ Hello” v2.5
+<div class="codehilite"><pre><span></span>$ git grep &amp;quot;你好&amp;quot; v2.5
 </pre></div>
 
 <h5 id="show-commits-that-introduced-a-specific-keyword">Show commits that introduced a specific keyword<a class="headerlink" href="#show-commits-that-introduced-a-specific-keyword" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git log -S&amp;#39;关键字&amp;#39;
+<div class="codehilite"><pre><span></span>$ git log -S &amp;#39;关键字&amp;#39;
 </pre></div>
 
 <h5 id="show-commits-that-introduced-a-specific-keyword-using-a-regular-expression">Show commits that introduced a specific keyword (using a regular expression)<a class="headerlink" href="#show-commits-that-introduced-a-specific-keyword-using-a-regular-expression" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git log -S&amp;#39;关键字&amp;#39;--pickaxe-regex
+<div class="codehilite"><pre><span></span>$ git log -S &amp;#39;关键字&amp;#39; --pickaxe-regex
 </pre></div>
 
 <hr>
 
 <h2 id="commit-history">Commit History<a class="headerlink" href="#commit-history" title="Permanent link">&para;</a></h2>
 <h5 id="show-all-commits-starting-with-newest-itll-show-the-hash-author-information-date-of-commit-and-title-of-the-commit">Show all commits, starting with newest (it'll show the hash, author information, date of commit and title of the commit):<a class="headerlink" href="#show-all-commits-starting-with-newest-itll-show-the-hash-author-information-date-of-commit-and-title-of-the-commit" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git日志
+<div class="codehilite"><pre><span></span>$ git 日志
 </pre></div>
 
 <h5 id="show-all-the-commitsitll-show-just-the-commit-hash-and-the-commit-message">Show all the commits(it'll show just the commit hash and the commit message):<a class="headerlink" href="#show-all-the-commitsitll-show-just-the-commit-hash-and-the-commit-message" title="Permanent link">&para;</a></h5>
@@ -6805,7 +6808,7 @@ $ git stash pop
 </pre></div>
 
 <h5 id="show-all-commits-of-a-specific-user">Show all commits of a specific user:<a class="headerlink" href="#show-all-commits-of-a-specific-user" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git log --author =“用户名”
+<div class="codehilite"><pre><span></span>$ git log --author=&amp;quot;用户名&amp;quot;
 </pre></div>
 
 <h5 id="show-changes-over-time-for-a-specific-file">Show changes over time for a specific file:<a class="headerlink" href="#show-changes-over-time-for-a-specific-file" title="Permanent link">&para;</a></h5>
@@ -6817,20 +6820,20 @@ $ git stash pop
 </pre></div>
 
 <h5 id="who-changed-what-and-when-in-file">Who changed, what and when in &lt;file&gt;:<a class="headerlink" href="#who-changed-what-and-when-in-file" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git怪&lt;file&gt;
+<div class="codehilite"><pre><span></span>$ git 责备&lt;file&gt;
 </pre></div>
 
 <h5 id="show-reference-log">Show Reference log:<a class="headerlink" href="#show-reference-log" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git reflog显示
+<div class="codehilite"><pre><span></span>$ git reflog 显示
 </pre></div>
 
 <h5 id="delete-reference-log">Delete Reference log:<a class="headerlink" href="#delete-reference-log" title="Permanent link">&para;</a></h5>
-<p><div class="codehilite"><pre><span></span>$ git reflog删除
+<p><div class="codehilite"><pre><span></span>$ git reflog 删除
 </pre></div>
 <hr></p>
 <h2 id="move-rename">Move / Rename<a class="headerlink" href="#move-rename" title="Permanent link">&para;</a></h2>
 <h5 id="rename-a-file">Rename a file:<a class="headerlink" href="#rename-a-file" title="Permanent link">&para;</a></h5>
-<p>将Index.txt重命名为Index.html</p>
+<p>将 Index.txt 重命名为 Index.html</p>
 <div class="codehilite"><pre><span></span>$ git mv Index.txt Index.html
 </pre></div>
 
@@ -6838,23 +6841,23 @@ $ git stash pop
 
 <h2 id="branches-tags">Branches &amp; Tags<a class="headerlink" href="#branches-tags" title="Permanent link">&para;</a></h2>
 <h5 id="list-all-local-branches">List all local branches:<a class="headerlink" href="#list-all-local-branches" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git分支
+<div class="codehilite"><pre><span></span>$ git 分支
 </pre></div>
 
 <h4 id="list-localremote-branches">List local/remote branches<a class="headerlink" href="#list-localremote-branches" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>$ git branch -a
+<div class="codehilite"><pre><span></span>$ git 分支 -a
 </pre></div>
 
 <h5 id="list-all-remote-branches">List all remote branches:<a class="headerlink" href="#list-all-remote-branches" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git branch -r
+<div class="codehilite"><pre><span></span>$ git 分支 -r
 </pre></div>
 
 <h5 id="switch-head-branch">Switch HEAD branch:<a class="headerlink" href="#switch-head-branch" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git checkout&lt;branch&gt;
+<div class="codehilite"><pre><span></span>$ git 结帐&lt;branch&gt;
 </pre></div>
 
 <h5 id="checkout-single-file-from-different-branch">Checkout single file from different branch<a class="headerlink" href="#checkout-single-file-from-different-branch" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span> $ git checkout&lt;branch&gt;  --&lt;filename&gt;
+<div class="codehilite"><pre><span></span> $ git 结帐&lt;branch&gt; ——&lt;filename&gt;
 </pre></div>
 
 <h5 id="create-and-switch-new-branch">Create and switch new branch:<a class="headerlink" href="#create-and-switch-new-branch" title="Permanent link">&para;</a></h5>
@@ -6862,7 +6865,7 @@ $ git stash pop
 </pre></div>
 
 <h5 id="switch-to-the-previous-branch-without-saying-the-name-explicitly">Switch to the previous branch, without saying the name explicitly:<a class="headerlink" href="#switch-to-the-previous-branch-without-saying-the-name-explicitly" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git checkout-
+<div class="codehilite"><pre><span></span>$ git 结帐 -
 </pre></div>
 
 <h5 id="create-a-new-branch-from-an-exiting-branch-and-switch-to-new-branch">Create a new branch from an exiting branch and switch to new branch:<a class="headerlink" href="#create-a-new-branch-from-an-exiting-branch-and-switch-to-new-branch" title="Permanent link">&para;</a></h5>
@@ -6870,28 +6873,28 @@ $ git stash pop
 </pre></div>
 
 <h4 id="checkout-and-create-a-new-branch-from-existing-commit">Checkout and create a new branch from existing commit<a class="headerlink" href="#checkout-and-create-a-new-branch-from-existing-commit" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span> $ git checkout&lt;commit-hash&gt;  -b&lt;new_branch_name&gt;
+<div class="codehilite"><pre><span></span> $ git 结帐&lt;commit-hash&gt; -b&lt;new_branch_name&gt;
 </pre></div>
 
 <h5 id="create-a-new-branch-based-on-your-current-head">Create a new branch based on your current HEAD:<a class="headerlink" href="#create-a-new-branch-based-on-your-current-head" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git分支&lt;new-branch&gt;
+<div class="codehilite"><pre><span></span>$ git 分支&lt;new-branch&gt;
 </pre></div>
 
 <h5 id="create-a-new-tracking-branch-based-on-a-remote-branch">Create a new tracking branch based on a remote branch:<a class="headerlink" href="#create-a-new-tracking-branch-based-on-a-remote-branch" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git branch --track&lt;new-branch&gt;&lt;remote-branch&gt;
+<div class="codehilite"><pre><span></span>$ git 分支 --track&lt;new-branch&gt;&lt;remote-branch&gt;
 </pre></div>
 
 <h5 id="delete-a-local-branch">Delete a local branch:<a class="headerlink" href="#delete-a-local-branch" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git branch -d&lt;branch&gt;
+<div class="codehilite"><pre><span></span>$ git 分支 -d&lt;branch&gt;
 </pre></div>
 
 <h5 id="rename-current-branch-to-new-branch-name">Rename current branch to new branch name<a class="headerlink" href="#rename-current-branch-to-new-branch-name" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git branch -m&lt;new_branch_name&gt;
+<div class="codehilite"><pre><span></span>$ git 分支 -m&lt;new_branch_name&gt;
 </pre></div>
 
 <h5 id="force-delete-a-local-branch">Force delete a local branch:<a class="headerlink" href="#force-delete-a-local-branch" title="Permanent link">&para;</a></h5>
 <p><em><sub>您将丢失未合并的更改！</sub></em></p>
-<div class="codehilite"><pre><span></span>$ git分支-D&lt;branch&gt;
+<div class="codehilite"><pre><span></span>$ git 分支 -D&lt;branch&gt;
 </pre></div>
 
 <h5 id="mark-head-with-a-tag">Mark <code>HEAD</code> with a tag:<a class="headerlink" href="#mark-head-with-a-tag" title="Permanent link">&para;</a></h5>
@@ -6899,11 +6902,11 @@ $ git stash pop
 </pre></div>
 
 <h5 id="mark-head-with-a-tag-and-open-the-editor-to-include-a-message">Mark <code>HEAD</code> with a tag and open the editor to include a message:<a class="headerlink" href="#mark-head-with-a-tag-and-open-the-editor-to-include-a-message" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git标签-a&lt;tag-name&gt;
+<div class="codehilite"><pre><span></span>$ git tag -a&lt;tag-name&gt;
 </pre></div>
 
 <h5 id="mark-head-with-a-tag-that-includes-a-message">Mark <code>HEAD</code> with a tag that includes a message:<a class="headerlink" href="#mark-head-with-a-tag-that-includes-a-message" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span> $ git标签&lt;tag-name&gt; -am&amp;#39;这里的消息&amp;#39;
+<div class="codehilite"><pre><span></span> $ git标签&lt;tag-name&gt; - 我&amp;#39;消息在这里&amp;#39;
 </pre></div>
 
 <h5 id="list-all-tags">List all tags:<a class="headerlink" href="#list-all-tags" title="Permanent link">&para;</a></h5>
@@ -6911,39 +6914,39 @@ $ git stash pop
 </pre></div>
 
 <h5 id="list-all-tags-with-their-messages-tag-message-or-commit-message-if-tag-has-no-message">List all tags with their messages (tag message or commit message if tag has no message):<a class="headerlink" href="#list-all-tags-with-their-messages-tag-message-or-commit-message-if-tag-has-no-message" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git标签-n
+<div class="codehilite"><pre><span></span>$ git tag -n
 </pre></div>
 
 <hr>
 
 <h2 id="update-publish">Update &amp; Publish<a class="headerlink" href="#update-publish" title="Permanent link">&para;</a></h2>
 <h5 id="list-all-current-configured-remotes">List all current configured remotes:<a class="headerlink" href="#list-all-current-configured-remotes" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git remote -v
+<div class="codehilite"><pre><span></span>$ git 远程 -v
 </pre></div>
 
 <h5 id="show-information-about-a-remote">Show information about a remote:<a class="headerlink" href="#show-information-about-a-remote" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git remote show&lt;remote&gt;
+<div class="codehilite"><pre><span></span>$ git 远程显示&lt;remote&gt;
 </pre></div>
 
 <h5 id="add-new-remote-repository-named-remote">Add new remote repository, named &lt;remote&gt;:<a class="headerlink" href="#add-new-remote-repository-named-remote" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git remote add&lt;remote&gt;&lt;url&gt;
+<div class="codehilite"><pre><span></span>$ git 远程添加&lt;remote&gt;&lt;url&gt;
 </pre></div>
 
 <h5 id="rename-a-remote-repository-from-remote-to-new_remote">Rename a remote repository, from &lt;remote&gt; to &lt;new_remote&gt;:<a class="headerlink" href="#rename-a-remote-repository-from-remote-to-new_remote" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git远程重命名&lt;remote&gt;&lt;new_remote&gt;
+<div class="codehilite"><pre><span></span>$ git 远程重命名&lt;remote&gt;&lt;new_remote&gt;
 </pre></div>
 
 <h5 id="remove-a-remote">Remove a remote:<a class="headerlink" href="#remove-a-remote" title="Permanent link">&para;</a></h5>
 <div class="codehilite"><pre><span></span>$ git远程rm&lt;remote&gt;
 </pre></div>
 
-<p><em><sub>注意：git remote rm不会从服务器删除远程存储库.</sub></em> <em><sub>它只是从本地存储库中删除远程及其引用.</sub></em></p>
+<p><em><sub>注意： git remote rm 不会从服务器上删除远程存储库.</sub></em> <em><sub>它只是从本地存储库中删除远程及其引用.</sub></em></p>
 <h5 id="download-all-changes-from-remote-but-dont-integrate-into-head">Download all changes from &lt;remote&gt;, but don't integrate into HEAD:<a class="headerlink" href="#download-all-changes-from-remote-but-dont-integrate-into-head" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git获取&lt;remote&gt;
+<div class="codehilite"><pre><span></span>$ git 获取&lt;remote&gt;
 </pre></div>
 
 <h5 id="download-changes-and-directly-mergeintegrate-into-head">Download changes and directly merge/integrate into HEAD:<a class="headerlink" href="#download-changes-and-directly-mergeintegrate-into-head" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git remote pull&lt;remote&gt;&lt;url&gt;
+<div class="codehilite"><pre><span></span>$ git 远程拉取&lt;remote&gt;&lt;url&gt;
 </pre></div>
 
 <h5 id="get-all-changes-from-head-to-local-repository">Get all changes from HEAD to local repository:<a class="headerlink" href="#get-all-changes-from-head-to-local-repository" title="Permanent link">&para;</a></h5>
@@ -6955,25 +6958,25 @@ $ git stash pop
 </pre></div>
 
 <h5 id="publish-local-changes-on-a-remote">Publish local changes on a remote:<a class="headerlink" href="#publish-local-changes-on-a-remote" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git push remote&lt;remote&gt;&lt;branch&gt;
+<div class="codehilite"><pre><span></span>$ git push 远程&lt;remote&gt;&lt;branch&gt;
 </pre></div>
 
 <h5 id="delete-a-branch-on-the-remote">Delete a branch on the remote:<a class="headerlink" href="#delete-a-branch-on-the-remote" title="Permanent link">&para;</a></h5>
-<p><div class="codehilite"><pre><span></span> $ git push&lt;remote&gt;  ：&lt;branch&gt;  （自Git v1.5.0起）
+<p><div class="codehilite"><pre><span></span> $ git push&lt;remote&gt;  ：&lt;branch&gt;  （自 Git v1.5.0 起）
 </pre></div>
 OR
-<div class="codehilite"><pre><span></span> $ git push&lt;remote&gt;  - 删除&lt;branch&gt; （自Git v1.7.0起）
+<div class="codehilite"><pre><span></span> $ git push&lt;remote&gt;  - 删除&lt;branch&gt; （自 Git v1.7.0 起）
 </pre></div></p>
 <h5 id="publish-your-tags">Publish your tags:<a class="headerlink" href="#publish-your-tags" title="Permanent link">&para;</a></h5>
-<p><div class="codehilite"><pre><span></span>$ git push-标签
+<p><div class="codehilite"><pre><span></span>$ git push --tags
 </pre></div>
 <hr></p>
 <h4 id="configure-the-merge-tool-globally-to-meld-editor">Configure the merge tool globally to meld (editor)<a class="headerlink" href="#configure-the-merge-tool-globally-to-meld-editor" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>$ git config --global merge.tool合并
+<div class="codehilite"><pre><span></span>$ git config --global merge.tool meld
 </pre></div>
 
 <h5 id="use-your-configured-merge-tool-to-solve-conflicts">Use your configured merge tool to solve conflicts:<a class="headerlink" href="#use-your-configured-merge-tool-to-solve-conflicts" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git mergetool
+<div class="codehilite"><pre><span></span>$ git 合并工具
 </pre></div>
 
 <h2 id="merge-rebase">Merge &amp; Rebase<a class="headerlink" href="#merge-rebase" title="Permanent link">&para;</a></h2>
@@ -6982,11 +6985,11 @@ OR
 </pre></div>
 
 <h4 id="list-merged-branches">List merged branches<a class="headerlink" href="#list-merged-branches" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>$ git branch-合并
+<div class="codehilite"><pre><span></span>$ git branch --merged
 </pre></div>
 
 <h5 id="rebase-your-current-head-onto-branch">Rebase your current HEAD onto &lt;branch&gt;:<br><a class="headerlink" href="#rebase-your-current-head-onto-branch" title="Permanent link">&para;</a></h5>
-<p><em><sub>不要对已发布的提交进行重新设置！</sub></em></p>
+<p><em><sub>不要重新发布已发布的提交！</sub></em></p>
 <div class="codehilite"><pre><span></span>$ git rebase&lt;branch&gt;
 </pre></div>
 
@@ -6995,11 +6998,11 @@ OR
 </pre></div>
 
 <h5 id="continue-a-rebase-after-resolving-conflicts">Continue a rebase after resolving conflicts:<a class="headerlink" href="#continue-a-rebase-after-resolving-conflicts" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git rebase-继续
+<div class="codehilite"><pre><span></span>$ git rebase --continue
 </pre></div>
 
 <h5 id="use-your-editor-to-manually-solve-conflicts-and-after-resolving-mark-file-as-resolved">Use your editor to manually solve conflicts and (after resolving) mark file as resolved:<a class="headerlink" href="#use-your-editor-to-manually-solve-conflicts-and-after-resolving-mark-file-as-resolved" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git添加&lt;resolved-file&gt;
+<div class="codehilite"><pre><span></span>$ git 添加&lt;resolved-file&gt;
 </pre></div>
 
 <div class="codehilite"><pre><span></span>$ git rm&lt;resolved-file&gt;
@@ -7009,13 +7012,13 @@ OR
 <div class="codehilite"><pre><span></span>$ git rebase -i&lt;commit-just-before-first&gt;
 </pre></div>
 
-<p>现在更换它，</p>
+<p>现在更换这个，</p>
 <div class="codehilite"><pre><span></span>挑选&lt;commit_id&gt;
 挑选&lt;commit_id2&gt;
 挑选&lt;commit_id3&gt;
 </pre></div>
 
-<p>为此，</p>
+<p>对此，</p>
 <p><div class="codehilite"><pre><span></span>挑选&lt;commit_id&gt;
 壁球&lt;commit_id2&gt;
 壁球&lt;commit_id3&gt;
@@ -7027,7 +7030,7 @@ OR
 </pre></div>
 
 <h5 id="get-all-the-files-out-of-the-staging-areaie-undo-the-last-git-add">Get all the files out of the staging area(i.e. undo the last <code>git add</code>):<a class="headerlink" href="#get-all-the-files-out-of-the-staging-areaie-undo-the-last-git-add" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git reset HEAD
+<div class="codehilite"><pre><span></span>$ git 重置头
 </pre></div>
 
 <h5 id="discard-local-changes-in-a-specific-file">Discard local changes in a specific file:<a class="headerlink" href="#discard-local-changes-in-a-specific-file" title="Permanent link">&para;</a></h5>
@@ -7035,7 +7038,7 @@ OR
 </pre></div>
 
 <h5 id="revert-a-commit-by-producing-a-new-commit-with-contrary-changes">Revert a commit (by producing a new commit with contrary changes):<a class="headerlink" href="#revert-a-commit-by-producing-a-new-commit-with-contrary-changes" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git还原&lt;commit&gt;
+<div class="codehilite"><pre><span></span>$ git 恢复&lt;commit&gt;
 </pre></div>
 
 <h5 id="reset-your-head-pointer-to-a-previous-commit-and-discard-all-changes-since-then">Reset your HEAD pointer to a previous commit and discard all changes since then:<a class="headerlink" href="#reset-your-head-pointer-to-a-previous-commit-and-discard-all-changes-since-then" title="Permanent link">&para;</a></h5>
@@ -7043,11 +7046,11 @@ OR
 </pre></div>
 
 <h5 id="reset-your-head-pointer-to-a-remote-branch-current-state">Reset your HEAD pointer to a remote branch current state.<a class="headerlink" href="#reset-your-head-pointer-to-a-remote-branch-current-state" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span> $ git reset --hard&lt;remote/branch&gt; 例如，上游/母版，来源/我的功能
+<div class="codehilite"><pre><span></span> $ git reset --hard&lt;remote/branch&gt; 例如，上游/主，来源/我的特征
 </pre></div>
 
 <h5 id="reset-your-head-pointer-to-a-previous-commit-and-preserve-all-changes-as-unstaged-changes">Reset your HEAD pointer to a previous commit and preserve all changes as unstaged changes:<a class="headerlink" href="#reset-your-head-pointer-to-a-previous-commit-and-preserve-all-changes-as-unstaged-changes" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ git reset&lt;commit&gt;
+<div class="codehilite"><pre><span></span>$ git重置&lt;commit&gt;
 </pre></div>
 
 <h5 id="reset-your-head-pointer-to-a-previous-commit-and-preserve-uncommitted-local-changes">Reset your HEAD pointer to a previous commit and preserve uncommitted local changes:<a class="headerlink" href="#reset-your-head-pointer-to-a-previous-commit-and-preserve-uncommitted-local-changes" title="Permanent link">&para;</a></h5>
@@ -7055,9 +7058,9 @@ OR
 </pre></div>
 
 <h5 id="remove-files-that-were-accidentally-committed-before-they-were-added-to-gitignore">Remove files that were accidentally committed before they were added to .gitignore<a class="headerlink" href="#remove-files-that-were-accidentally-committed-before-they-were-added-to-gitignore" title="Permanent link">&para;</a></h5>
-<p><div class="codehilite"><pre><span></span>$ git rm -r-缓存.
-$ git添加.
-$ git commit -m“删除xyz文件”
+<p><div class="codehilite"><pre><span></span>$ git rm -r --cached .
+$ git 添加.
+$ git commit -m &amp;quot;删除 xyz 文件&amp;quot;
 </pre></div>
 <hr></p>
 <h2 id="git-flow">Git-Flow<a class="headerlink" href="#git-flow" title="Permanent link">&para;</a></h2>
@@ -7068,38 +7071,38 @@ $ git commit -m“删除xyz文件”
 <h3 id="setup_1">Setup<a class="headerlink" href="#setup_1" title="Permanent link">&para;</a></h3>
 <h6 id="you-need-a-working-git-installation-as-prerequisite-git-flow-works-on-osx-linux-and-windows">You need a working git installation as prerequisite. Git flow works on OSX, Linux and Windows.<a class="headerlink" href="#you-need-a-working-git-installation-as-prerequisite-git-flow-works-on-osx-linux-and-windows" title="Permanent link">&para;</a></h6>
 <h5 id="osx-homebrew">OSX Homebrew:<a class="headerlink" href="#osx-homebrew" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ brew安装git-flow-avh
+<div class="codehilite"><pre><span></span>$ brew install git-flow-avh
 </pre></div>
 
 <h5 id="osx-macports">OSX Macports:<a class="headerlink" href="#osx-macports" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ port安装git-flow
+<div class="codehilite"><pre><span></span>$ 端口安装git-flow
 </pre></div>
 
 <h5 id="linux-debian-based">Linux (Debian-based):<a class="headerlink" href="#linux-debian-based" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span>$ sudo apt-get安装git-flow
+<div class="codehilite"><pre><span></span>$ sudo apt-get install git-flow
 </pre></div>
 
 <h5 id="windows-cygwin">Windows (Cygwin):<a class="headerlink" href="#windows-cygwin" title="Permanent link">&para;</a></h5>
 <h6 id="you-need-wget-and-util-linux-to-install-git-flow">You need wget and util-linux to install git-flow.<a class="headerlink" href="#you-need-wget-and-util-linux-to-install-git-flow" title="Permanent link">&para;</a></h6>
-<p><div class="codehilite"><pre><span></span> $ wget -q -O---no-check-certificate https://raw.githubusercontent.com/petervanderdoes/gitflow/develop/contrib/gitflow-installer.sh安装&lt;state&gt; <span class="p">|</span> 重击
+<p><div class="codehilite"><pre><span></span> $ wget -q -O - --no-check-certificate https://raw.githubusercontent.com/petervanderdoes/gitflow/develop/contrib/gitflow-installer.sh install&lt;state&gt;  <span class="p">|</span> 猛击
 </pre></div>
 <hr></p>
 <h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
 <h6 id="git-flow-needs-to-be-initialized-in-order-to-customize-your-project-setup-start-using-git-flow-by-initializing-it-inside-an-existing-git-repository">Git flow needs to be initialized in order to customize your project setup. Start using git-flow by initializing it inside an existing git repository:<a class="headerlink" href="#git-flow-needs-to-be-initialized-in-order-to-customize-your-project-setup-start-using-git-flow-by-initializing-it-inside-an-existing-git-repository" title="Permanent link">&para;</a></h6>
 <h5 id="initialize">Initialize:<a class="headerlink" href="#initialize" title="Permanent link">&para;</a></h5>
 <h6 id="youll-have-to-answer-a-few-questions-regarding-the-naming-conventions-for-your-branches-its-recommended-to-use-the-default-values">You'll have to answer a few questions regarding the naming conventions for your branches. It's recommended to use the default values.<a class="headerlink" href="#youll-have-to-answer-a-few-questions-regarding-the-naming-conventions-for-your-branches-its-recommended-to-use-the-default-values" title="Permanent link">&para;</a></h6>
-<p><div class="codehilite"><pre><span></span>git flow初始化
+<p><div class="codehilite"><pre><span></span>git流初始化
 </pre></div>
 OR</p>
 <h6 id="to-use-default">To use default<a class="headerlink" href="#to-use-default" title="Permanent link">&para;</a></h6>
-<p><div class="codehilite"><pre><span></span>git flow初始化-d
+<p><div class="codehilite"><pre><span></span>git流初始化 -d
 </pre></div>
 <hr></p>
 <h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
 <h6 id="develop-new-features-for-upcoming-releases-typically-exist-in-developers-repos-only">Develop new features for upcoming releases. Typically exist in developers repos only.<a class="headerlink" href="#develop-new-features-for-upcoming-releases-typically-exist-in-developers-repos-only" title="Permanent link">&para;</a></h6>
 <h5 id="start-a-new-feature">Start a new feature:<a class="headerlink" href="#start-a-new-feature" title="Permanent link">&para;</a></h5>
 <h6 id="this-action-creates-a-new-feature-branch-based-on-develop-and-switches-to-it">This action creates a new feature branch based on 'develop' and switches to it.<a class="headerlink" href="#this-action-creates-a-new-feature-branch-based-on-develop-and-switches-to-it" title="Permanent link">&para;</a></h6>
-<div class="codehilite"><pre><span></span>git flow功能启动MYFEATURE
+<div class="codehilite"><pre><span></span>git flow 功能启动 MYFEATURE
 </pre></div>
 
 <h5 id="finish-up-a-feature">Finish up a feature:<a class="headerlink" href="#finish-up-a-feature" title="Permanent link">&para;</a></h5>
@@ -7107,33 +7110,33 @@ OR</p>
 <h6 id="1-merged-myfeature-into-develop">1) Merged MYFEATURE into 'develop'.<a class="headerlink" href="#1-merged-myfeature-into-develop" title="Permanent link">&para;</a></h6>
 <h6 id="2-removes-the-feature-branch">2) Removes the feature branch.<a class="headerlink" href="#2-removes-the-feature-branch" title="Permanent link">&para;</a></h6>
 <h6 id="3-switches-back-to-develop-branch">3) Switches back to 'develop' branch<a class="headerlink" href="#3-switches-back-to-develop-branch" title="Permanent link">&para;</a></h6>
-<div class="codehilite"><pre><span></span>git flow功能完成MYFEATURE
+<div class="codehilite"><pre><span></span>git flow 功能完成 MYFEATURE
 </pre></div>
 
 <h5 id="publish-a-feature">Publish a feature:<a class="headerlink" href="#publish-a-feature" title="Permanent link">&para;</a></h5>
 <h6 id="are-you-developing-a-feature-in-collaboration-publish-a-feature-to-the-remote-server-so-it-can-be-used-by-other-users">Are you developing a feature in collaboration? Publish a feature to the remote server so it can be used by other users.<a class="headerlink" href="#are-you-developing-a-feature-in-collaboration-publish-a-feature-to-the-remote-server-so-it-can-be-used-by-other-users" title="Permanent link">&para;</a></h6>
-<div class="codehilite"><pre><span></span>git flow功能发布MYFEATURE
+<div class="codehilite"><pre><span></span>git flow 功能发布 MYFEATURE
 </pre></div>
 
 <h5 id="getting-a-published-feature">Getting a published feature:<a class="headerlink" href="#getting-a-published-feature" title="Permanent link">&para;</a></h5>
 <h6 id="get-a-feature-published-by-another-user">Get a feature published by another user.<a class="headerlink" href="#get-a-feature-published-by-another-user" title="Permanent link">&para;</a></h6>
-<div class="codehilite"><pre><span></span>git flow功能拉原点MYFEATURE
+<div class="codehilite"><pre><span></span>git flow 功能 pull origin MYFEATURE
 </pre></div>
 
 <h5 id="tracking-a-origin-feature">Tracking a origin feature:<a class="headerlink" href="#tracking-a-origin-feature" title="Permanent link">&para;</a></h5>
 <h6 id="you-can-track-a-feature-on-origin-by-using">You can track a feature on origin by using<a class="headerlink" href="#you-can-track-a-feature-on-origin-by-using" title="Permanent link">&para;</a></h6>
-<p><div class="codehilite"><pre><span></span>git flow功能跟踪MYFEATURE
+<p><div class="codehilite"><pre><span></span>git flow 功能跟踪 MYFEATURE
 </pre></div>
 <hr></p>
 <h3 id="make-a-release">Make a Release<a class="headerlink" href="#make-a-release" title="Permanent link">&para;</a></h3>
 <h6 id="support-preparation-of-a-new-production-release-allow-for-minor-bug-fixes-and-preparing-meta-data-for-a-release">Support preparation of a new production release. Allow for minor bug fixes and preparing meta-data for a release<a class="headerlink" href="#support-preparation-of-a-new-production-release-allow-for-minor-bug-fixes-and-preparing-meta-data-for-a-release" title="Permanent link">&para;</a></h6>
 <h5 id="start-a-release">Start a release:<a class="headerlink" href="#start-a-release" title="Permanent link">&para;</a></h5>
 <h6 id="to-start-a-release-use-the-git-flow-release-command-it-creates-a-release-branch-created-from-the-develop-branch-you-can-optionally-supply-a-base-commit-sha-1-hash-to-start-the-release-from-the-commit-must-be-on-the-develop-branch">To start a release, use the git flow release command. It creates a release branch created from the 'develop' branch. You can optionally supply a [BASE] commit sha-1 hash to start the release from. The commit must be on the 'develop' branch.<a class="headerlink" href="#to-start-a-release-use-the-git-flow-release-command-it-creates-a-release-branch-created-from-the-develop-branch-you-can-optionally-supply-a-base-commit-sha-1-hash-to-start-the-release-from-the-commit-must-be-on-the-develop-branch" title="Permanent link">&para;</a></h6>
-<div class="codehilite"><pre><span></span>git flow发布开始发布[BASE]
+<div class="codehilite"><pre><span></span>git flow release start RELEASE [BASE]
 </pre></div>
 
 <h6 id="its-wise-to-publish-the-release-branch-after-creating-it-to-allow-release-commits-by-other-developers-do-it-similar-to-feature-publishing-with-the-command">It's wise to publish the release branch after creating it to allow release commits by other developers. Do it similar to feature publishing with the command:<a class="headerlink" href="#its-wise-to-publish-the-release-branch-after-creating-it-to-allow-release-commits-by-other-developers-do-it-similar-to-feature-publishing-with-the-command" title="Permanent link">&para;</a></h6>
-<div class="codehilite"><pre><span></span>git flow发布发布
+<div class="codehilite"><pre><span></span>git flow release 发布 RELEASE
 </pre></div>
 
 <h6 id="you-can-track-a-remote-release-with-the-git-flow-release-track-release-command">(You can track a remote release with the: <code>git flow release track RELEASE</code> command)<a class="headerlink" href="#you-can-track-a-remote-release-with-the-git-flow-release-track-release-command" title="Permanent link">&para;</a></h6>
@@ -7143,7 +7146,7 @@ OR</p>
 <h6 id="2-tags-the-release-with-its-name">2) Tags the release with its name<a class="headerlink" href="#2-tags-the-release-with-its-name" title="Permanent link">&para;</a></h6>
 <h6 id="3-back-merges-the-release-into-develop">3) Back-merges the release into 'develop'<a class="headerlink" href="#3-back-merges-the-release-into-develop" title="Permanent link">&para;</a></h6>
 <h6 id="4-removes-the-release-branch">4) Removes the release branch<a class="headerlink" href="#4-removes-the-release-branch" title="Permanent link">&para;</a></h6>
-<div class="codehilite"><pre><span></span>git flow发布完成发布
+<div class="codehilite"><pre><span></span>git flow 发布完成 RELEASE
 </pre></div>
 
 <h6 id="dont-forget-to-push-your-tags-with-git-push-tags">Don't forget to push your tags with <code>git push --tags</code><a class="headerlink" href="#dont-forget-to-push-your-tags-with-git-push-tags" title="Permanent link">&para;</a></h6>
@@ -7153,13 +7156,13 @@ OR</p>
 <h6 id="hotfixes-arise-from-the-necessity-to-act-immediately-upon-an-undesired-state-of-a-live-production-version-may-be-branched-off-from-the-corresponding-tag-on-the-master-branch-that-marks-the-production-version">Hotfixes arise from the necessity to act immediately upon an undesired state of a live production version. May be branched off from the corresponding tag on the master branch that marks the production version.<a class="headerlink" href="#hotfixes-arise-from-the-necessity-to-act-immediately-upon-an-undesired-state-of-a-live-production-version-may-be-branched-off-from-the-corresponding-tag-on-the-master-branch-that-marks-the-production-version" title="Permanent link">&para;</a></h6>
 <h5 id="git-flow-hotfix-start">Git flow hotfix start:<a class="headerlink" href="#git-flow-hotfix-start" title="Permanent link">&para;</a></h5>
 <h6 id="like-the-other-git-flow-commands-a-hotfix-is-started-with">Like the other git flow commands, a hotfix is started with<a class="headerlink" href="#like-the-other-git-flow-commands-a-hotfix-is-started-with" title="Permanent link">&para;</a></h6>
-<div class="codehilite"><pre><span></span>$ git flow hotfix启动VERSION [BASENAME]
+<div class="codehilite"><pre><span></span>$ git flow hotfix start VERSION [BASENAME]
 </pre></div>
 
 <h6 id="the-version-argument-hereby-marks-the-new-hotfix-release-name-optionally-you-can-specify-a-basename-to-start-from">The version argument hereby marks the new hotfix release name. Optionally you can specify a basename to start from.<a class="headerlink" href="#the-version-argument-hereby-marks-the-new-hotfix-release-name-optionally-you-can-specify-a-basename-to-start-from" title="Permanent link">&para;</a></h6>
 <h5 id="finish-a-hotfix">Finish a hotfix:<a class="headerlink" href="#finish-a-hotfix" title="Permanent link">&para;</a></h5>
 <h6 id="by-finishing-a-hotfix-it-gets-merged-back-into-develop-and-master-additionally-the-master-merge-is-tagged-with-the-hotfix-version">By finishing a hotfix it gets merged back into develop and master. Additionally the master merge is tagged with the hotfix version<a class="headerlink" href="#by-finishing-a-hotfix-it-gets-merged-back-into-develop-and-master-additionally-the-master-merge-is-tagged-with-the-hotfix-version" title="Permanent link">&para;</a></h6>
-<p><div class="codehilite"><pre><span></span>git flow修补程序完成版本
+<p><div class="codehilite"><pre><span></span>git flow 修补程序完成版本
 </pre></div>
 <hr></p>
 <h3 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h3>
